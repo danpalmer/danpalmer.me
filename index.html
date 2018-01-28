@@ -16,10 +16,19 @@ title: Dan Palmer
   interest in distributed systems.
 </p>
 
-<hr>
+<br>
+<br>
 
-<h2>Recent posts</h2>
+<h3>Recent posts</h3>
 
-{% for post in site.posts limit:3 %}
-  {% include post_list_item.html %}
-{% endfor %}
+<div class="c-archives__list">
+  {% for post in site.posts limit:3 %}
+    <div class="c-archives__item_with_preview">
+      <span class="c-archives__item">
+          <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+          <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+      </span>
+      <p>{{ post.preview }}</p>
+    </div>
+  {% endfor %}
+</div>
