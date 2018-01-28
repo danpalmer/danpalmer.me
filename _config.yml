@@ -10,8 +10,6 @@ url: "https://danpalmer.me" # the base hostname & protocol for your site
 # Social
 githubUsername: danpalmer
 twitterUsername: danpalmer
-dribbbleUsername:
-codepenUsername:
 
 # Build settings
 markdown: kramdown
