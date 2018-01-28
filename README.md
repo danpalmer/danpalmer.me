@@ -21,3 +21,4 @@ Customize your options within the `_config.yml` file.
 + Fixed Navigation
   - True
   - False
+# danpalmer.me
