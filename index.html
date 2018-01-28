@@ -1,0 +1,25 @@
+---
+layout: page
+title: Dan Palmer
+---
+
+<p>
+  I'm a software developer at Thread in London, and a University of Southampton
+  alumni where I studied Computer Science, specialising in Mobile and Secure
+  Systems.
+</p>
+
+<p>
+  I'm <a href="https://twitter.com/danpalmer">@danpalmer</a> on Twitter and can be found
+  on <a href="https://github.com/danpalmer">GitHub</a>. I enjoy writing software and
+  improving engineering processes. I'm currently learning Haskell, and have an
+  interest in distributed systems.
+</p>
+
+<hr>
+
+<h2>Recent posts</h2>
+
+{% for post in site.posts limit:3 %}
+  {% include post_list_item.html %}
+{% endfor %}
