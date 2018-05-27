@@ -4,14 +4,6 @@ title: CV
 permalink: /cv/
 ---
 
-The best thing about working in technology is how there is always something new
-to learn. Finding ways to improve how I work, how my team works, and solving
-hard engineering and business problems is great fun. As I continue to try new
-languages, frameworks, technologies, development principles and methodologies,
-I find that my university degree has given me a solid foundation in theory to
-benefit the practical experience I gain in every project I undertake at work,
-and in personal projects.
-
 ## Experience
 
 #### Thread - Software Engineer, June 2014 - Present
@@ -31,10 +23,11 @@ for new engineers.
 
 #### MWR InfoSecurity - Security Research and Development Intern, Summer 2013
 
-At MWR I was given the task of taking a new security product from the prototype
-stage to a fully featured working system. At the end of my internship I helped
-another developer to get up to speed on the project so that development could
-continue.
+At MWR I was given the task of taking a new security product from idea to a
+fully featured prototype. At the end of my internship I onboarded another
+developer to the codebase so that development could continue. Eventually this
+project was spun-off into a new company – Countercept, that currently has
+around 50 employees.
 
 During my time at MWR I also participated in a penetration test against a
 client's iOS application, finding vulnerabilities and verifying the client's
@@ -88,15 +81,16 @@ some help from friends!).
 I have also presented at PyConUK and the London Django Meetup Group.
 
  - [Scaling Django Codebases – PyConUK 2017](https://www.youtube.com/watch?v=jBBcORHhfV0)
+ - [Managing Special Cases with Django Enumfield – London Django Meetup 2018](https://skillsmatter.com/skillscasts/11718-django-enumfield)
 
 ## Skills
 
 ##### Technical
 
- - Currently using Python, Django, Javascript and Git
+ - Currently using Python, Django, Elm, Javascript, React and Git
  - Experience using Postgres and Redis in production
  - Previously worked on Objective-C, C# .NET MVC and Node.js codebases on professional projects
- - Some experience with Haskell and Elm for personal projects
+ - Some experience with Haskell for personal projects
  - Used Java, C and Io in university projects
  - Knowledge of, and interest in, computer security issues.
  - Basic knowledge, and interest in penetration testing and malware analysis.
@@ -105,6 +99,7 @@ I have also presented at PyConUK and the London Django Meetup Group.
 ##### Non-Technical
 
  - Extensive experience with code review.
+ - Strong emphasis on empathy, candour and clarity in communication.
  - Experience with project management tools, bug tracking and testing feedback.
  - Excellent written and spoken communication.
  - Experience working in an environment with constant re-prioritisation of work.
