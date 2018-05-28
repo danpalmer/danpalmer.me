@@ -25,9 +25,8 @@ for new engineers.
 
 At MWR I was given the task of taking a new security product from idea to a
 fully featured prototype. At the end of my internship I onboarded another
-developer to the codebase so that development could continue. Eventually this
-project was spun-off into a new company – Countercept, that currently has
-around 50 employees.
+developer to the codebase so that development could continue. Eventually the
+project was spun-off into a new company – Countercept.
 
 During my time at MWR I also participated in a penetration test against a
 client's iOS application, finding vulnerabilities and verifying the client's
