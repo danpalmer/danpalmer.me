@@ -1,8 +1,8 @@
-@import '../../styles/colors';
+@import "../../styles/variables";
 
 .project {
   h3 > small > a {
-    color: $thread-gray;
+    color: lightgrey;
   }
 
   clear: both;

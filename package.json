@@ -4,12 +4,14 @@
   "version": "1.0.0",
   "author": "Dan Palmer <dan@danpalmer.me>",
   "dependencies": {
+    "@primer/components": "^12.0.2",
     "atom-language-graphql": "^0.2.0",
     "classnames": "^2.2.6",
-    "gatsby": "next",
+    "gatsby": "^2.3.25",
     "gatsby-image": "^2.0.7",
     "gatsby-plugin-feed": "^2.0.10",
     "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-netlify": "^2.0.0-rc.6",
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",
@@ -25,20 +27,25 @@
     "gatsby-transformer-remark": "^2.1.1-rc.5",
     "gatsby-transformer-sharp": "^2.1.1",
     "gatsby-transformer-yaml": "^2.1.1-rc.6",
+    "graphql": "^14.2.1",
     "language-graphql": "https://github.com/rmosolgo/language-graphql",
     "node-sass": "^4.9.3",
+    "prop-types": "^15.7.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-google-charts": "^3.0.8",
     "react-helmet": "^5.2.0",
-    "sass-mq": "^5.0.0"
+    "sass-mq": "^5.0.0",
+    "styled-components": "^4.2.0",
+    "tachyons": "^4.11.1",
+    "webpack": "^4.30.0"
   },
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js' '**/*.md'"
+    "format": "prettier --write '**/*.js' '**/*.md' '**/*.css' '**/*.scss'"
   },
   "devDependencies": {
     "prettier": "^1.14.2"

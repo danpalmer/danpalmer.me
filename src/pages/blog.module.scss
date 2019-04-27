@@ -1,6 +1,4 @@
-@import '../styles/grid';
-@import '../styles/breakpoints';
-@import '../styles/colors';
+@import "../styles/variables";
 
 .blog {
   display: flex;
@@ -41,11 +39,11 @@
 
   a {
     text-decoration: none;
-    color: $thread-black;
+    color: black;
 
     &:after {
       margin-left: 5px;
-      content: '→';
+      content: "→";
     }
   }
 }
@@ -55,7 +53,7 @@
 
   a {
     text-decoration: none;
-    color: $thread-black;
+    color: black;
   }
 }
 
@@ -67,6 +65,6 @@
   }
 
   a:after {
-    content: '';
+    content: "";
   }
 }

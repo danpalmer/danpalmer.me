@@ -1,7 +1,4 @@
-@import '../../styles/variables';
-@import '../../styles/grid';
-@import '../../styles/colors';
-@import '../../styles/breakpoints';
+@import "../../styles/variables";
 
 .post {
   display: flex;
@@ -12,7 +9,7 @@
 
 .title {
   font-size: 50px;
-  font-weight: $fw-bold;
+  font-weight: bold;
   line-height: 1.2em;
   margin-bottom: 24px;
 
@@ -45,19 +42,19 @@
 
   p {
     margin-bottom: 20px;
-    font-weight: $fw-normal;
+    font-weight: normal;
   }
 
   a {
     color: #1e1e1e;
-    font-weight: $fw-bold;
+    font-weight: bold;
     text-decoration: none;
     display: inline-block;
     position: relative;
     outline: none;
 
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 0;
@@ -86,7 +83,7 @@
   }
 
   code {
-    background-color: $thread-gainsboro;
+    background-color: lightgrey;
     padding: 1px 3px;
     border-radius: 2px;
   }

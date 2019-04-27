@@ -1,33 +1,5 @@
-- name: strict-css-modules-loader
-  primary: true
-  description:
-    Wrap your CSS Modules objects in a proxy object, to warn if you attempt to access a non-existent style-name
-  languages:
-    - JavaScript
-  repo:
-    thread/strict-css-modules-loader
-
-- name: elm-web-components
-  primary: true
-  description:
-    A library to let you wrap your Elm applications up in web components.
-  languages:
-    - Elm
-    - JavaScript
-  repo:
-    thread/elm-web-components
-
-- name: Jacquard
-  primary: true
-  description:
-    Split testing server for running experiments, supporting gradual rollout.
-  languages:
-    - Python
-  repo:
-    prophile/jacquard
-
 - name: Routemaster
-  primary: true
+  role: Maintainer
   description:
     A service for coordinating complex state machines between muliple other services.
   languages:
@@ -35,90 +7,10 @@
   repo:
     thread/routemaster
 
-- name: css-modules-elm-types-loader
-  primary: true
-  description:
-    A Webpack loader for exposing CSS modules to Elm code in a type-safe way.
-  languages:
-    - JavaScript
-  repo:
-    thread/css-modules-elm-types-loader
-
-- name: Routemaster SDK
-  primary: true
-  description:
-    A Python client library for Routemaster, for integrating Python applications with Routemaster state machines.
-  languages:
-    - Python
-  repo:
-    thread/routemaster-sdk
-
-- name: Exhibit
-  primary: true
-  description:
-    A Chrome kiosk app for rotating public web pages on a Chromebit, for dashboards and public displays.
-  languages:
-    - JavaScript
-  repo:
-    thread/exhibit
-
-- name: Wide Product
-  primary: true
-  description:
-    Fast column-wise partial Khatri-Rao product.
-  languages:
-    - Python
-    - C
-  repo:
-    thread/wide-product
-
-# External Packages
-
 - name: django-enumfield
+  role: Contributor
   description:
   languages:
     - Python
   repo:
     lamby/django-enumfield
-
-- name: django-lightweight-queue
-  description:
-  languages:
-    - Python
-  repo:
-    thread/django-lightweight-queue
-
-- name: django-yadt
-  description:
-  languages:
-    - Python
-  repo:
-    lamby/django-yadt
-
-- name: django-force-logout
-  description:
-  languages:
-    - Python
-  repo:
-    lamby/django-force-logout
-
-- name: django-debug-toolbar-user-panel
-  description:
-  languages:
-    - Python
-  repo:
-    lamby/django-debug-toolbar-user-panel
-
-- name: django-autologin
-  description:
-  languages:
-    - Python
-  repo:
-    lamby/django-autologin
-
-- name: django-cache-toolbox
-  description:
-  languages:
-    - Python
-  repo:
-    lamby/django-cache-toolbox

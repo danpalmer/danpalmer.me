@@ -11,6 +11,8 @@ export default ({ project, languages }) => {
         <small>
           <a href={`https://github.com/${project.repo}`}>{project.repo}</a>
         </small>
+        <br />
+        <code>{project.role}</code>
       </h3>
       <p>{project.description}</p>
       <ul className={styles.languages}>

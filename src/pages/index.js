@@ -77,7 +77,10 @@ export const query = graphql`
         }
       }
     }
-    projects: allProjectsYaml(filter: { primary: { eq: true } }, limit: 3) {
+    projects: allProjectsYaml(
+      filter: { role: { eq: "Maintainer" } }
+      limit: 3
+    ) {
       edges {
         node {
           id

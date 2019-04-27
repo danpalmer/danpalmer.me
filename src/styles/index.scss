@@ -1,11 +1,6 @@
-@import './reset';
-@import './colors';
-@import './variables';
-@import './breakpoints';
-@import './grid';
-@import './z-index';
-@import './bootstrap';
-@import './code';
+@import "~/tachyons/tachyons.css";
+
+@import "./variables";
 
 img::selection {
   background: transparent;
@@ -16,7 +11,7 @@ img::-moz-selection {
 
 body {
   font-family: $global-font-family;
-  font-weight: $fw-normal;
+  font-weight: normal;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +19,5 @@ body {
 
 b,
 strong {
-  font-weight: $fw-bold;
+  font-weight: bold;
 }

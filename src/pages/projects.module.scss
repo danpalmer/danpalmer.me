@@ -1,6 +1,4 @@
-@import '../styles/grid';
-@import '../styles/breakpoints';
-@import '../styles/colors';
+@import "../styles/variables";
 
 .primaryProjects,
 .secondaryProjects {
@@ -12,7 +10,7 @@
 
 .primaryProjects:after,
 .secondaryProjects:after {
-  content: '';
+  content: "";
 }
 
 .project,

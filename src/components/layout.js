@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
+import { BaseStyles } from "@primer/components";
 import classNames from "classnames";
 
 import "../styles/index.scss";
@@ -35,7 +36,11 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className={classNames(styles.layout, "container")}>{children}</div>
+        <BaseStyles>
+          <div className={classNames(styles.layout, "container")}>
+            {children}
+          </div>
+        </BaseStyles>
       </Fragment>
     )}
   />

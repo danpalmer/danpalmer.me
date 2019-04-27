@@ -1,19 +1,5 @@
-$global-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-  'Helvetica Neue', Helvetica, Arial, sans-serif;
+$global-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$fw-normal: 400;
-$fw-bold: 500;
-
-$nav-font-size: 15px;
-$nav-font-size-desktop: 15px;
-$nav-height: 26px;
-$nav-vertical-padding: 15px;
-$nav-search-width: 320px;
-
-$nav-search-transition-duration: 0.4s;
-$nav-dropdown-transition-duration: 0.2s;
-$nav-liked-transition-duration: 1.5s;
-$nav-disliked-transition-duration: 0.8s;
-
-$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
-$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$breakpoint-mobile: 761px;
+$breakpoint-stack: 530px;
