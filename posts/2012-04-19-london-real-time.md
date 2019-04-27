@@ -1,8 +1,8 @@
 ---
-date: '2012-04-19'
+date: "2012-04-19"
 layout: post
 redirect_from:
-- /2012/04/london-real-time
+  - /2012/04/london-real-time
 slug: london-real-time
 title: London Real-time
 ---

@@ -1,8 +1,8 @@
 ---
-date: '2012-04-19'
+date: "2012-04-19"
 layout: post
 redirect_from:
-- /2012/04/githubs-security-vulnerabilities
+  - /2012/04/githubs-security-vulnerabilities
 slug: githubs-security-vulnerabilities
 title: GitHub's Security Vulnerabilities
 ---
@@ -19,10 +19,10 @@ The developer responded very quickly, changed his password, and assumed everythi
 
 I am not sure exactly how the problem arose, but I suspect it was something along these lines:
 
- - GitHub has API access by means of an access token, revocation happens when you change your password.
- - This is an old approach so they decide to implement OAuth and give each application it's own access token and give the user the ability to revoke access on a per-app basis.
- - Now that we have per-app revocation, we don't want to revoke access on changing the account password.
- - However we need to keep legacy API access around in some form.
+- GitHub has API access by means of an access token, revocation happens when you change your password.
+- This is an old approach so they decide to implement OAuth and give each application it's own access token and give the user the ability to revoke access on a per-app basis.
+- Now that we have per-app revocation, we don't want to revoke access on changing the account password.
+- However we need to keep legacy API access around in some form.
 
 Result: _changing the account password no longer changes the access token, but there is no way to revoke access to that token as it's not an OAuth authorised app._
 
@@ -32,7 +32,7 @@ I don't think this vulnerability was avoidable. It could be argued that better c
 
 GitHub dealt with this in exactly the right way. I reported it as soon as I had worked out exactly what it was, and I received a reply saying it had been corrected within a few hours. I didn't disclose it anonymously, perhaps one should when dealing with companies who can sue you, but I had been careful not to do anything which I could get in trouble for, and the developer who's account I breached was supportive of the disclosure.
 
-- - -
+---
 
 A few months after finding this issue another arose in the form of the Ruby-on-Rails mass attribute update vulnerability. After it was publicly demonstrated by the hacker who found it by committing to [<code>rails/master</code>](http://github.com/rails/rails), many criticised GitHub's approach to handling the issue, and I feel this criticism is unfairly directed at them.
 

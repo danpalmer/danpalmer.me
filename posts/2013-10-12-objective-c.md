@@ -1,17 +1,17 @@
 ---
-date: '2013-10-12'
+date: "2013-10-12"
 layout: post
 redirect_from:
-- /2013/10/objective-c
+  - /2013/10/objective-c
 slug: objective-c
 title: Objective-C
 ---
 
 If I mentioned that I like C, C++ or Python to other students on my course, or colleagues, there would be no reaction. There are things you can criticise about each one, but they are all very safe bets. When I tell people that I enjoy writing Objective-C however, they are confused and often quite hostile towards the language.
 
-I am by no means an Objective-C expert, but I've been thinking through the reasons *why* I like it, so this is a random collection of reasons why I enjoy using the language.
+I am by no means an Objective-C expert, but I've been thinking through the reasons _why_ I like it, so this is a random collection of reasons why I enjoy using the language.
 
-- - -
+---
 
 #### The Syntax
 
@@ -20,7 +20,7 @@ The very first thing that is mentioned, every single time I talk to a non-Object
 > What are all these square brackets for?
 > Why do strings have an @ in front of them?
 
-There are two possible answer to these questions. The first is that, at the time Objective-C was created in 1983, the 'C-style' syntax that most developers are so familiar with wasn't as well known and standard as we take for granted now. The syntax has been used in various froms in C, C++, Java, JavaScript, C# and arguably Perl and PHP, but of these only C pre-dates Objective-C. Simply put, Objective-C doesn't look *normal* because our concept of *normal* didn't exist when it was created.
+There are two possible answer to these questions. The first is that, at the time Objective-C was created in 1983, the 'C-style' syntax that most developers are so familiar with wasn't as well known and standard as we take for granted now. The syntax has been used in various froms in C, C++, Java, JavaScript, C# and arguably Perl and PHP, but of these only C pre-dates Objective-C. Simply put, Objective-C doesn't look _normal_ because our concept of _normal_ didn't exist when it was created.
 
 The second answer to this is taken from Apple's documentation...
 
@@ -30,12 +30,11 @@ When I first read this years ago, I read it as "You know all that C code? You ca
 
 Objective-C defines some extra symbols that you could have previously used in C, so that some old C code won't compile, but in terms of syntax it is a strict superset, meaning that any extra syntax that has been added will not conflict with C syntax.
 
-Take strings for example. If a string is defined between double quotes, like in Java or C#, it's not a string object, it's a <code>char *</code>, and it must remain a <code>char *</code> for compatability.
+Take strings for example. If a string is defined between double quotes, like in Java or C#, it's not a string object, it's a <code>char _</code>, and it must remain a <code>char _</code> for compatability.
 
 Nowadays this compatability is less important as most Objective-C applications probably don't have 'raw C' components (apart from those in the frameworks), but 30 years ago I'm sure that was a very different case, and still today, it is common in games to write lower level code, or code that interacts directly with OpenGL in C.
 
-Objective-C adds a number of new features to the C language, but almost all are prefixed with an <code>@</code>, so are very easy to spot, and more importantly, anything that looks like a C behaviour *is* a C behaviour and should work in exactly the same way.
-
+Objective-C adds a number of new features to the C language, but almost all are prefixed with an <code>@</code>, so are very easy to spot, and more importantly, anything that looks like a C behaviour _is_ a C behaviour and should work in exactly the same way.
 
 #### <del>Method Calling</del> Message Passing
 
@@ -43,13 +42,13 @@ The most obvious difference in Objective-C to most widely used languages is its 
 
 <script src="https://gist.github.com/danpalmer/5994242.js"></script>
 
-The first line here could be from C++, Java or any other similar language. It expresses a call to a known method on an object, that is, the compiler *knows* where in memory that method will reside, or at least will have a valid pointer to it after the linking stage of compilation.
+The first line here could be from C++, Java or any other similar language. It expresses a call to a known method on an object, that is, the compiler _knows_ where in memory that method will reside, or at least will have a valid pointer to it after the linking stage of compilation.
 
 This line essentially translates to <code>100</code> (and a few other contextual details) being put in a known location, and the processor receiving a jump instruction to the method location in memory where it will continue executing from.
 
 The second line is Objective-C, and it's expressing a very different concept. The compiler does not know where the method is, or if it exists, and if it doesn't, it may be handled in a range of different ways.
 
-This line translates directly into the following C function call. This function will look up the method name, called the *selector* in Objective-C terminology, at *runtime* in the method table on the *receiver* of the message, in this case <code>robot</code>.
+This line translates directly into the following C function call. This function will look up the method name, called the _selector_ in Objective-C terminology, at _runtime_ in the method table on the _receiver_ of the message, in this case <code>robot</code>.
 
 <script src="https://gist.github.com/danpalmer/5994278.js"></script>
 
@@ -63,8 +62,7 @@ Objective-C doesn't have 'named parameters'. In Python and Ruby you can call a m
 
 <script src="https://gist.github.com/danpalmer/5994301.js"></script>
 
-In this method call, there are 3 arguments: <code>someURL</code>, <code>NSURLRequestUseProtocolCachePolicy</code> and <code>60.0</code>. The *selector*, or name, of the method is <code>requestWithURL:cachePolicy:timeoutInterval:</code>. Any selector may be split up by colon delimiters, between which the arguments can be interspersed. I quite like this approach as it results in very good readability, but allows the IDE to 'know' more about the code and the parameters, because it's not as dynamic as passing a dictionary. However, it's a very different paradigm to most other languages, and arguably the style of passing named parameters that other languages take is more 'pure'.
-
+In this method call, there are 3 arguments: <code>someURL</code>, <code>NSURLRequestUseProtocolCachePolicy</code> and <code>60.0</code>. The _selector_, or name, of the method is <code>requestWithURL:cachePolicy:timeoutInterval:</code>. Any selector may be split up by colon delimiters, between which the arguments can be interspersed. I quite like this approach as it results in very good readability, but allows the IDE to 'know' more about the code and the parameters, because it's not as dynamic as passing a dictionary. However, it's a very different paradigm to most other languages, and arguably the style of passing named parameters that other languages take is more 'pure'.
 
 #### Design Patterns
 
@@ -74,7 +72,6 @@ Frameworks in Objective-C use the delegate pattern a lot. In some places it migh
 
 I think some of this comes down to personal preference. In Java I often find that there are too many different 'valid' ways of designing functionality which results in not knowing which direction to go down. Conversely, in JavaScript, I find there is a severe lacking of common design patterns and ways of structuring code, unless you use a very well defined framework, and in many cases I've seen this result in poor code quality, both from myself and others. For me, Objective-C is a pretty good point in the middle.
 
-
 #### APIs
 
 Much of the relative ease or difficulty of using a 'language' is actually down to the APIs provided within the standard library, or available libraries and frameworks from the community.
@@ -83,7 +80,7 @@ I have found the APIs to be very well designed, and designed to suit the languag
 
 I understand that a language is not it's APIs, but in so many real-world uses, they might as well be the same thing. Until very recently with the work [Xamarin](http://xamarin.com/) are doing, writing C# meant using .NET for almost all C# developers, Javascript commonly gets confused with jQuery and Node.js, and the widespread success of Ruby was at least in the beginning of its popularity, down to Rails.
 
-One API I am a big fan of is *Grand Central Dispatch*. This is an open source library developed by Apple for handling asynchronous and background task queues in Objective-C. It's by far the easiest threading system I've used in a language, and only languages with built in primitives for similar functionality (like Go's goroutines) provide better implementations from what I've seen so far.
+One API I am a big fan of is _Grand Central Dispatch_. This is an open source library developed by Apple for handling asynchronous and background task queues in Objective-C. It's by far the easiest threading system I've used in a language, and only languages with built in primitives for similar functionality (like Go's goroutines) provide better implementations from what I've seen so far.
 
 <script src="https://gist.github.com/danpalmer/5994709.js"></script>
 
@@ -98,11 +95,11 @@ Block 2 finished
 Block n finished
 Completed
 ```
+
 <br/>
 The blocks may not execute in order, but we can know when all of them have finished executing. Crucially, this process takes just over 3 seconds to run, because grand central dispatch is able to move on to other processing when blocks call `sleep`, and return to them once they need to continue processing.
 
 Similar things are possible in many languages and with many different libraries, but I've rarely found them to be as powerful as this for the ease of use. The equivalent in Java, using thread pools, requires considerably more manual setup.
-
 
 #### Open-Source Community
 
@@ -114,7 +111,7 @@ The JavaScript community was better in many ways I felt. But there are a large n
 
 The Objective-C community appears to fall somewhere in the middle. The popular CocoaPods system has a fairly large number of open source libraries now available on it, and I'm often impressed with them for several reasons. Firstly there are some very experienced, very good developers, out there in the community. But also everyone seems to take inspiration from Apple's frameworks in creating easy to use, but powerful APIs, often achieving better results than Apple themselves. I feel like there's a serious commitment to quality in the community.
 
-- - -
+---
 
 #### Some Things I Don't Like
 
@@ -124,7 +121,7 @@ For me, it's becoming more noticeable that Objective-C lacks namespaces. Apple a
 
 The standard Foundation and Cocoa libraries are lacking features that I would really like. String, array and dictionary manipulation aren't as good as they could be, and while the community are doing some great stuff to help with this, like [NSString+Ruby](https://github.com/zdavison/NSString-Ruby), and while the language provides features, like categories, that make these features easy enough to add, I think some more data manipulation and functional programming style methods would be a really nice thing to have in the standard classes.
 
-- - -
+---
 
 ### Conclusion
 

@@ -1,8 +1,8 @@
 ---
-date: '2012-05-09'
+date: "2012-05-09"
 layout: post
 redirect_from:
-- /2012/05/the-problem-with-square-and-paypal-here
+  - /2012/05/the-problem-with-square-and-paypal-here
 slug: the-problem-with-square-and-paypal-here
 title: The Problem with Square and PayPal Here
 ---
@@ -34,21 +34,21 @@ For those of you who don't know the details of the two systems, here is a brief 
 <img src="/assets/images/blog/mobile-payments-magstripe.jpg" alt="EMV Card"/>
 **Magstripe**
 
- - Static information
- - Easy to read
- - No encryption
- - Very easy to clone
- - Relies on signature verification
+- Static information
+- Easy to read
+- No encryption
+- Very easy to clone
+- Relies on signature verification
 
 <img src="/assets/images/blog/mobile-payments-emv-card.jpg" alt="EMV Card"/>
 **Chip & PIN / EMV**
 
- - Dynamic information
- - More difficult to read
- - Encrypted
- - Difficult or impossible to clone
- - Usually uses PIN verification
- - Usually contacts bank for authorisation
+- Dynamic information
+- More difficult to read
+- Encrypted
+- Difficult or impossible to clone
+- Usually uses PIN verification
+- Usually contacts bank for authorisation
 
 ### What are the Problems?
 
@@ -94,9 +94,9 @@ Square clearly has a lot of power over the payment industry now, and is gaining 
 
 What actually needs to happen for Square, PayPal and others to take hold of the UK and maybe the rest of Europe?
 
- 1. Battle with the red-tape of Europay, Mastercard and Visa to get approval for their hardware, and with EU financial industry regulations for their backend services.
- 2. Overcome 10 years of a bad public image of signature authentication and convince businesses to go backwards in their fight against card fraud.
- 3. Redesign their hardware, possily losing their brand identity in the process.
+1.  Battle with the red-tape of Europay, Mastercard and Visa to get approval for their hardware, and with EU financial industry regulations for their backend services.
+2.  Overcome 10 years of a bad public image of signature authentication and convince businesses to go backwards in their fight against card fraud.
+3.  Redesign their hardware, possily losing their brand identity in the process.
 
 On a closing note, 'contactless payments' are beginning to roll-out here in the UK, with banks such as Barclays offering cards that work using RFID. This technology is almost identical in the way the services and software work to EMV, but obviously without a normal card reader. They also don't use a PIN. Adoption of the new cards seems to be a little slow, perhaps the security risk is a part of this? Either way if any of the companies I have talked about decide to go down this route they still face many issues related to hardware, red-tape and public perception.
 

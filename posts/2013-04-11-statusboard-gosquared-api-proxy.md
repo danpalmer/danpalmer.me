@@ -1,8 +1,8 @@
 ---
-date: '2013-04-11'
+date: "2013-04-11"
 layout: post
 redirect_from:
-- /2013/04/statusboard-gosquared-api-proxy
+  - /2013/04/statusboard-gosquared-api-proxy
 slug: statusboard-gosquared-api-proxy
 title: GoSquared API Proxy for Panic's Status Board
 ---
@@ -21,7 +21,7 @@ I've set up a public API for this so that you can use it with no setup at all. B
 
 **Note: this service is no longer provided, GoSquared now provide first-class support for Panic's Statusboard, see [here](https://www.gosquared.com/statusboard/) for more details.**
 
-The colour of the graph is defined in the JSON returned, and defaults to "blue". Colours that Status Board will display are *red*, *blue*, *green*, *yellow*, *orange*, *purple*, *aqua*, or *pink*.
+The colour of the graph is defined in the JSON returned, and defaults to "blue". Colours that Status Board will display are _red_, _blue_, _green_, _yellow_, _orange_, _purple_, _aqua_, or _pink_.
 
 #### Pages
 
@@ -39,7 +39,7 @@ You can find your API key and site tokens [here](https://www.gosquared.com/home/
 
 ### Deployment
 
-There are a few ways you can deploy this for your own use. I've done a manual setup of Node.js running a local only server on port 8000 as an Upstart service. I use Nginx to reverse proxy to this on the *statusboard* subdomain.
+There are a few ways you can deploy this for your own use. I've done a manual setup of Node.js running a local only server on port 8000 as an Upstart service. I use Nginx to reverse proxy to this on the _statusboard_ subdomain.
 
 My Upstart script in `/etc/init/statusboard-gosquared.conf` looks something like this:
 

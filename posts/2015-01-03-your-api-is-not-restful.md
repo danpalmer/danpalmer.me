@@ -1,11 +1,12 @@
 ---
-date: '2015-01-03'
+date: "2015-01-03"
 layout: post
-preview: RESTful APIs are a popular thing, but is anyone really doing it properly?
+preview:
+  RESTful APIs are a popular thing, but is anyone really doing it properly?
   This post highlights some common flaws in RESTful APIs, and explains why it's important
   that we improve them beyond the current standard.
 redirect_from:
-- /2015/01/your-api-is-not-restful
+  - /2015/01/your-api-is-not-restful
 slug: your-api-is-not-restful
 title: Your API is not RESTful
 ---
@@ -36,7 +37,6 @@ The difficult bit is the uniform interface, and this is where so many developers
 3. Messages are self-descriptive, including enough information to know how to use them, for example with MIME types.
 4. Hypermedia as the Engine of Application State.
 
-
 ### Hypermedia as the Engine of Application State
 
 This is the crux of why most "RESTful" APIs are not actually RESTful. In order to evaluate whether an API is using 'HATEOAS', we can ask the question – "What do I need to know in advance to use this service?". The correct answer is the domain, and the protocol. That's all. Given that information, it should be possible to fully explore everything the service has to offer.
@@ -51,19 +51,17 @@ This is a simple way of evaluating how RESTful a web service is. It's not perfec
 
 1. **Resources** – rather than using RPC on a single endpoint, data is broken out into separate resources, at separate locations. Communication is not method names and arguments, but instead the resources being manipulated.
 2. **HTTP Verbs** – rather than using HTTP `POST` for everything (as was the standard for SOAP APIs over HTTP for a while), we use `GET`, `POST`, `PUT` and `DELETE` as appropriate. `GET` is idempotent, `POST` creates a new resource in a collection, `PUT` updates a resource, and `DELETE` deletes it.
-3. **Hypermedia** – resources contain links to related resources and collections, and also links to perform actions on the resources themselves. APIs are now *self-documenting* and *discoverable*.
+3. **Hypermedia** – resources contain links to related resources and collections, and also links to perform actions on the resources themselves. APIs are now _self-documenting_ and _discoverable_.
 
 Each level is a condition for the next, so the only way for a service to qualify for level 3 is for it to also support levels 1 and 2.
-
-
 
 ### RESTful Web Services
 
 Let's look at a few examples. Take [Mandrill](https://mandrillapp.com/api/docs) for example. This API claims to be "mostly RESTful", but it's barely RESTful at all.
 
- - Endpoints are *functions* in a Remote Procedure Call style, not resources, meaning that to get a user you 'call' `info`, providing an argument of a user ID, rather than performing a `GET` on a resource of `/user/:id`. This fails level 1 of the maturity model.
- - All requests must be HTTP `POST`, therefore failing level 2.
- - There are no links, and no self-documentation in responses about actions that can be taken, therefore failing level 3.
+- Endpoints are _functions_ in a Remote Procedure Call style, not resources, meaning that to get a user you 'call' `info`, providing an argument of a user ID, rather than performing a `GET` on a resource of `/user/:id`. This fails level 1 of the maturity model.
+- All requests must be HTTP `POST`, therefore failing level 2.
+- There are no links, and no self-documentation in responses about actions that can be taken, therefore failing level 3.
 
 The Mandrill API is RESTful only in that it works over the web, and therefore satisfies many of the constraints automatically. Nothing at the level of the application itself is RESTful, it is instead just an RPC API that communicates in JSON.
 
@@ -71,32 +69,29 @@ Perhaps the new Digital Ocean API will be better? They make bold claims about it
 
 Twitter's REST API was one of the first major APIs to make REST 'trendy', at least in terms of popularity and widespread use. However on closer inspection it's not particularly RESTful.
 
- - Endpoints are resources, so the API passes level 1.
- - HTTP verbs are used, although whether their usage is good practice or not is up for debate. For example, to delete a tweet, a `POST` request must be issued to `/statuses/destroy/:id`, therefore encoding the action in the URI rather than the verb. Perhaps a better way would be to issue a `DELETE` to `/statuses/:id`. The API arguably fails level 2.
- - There are no links, and no self-documentation in responses, so the API fails level 3 entirely.
+- Endpoints are resources, so the API passes level 1.
+- HTTP verbs are used, although whether their usage is good practice or not is up for debate. For example, to delete a tweet, a `POST` request must be issued to `/statuses/destroy/:id`, therefore encoding the action in the URI rather than the verb. Perhaps a better way would be to issue a `DELETE` to `/statuses/:id`. The API arguably fails level 2.
+- There are no links, and no self-documentation in responses, so the API fails level 3 entirely.
 
-
-### Why be *fully* RESTful?
+### Why be _fully_ RESTful?
 
 The current state of Web APIs is fundamentally broken. The 'officially supported' way of accessing many APIs is to use one of usually half a dozen client libraries created by the service provider, or to read the documentation and construct your own. If, as is often the case, a library is not provided for your language, and any third party versions aren't in active development, or the documentation is lacking, then making full use of the API's abilities is often not possible. When the libraries do exist, they all do essentially the same thing: they make web requests, and based on the data they receive, they figure out how to make more requests.
 
 If this doesn't sound like a bad state of affairs, imagine what it would be like if each website published their own browser, that you had to use to browse the site, just because they have decided to publish content in different formats, or have an obscure and proprietary way of linking to other content.
 
-Some client libraries published by API providers claim additional features (over what your own implementation might have) such as smart caching, performance enhancements for slow connections on mobile data, and 'live' connections. But all of these are possible with open web standards, and a well written *generic* REST library could support all of them and more, for any service that provided full REST support.
+Some client libraries published by API providers claim additional features (over what your own implementation might have) such as smart caching, performance enhancements for slow connections on mobile data, and 'live' connections. But all of these are possible with open web standards, and a well written _generic_ REST library could support all of them and more, for any service that provided full REST support.
 
 Imagine the following:
 
- - Writing an application that consumed many web services, and all the implementation specific code you had to write was the list of links you wanted to traverse.
- - Not having to re-write or update your library when changes were made to the API, being able to take advantage of performance improvements in the API with no additional development.
- - Querying a web service being no different to using an ORM to query your database, even across services from multiple providers.
+- Writing an application that consumed many web services, and all the implementation specific code you had to write was the list of links you wanted to traverse.
+- Not having to re-write or update your library when changes were made to the API, being able to take advantage of performance improvements in the API with no additional development.
+- Querying a web service being no different to using an ORM to query your database, even across services from multiple providers.
 
 All of this is possible. We don't yet have all the standards we need, but they aren't going to come about until developers are actively using, providing, and requesting REST APIs.
 
-
 ##### Related Resources
 
- - [Richardson Maturity Model](http://martinfowler.com/articles/richardsonMaturityModel.html)
- - [Wikipedia – Representation State Transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
- - [Roy Fielding's Thesis – Architectural Styles and
-the Design of Network-based Software Architectures](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
-    - [Chapter 5 – Representation State Transfer](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
+- [Richardson Maturity Model](http://martinfowler.com/articles/richardsonMaturityModel.html)
+- [Wikipedia – Representation State Transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
+- [Roy Fielding's Thesis – Architectural Styles and
+  the Design of Network-based Software Architectures](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) - [Chapter 5 – Representation State Transfer](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)

@@ -1,8 +1,8 @@
 {
-  "name": "thread-engineering",
-  "description": "thread.engineering",
+  "name": "danpalmer.me",
+  "description": "danpalmer.me",
   "version": "1.0.0",
-  "author": "Thread Engineering <engineering@thread.com>",
+  "author": "Dan Palmer <dan@danpalmer.me>",
   "dependencies": {
     "atom-language-graphql": "^0.2.0",
     "classnames": "^2.2.6",
@@ -38,14 +38,13 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write '**/*.js' '**/*.md'"
   },
   "devDependencies": {
     "prettier": "^1.14.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thread/thread-engineering"
+    "url": "https://github.com/danpalmer/danpalmer.me"
   }
 }

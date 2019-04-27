@@ -1,20 +1,21 @@
 ---
-date: '2014-01-29'
+date: "2014-01-29"
 layout: post
 redirect_from:
-- /2014/01/crowdfunded-cryptography
+  - /2014/01/crowdfunded-cryptography
 slug: crowdfunded-cryptography
 title: A Crowdfunded Cryptography Nightmare
 ---
 
 Today I found [DyNAcrypt](http://www.indiegogo.com/projects/dynacrypt-introducing-the-fractalizing-random-abstraction-ciphering-transputer/x/4092978) on IndieGoGo, and was disappointed to see yet another example of terrible cryptography practice in a project looking for crowdfunding.
 
-I don't know whether the creators of DyNAcrypt are trying to scam people, or just ignorant, but either way, I'm going to go through some concerns I had while reading the project description. Reading the project description, and watching the video strongly suggests that the project creators are 'trolling', making very obvious technical, and grammatical, mistakes. Even if this is the case, there *are* people who still get cryptography as wrong as this project does.
-- - -
+I don't know whether the creators of DyNAcrypt are trying to scam people, or just ignorant, but either way, I'm going to go through some concerns I had while reading the project description. Reading the project description, and watching the video strongly suggests that the project creators are 'trolling', making very obvious technical, and grammatical, mistakes. Even if this is the case, there _are_ people who still get cryptography as wrong as this project does.
+
+---
 
 > Most encryption methods (algorithms) in use today, are well-established and/or thoroughly documented. This presents at least three major problems: powerful computers can be set-up to work out encryption keys, or; make repeated attempts to guess the encryption pin, password, or keys, and; some encryption solutions have provided back-door mechanisms to allow those who feel they must, to have access via a secretly easy way in.
 
-Most encryption methods in use today are well-established and thoroughly documented. This is a *good thing*. [Kirchoff's Principle](http://en.wikipedia.org/wiki/Kerckhoffs's_principle) is that a cryptosystem should be secure, even if the enemy knows every detail about the system, as long as the key used is secret.
+Most encryption methods in use today are well-established and thoroughly documented. This is a _good thing_. [Kirchoff's Principle](http://en.wikipedia.org/wiki/Kerckhoffs's_principle) is that a cryptosystem should be secure, even if the enemy knows every detail about the system, as long as the key used is secret.
 
 The reason for this is that it is really easy to work out how a system works, and reverse engineer it, but often difficult to crack the key used. This was the first thing I ever learnt about cryptography, and I've seen it confirmed time and time again.
 
@@ -38,8 +39,8 @@ Dedicated hardware for cryptography isn't such a bad idea, in fact many banks an
 
 A quick search on [Mendeley](https://mendeley.com) for the term "ASIC analysis" turned up a few papers on analysing computation being performed on ASICs.
 
- - [Power-analysis attack on an ASIC AES implementation](http://www.mendeley.com/catalog/poweranalysis-attack-asic-aes-implementation/)
- - [Differential power analysis of AES ASIC implementations with various S-box circuits](http://www.mendeley.com/catalog/differential-power-analysis-aes-asic-implementations-various-sbox-circuits/)
+- [Power-analysis attack on an ASIC AES implementation](http://www.mendeley.com/catalog/poweranalysis-attack-asic-aes-implementation/)
+- [Differential power analysis of AES ASIC implementations with various S-box circuits](http://www.mendeley.com/catalog/differential-power-analysis-aes-asic-implementations-various-sbox-circuits/)
 
 I don't know this subject area, but even just a cursory glance at literature appears to indicate that it might be possible to retrieve information from a running ASIC. Similar methods of power analysis have been used to [crack the MIFARE DESFire triple-DES implementation](http://www.iacr.org/workshops/ches/ches2011/presentations/Session%205/CHES2011_Session5_1.pdf).
 
@@ -61,36 +62,41 @@ This gives me the opposite of 'peace of mind', it gives me great cause for conce
 
 All this tells me is that 66% of people are ignorant about security issues. Sending unencrypted files to an untrusted party is asking for trouble. If you're trying to emphasise security, this just isn't how you go about doing it. Instead an approach like [MEGA](https://mega.co.nz) where encryption is done in the browser before transmission, and the keys never hit the remote servers is a much better system.
 
-- - -
+---
 
 The "frequently asked questions" section of the project description is just as bad as the rest...
 
 ##### Anything I wanted to encrypt I would encrypt using one of the plethora of free encryption tools available today.
+
 > How secure are these free products, and why are they free?
 
 They are free because thousands of developers donate their time and effort to making them publicly available and highly secure. The open-source community has a much better track record of secure software, and fixing security flaws in insecure software, than that of the commercial software industry.
 
 ##### The very idea of transmitting, unencrypted, something I wanted to encrypt over the internet completely defeats the purpose of doing so.
->Would you do online banking on your banks secured https website? We would use the same secure protocol for the upload and download of your files.
+
+> Would you do online banking on your banks secured https website? We would use the same secure protocol for the upload and download of your files.
 
 You might use HTTPS, but you still receive an unencrypted file and store it for a period of time on your servers.
 
 ##### If the service went offline, would I be stuck with unusable files?
+
 > We plan to provide at multiple servers from the start, to help avoid any downtime. The absolute best protection against this possibility, would be to own your own DyNAcrypt Encryption device.
 
 Another reason for public encryption protocols is that you don't have to rely on a single provider, their availability, reliability, pricing, or security. You have the choice to move to another provider, or even implement your own system.
 
 ##### If Google/Apple and the like can be back doored by the NSA, then anyone can.
+
 > The algorithms do not provide a back-door to anyone.
 
 The algorithms don't have to. The NSA have intercepted data in data centres before it has been stored in an encrypted form. In fact it's because [Lavabit](https://lavabit.com) were instructed to do allow for this that they shut down. This has nothing to do with the algorithm.
 
 ##### Unless the encryption algorithm is public, I wouldn't trust it.
+
 > We are extremely confident that the algorithms within the ASIC's, are undiscoverable, and believe this secrecy can only multiply the security of your encrypted files. Other encryption algorithm providers, may not see this benefit.
 
 The fact that the project creators have discovered the algorithm themselves shows that this is just wrong, but even if the algorithm isn't rediscovered by someone else, I suspect there are ways to recover some detail about the algorithm and keys from the ASIC. Recently a 4096 bit RSA key has been recovered from a computer with [acoustic cryptanalysis](http://www.cs.tau.ac.il/~tromer/acoustic/) - a fancy way of saying they pointed a microphone at it.
 
-- - -
+---
 
 These points only scratch the surface of what's wrong with this project. It might be an over-engineered joke, it might be a scam, but these problems exist in many real-world products and cryptosystems.
 

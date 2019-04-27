@@ -1,10 +1,10 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import Layout from '../components/layout';
-import BuildChart from '../components/build-chart/build-chart';
+import Layout from "../components/layout";
+import BuildChart from "../components/build-chart/build-chart";
 
-import styles from './careers.module.scss';
+import styles from "./careers.module.scss";
 
 export default ({ data }) => {
   return (

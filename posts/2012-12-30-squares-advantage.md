@@ -1,8 +1,8 @@
 ---
-date: '2012-12-30'
+date: "2012-12-30"
 layout: post
 redirect_from:
-- /2012/12/squares-advantage
+  - /2012/12/squares-advantage
 slug: squares-advantage
 title: Square's Advantage
 ---

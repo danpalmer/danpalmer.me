@@ -1,8 +1,8 @@
 ---
-date: '2012-01-04'
+date: "2012-01-04"
 layout: post
 redirect_from:
-- /2012/01/buffer-overflows
+  - /2012/01/buffer-overflows
 slug: buffer-overflows
 title: Buffer Overflows
 ---
@@ -41,7 +41,9 @@ It is now common to disable execution of code from the stack. This can be circum
 #### Exploit
 
 <script src="https://gist.github.com/4287063.js"></script>
+
 <small><a href="http://www.blackhatacademy.org/security101/index.php?title=Buffer_Overflows">http://www.blackhatacademy.org/security101/index.php?title=Buffer_Overflows</a></small>
+
 <p>
 	<dl>
 		<dt>buffer_addr</dt>

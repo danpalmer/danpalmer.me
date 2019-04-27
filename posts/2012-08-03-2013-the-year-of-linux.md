@@ -1,10 +1,10 @@
 ---
-date: '2012-08-03'
+date: "2012-08-03"
 layout: post
 redirect_from:
-- /2012/08/2013-the-year-of-linux
+  - /2012/08/2013-the-year-of-linux
 slug: 2013-the-year-of-linux
-title: '2013: The Year of Linux on the Desktop?'
+title: "2013: The Year of Linux on the Desktop?"
 ---
 
 There is a lot going for Linux in business already: it's free, runs well on old hardware, and has a good range of office software, but I don't think business is where Linux will take off, if anything I think it will take longer than home use.

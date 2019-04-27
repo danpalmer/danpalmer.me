@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import styles from './project.module.scss';
+import styles from "./project.module.scss";
 
 export default ({ project, languages }) => {
   return (

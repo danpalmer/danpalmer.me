@@ -1,8 +1,8 @@
 ---
-date: '2014-03-01'
+date: "2014-03-01"
 layout: post
 redirect_from:
-- /2014/03/imessage-security
+  - /2014/03/imessage-security
 slug: imessage-security
 title: iMessage Security
 ---
@@ -41,7 +41,7 @@ But what if Apple just distributed a different version?
 
 It was suspected that this was happening to [TrueCrypt](http://www.truecrypt.org/). TrueCrypt distributes both binaries and the source code, however for a long time 3rd party developers were unable to reproduce the same build results, when they compiled the source code, they got a different result to what was being distributed. This led many to believe that TrueCrypt had been backdoored. However, near the end of last year, a researcher finally [managed to reproduce](https://madiba.encs.concordia.ca/~x_decarn/truecrypt-binaries-analysis/) the exact build of TrueCrypt.
 
-By matching the hashes of the compiled application, we can confirm to a *very* high degree of confidence that what we compiled is the same as another build. For iMessage, this would mean we could tell if Apple was distributing a different, and possibly malicious, version of the application with iOS.
+By matching the hashes of the compiled application, we can confirm to a _very_ high degree of confidence that what we compiled is the same as another build. For iMessage, this would mean we could tell if Apple was distributing a different, and possibly malicious, version of the application with iOS.
 
 Wouldn't they have to release the source code of the server component?
 

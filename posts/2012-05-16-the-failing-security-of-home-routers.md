@@ -1,8 +1,8 @@
 ---
-date: '2012-05-16'
+date: "2012-05-16"
 layout: post
 redirect_from:
-- /2012/05/the-failing-security-of-home-routers
+  - /2012/05/the-failing-security-of-home-routers
 slug: the-failing-security-of-home-routers
 title: The Failing Security of Home Routers
 ---
@@ -98,7 +98,7 @@ think this is good, at least they tell people to change them. Not only was I
 never prompted to change the default password on this account, _the account
 wasn't even visible_. As I said before as well, the serial number, is not
 protected information so finding it by
-[social engineering](http://en.wikipedia.org/wiki/Social_engineering_(security))
+[social engineering](<http://en.wikipedia.org/wiki/Social_engineering_(security)>)
 would be relatively easy.
 
 ### The Virgin Media SuperHub - Netgear VMDG480/CG3101D
@@ -147,8 +147,8 @@ is the one that holds a key to my home network security. That's not good enough.
 If you have done any development on systems that have passwords you will know
 the rules of storing passwords:
 
- 1. Do not store passwords in plaintext.
- 2. DO NOT store passwords in plaintext.
+1.  Do not store passwords in plaintext.
+2.  DO NOT store passwords in plaintext.
 
 This is such a fundamental rule, I cannot express how important it is. What it
 means is that after you have entered the password into a website/device/app it
@@ -158,14 +158,14 @@ password. Here is an analogy:
 
 1. Let's equate passwords to paint colours.
 2. When I set my password (red), the system will mix it with it's own colour
- which never changes, blue for example, and then store the result, which is
- purple.
+   which never changes, blue for example, and then store the result, which is
+   purple.
 
 3. If I want to 'log in', I give it my shade of red, it mixes it to form purple,
- and can see that it matches the purple it has on file.
+   and can see that it matches the purple it has on file.
 
 4. However, if the system is broken and someone steals the purple, it's only
- a mixture and they cannot separate the colours that originally made it up.
+   a mixture and they cannot separate the colours that originally made it up.
 
 People who know password security well might pick holes in the finer details of
 this analogy, but I think it explains the concept well enough. It is possible

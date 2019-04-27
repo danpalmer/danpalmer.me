@@ -1,8 +1,8 @@
 ---
-date: '2013-10-24'
+date: "2013-10-24"
 layout: post
 redirect_from:
-- /2013/10/reasons-children-should-learn-to-code
+  - /2013/10/reasons-children-should-learn-to-code
 slug: reasons-children-should-learn-to-code
 title: Reasons Children Should Learn to Code
 ---
@@ -10,7 +10,6 @@ title: Reasons Children Should Learn to Code
 I've just read [The Government wants to teach all children how to code, Here's why it's a stupid idea](http://blogs.telegraph.co.uk/technology/willardfoxton2/100011290/the-government-wants-to-teach-all-children-how-to-code-heres-why-its-a-stupid-idea/) by [Willard Foxton](http://blogs.telegraph.co.uk/technology/author/willardfoxton2/) on his Telegraph technology blog. I found the article incredibly short sighted and full of bad stereotypes that miss the point of teaching children to code.
 
 I'm not going to pick apart the author's points, from the looks of the comments section on the post I think that's easy enough for anyone to do. Instead I'm going to give 3 positive reasons that we should be teaching children to code from a young age.
-
 
 ### Problem Solving
 
@@ -22,7 +21,6 @@ In programming however, this breaking down of problems into simpler elements, an
 
 It's not up to volunteers and organisations like [Code Club](https://www.codeclub.org.uk/) to teach children essential life skills, that's what school is for.
 
-
 ### Wide Applications
 
 Programming is not just for programmers. When I graduate I will become a software developer, and my career will probably involve that for quite a few years so programming is clearly very important for me. However it's also applicable to a wide range of subjects. My friends who study Physics learn Python in order to more efficiently solve problems they encounter, those who study Maths often learn Matlab so that they can apply complex theories they learn to real world examples, even my friend studying Geophysics has written C Shell (yes, really) code to automate the processing of large datasets to generate useful graphs of seismic activity.
@@ -31,8 +29,7 @@ If you want a really high paying job coming out of a computer science degree, yo
 
 One of my friends at university, Philip, is doing a PhD in Chemistry. As a part of this, his supervisor gave him and two others some spreadsheets with large amounts of data in to use in their calculations. The supervisor estimated it would take around 2-3 weeks to process manually in Excel. The other two students got stuck in and I'm sure had a very boring few weeks, but instead Philip fired up [Python](http://www.python.org/) and wrote some code. It took him about 2 hours to get it to the point of being able to process a single result when the others were already much further in, but the value of programming a solution is that once you can run it once, it takes no effort to run it many times more. Philip finished the 2-3 week assignment in under 3 hours, because of the automation he could apply to the task.
 
-Even a field like sociology would probably benefit in some ways from a knowledge of programming. Do you want to understand friendship groups? You could survey a few thousand people and get a basic understanding with months of effort, or you could use the Facebook graph API to traverse social groups and have a sample size of *millions* of people in much less time.
-
+Even a field like sociology would probably benefit in some ways from a knowledge of programming. Do you want to understand friendship groups? You could survey a few thousand people and get a basic understanding with months of effort, or you could use the Facebook graph API to traverse social groups and have a sample size of _millions_ of people in much less time.
 
 ### Career Opportunities
 
@@ -42,8 +39,7 @@ Of course many people still won't need to be able to write code in their jobs, b
 
 Those who can code will be more employable in so many types of job in the not too distant future, and if we aren't teaching it to children then they are going to lose out to people who grow up in education systems where they are taught to program.
 
-
-- - -
+---
 
 <blockquote class="twitter-tweet" align="center"><p>“We shouldn’t teach kids to code as they won’t all become coders”&#10;“We shouldn’t teach kids to write as they won’t all become writers”</p>&mdash; Martin Pilkington (@pilky) <a href="https://twitter.com/pilky/statuses/393381232257826816">October 24, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -1,13 +1,13 @@
 ---
-date: '2013-01-06'
+date: "2013-01-06"
 layout: post
 redirect_from:
-- /2013/01/principles-of-computer-graphics
+  - /2013/01/principles-of-computer-graphics
 slug: principles-of-computer-graphics
 title: Principles of Computer Graphics
 ---
 
-The specification for this assignment was to create a basic 3D scene with mutliple objects, camera control, and various graphical effects under the title *Mars in Fiction*.
+The specification for this assignment was to create a basic 3D scene with mutliple objects, camera control, and various graphical effects under the title _Mars in Fiction_.
 
 The scene had to be written in C++ and use OpenGL, and 'modern' OpenGL techniques that have been the standard since version 3, such as the use of vertex and fragment shaders, and vertex arrays.
 
@@ -39,7 +39,7 @@ By the end of the assignment, I had ended up with a simple, but fairly capable m
 
 #### Conclusion
 
-There is a need for a graphics *framework*. OpenGL provides a great API, but no hint about how an application should be structured. There are game engines out there that will do this, but I don't think the answer is to learn a game engine instead.
+There is a need for a graphics _framework_. OpenGL provides a great API, but no hint about how an application should be structured. There are game engines out there that will do this, but I don't think the answer is to learn a game engine instead.
 
 All that is really needed is a basic structure of probably no more than a dozen or so classes with basic scene object handling, shader setup, graphics pipeline and texturing. Possibly the most complex part that I think is desparately needed is handling for hardware compatibility – a way to abstract some of the main differences away from the graphics novice.
 

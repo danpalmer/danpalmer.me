@@ -1,8 +1,8 @@
 ---
-date: '2010-05-19'
+date: "2010-05-19"
 layout: post
 redirect_from:
-- /2010/05/pin-security
+  - /2010/05/pin-security
 slug: pin-security
 title: PIN Security
 ---
@@ -22,8 +22,9 @@ When an attempt at the password is to be made, each square in the grid is filled
 For example, in the above picture, if my password is made of the 4 corners starting top-left and moving clockwise, for this attempt my password would be '5178'. However as the numbers are generated randomly to fill the squares, they would be different the next time I am asked to enter my PIN.
 
 The size of the grid can be set to anything in the concept. I have used a 7x7 grid for 2 reasons:
- - It is small enough that remembering positions and finding them quickly is relatively easy, especially with the colours.
- - The grid has 49 squares. On average, there will be almost 5 of any 1 number in the grid. This means that if you type '8' while someone is watching, they will probably have no idea which 8 you are referring to. In the case above, there are 9 instances of '8'. This is abnormal, but demonstrates the point well.
+
+- It is small enough that remembering positions and finding them quickly is relatively easy, especially with the colours.
+- The grid has 49 squares. On average, there will be almost 5 of any 1 number in the grid. This means that if you type '8' while someone is watching, they will probably have no idea which 8 you are referring to. In the case above, there are 9 instances of '8'. This is abnormal, but demonstrates the point well.
 
 I can see 2 ways to crack this. Firstly, trying all passwords. This is known as 'brute force' cracking and usually works by trying everything from '0000' to '9999'. However in this case it would not work in the same way as the password changes each time. Instead, it would be luck each time it guessed it as to whether it guessed correctly. Each guess has the same chance of 1 in 9999.
 

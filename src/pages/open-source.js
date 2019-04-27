@@ -1,10 +1,10 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import Layout from '../components/layout';
-import Project from '../components/project/project';
+import Layout from "../components/layout";
+import Project from "../components/project/project";
 
-import styles from './open-source.module.scss';
+import styles from "./open-source.module.scss";
 
 export default ({ data }) => {
   return (

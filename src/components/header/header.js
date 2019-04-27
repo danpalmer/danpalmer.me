@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
 
-import './header.scss';
+import "./header.scss";
 
 const Header = ({ siteTitle }) => (
   <div className="global-navigation-wrapper">

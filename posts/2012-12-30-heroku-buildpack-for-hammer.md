@@ -1,8 +1,8 @@
 ---
-date: '2012-12-30'
+date: "2012-12-30"
 layout: post
 redirect_from:
-- /2012/12/heroku-buildpack-for-hammer
+  - /2012/12/heroku-buildpack-for-hammer
 slug: heroku-buildpack-for-hammer
 title: Heroku Buildpack for Hammer
 ---
@@ -17,9 +17,9 @@ Heroku allows custom 'buildpacks' which are scripts that can package up an 'app'
 
 Buildpacks are composed of three scripts:
 
- - `detect` -- Test to see if an application can be deployed with this buildpack.
- - `compile` -- Set up the application and anything else required to deploy it in the `BUILD_DIR`.
- - `release` -- Provide a list of required addons and process types to Heroku.
+- `detect` -- Test to see if an application can be deployed with this buildpack.
+- `compile` -- Set up the application and anything else required to deploy it in the `BUILD_DIR`.
+- `release` -- Provide a list of required addons and process types to Heroku.
 
 The `detect` script for my buildpack is trivial. As Hammer compiles a site to a `Build` directory it tests for the existence of this and fails if it is not found.
 

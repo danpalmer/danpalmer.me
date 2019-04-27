@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
+import React from "react";
+import { Link, graphql } from "gatsby";
 
-import Layout from '../components/layout';
-import Project from '../components/project/project';
+import Layout from "../components/layout";
+import Project from "../components/project/project";
 
-import styles from './blog.module.scss';
+import styles from "./blog.module.scss";
 
 const PostItem = ({ post }) => {
   return (

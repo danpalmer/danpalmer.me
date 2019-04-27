@@ -1,8 +1,8 @@
 ---
-date: '2018-01-04'
+date: "2018-01-04"
 layout: post
 redirect_from:
-- /2018/01/teaching-non-engineers-how-to-contribute-code
+  - /2018/01/teaching-non-engineers-how-to-contribute-code
 slug: teaching-non-engineers-how-to-contribute-code
 title: How and why we teach non-engineers to use GitHub at Thread
 ---
@@ -61,6 +61,6 @@ We consider this experiment to be a success and will be continuing it for the fo
 
 We already try to make our test failures have informative error messages with details on how to fix where we can, but due to the complexity of interpreting test output we don’t currently expose Jenkins to non-technical team members, even though they can technically log in with single-sign-on. This is perhaps the next opportunity we have to improve the contribution experience and something we might trial in the next batch of new starters who go through the tutorial.
 
-- - -
+---
 
 To finish, I’d encourage all developers to see if there are opportunities in your companies to get non-technical team members contributing to your codebases. There are benefits to productivity on both sides, more empathy between teams, and a stronger feeling of ownership over work for those who are no longer reliant on developers to make changes for them. The reduced friction also means shorter feedback cycles, which can be transformational for what others can accomplish in their work, all without the high cost of development time on editing interfaces.

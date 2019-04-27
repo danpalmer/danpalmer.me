@@ -1,13 +1,13 @@
 ---
-date: '2015-04-04'
+date: "2015-04-04"
 layout: post
 redirect_from:
-- /2015/04/first-thoughts-react-native
+  - /2015/04/first-thoughts-react-native
 slug: first-thoughts-react-native
 title: First Thoughts on React Native
 ---
 
-[React Native](http://facebook.github.io/react-native/) was released this week. For those who aren't familiar with it, the short version is that React Native brings the React architecture to iOS, letting the developer write Javascript that runs asynchronously, off the main thread, to orchestrate *native* components.
+[React Native](http://facebook.github.io/react-native/) was released this week. For those who aren't familiar with it, the short version is that React Native brings the React architecture to iOS, letting the developer write Javascript that runs asynchronously, off the main thread, to orchestrate _native_ components.
 
 I was looking forward to trying React Native, so with an hour or two spare on the train home, I ran through the first tutorial.
 
@@ -16,8 +16,8 @@ I was looking forward to trying React Native, so with an hour or two spare on th
 This is as easy as `react-native init AppName`. It sets up an Xcode project for the app, installs a selection of Node modules that it requires, and then leaves you with the next steps:
 
 > Next steps:
->   Open /Users/dan/Code/HelloWorld/HelloWorld.xcodeproj in Xcode
->   Hit Run button
+> Open /Users/dan/Code/HelloWorld/HelloWorld.xcodeproj in Xcode
+> Hit Run button
 
 So I did.
 
@@ -49,6 +49,6 @@ Finally, I want to cover my 'wow moment' that I had while using React Native. Th
 
 This is already a very useful screen, but I accidentally clicked on one of the frames in the stack trace, and was amazed to find that it opened the source file from the libraries I was using, to the correct line, in my editor. This is not a hugely difficult feat to achieve, there's already a connection out of the simulator back to a process on my machine, opening a file is straightforward, and yet I've never seen it before. Impressive.
 
-- - -
+---
 
 It remains to be see whether React Native will scale well to large projects with lots of code, but it has already lowered the barrier to entry to iOS development significantly, and I can imagine it being a solid boost to productivity.

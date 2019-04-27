@@ -1,24 +1,24 @@
 ---
-date: '2016-06-19'
+date: "2016-06-19"
 layout: post
-preview: Following on from my previous post about Haskell web frameworks, I've dived
+preview:
+  Following on from my previous post about Haskell web frameworks, I've dived
   into making a non-trivial web application, with type-safe database access.
 redirect_from:
-- /2016/06/starting-snap
+  - /2016/06/starting-snap
 slug: starting-snap
 title: Starting a Snap site with Stack and Persistent
 ---
 
 Following on from my [previous post](https://danpalmer.me/blog/haskell-web-frameworks) about Haskell web frameworks, I wanted to dive into actually making something with my favourite of the lot. Snap gives you a lot right out of the box, but setting up an application to the point where it can talk to a database in a useful way (i.e. not untyped raw queries) takes a little bit of work.
 
-Note: Since my goal here is to *learn*, and do things the "right way", I'm not worrying too much about productivity or whether these solutions are proportionate to the problem I'm trying to solve. There are certainly simpler ways that would have sufficed (i.e. dropping authentication, using a simpler templating system, or using [postgresql-simple](https://hackage.haskell.org/package/postgresql-simple)).
+Note: Since my goal here is to _learn_, and do things the "right way", I'm not worrying too much about productivity or whether these solutions are proportionate to the problem I'm trying to solve. There are certainly simpler ways that would have sufficed (i.e. dropping authentication, using a simpler templating system, or using [postgresql-simple](https://hackage.haskell.org/package/postgresql-simple)).
 
 My requirements for this project were:
 
- - To write *idiomatic* Snap, making good use of Snaplets.
- - To use modern Haskell development tooling, like Stack, and up-to-date libraries.
- - To interface to the database with a high-level, type-safe interface, in this case Persistent and Esqueleto.
-
+- To write _idiomatic_ Snap, making good use of Snaplets.
+- To use modern Haskell development tooling, like Stack, and up-to-date libraries.
+- To interface to the database with a high-level, type-safe interface, in this case Persistent and Esqueleto.
 
 ### Setting up Snap
 
@@ -36,13 +36,11 @@ At this point, we should be able to run `stack build`, then `stack exec snap-sta
 
 Another thing to note in the project cabal file is that there's a flag for compiling in development mode. This changes some of the behaviour in `Main.hs` to enable hot-reloading of the site on each request. This obviously slows it down significantly, but also speeds up development time.
 
-
 ##### Sidenote – gitignores
 
 The standard snap template, and development builds, leave some files around that we won't want to commit into version control. For this reason it's a good idea to add a `.gitignore` file. I've used the standard GitHub Haskell file, with a few additions [6261a585](https://github.com/danpalmer/snap-starter/commit/6261a585bca5a5d7e1b5e153f2e0fd90b2e6ba4c).
 
 In addition to this, later on, the auth and persistent snaplets will write development configuration files. You may want to ignore these, depending on your development process.
-
 
 ### Adding a database
 
@@ -93,7 +91,6 @@ app = makeSnaplet "app" "An snaplet example application." Nothing $ do
 
 When initialising the Persistent snaplet, we can pass it a function to run within the SQL context once initialised. The intented use of this is that we can run our migrations, so we just pass the migration function that Persistent generates for us.
 
-
 ### Persistent Authentication
 
 The snap template includes a basic authentication system for us which backs on to a flat JSON file on disk. While the auth system is relatively capable, a JSON flat file isn't an ideal backend, and although snap ships with a [postgresql-simple](https://hackage.haskell.org/package/postgresql-simple) backend, it would be nice to use Persistent so that we can enforce foreign key constraints and types in Haskell.
@@ -124,7 +121,6 @@ share [mkPersist sqlSettings, mkMigrate "migrateAll"] $ authEntityDefs ++ [persi
 ```
 
 When we compile and run this, we will be able to see Persistent creating the user model in the database.
-
 
 ### Querying the Database
 
@@ -178,7 +174,6 @@ handleBlogPosts = do
 
 The result of this (along with a few other imports and a template in [67f3b423](https://github.com/danpalmer/snap-starter/commit/67f3b423d7fe1aa331b313f38461ba7ca0f4a09d)) is that we can visit `/posts` on our application and see a list of the top 3 posts, ordered by name ascending.
 
-
-- - -
+---
 
 That's all for now. We have a barebones Snap application that uses the out of the box authentication, a database with an interface using Persistent for models and Esqueleto for querying, and we've seen how we can expose data to Heist for rendering HTML. The next things I'm looking at are form validation and background tasks, as both are crucial to a web application of any real complexity.

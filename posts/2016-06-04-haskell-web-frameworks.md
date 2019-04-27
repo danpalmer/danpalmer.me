@@ -1,10 +1,11 @@
 ---
-date: '2016-06-04'
+date: "2016-06-04"
 layout: post
-preview: A quick overview of 5 of the popular Haskell web frameworks, and what they
+preview:
+  A quick overview of 5 of the popular Haskell web frameworks, and what they
   can do to improve the state of web development.
 redirect_from:
-- /2016/06/haskell-web-frameworks
+  - /2016/06/haskell-web-frameworks
 slug: haskell-web-frameworks
 title: Haskell Web Frameworks
 ---
@@ -23,7 +24,7 @@ The other downside I found to Yesod was that, while it dictated a good structure
 
 ### Servant
 
-[Servant](https://haskell-servant.github.io/) is definitely not a *framework*, but instead a library for defining APIs. It allows the definition of APIs at the *type level*, which can then be used either as the client interface to a remote API, to generate Javascript client libraries, to generate documentation, or as the routing a serialisation layer in a web API you're serving. It's this last aspect where I've been using it and it has been a mix of both wonderful and difficult to use.
+[Servant](https://haskell-servant.github.io/) is definitely not a _framework_, but instead a library for defining APIs. It allows the definition of APIs at the _type level_, which can then be used either as the client interface to a remote API, to generate Javascript client libraries, to generate documentation, or as the routing a serialisation layer in a web API you're serving. It's this last aspect where I've been using it and it has been a mix of both wonderful and difficult to use.
 
 It's possible to create a web API that along with the endpoints it defines, also serves up Javascript and API documentation that are guaranteed correct at compile time, something that I don't think anything else can claim. The web of APIs is becoming more and more difficult to navigate, and as a service provider, hosting an API that is performant, well documented, etc is becoming increasingly difficult. Pushing a lot of this complexity off to the compiler has the potential to increase developer productivity and service reliability, and I'm very excited to see more of this sort of thing happening over the next few years.
 
@@ -45,6 +46,6 @@ Unfortunately as with most things, there's a trade-off. While the architecture i
 
 Finally, [Spock](https://www.spock.li/) is another contender on the level of Scotty, with a few additional features such as session management and type-safe routing. The type-safe routing is interesting as it handles the parsing of URL components for you, and means you can't attach a URL handler that won't accept the right type, as well as not being able to generate URLs that your application wouldn't be able to handle.
 
-- - -
+---
 
 This isn't an exhaustive list of frameworks and libraries for web application, but from my learning so far they seem to be the most popular. Of these, I'm particularly excited about what Servant can do for the reliability of development and maintenance of APIs, and excited about Snap's architecture could scale to very large projects. Thankfully, there's a [servant-snap](https://github.com/haskell-servant/servant-snap) library in development that should provide the bestof both worlds. I'm looking forward to trying these out in a larger project in the future.
