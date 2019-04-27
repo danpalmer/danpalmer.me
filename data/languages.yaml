@@ -1,0 +1,11 @@
+- name: Python
+  colour: "#3572A5"
+
+- name: JavaScript
+  colour: "#f1e05a"
+
+- name: Elm
+  colour: "#60B5CC"
+
+- name: C
+  colour: "#555555"

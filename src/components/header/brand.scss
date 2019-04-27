@@ -1,0 +1,46 @@
+@import '../../styles/index';
+
+.navigation-brand {
+  margin-left: -16px;
+  user-select: none;
+
+  h1 {
+    font-size: $nav-font-size-desktop;
+    margin: 0;
+    height: 48px;
+    position: relative;
+
+    a {
+      color: $global-color-dark;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      padding: 0 10px 0 16px;
+      text-decoration: none;
+    }
+
+    svg {
+      // left: 16px;
+      // position: absolute;
+      // top: 11px;
+      margin: 0;
+      overflow: hidden;
+      height: $nav-height;
+    }
+
+    svg path {
+      fill: $global-color-dark;
+    }
+  }
+
+  &.with-label h1 a {
+    /*
+     77 = width of logo
+     12 = extra padding for hit area
+     5  = spacing
+    */
+    padding-left: 77px + 12 + 5;
+    padding-right: 16px;
+  }
+}

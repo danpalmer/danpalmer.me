@@ -1,0 +1,195 @@
+@import '../../styles/index';
+
+// Unfortunately the specificity of the classes mean we need to apply the !important flag
+// so we can be sure the dropdowns become visible and with the correct offset
+.nav-dropdown-visible-mobile {
+  .navigation-dropdown {
+    height: auto !important;
+    opacity: 1 !important;
+  }
+
+  .navigation-dropdown-container {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .has-dropdown & .navigation-dropdown {
+    height: auto !important;
+    top: 20px !important;
+
+    @media (min-width: $breakpoint-stack) {
+      top: 36px !important;
+    }
+  }
+
+  .profile & .navigation-dropdown {
+    top: 60px !important;
+
+    @media (min-width: $breakpoint-stack) {
+      top: 36px !important;
+    }
+  }
+
+  .has-dropdown .text {
+    color: $global-color-dark;
+  }
+}
+
+@mixin nav-dropdown {
+  .navigation-dropdown {
+    height: 0;
+    opacity: 0;
+    max-width: 288px;
+    position: absolute;
+    left: -16px;
+    top: 20px;
+    transition: all $nav-dropdown-transition-duration ease;
+    z-index: $nav-bar-z-index-dropdown;
+
+    @media (max-width: $breakpoint-stack) {
+      top: 44px;
+    }
+
+    ul a,
+    ul li.no-link {
+      padding-left: 24px;
+      padding-right: 48px;
+    }
+
+    // right-aligned variant (profile dropdown)
+
+    &.right-aligned {
+      left: auto;
+      right: -10px;
+
+      @media (max-width: $breakpoint-stack) {
+        right: 6px;
+      }
+
+      .navigation-dropdown-container {
+        text-align: right;
+      }
+
+      ul a,
+      ul li.no-link {
+        padding-left: 48px;
+        padding-right: 24px;
+      }
+    }
+
+    .navigation-dropdown-container {
+      background-color: $global-color-white;
+      border-radius: 6px;
+      box-shadow: $global-shadow-soft;
+      color: $global-color-dark-60;
+      margin-top: 24px;
+      // opacity: 0;
+      overflow-y: auto;
+      transition: all $nav-dropdown-transition-duration ease;
+      visibility: hidden;
+
+      // calculated max-height is for small viewports, i.e. mobile
+
+      @media (max-width: $breakpoint-stack - 1) and (min-height: 280px) {
+        max-height: calc(100vh - 124px);
+      }
+
+      @media (min-width: $breakpoint-stack) and (min-height: 230px) {
+        max-height: calc(100vh - 76px);
+      }
+    }
+
+    ul {
+      // N.B. color is set to transparent in order to fix a bug with IE Edge:
+      // https://twitter.com/FremyCompany/status/950856311083683840
+      color: transparent;
+
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        color: $global-color-dark-60;
+        line-height: inherit;
+
+        @media (max-width: $breakpoint-stack) {
+          line-height: 28px;
+        }
+
+        &:first-child a,
+        &.no-link:first-child {
+          padding-top: 16px;
+        }
+
+        &:last-child a,
+        &.no-link:last-child {
+          padding-bottom: 24px;
+        }
+      }
+
+      .spacer {
+        & > a,
+        &.no-link {
+          padding-bottom: 11px;
+        }
+
+        + li.no-link,
+        + li > a {
+          padding-top: 11px;
+        }
+      }
+
+      a {
+        display: block;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .navigation-primary {
+    .navigation-dropdown {
+      top: 20px;
+
+      @media (max-width: $breakpoint-stack) {
+        top: 4px;
+      }
+    }
+  }
+}
+
+@mixin nav-dropdown-hover {
+  // show/hide dropdowns on hover, and define start and end
+  // positions for animation
+
+  .navigation-primary .has-dropdown:hover .navigation-dropdown,
+  .navigation-secondary .profile:hover .navigation-dropdown {
+    height: auto;
+    opacity: 1;
+
+    .navigation-dropdown-container {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .navigation-primary .has-dropdown:hover .navigation-dropdown {
+    height: auto;
+    top: 36px;
+
+    @media (max-width: $breakpoint-stack) {
+      top: 20px;
+    }
+  }
+
+  .navigation-secondary .profile:hover .navigation-dropdown {
+    top: 36px;
+
+    @media (max-width: $breakpoint-stack) {
+      top: 60px;
+    }
+  }
+
+  .navigation-primary .has-dropdown:hover > .text {
+    color: $global-color-dark;
+  }
+}

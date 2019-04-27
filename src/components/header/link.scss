@@ -1,0 +1,116 @@
+@import '../../styles/index';
+
+.navigation-primary {
+  line-height: $nav-height;
+  margin-top: 0;
+  order: 0;
+  position: relative;
+  user-select: none;
+  width: auto;
+  z-index: $nav-bar-z-index-link;
+
+  @media (max-width: $breakpoint-stack) {
+    margin-top: -8px;
+    order: 1;
+    width: 100%;
+  }
+
+  > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: $breakpoint-stack) {
+      margin: 0 0 0 -9px;
+    }
+
+    > li {
+      position: relative;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &.has-dropdown {
+        color: $global-color-dark-60;
+        padding: $nav-vertical-padding 8px;
+
+        @media (max-width: $breakpoint-stack) {
+          padding: 0 8px 8px 8px;
+        }
+      }
+
+      > a {
+        color: $global-color-dark-60;
+        display: block;
+        padding: $nav-vertical-padding 8px;
+        letter-spacing: 0.02em;
+        text-size-adjust: auto;
+
+        @media (max-width: $breakpoint-stack) {
+          padding: 0 8px 8px 8px;
+        }
+      }
+    }
+  }
+
+  ul > li > a.active {
+    color: $global-color-dark;
+
+    > svg path {
+      fill: $global-color-dark;
+    }
+  }
+
+  .has-notification:after {
+    right: 0;
+    top: 13px;
+
+    @media (max-width: $breakpoint-stack) {
+      top: 2px;
+    }
+  }
+
+  .notification-count {
+    top: 4px;
+
+    @media (max-width: $breakpoint-stack) {
+      top: -6px;
+    }
+  }
+}
+
+.navigation-secondary {
+  line-height: $nav-height;
+  margin-left: auto;
+  margin-right: 5px;
+  user-select: none;
+
+  > ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      & > a {
+        display: block;
+        padding: $nav-vertical-padding 4px;
+
+        @media (max-width: $breakpoint-stack) {
+          padding: $nav-vertical-padding 6px;
+        }
+      }
+    }
+  }
+
+  ul > li > a.active {
+    color: $global-color-dark;
+
+    > svg path {
+      fill: $global-color-dark;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import './reset';
+@import './colors';
+@import './variables';
+@import './breakpoints';
+@import './grid';
+@import './z-index';
+@import './bootstrap';
+@import './code';
+
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+
+body {
+  font-family: $global-font-family;
+  font-weight: $fw-normal;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+b,
+strong {
+  font-weight: $fw-bold;
+}

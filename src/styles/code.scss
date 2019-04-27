@@ -1,0 +1,20 @@
+@import './grid';
+@import './breakpoints';
+
+.snippet {
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+  .editor {
+    $editor-y-padding: 32px;
+    padding: $editor-y-padding $global-base-spacing-1;
+    margin: 0 #{-$global-base-spacing-1};
+    overflow: auto;
+
+    @media (min-width: $breakpoint-mobile) {
+      padding: $editor-y-padding $global-base-spacing-2;
+      margin: 0 #{-$global-base-spacing-2};
+      border-radius: 10px;
+    }
+  }
+}
