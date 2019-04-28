@@ -42,7 +42,7 @@ module.exports = {
           {
             resolve: "gatsby-remark-highlights",
             options: {
-              additionalLangs: ["language-graphql"],
+              additionalLangs: ["language-graphql", "language-haskell"],
               scopePrefix: "syntax--",
               codeWrap: {
                 className: "snippet"

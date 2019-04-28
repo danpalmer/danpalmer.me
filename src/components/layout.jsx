@@ -2,12 +2,9 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
-import { BaseStyles } from "@primer/components";
-import classNames from "classnames";
 
 import "../styles/index.scss";
 import Header from "./header/header";
-import styles from "./layout.module.css";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -36,11 +33,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <BaseStyles>
-          <div className={classNames(styles.layout, "container")}>
-            {children}
-          </div>
-        </BaseStyles>
+        <div class="pa3 pa5-ns">{children}</div>
       </Fragment>
     )}
   />

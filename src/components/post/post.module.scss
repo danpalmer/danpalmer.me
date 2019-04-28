@@ -1,29 +1,9 @@
 @import "../../styles/variables";
 
+@import "~tachyons-sass/tachyons.scss";
+
 .post {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 800px;
-}
-
-.title {
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 1.2em;
-  margin-bottom: 24px;
-
-  @media (max-width: $breakpoint-mobile) {
-    font-size: 40px;
-  }
-}
-.subtitle {
-  font-size: 14px;
-  line-height: 1.5;
-}
-.subtitleDate {
-  color: #777;
-  display: block;
+  max-width: 60em;
 }
 
 .content {
@@ -33,58 +13,65 @@
     max-width: 100%;
   }
 
-  h2,
-  h3,
-  h4,
-  h5 {
-    margin-top: 2em;
+  p {
+    @extend .lh-copy;
+    @extend .f5;
+    @extend .pb2;
   }
 
-  p {
-    margin-bottom: 20px;
-    font-weight: normal;
+  h3 {
+    @extend .pt5;
+  }
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    @extend .w-100;
+    @extend .mw8;
+    @extend .tl;
+    @extend .ph3;
+    @extend .pv2;
+
+    th {
+      @extend .bb;
+      @extend .b--black-20;
+      @extend .tl;
+      @extend .pb3;
+      @extend .pr3;
+      @extend .bg-white;
+    }
+
+    td {
+      @extend .pv3;
+      @extend .pr3;
+      @extend .bb;
+      @extend .b--black-20;
+    }
   }
 
   a {
-    color: #1e1e1e;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    outline: none;
-
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 3px;
-      border-bottom: 2px solid currentColor;
-      transform: scaleY(0);
-      transform-origin: top;
-      transition: 0.1s ease transform;
-    }
-
-    &:hover:after,
-    &:focus:after {
-      transform: scaleY(1);
-    }
-  }
-  // certain links shouldn't have the underline
-  a:global(.gatsby-resp-image-link):after,
-  :global(.gist) a:after {
-    display: none;
+    @extend .link;
+    @extend .underline-hover;
   }
 
-  ul > li,
-  ol > li {
-    margin-left: 1.5em;
+  ul {
+    @extend .lh-copy;
+    @extend .pl4;
   }
 
   code {
-    background-color: lightgrey;
-    padding: 1px 3px;
-    border-radius: 2px;
+    @extend .lh-copy;
+    @extend .white;
+    @extend .bg-mid-gray;
+    @extend .br2;
+    @extend .pv0;
+    @extend .ph1;
+    @extend .f6;
+  }
+
+  pre {
+    overflow: scroll;
+    padding: 1rem;
   }
 }

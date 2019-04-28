@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
-import { graphql } from 'gatsby';
-import Helmet from 'react-helmet';
-import Layout from '../../components/layout';
+import React, { Fragment } from "react";
+import { graphql } from "gatsby";
+import Helmet from "react-helmet";
+import Layout from "../../components/layout";
 
-import styles from './post.module.scss';
-import '../../styles/syntax-highlighting.css';
+import styles from "./post.module.scss";
+import "../../styles/syntax-highlighting.css";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -14,27 +14,27 @@ export default ({ data }) => {
         title={`${post.frontmatter.title} — ${data.site.siteMetadata.title}`}
         meta={[
           {
-            name: 'description',
-            content: data.site.siteMetadata.description,
+            name: "description",
+            content: data.site.siteMetadata.description
           },
-          { name: 'keywords', content: 'engineering culture' },
+          { name: "keywords", content: "engineering culture" }
         ]}
       />
       <Layout>
-        <div className={styles.post}>
+        <article className={styles.post}>
           <header>
-            <h1 className={styles.title}>{post.frontmatter.title}</h1>
-            <div className={styles.subtitle}>
-              <time className={styles.subtitleDate}>
-                {post.frontmatter.date}
-              </time>
+            <h1 className="f2-m  mb1 f1-l lh-solid">
+              {post.frontmatter.title}
+            </h1>
+            <div>
+              <time className="f6 gray">{post.frontmatter.date}</time>
             </div>
           </header>
           <section
             className={styles.content}
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-        </div>
+        </article>
       </Layout>
     </Fragment>
   );

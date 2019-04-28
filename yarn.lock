@@ -5493,6 +5493,13 @@ gatsby-redirect-from@^0.1.1:
   dependencies:
     chalk "^2.4.1"
 
+gatsby-remark-classes@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-classes/-/gatsby-remark-classes-0.1.0.tgz#047b4197ba10138c5839ef7a602cd7a930b92108"
+  integrity sha512-uYvL86bRqYneHFjBM/nrlnsNLtI1XVFoaifjF0Hwr5dj87oUxKKCI9dEDB3pv1O/AAciDxQpnWnBKdTKMSsIxA==
+  dependencies:
+    unist-util-visit "^1.4.0"
+
 gatsby-remark-embed-gist@^1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/gatsby-remark-embed-gist/-/gatsby-remark-embed-gist-1.1.7.tgz#96f1e2facf4a4c01a3f7a008f74591238dfe6d24"
@@ -7554,6 +7561,10 @@ kleur@^3.0.2:
 "language-graphql@https://github.com/rmosolgo/language-graphql":
   version "0.11.0"
   resolved "https://github.com/rmosolgo/language-graphql#c9b33be6c577e0a2a11511b6fd963dbef8a0a023"
+
+"language-haskell@https://github.com/atom-haskell/language-haskell":
+  version "1.18.0"
+  resolved "https://github.com/atom-haskell/language-haskell#a2f1930fbb4ea36739f961aca089d80d2637f3b8"
 
 last-call-webpack-plugin@^3.0.0:
   version "3.0.0"
@@ -11713,6 +11724,18 @@ table@^5.2.3:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
+tachyons-custom@^4.9.5:
+  version "4.9.6"
+  resolved "https://registry.yarnpkg.com/tachyons-custom/-/tachyons-custom-4.9.6.tgz#02f3a28269e098566eaf63c09c5985d249bbbdf8"
+  integrity sha512-HsrN1C8GTj9Tr8Ki4XMZdd1ye2O8YLVUXNAJiga3DzcdY4pRuEMYcvjOk0wAGEdVgePPSAWAsE+CWNZzNagEJw==
+
+tachyons-sass@^4.9.5:
+  version "4.9.5"
+  resolved "https://registry.yarnpkg.com/tachyons-sass/-/tachyons-sass-4.9.5.tgz#98d7924f72dfcdc940ccc331f304b85952434799"
+  integrity sha512-GPPUIoM+8OkaHF7Ii8+AE5AQzVekfrRnGv55oXYTspXw8BMThmiXr/HrCUmYGiuSnBG73T0862tvzqLGP8B/Mg==
+  dependencies:
+    tachyons-custom "^4.9.5"
+
 tachyons@^4.11.1:
   version "4.11.1"
   resolved "https://registry.yarnpkg.com/tachyons/-/tachyons-4.11.1.tgz#4e3666e7299e47aea7d820e0580dd4dc07cf3feb"
@@ -12214,7 +12237,7 @@ unist-util-visit-parents@^2.0.0, unist-util-visit-parents@^2.0.1:
   dependencies:
     unist-util-is "^2.1.2"
 
-unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.1.3, unist-util-visit@^1.2.0, unist-util-visit@^1.3.0:
+unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.1.3, unist-util-visit@^1.2.0, unist-util-visit@^1.3.0, unist-util-visit@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.4.0.tgz#1cb763647186dc26f5e1df5db6bd1e48b3cc2fb1"
   dependencies:

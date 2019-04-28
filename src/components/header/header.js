@@ -1,46 +1,40 @@
 import React from "react";
 import { Link } from "gatsby";
 
+import avatar from "./danpalmer.jpg";
+
 const Header = ({ siteTitle }) => (
-  <div className="global-navigation-wrapper">
-    <header className="global-navigation navigation-fixed loaded">
-      <div className="navigation-container">
-        <section className="navigation-brand">
-          <h1>
-            <Link to="/">{siteTitle}</Link>
-          </h1>
-        </section>
-
-        <section className="navigation-primary">
-          <ul>
-            <li>
-              <Link to="/" activeClassName="active">
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects" activeClassName="active">
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="#" activeClassName="active">
-                CV
-              </Link>
-            </li>
-          </ul>
-        </section>
-
-        <section className="navigation-secondary">
-          <ul>
-            <li className="signin-item">
-              <a href="https://www.thread.com/">Visit Thread &rarr;</a>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </header>
-  </div>
+  <nav class="db dt-l w-100 border-box pa3 ph5-l">
+    <Link
+      to="/"
+      className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l"
+    >
+      <img src={avatar} class="dib w2 h2 br-100" alt={siteTitle} />
+    </Link>
+    <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+      <Link
+        to="/"
+        activeClassName="active"
+        className="link dim dark-gray f6 f5-l dib mr3 mr4-l"
+      >
+        Blog
+      </Link>
+      <Link
+        to="/projects"
+        activeClassName="active"
+        className="link dim dark-gray f6 f5-l dib mr3 mr4-l"
+      >
+        Projects
+      </Link>
+      <Link
+        to="#"
+        activeClassName="active"
+        className="link dim dark-gray f6 f5-l dib"
+      >
+        CV
+      </Link>
+    </div>
+  </nav>
 );
 
 export default Header;
