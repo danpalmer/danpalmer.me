@@ -7,12 +7,12 @@ const PostItem = ({ post }) => {
   return (
     <div className="pb5">
       <Link to={post.fields.slug} className="link dim black no-underline">
-        <h3 className="mb1 lh-solid">
+        <h3 className="mb1">
           {post.frontmatter.title}
           <br />
         </h3>
         <small className="f6 gray">{post.frontmatter.date}</small>
-        <p className="lh-copy">{post.excerpt}</p>
+        <p>{post.excerpt}</p>
       </Link>
     </div>
   );
