@@ -88,7 +88,7 @@ export default () => {
           </section>
         </div>
         <div className="w-100 w-50-l pl4-l">
-          <section className="pt3">
+          <section>
             <h2 className="f3-m  mb1 f2-l">Qualifications</h2>
             <div>
               <ul>
