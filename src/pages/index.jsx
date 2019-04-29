@@ -22,7 +22,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <div>
-        <div className="fl w-100 w-30-l pa2 pr5-l">
+        <div className="fl w-100 w-30-l pa2 pb5 pr5-l">
           <section>
             <h3>About</h3>
             <p>
