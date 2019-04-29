@@ -26,14 +26,10 @@ export default ({ data }) => {
           <section>
             <h3>About</h3>
             <p>
-              I'm a software developer at Thread in London, and a University of
-              Southampton alumni where I studied Computer Science, specialising
-              in Mobile and Secure Systems.
-            </p>
-            <p>
-              I enjoy writing software and improving engineering processes. I'm
-              currently learning Haskell, and have an interest in distributed
-              systems.
+              I'm a software developer at Thread in London, and an alumnus
+              University of Southampton where I studied Computer Science
+              specialising in Mobile and Secure Systems. I enjoy writing
+              software and improving engineering processes.
             </p>
             <ul className="list pl0 b pt3">
               <li className="fl mr3">
