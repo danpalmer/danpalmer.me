@@ -1,7 +1,6 @@
 import React from "react";
 
 import Layout from "../components/layout";
-import styles from "./cv.module.scss";
 
 export default () => {
   return (
@@ -9,7 +8,7 @@ export default () => {
       <article className="flex flex-wrap">
         <div className="w-100 w-50-l pr4-l">
           <section>
-            <h2 className="f3-m  mb1 f2-l lh-solid">Experience</h2>
+            <h2 className="f3-m  mb1 f2-l">Experience</h2>
             <div>
               <h5 className="f6 gray">
                 <span className="black">Thread</span> &ndash; Software Engineer,
@@ -90,7 +89,7 @@ export default () => {
         </div>
         <div className="w-100 w-50-l pl4-l">
           <section className="pt3">
-            <h2 className="f3-m  mb1 f2-l lh-solid">Qualifications</h2>
+            <h2 className="f3-m  mb1 f2-l">Qualifications</h2>
             <div>
               <ul>
                 <li>
@@ -114,7 +113,7 @@ export default () => {
             </div>
           </section>
           <section className="pt3">
-            <h2 className="f3-m  mb1 f2-l lh-solid">Events</h2>
+            <h2 className="f3-m  mb1 f2-l">Events</h2>
             <div>
               <p>
                 I make an effort to attend industry events, as I find them a
@@ -163,7 +162,7 @@ export default () => {
             </div>
           </section>
           <section className="pt3">
-            <h2 className="f3-m  mb1 f2-l lh-solid">Skills</h2>
+            <h2 className="f3-m  mb1 f2-l">Skills</h2>
             <div>
               <h5>Technical</h5>
               <ul>
@@ -206,7 +205,7 @@ export default () => {
             </div>
           </section>
           <section className="pt3">
-            <h2 className="f3-m  mb1 f2-l lh-solid">Contact</h2>
+            <h2 className="f3-m  mb1 f2-l">Contact</h2>
             <p>
               You can contact me a{" "}
               <a href="mailto:cv@danpalmer.me">cv@danpalmer.me</a>. Please note

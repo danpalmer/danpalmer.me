@@ -3,6 +3,7 @@
 @import "~tachyons-sass/tachyons.scss";
 
 @import "./variables";
+@import "./themes";
 
 img::selection {
   background: transparent;
@@ -36,8 +37,14 @@ strong {
   @extend .b;
 }
 
-.active {
-  @extend .gray;
+nav {
+  a {
+    @extend .dark-gray;
+
+    &.active {
+      @extend .silver;
+    }
+  }
 }
 
 p {
@@ -61,8 +68,13 @@ hr {
 ul {
   @extend .pl4;
   @extend .lh-copy;
+  @extend .dark-gray;
 
   li {
     @extend .lh-copy;
   }
+}
+
+time {
+  @extend .gray;
 }

@@ -2,16 +2,8 @@
 
 @import "~tachyons-sass/tachyons.scss";
 
-.post {
-  max-width: 60em;
-}
-
 .content {
   margin-top: 30px;
-
-  @media (max-width: $breakpoint-mobile) {
-    max-width: 100%;
-  }
 
   p {
     @extend .f5;
@@ -38,7 +30,6 @@
       @extend .tl;
       @extend .pb3;
       @extend .pr3;
-      @extend .bg-white;
     }
 
     td {

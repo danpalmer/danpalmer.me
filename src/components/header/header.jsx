@@ -5,7 +5,7 @@ import avatar from "./danpalmer.jpg";
 
 const Header = ({ siteTitle }) => (
   <nav className="db flex justify-between w-100 pa3 ph5-l">
-    <div className="dib w-25 v-mid mid-gray">
+    <div className="dib w-25 v-mid">
       <Link to="/" className="link dim">
         <img src={avatar} className="dib w2 h2 br-100" alt={siteTitle} />
       </Link>
@@ -14,22 +14,18 @@ const Header = ({ siteTitle }) => (
       <Link
         to="/"
         activeClassName="active"
-        className="link dim dark-gray f6 f5-l dib mr3 mr4-l"
+        className="link dim f6 f5-l dib mr3 mr4-l"
       >
         Blog
       </Link>
       <Link
         to="/projects"
         activeClassName="active"
-        className="link dim dark-gray f6 f5-l dib mr3 mr4-l"
+        className="link dim f6 f5-l dib mr3 mr4-l"
       >
         Projects
       </Link>
-      <Link
-        to="/cv"
-        activeClassName="active"
-        className="link dim dark-gray f6 f5-l dib"
-      >
+      <Link to="/cv" activeClassName="active" className="link dim f6 f5-l dib">
         CV
       </Link>
     </div>

@@ -2,12 +2,17 @@ import React, { Fragment } from "react";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import Layout from "../../components/layout";
+import classNames from "classnames";
 
 import styles from "./post.module.scss";
 import "../../styles/syntax-highlighting.css";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
+  const bodyClasses = post.frontmatter.theme
+    ? `theme-${post.frontmatter.theme}`
+    : "";
+
   return (
     <Fragment>
       <Helmet
@@ -19,19 +24,23 @@ export default ({ data }) => {
           },
           { name: "keywords", content: "engineering culture" }
         ]}
+        bodyAttributes={{ class: bodyClasses }}
       />
       <Layout>
         <article className={styles.post}>
           <header>
-            <h1 className="f2-m  mb1 f1-l lh-solid">
+            <h1 className="f2-m  mb1 f1-l measure-wide">
               {post.frontmatter.title}
             </h1>
             <div>
-              <time className="f6 gray">{post.frontmatter.date}</time>
+              <time className="f6">{post.frontmatter.date}</time>
             </div>
           </header>
           <section
-            className={styles.content}
+            className={classNames(
+              styles.content,
+              "markdown-content measure-wide"
+            )}
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </article>
@@ -46,6 +55,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        theme
         date(formatString: "DD MMMM, YYYY")
       }
     }

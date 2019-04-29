@@ -1,6 +1,7 @@
 ---
 title: Interview Assessment Grid Model
 date: 2019-04-25
+theme: blue-washed-red
 ---
 
 At Thread I'm involved in hiring engineers for frontend, backend and iOS roles.

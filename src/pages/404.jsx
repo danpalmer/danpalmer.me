@@ -3,8 +3,15 @@ import Layout from "../components/layout";
 
 const NotFoundPage = () => (
   <Layout>
-    <h1 className="lh-solid">NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1 className="f-headline">404</h1>
+    <p>This page doesn&#39;t exist.</p>
+    <p className="moon-gray">
+      If you think it should, please send me an email at{" "}
+      <a className="moon-gray b" href="mailto:contact@danpalmer.me">
+        contact@danpalmer.me
+      </a>
+      .
+    </p>
   </Layout>
 );
 

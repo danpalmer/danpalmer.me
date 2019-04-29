@@ -35,7 +35,7 @@ export default ({ data }) => {
               currently learning Haskell, and have an interest in distributed
               systems.
             </p>
-            <ul class="list pl0 b pt3">
+            <ul className="list pl0 b pt3">
               <li className="fl mr3">
                 <a
                   className="link mid-gray no-underline"

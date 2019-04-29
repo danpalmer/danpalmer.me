@@ -1,0 +1,108 @@
+@import "~tachyons-sass/tachyons.scss";
+@import "./variables.scss";
+
+$avenir: "avenir next", avenir, sans-serif;
+$consolas: Consolas, monaco, monospace;
+$helvetica: "helvetica neue", helvetica, sans-serif;
+$regular: $global-font-family;
+
+@mixin theme($text-colour, $bg-color, $typeface) {
+  color: $text-colour;
+  background-color: $bg-color;
+  font-family: $typeface;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $text-colour;
+  }
+
+  b,
+  strong {
+    color: $text-colour;
+  }
+
+  nav {
+    font-family: $global-font-family;
+
+    a {
+      color: $text-colour;
+
+      &.active {
+        color: lighten($text-colour, 5%);
+      }
+    }
+  }
+
+  p {
+    color: $text-colour;
+  }
+
+  hr {
+    @extend .b--black-20;
+  }
+
+  ul {
+    color: $text-colour;
+  }
+
+  time {
+    color: $text-colour;
+    font-weight: bold;
+  }
+
+  .markdown-content table {
+    th {
+      border-color: $text-colour;
+    }
+
+    td {
+      border-color: $text-colour;
+    }
+  }
+}
+
+// Lots of great colour combos here:
+// http://tachyons.io/docs/themes/skins/
+
+.theme-blue-washed-red {
+  @include theme($washed-red, $blue, $regular);
+}
+
+.theme-washed-green-red {
+  @include theme($red, $washed-green, $regular);
+}
+
+.theme-washed-blue-red {
+  @include theme($red, $washed-blue, $regular);
+}
+
+.theme-washed-yellow-red {
+  @include theme($red, $washed-yellow, $regular);
+}
+
+.theme-navy-light-red {
+  @include theme($light-red, $navy, $regular);
+}
+
+.theme-near-black-gold {
+  @include theme($gold, $near-black, $regular);
+}
+
+.theme-near-black-light-yellow {
+  @include theme($light-yellow, $near-black, $regular);
+}
+
+.theme-red-light-yellow {
+  @include theme($light-yellow, $red, $regular);
+}
+
+.theme-purple-light-gray {
+  @include theme($light-gray, $purple, $regular);
+}
+
+.theme-light-gray-purple {
+  @include theme($purple, $light-gray, $regular);
+}
