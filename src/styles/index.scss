@@ -59,6 +59,10 @@ hr {
 }
 
 ul {
-  @extend .lh-copy;
   @extend .pl4;
+  @extend .lh-copy;
+
+  li {
+    @extend .lh-copy;
+  }
 }

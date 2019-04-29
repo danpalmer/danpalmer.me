@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => (
         Projects
       </Link>
       <Link
-        to="#"
+        to="/cv"
         activeClassName="active"
         className="link dim dark-gray f6 f5-l dib"
       >

@@ -1,0 +1,9 @@
+@import "../styles/variables";
+
+.cv {
+  max-width: 100em;
+
+  @media (max-width: $breakpoint-mobile) {
+    max-width: 100%;
+  }
+}

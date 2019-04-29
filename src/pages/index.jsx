@@ -35,9 +35,31 @@ export default ({ data }) => {
               currently learning Haskell, and have an interest in distributed
               systems.
             </p>
-            <ul>
-              <li>GitHub</li>
-              <li>Twitter</li>
+            <ul class="list pl0 b pt3">
+              <li className="fl mr3">
+                <a
+                  className="link mid-gray no-underline"
+                  href="https://www.github.com/danpalmer"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li className="fl mr3">
+                <a
+                  className="link mid-gray no-underline"
+                  href="https://www.twitter.com/danpalmer"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li className="fl mr3">
+                <a
+                  className="link mid-gray no-underline"
+                  href="mailto:contact@danpalmer.me"
+                >
+                  Email
+                </a>
+              </li>
             </ul>
           </section>
         </div>
