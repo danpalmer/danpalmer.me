@@ -1,16 +1,10 @@
 @import "../../styles/variables";
 
-.project {
-  h3 > small > a {
-    color: lightgrey;
-  }
-
-  clear: both;
-}
-
 .languages {
   list-style: none;
   float: left;
+  padding: 0;
+  width: 100%;
 
   li {
     display: inline-block;
