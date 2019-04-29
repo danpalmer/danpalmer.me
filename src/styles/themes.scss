@@ -38,10 +38,16 @@ $regular: $global-font-family;
 
   p {
     color: $text-color;
+
+    a {
+      color: $text-color;
+      font-weight: bold;
+      text-decoration: underline;
+    }
   }
 
   hr {
-    border-color: $bg-color;
+    border-color: $text-color;
   }
 
   ul {
