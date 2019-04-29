@@ -29,7 +29,7 @@ export default ({ data }) => {
       <Layout>
         <article className={styles.post}>
           <header>
-            <h1 className="f2-m  mb1 f1-l measure-wide">
+            <h1 className="f2-m mb1 f1-l measure-narrow">
               {post.frontmatter.title}
             </h1>
             <div>

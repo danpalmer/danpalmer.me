@@ -5,6 +5,7 @@ redirect_from:
   - /2010/05/pin-security
 slug: pin-security
 title: PIN Security
+theme: none
 ---
 
 Most credit card fraud occurs because, somehow the fraudster is able to see the card owner's PIN number. The most common way this happens is hidden cameras at ATM machines recording PIN numbers or dodgy Chip &amp; PIN readers fitted with monitoring devices (this is significantly less common).
