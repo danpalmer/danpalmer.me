@@ -14,7 +14,6 @@
   }
 
   p {
-    @extend .lh-copy;
     @extend .f5;
     @extend .pb2;
   }
@@ -50,16 +49,6 @@
     }
   }
 
-  a {
-    @extend .link;
-    @extend .underline-hover;
-  }
-
-  ul {
-    @extend .lh-copy;
-    @extend .pl4;
-  }
-
   code {
     @extend .lh-copy;
     @extend .white;
@@ -73,13 +62,5 @@
   pre {
     overflow: scroll;
     padding: 1rem;
-  }
-
-  hr {
-    border-top: none;
-
-    @extend .bb;
-    @extend .b--black-20;
-    @extend .mv4;
   }
 }

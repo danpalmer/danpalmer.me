@@ -1,30 +1,44 @@
 - name: routemaster
   status: live
-  role: Maintainer
+  role: maintainer
+  primary: true
   description: A service for coordinating complex state machines between muliple other services.
   languages:
     - Python
   repo: thread/routemaster
 
-- name: django-enumfield
+- name: danpalmer.me
   status: live
-  role: Contributor
-  repo: lamby/django-enumfield
-  description: Complex enums wtith attached metadata and functionality in Python, compatible with the Django ORM.
+  role: author
+  primary: true
+  repo: danpalmer/danpalmer.me
+  description: This website, built with React, Gatsby, JS, SASS, Webpack and more.
   languages:
-    - Python
+    - JavaScript
+    - CSS
 
 - name: yesod-auth-nopassword
-  status: live
-  role: Author
+  status: legacy
+  role: author
+  primary: true
   repo: danpalmer/yesod-auth-nopassword
   description: A plugin for Yesod to provide email-only authentication.
   languages:
     - Haskell
 
+- name: django-enumfield
+  status: live
+  role: contributor
+  primary: false
+  repo: lamby/django-enumfield
+  description: Complex enums wtith attached metadata and functionality in Python, compatible with the Django ORM.
+  languages:
+    - Python
+
 - name: sixfifty
   status: legacy
-  role: Contributor
+  role: contributor
+  primary: true
   repo: six50/sixfifty
   description: Website and visualisations for an attempt to predict the UK General Election in 2017
   languages:
@@ -33,8 +47,9 @@
     - CSS
 
 - name: monzo-web
-  role: Author
+  role: author
   status: legacy
+  primary: true
   description: Web interface to a Monzo account. Browser-based, no server requirement, supports full O-Auth flow.
   repo: danpalmer/monzo-web
   languages:
@@ -42,104 +57,108 @@
     - CSS
 
 - name: graphql-validate
-  role: Author
+  role: author
   status: experimental
+  primary: true
   description: Pedantic tools to validate GraphQL API documentation and structure.
   repo: danpalmer/graphql-validate
   languages:
     - Python
 
-- name: graphene-django
-  role: Contributor
-  status: live
-  description: Graphene Django integration.
-  repo: graphene/graphene-django
-  languages:
-    - Python
-
 - name: jquery.complexify.js
-  role: Author
+  role: author
   status: legacy
+  primary: false
   description: jQuery password complexity meter based on brute-force attack complexity.
   repo: danpalmer/jquery.complexify.js
   languages:
     - JavaScript
 
 - name: imhotep
-  role: Contributor
+  role: contributor
   status: legacy
+  primary: false
   description: A static-analysis bot for Github.
   repo: justinabrahms/imhotep
   languages:
     - Python
 
 - name: monzo-api-stub
-  role: Author
+  role: author
   status: legacy
+  primary: false
   description: Stub API for Monzo Bank, to aid in the developement of client applications.
   repo: danpalmer/monzo-api-stub
   languages:
     - Python
 
 - name: mondo-bills
-  role: Author
+  role: author
   status: legacy
+  primary: false
   description: A service to monitor subscriptions and bills coming out of your Mondo account automatically.
   repo: danpalmer/mondo-bills
   languages:
     - Python
 
 - name: mondo-loyalty
-  role: Author
+  role: author
   status: legacy
+  primary: false
   description: Loyalty scheme balance tracking in your Mondo account.
   repo: danpalmer/mondo-loyalty
   languages:
     - Python
   
 - name: snap-starter
-  role: Author
+  role: author
   status: legacy
+  primary: false
   description: A starter project with Snap, using Heist, Persistent and Esqueleto.
   repo: danpalmer/snap-starter
   languages:
     - Haskell
 
 - name: bbcheck
-  role: Author
+  role: author
   status: legacy
-  description: A microservice for checking the internet package availability at an address.
+  primary: true
+  description: A service for checking the internet package availability at an address.
   repo: danpalmer/bbcheck
   languages:
     - Haskell
 
 - name: django-security
-  role: Contributor
+  role: contributor
   status: legacy
+  primary: false
   description: A collection of models, views, middlewares, and forms to help secure a Django project.
   repo: sdelements/django-security
   languages:
     - Python
 
 - name: trac-to-phabricator
-  role: Contributor
-  status: experimental
+  role: contributor
+  status: legacy
+  primary: false
   description: Tool to migrate from GHC's Trac to Phabricator
   repo: danpalmer/trac-to-phabricator
   languages:
     - Haskell
 
 - name: django-google-charts
-  role: Author
-  status: experimental
+  role: author
+  status: legacy
+  primary: false
   description: A simple Python interface to Google Charts.
   repo: danpalmer/django-google-charts
   languages:
     - Python
 
 - name: dj2j2
-  role: Author
-  status: experimental
+  role: author
+  status: legacy
+  primary: false
   description: A tool to migrate from Django templates to Jinja2 templates – "Django 2 Jinja2", dj2j2.
   repo: danpalmer/dj2j2
   languages:

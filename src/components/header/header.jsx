@@ -4,14 +4,13 @@ import { Link } from "gatsby";
 import avatar from "./danpalmer.jpg";
 
 const Header = ({ siteTitle }) => (
-  <nav className="db dt-l w-100 border-box pa3 ph5-l">
-    <Link
-      to="/"
-      className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l"
-    >
-      <img src={avatar} className="dib w2 h2 br-100" alt={siteTitle} />
-    </Link>
-    <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
+  <nav className="db flex justify-between w-100 pa3 ph5-l">
+    <div className="dib w-25 v-mid mid-gray">
+      <Link to="/" className="link dim">
+        <img src={avatar} className="dib w2 h2 br-100" alt={siteTitle} />
+      </Link>
+    </div>
+    <div className="dib w-75 v-mid tr">
       <Link
         to="/"
         activeClassName="active"

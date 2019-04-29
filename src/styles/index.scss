@@ -19,11 +19,46 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+// Theme
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @extend .near-black;
+  @extend .lh-solid;
+}
+
 b,
 strong {
-  font-weight: bold;
+  @extend .black;
+  @extend .b;
 }
 
 .active {
   @extend .gray;
+}
+
+p {
+  @extend .dark-gray;
+  @extend .lh-copy;
+
+  a {
+    @extend .link;
+    @extend .underline-hover;
+  }
+}
+
+hr {
+  border-top: none;
+
+  @extend .bb;
+  @extend .b--black-20;
+  @extend .mv4;
+}
+
+ul {
+  @extend .lh-copy;
+  @extend .pl4;
 }

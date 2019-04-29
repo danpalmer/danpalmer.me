@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 const PostItem = ({ post }) => {
   return (
     <div className="pb5">
-      <Link to={post.fields.slug} className="link dim black">
+      <Link to={post.fields.slug} className="link dim black no-underline">
         <h3 className="mb1 lh-solid">
           {post.frontmatter.title}
           <br />
@@ -22,15 +22,15 @@ export default ({ data }) => {
   return (
     <Layout>
       <div>
-        <div className="fl w-30 pa2">
+        <div className="fl w-100 w-30-l pa2 pr5-l">
           <section>
-            <h3 className="lh-solid">About</h3>
-            <p className="lh-copy">
+            <h3>About</h3>
+            <p>
               I'm a software developer at Thread in London, and a University of
               Southampton alumni where I studied Computer Science, specialising
               in Mobile and Secure Systems.
             </p>
-            <p className="lh-copy">
+            <p>
               I enjoy writing software and improving engineering processes. I'm
               currently learning Haskell, and have an interest in distributed
               systems.
@@ -41,7 +41,7 @@ export default ({ data }) => {
             </ul>
           </section>
         </div>
-        <div className="fl w-70 pa2">
+        <div className="fl w-100 w-70-l pa2">
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <PostItem post={node} key={node.id} />
           ))}
