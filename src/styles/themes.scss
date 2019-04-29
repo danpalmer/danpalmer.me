@@ -6,8 +6,8 @@ $consolas: Consolas, monaco, monospace;
 $helvetica: "helvetica neue", helvetica, sans-serif;
 $regular: $global-font-family;
 
-@mixin theme($text-colour, $bg-color, $typeface) {
-  color: $text-colour;
+@mixin theme($text-color, $bg-color, $typeface) {
+  color: $text-color;
   background-color: $bg-color;
   font-family: $typeface;
 
@@ -16,55 +16,57 @@ $regular: $global-font-family;
   h3,
   h4,
   h5 {
-    color: $text-colour;
+    color: $text-color;
   }
 
   b,
   strong {
-    color: $text-colour;
+    color: $text-color;
   }
 
   nav {
     font-family: $global-font-family;
 
     a {
-      color: $text-colour;
+      color: $text-color;
 
       &.active {
-        color: lighten($text-colour, 5%);
+        color: lighten($text-color, 5%);
       }
     }
   }
 
   p {
-    color: $text-colour;
+    color: $text-color;
   }
 
   hr {
-    @extend .b--black-20;
+    border-color: $bg-color;
   }
 
   ul {
-    color: $text-colour;
+    color: $text-color;
   }
 
   time {
-    color: $text-colour;
+    color: $text-color;
     font-weight: bold;
   }
 
-  .markdown-content table {
-    th {
-      border-color: $text-colour;
-    }
+  .markdown-content blockquote {
+    border-color: $text-color !important;
+  }
 
-    td {
-      border-color: $text-colour;
+  .markdown-content table {
+    background-color: mix($near-white, $bg-color, 10%);
+
+    tr {
+      border-color: mix($near-black, $text-color, 10%);
     }
   }
 }
 
-// Lots of great colour combos here:
+// Lots of great color combos here:
 // http://tachyons.io/docs/themes/skins/
 
 .theme-blue-washed-red {

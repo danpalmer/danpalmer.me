@@ -21,22 +21,20 @@
     @extend .w-100;
     @extend .mw8;
     @extend .tl;
-    @extend .ph3;
-    @extend .pv2;
+    @extend .mv4;
+    @extend .bg-near-white;
 
     th {
-      @extend .bb;
-      @extend .b--black-20;
       @extend .tl;
-      @extend .pb3;
+      @extend .pa3;
       @extend .pr3;
     }
-
     td {
-      @extend .pv3;
-      @extend .pr3;
+      @extend .pa3;
+    }
+    tr {
       @extend .bb;
-      @extend .b--black-20;
+      @extend .b--black-10;
     }
   }
 
@@ -53,5 +51,17 @@
   pre {
     overflow: scroll;
     padding: 1rem;
+  }
+
+  blockquote {
+    @extend .bl;
+    @extend .bw2;
+    @extend .ml0;
+    @extend .pl4;
+    @extend .b--black-20;
+
+    p {
+      @extend .pa0;
+    }
   }
 }
