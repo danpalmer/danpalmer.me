@@ -35,6 +35,17 @@ export default ({ data }) => {
             <div>
               <time className="f6">{post.frontmatter.date}</time>
             </div>
+            {post.frontmatter.originally_on_thread ? (
+              <p className="measure-wide">
+                <small>
+                  This post was published on{" "}
+                  <a href="https://thread.engineering/teaching-non-engineers-how-to-contribute-code-2e85411ab464">
+                    Thread's Engineering blog
+                  </a>
+                  .
+                </small>
+              </p>
+            ) : null}
           </header>
           <section
             className={classNames(
@@ -56,6 +67,7 @@ export const query = graphql`
       frontmatter {
         title
         theme
+        originally_on_thread
         date(formatString: "DD MMMM, YYYY")
       }
     }

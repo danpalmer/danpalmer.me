@@ -6,9 +6,8 @@ redirect_from:
 slug: teaching-non-engineers-how-to-contribute-code
 title: How and why we teach non-engineers to use GitHub at Thread
 theme: washed-blue-red
+originally_on_thread: true
 ---
-
-<small>This post was published on [Thread's Engineering blog.](https://thread.engineering/teaching-non-engineers-how-to-contribute-code-2e85411ab464)</small>
 
 At Thread one of our core beliefs is that technology allows for great change. This is important to our product, but it’s also important to how we work internally.
 
