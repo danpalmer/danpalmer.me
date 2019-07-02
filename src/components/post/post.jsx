@@ -1,17 +1,17 @@
-import React, { Fragment } from "react";
-import { graphql } from "gatsby";
-import Helmet from "react-helmet";
-import Layout from "../../components/layout";
-import classNames from "classnames";
+import React, { Fragment } from 'react';
+import { graphql } from 'gatsby';
+import Helmet from 'react-helmet';
+import Layout from '../../components/layout';
+import classNames from 'classnames';
 
-import styles from "./post.module.scss";
-import "../../styles/syntax-highlighting.css";
+import styles from './post.module.scss';
+import '../../styles/syntax-highlighting.css';
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   const bodyClasses = post.frontmatter.theme
     ? `theme-${post.frontmatter.theme}`
-    : "";
+    : '';
 
   return (
     <Fragment>
@@ -19,12 +19,18 @@ export default ({ data }) => {
         title={`${post.frontmatter.title} — ${data.site.siteMetadata.title}`}
         meta={[
           {
-            name: "description",
-            content: data.site.siteMetadata.description
+            name: 'description',
+            content: data.site.siteMetadata.description,
           },
-          { name: "keywords", content: "engineering culture" }
+          { name: 'keywords', content: 'engineering culture' },
         ]}
         bodyAttributes={{ class: bodyClasses }}
+        link={[
+          {
+            rel: 'canonical',
+            href: `${data.site.siteMetadata.siteUrl}/${post.fields.slug}`,
+          },
+        ]}
       />
       <Layout>
         <article className={styles.post}>
@@ -38,7 +44,7 @@ export default ({ data }) => {
             {post.frontmatter.originally_on_thread ? (
               <p className="measure-wide">
                 <small>
-                  This post was published on{" "}
+                  This post was published on{' '}
                   <a href="https://thread.engineering/teaching-non-engineers-how-to-contribute-code-2e85411ab464">
                     Thread's Engineering blog
                   </a>
@@ -50,7 +56,7 @@ export default ({ data }) => {
           <section
             className={classNames(
               styles.content,
-              "markdown-content measure-wide"
+              'markdown-content measure-wide'
             )}
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
@@ -64,6 +70,9 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         theme
