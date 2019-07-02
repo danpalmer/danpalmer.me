@@ -4,6 +4,7 @@
 $avenir: "avenir next", avenir, sans-serif;
 $consolas: Consolas, monaco, monospace;
 $helvetica: "helvetica neue", helvetica, sans-serif;
+$san-francisco: "San Francisco", "helvetica neue", helvetica, sans-serif;
 $regular: $global-font-family;
 
 @mixin theme($text-color, $bg-color, $typeface) {
@@ -113,4 +114,8 @@ $regular: $global-font-family;
 
 .theme-light-gray-purple {
   @include theme($purple, $light-gray, $regular);
+}
+
+.theme-near-white-black {
+  @include theme($black, $near-white, $san-francisco);
 }
