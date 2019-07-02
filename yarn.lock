@@ -7779,8 +7779,9 @@ kleur@^3.0.2:
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
 "language-graphql@https://github.com/rmosolgo/language-graphql":
-  version "0.11.0"
-  resolved "https://github.com/rmosolgo/language-graphql#c9b33be6c577e0a2a11511b6fd963dbef8a0a023"
+  version "1.0.0"
+  uid d07eee82149e5ae3a82103136e1d064b5aabd491
+  resolved "https://github.com/rmosolgo/language-graphql#d07eee82149e5ae3a82103136e1d064b5aabd491"
 
 "language-haskell@https://github.com/atom-haskell/language-haskell":
   version "1.18.0"
