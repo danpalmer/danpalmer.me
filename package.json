@@ -24,7 +24,7 @@
     "gatsby-remark-images": "^3.1.2",
     "gatsby-remark-responsive-iframe": "^2.2.1",
     "gatsby-source-filesystem": "^2.0.1-rc.6",
-    "gatsby-transformer-remark": "^2.1.1-rc.5",
+    "gatsby-transformer-remark": "^2.5.0",
     "gatsby-transformer-sharp": "^2.1.1",
     "gatsby-transformer-yaml": "^2.1.1-rc.6",
     "graphql": "^14.4.1",
