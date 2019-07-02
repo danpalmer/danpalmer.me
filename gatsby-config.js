@@ -89,7 +89,6 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-feed',
     },
-    'gatsby-plugin-canonical-urls',
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
