@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Dan Palmer',
-    siteUrl: 'https://danpalmer.me/',
+    siteUrl: 'https://danpalmer.me',
     description: 'Personal site and blog',
   },
   plugins: [
@@ -88,6 +88,64 @@ module.exports = {
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-feed',
+    },
+    'gatsby-plugin-canonical-urls',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        query: `
+          query {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                });
+              });
+            },
+            query: `
+              query {
+                allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+                  totalCount
+                  edges {
+                    node {
+                      excerpt(pruneLength: 300)
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: 'Dan Palmer',
+          },
+        ],
+      },
     },
   ],
 };
