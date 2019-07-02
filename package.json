@@ -37,7 +37,7 @@
     "react-google-charts": "^3.0.8",
     "react-helmet": "^5.2.0",
     "sass-mq": "^5.0.0",
-    "styled-components": "^4.2.0",
+    "styled-components": "^4.3.2",
     "tachyons": "^4.11.1",
     "tachyons-sass": "^4.9.5",
     "webpack": "^4.30.0"
