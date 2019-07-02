@@ -87,9 +87,6 @@ module.exports = {
     'gatsby-redirect-from',
     'gatsby-plugin-sitemap',
     {
-      resolve: 'gatsby-plugin-feed',
-    },
-    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         policy: [{ userAgent: '*', allow: '/' }],
