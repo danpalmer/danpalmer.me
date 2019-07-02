@@ -5530,15 +5530,15 @@ gatsby-page-utils@^0.0.2:
     micromatch "^3.1.10"
     slash "^1.0.0"
 
-gatsby-plugin-feed@^2.0.10:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.0.10.tgz#77c71809354f7b4d1c97b1b172643ee587ba5f99"
-  integrity sha512-Qw4R+oYWEIOW245SCzd4NPJ4s4X7JMGEvTkeFQ6vDUIGerfVtLSWq/aRi8JJsqi4bPl/Hor2Y01KhI+j9OwQ8g==
+gatsby-plugin-feed@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.3.1.tgz#1346a46878539aa37caa589ef4861621c3d27198"
+  integrity sha512-fgzvR/8ZOqYxqvt/1Yjjn98Ccrsy7cIemyQUtK7tmuZ0DZBJrttAOfAp9cIcn0+z70QYVwk31rzTBWEys0qbkA==
   dependencies:
     "@babel/runtime" "^7.0.0"
+    "@hapi/joi" "^14.0.0"
+    fs-extra "^7.0.1"
     lodash.merge "^4.6.0"
-    mkdirp "^0.5.1"
-    pify "^3.0.0"
     rss "^1.2.2"
 
 gatsby-plugin-manifest@^2.2.0:
