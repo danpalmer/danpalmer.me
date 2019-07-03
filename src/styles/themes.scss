@@ -1,10 +1,10 @@
-@import '~tachyons-sass/tachyons.scss';
-@import './variables.scss';
+@import "~tachyons-sass/tachyons.scss";
+@import "./variables.scss";
 
-$avenir: 'avenir next', avenir, sans-serif;
+$avenir: "avenir next", avenir, sans-serif;
 $consolas: Consolas, monaco, monospace;
-$helvetica: 'helvetica neue', helvetica, sans-serif;
-$san-francisco: 'San Francisco', 'helvetica neue', helvetica, sans-serif;
+$helvetica: "helvetica neue", helvetica, sans-serif;
+$san-francisco: "San Francisco", "helvetica neue", helvetica, sans-serif;
 $regular: $global-font-family;
 
 @mixin theme($text-color, $bg-color, $typeface) {
