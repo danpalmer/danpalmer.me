@@ -1,4 +1,10 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
+
+.project {
+  a {
+    color: inherit;
+  }
+}
 
 .languages {
   list-style: none;
