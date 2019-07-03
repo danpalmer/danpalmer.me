@@ -121,7 +121,10 @@ module.exports = {
             },
             query: `
               query {
-                allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+                allMarkdownRemark(
+                  sort: { fields: [frontmatter___date], order: DESC },
+                  filter: {frontmatter: {hidden: {ne: true}}}
+                ) {
                   totalCount
                   edges {
                     node {

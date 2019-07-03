@@ -2,6 +2,7 @@
 title: On Signing in with Apple
 date: 2019-07-02
 theme: near-white-black
+hidden: true
 ---
 
 Last month at their annual Worldwide Developers Conference (WWDC), one of
