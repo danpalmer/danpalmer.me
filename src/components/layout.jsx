@@ -25,9 +25,9 @@ const Layout = ({ children }) => (
           meta={[
             {
               name: "description",
-              content: data.site.siteMetadata.description
+              content: data.site.siteMetadata.description,
             },
-            { name: "keywords", content: "engineering culture" }
+            { name: "keywords", content: "engineering culture" },
           ]}
         >
           <html lang="en" />
@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

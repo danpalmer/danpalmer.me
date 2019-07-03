@@ -31,6 +31,16 @@ export default () => {
                 review on a regular basis, pair programming where appropriate,
                 and participate in hiring for new engineers.
               </p>
+              <p>
+                While at Thread I have worked on all parts of our codebase,
+                building features and solving problems for different teams
+                across growth, customer acquisition, retention, core product
+                value, user experience, styling, inventory, commercial, finance,
+                warehouse operations, logistics, shipping, APIs, client apps,
+                internationalisation, automation, deployment, databases,
+                continuous integration and delivery, monitoring, alerting,
+                documenting, training, mentoring and more.
+              </p>
             </div>
             <div>
               <h5 className="f6 gray">
@@ -120,17 +130,38 @@ export default () => {
                 great way of learning new skills, finding alternate points of
                 view, and getting critical feedback on ideas. Events I’ve been
                 to include{" "}
-                <a href="http://www.manytomany.co.uk/">Many to Many</a>, Monzo
-                hackathons (multiple years),{" "}
-                <a href="http://hackunamatata.nl/">Hackunamatata</a>, National
-                Hack the Government (multiple years),{" "}
-                <a href="http://nsconference.com/">NSConference</a>, Southampton
-                Appathon,{" "}
-                <a href="http://www.rhok.org/event/southampton-uk">
+                <a
+                  className="link gray underline-hover"
+                  href="http://www.manytomany.co.uk/"
+                >
+                  Many to Many
+                </a>
+                , Monzo hackathons (multiple years),{" "}
+                <a
+                  className="link gray underline-hover"
+                  href="http://hackunamatata.nl/"
+                >
+                  Hackunamatata
+                </a>
+                , National Hack the Government (multiple years),{" "}
+                <a
+                  className="link gray underline-hover"
+                  href="http://nsconference.com/"
+                >
+                  NSConference
+                </a>
+                , Southampton Appathon,{" "}
+                <a
+                  className="link gray underline-hover"
+                  href="http://www.rhok.org/event/southampton-uk"
+                >
                   Random Hack of Kindness
                 </a>{" "}
                 (multiple years),{" "}
-                <a href="http://rewiredstate.org/hacks/parliament-2012">
+                <a
+                  className="link gray underline-hover"
+                  href="http://rewiredstate.org/hacks/parliament-2012"
+                >
                   Rewired State: Parliament
                 </a>
                 , Barcamp Brighton and Barcamp Southampton. I have won multiple
@@ -143,7 +174,7 @@ export default () => {
               <ul>
                 <li>
                   <a
-                    className="link underline-hover"
+                    className="link gray underline-hover"
                     href="https://www.youtube.com/watch?v=jBBcORHhfV0"
                   >
                     Scaling Django Codebases – PyConUK 2017
@@ -151,7 +182,7 @@ export default () => {
                 </li>
                 <li>
                   <a
-                    className="link underline-hover"
+                    className="link gray underline-hover"
                     href="https://skillsmatter.com/skillscasts/11718-django-enumfield"
                   >
                     Managing Special Cases with Django Enumfield – London Django
@@ -208,9 +239,14 @@ export default () => {
             <h2 className="f3-m  mb1 f2-l">Contact</h2>
             <p>
               You can contact me a{" "}
-              <a href="mailto:cv@danpalmer.me">cv@danpalmer.me</a>. Please note
-              that I do not answer my phone during working hours unless
-              necessary for work.
+              <a
+                className="link gray underline-hover"
+                href="mailto:cv@danpalmer.me"
+              >
+                cv@danpalmer.me
+              </a>
+              . Please note that I do not answer my phone during working hours
+              unless necessary for work.
             </p>
           </section>
         </div>

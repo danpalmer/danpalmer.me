@@ -51,8 +51,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
-    "format": "prettier --write '**/*.js' '**/*.md' '**/*.css' '**/*.scss'",
-    "check": "prettier --check '**/*.js' '**/*.md' '**/*.css' '**/*.scss'",
+    "format": "prettier --write '**/*.js' '**/*.jsx' '**/*.md' '**/*.css' '**/*.scss'",
+    "check": "prettier --check '**/*.js' '**/*.jsx' '**/*.md' '**/*.css' '**/*.scss'",
     "ci": "yarn run check && yarn run build"
   },
   "devDependencies": {
