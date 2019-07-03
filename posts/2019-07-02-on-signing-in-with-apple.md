@@ -44,6 +44,8 @@ creates some issues for us that may mean we can't pass its benefits on to our
 users. I believe Apple have underestimated the issues involved in identity,
 user experience (UX), fraud, and their global market position.
 
+---
+
 ## Sign in ≠ Sign up
 
 The first issue I noticed was the fact that Apple do not differentiate between
@@ -135,7 +137,7 @@ this option seems to have gone out of fashion, and I am finding that I have to
 hunt for these options more and more, where they have been superseded by
 Facebook and Google, the two clearly dominant social sign-in providers.
 
-Authentication is hard, even if you outsource the problem to social sign-in
+Authentication is hard, even if outsourcing the problem to social sign-in
 providers. This means authentication systems stick around for a long time.
 Given how they are used and the relatively uncommon practice of getting users
 to reconfigure their authentication, they tend to accumulate code paths that
@@ -182,9 +184,181 @@ Thread is lucky that we have a website where we can put this flow – many apps
 don't and would have to have the flow in the app, something I have very little
 hope of Apple allowing.
 
+---
+
 ## Fighting Fraud
 
+One of the headlining features of Apple's SSO service is that users have the
+option to hide their email address from the service they are signing up to,
+instead relaying any email through Apple's servers.
+
+Instead of the service seeing the address `contact@danpalmer.me`, the service
+will be provided an address such as
+`521d61ae4d98e588c33049ab28adf411@private.relay.apple.com`. Each service the
+user signs up for will see a different email address. This is great for users
+as they can immediately stop all email from that service at any time, so if a
+service is hacked and their email address leaked, they have an easy way to
+prevent spam.
+
+# TODO: shift around?
+
+---
+
+---
+
+---
+
+#### Pay Later
+
+Let's take a moment to talk about a common concern in retail: financing. Many
+purchases are above what people can afford, so they prefer to either split the
+cost of a purchase over months or years, or they prefer trial a product and
+pay only when they've decided that they will keep the purchase.
+
+Thread offers this latter option in our checkout process so that customers can
+order clothing, try it on at home, send back what they don't like or doesn't
+fit, and then finally only pay for what they kept of the order which may even
+be nothing. This may not sound the same as a loan to spread the cost over
+months or years, but fundamentally it is, and the UK's Financial Conduct
+Authority (FCA) certainly consider it to be the same, and a retailer must be FCA
+approved to offer this.
+
+This is quite a burden, so like most retailers we outsource this to a third
+party payments provider who take on the responsibility of being FCA approved,
+as well as the fraud risk, and the risk of a customer just "forgetting" to pay
+something often called "friendly fraud". Since the third party provider are
+providing credit to the customer, they do a credit check. In order to perform
+this we share very basic user details with them, only for the purpose of
+performing this check, and on the basis of these the provider will either
+agree or decline to offer the credit.
+
+If the customer decides to take the credit, the outstanding balance is added
+to an account with the payments provider, and they can pay it off any time
+they like over the next 30 days.
+
+Now here's the problem. This account with the provider will also hold any
+balance that the customer may have by using that payment provider with other
+retailers and any already outstanding balance or payment history and issues
+that may have occured in the past are one of the main deciding factors in
+whether the customer is offered the credit or not.
+
+If you've paid off a £100 balance three times before, they may well let you do
+the same for £500. If you paid late (with a fee) on a £100 balance, they may
+not let you take credit again (these numbers are an example and may not be
+entirely accurate, but are representative of how this may work).
+
+So how do they know if the customer has an outstanding balance? They use the
+customer's email address.
+
+#### Correlating Email Addresses
+
+This brings us to the crux of the problem with the private email addresses:
+services can no longer correlate email addresses between each other. In many
+ways this is great. Preventing a service from telling Facebook that you signed
+up with that email address prevents Facebook from learning something about
+you, and that's good for privacy. It prevents advertising networks from
+building the links that are so valuable to them, the cost of which is
+completely hidden from the user. As these addresses start to become more
+pervasive, the quality of the hidden "knowledge graph" of user data will begin
+to deteriorate, forcing control back into the hands of users.
+
+But what about our pay-later example? In this case the email address isn't
+going into a "network", it's just being used to look up an existing
+account[^1]. It's not a hidden side-effect with no benefit to our
+customers, in this case it's a feature of our service, being used with the
+consent of our customers, in order to provide direct value to them.
+
+Use of data is not inherently bad, and this is a great example of where
+something that wasn't before possible – taking on the risk of providing a loan
+in this way – is now possible (at a low enough cost) for it to be a feature
+that a payment provider can offer, and that we can make available for our
+customers to improve their shopping experience.
+
+#### Apple's Answer
+
+Apple do have an answer to the question of fraud, but it's not a particularly
+satisfying one for certain kinds of service.
+
+On account creation, Apple will return a boolean value to the app that
+represents whether the user is a "trusted" user. True means that Apple has a
+high confidence this user is legitimate, likely because their Apple account
+has years of history of legitimate use. False means that Apple does not know
+if this user is legitimate (it doesn't mean they are _illegitimate_ in any
+way).
+
+This is a nice feature, and I think it's likely to have a very low false
+positive rate as Apple have so much account history, purchase history, and
+device activity for most legitimate users.
+
+However this design is a very _account centric_ design. It's
+intended to assess whether the user signing up to a service with Apple's SSO
+is a real person or a "bot". It is not intended to assess whether the user
+intends to commit fraud – intentionally or not – on that account.
+
+Unfortunately this is completely ineffective for the pay-later scenario, which
+depends on being able to correlate user accounts.
+
+#### What can we do about this?
+
+There are a couple of directions this could go.
+
+1. Using the trustworthiness flag that Apple pass through
+2. Collecting real email addresses at account creation, or "upgrading" to a
+   real address later on if required.
+3. A trusted partnership programme where select third parties can translate a
+   relay email address to a real one directly with Apple.
+4. Services disable features for those accounts that signed up with "Sign in
+   with Apple".
+
+I don't believe that Apple's trustworthiness flag (1) represents enough for
+all possible use-cases, so while this may be a useful feature for services to
+combat fake accounts, I don't believe it will provide much more benefit. In
+addition it is not something that can be shared with third parties as it could
+just be made up by any intermediary that wishes to do so.
+
+Apple does provide the option for a user to give their real email address to
+the service they are signing up for (2). Thread could build a flow to detect
+that a user has given us a relay address and "upgrade" to their real address
+later in the account lifecycle at the point that we need to provide the email
+address to our payment provider. This is somewhat complex to build, and
+potentially a cumbersome UX at the point that a user is attempting to make a
+purchase so far from ideal. Apple could provide a flow in their API for doing
+this with a relatively frictionless user experience, but so far appear not to
+offer this as an option.
+
+Additionally, while this flow may work for Thread, it may not work for every
+service. There may be some services where a real email address being used is
+fundamental to the service – Gravatar comes to mind as an example. These
+services have no way to _enforce_ that users sign up with a real email
+address, and will simply have to detect Apple's relay addresses and reject the
+new account, a poor user experience, the cause of which may be difficult to
+communicate to the user.
+
+My favourite option here (3), although probably the least-worst from a
+selection of options that isn't great to begin with, is for Apple to create a
+partnership programme for sharing email addresses. This would allow select
+partners who have committed to Apple's terms of use of those email addresses
+to convert a relay address to a real address. This way a user could sign up to
+Thread choosing to hide their real email from us. We could then pass the relay
+address to our payment provider (with our customer's permission) as we
+normally do, with no changes to our process, and they would be able to look
+this up in order to correlate it to an existing address in their system. The
+address conversion could even be done to a normalised and hashed email address
+so that the third party service must already know about the address in order
+to reveal it, and would be unable to harvest new addresses from the programme.
+
+Unfortunately, the easiest option of the lot here is that these features are
+simply not offered to users who signed up for the service with Apple's SSO. I
+suspect that this may be the route that many companies take, and I feel for
+the support teams who will have to explain why some features are unavailable
+to users.
+
+---
+
 ## Why would I sign in with Apple?
+
+The last issue that I have with Apple's SSO service is not a technical one,
+but one primarily of branding.
 
 When discussing Apple with people I like to joke that they make products for
 Phil Schiller. They make products for that target well off, 35-55 year-olds,
@@ -234,7 +408,7 @@ in with, because they have replaced their iPhone with and Android phone.
 
 This matters because it's a bad user experience. Anything that causes doubt or
 confusion in a user's mind, and distracts them from the job they are looking
-to do with your app/site/service is a bad experience for them.
+to do with an app/site/service is a bad experience for them.
 
 More than this though, this confusion can be damaging to a business. As
 mentioned earlier, we A/B tested Facebook login in our registration process
@@ -254,6 +428,13 @@ privacy enhancing properties that it may bring to many apps, I'm concerned
 that Apple has not given enough thought to how it interacts with the complex
 ecosystem of authentication, fraud checks, and what the user experience will
 be for most people.
+
+Ultimately I believe that in its current form it's a blunt instrument,
+marketed as improving user privacy, but instead preventing whole classes of
+data use regardless of their actual privacy impact or the UX benefits that may
+no longer be possible, while alienating many apps and services who will have
+to make tough business critical choices for little to no benefit for their
+customers.
 
 I would have liked for Apple to launch this as a purely opt-in service for the
 first year or so, to see how it is adopted and to work with those in the
@@ -275,17 +456,23 @@ ultimate goals:
   account, allowing apps a migration path away from social sign-in instead
   of requiring the adoption of Apple's SSO.
 
-- Allow apps to _require_ a real email address at sign-up, perhaps if they
-  can justify it in the app review process, perhaps requiring the developer
-  to provide a textual description of why that can be shown to the user.
+- Allow apps to _require_ a real email address at sign-up, if doing so can be
+  shown to be a core requirement of the service they provide.
 
 - Provide apps an easy way to request a real email address, to "upgrade"
   from the Apple private email address, after account creation.
 
 These would address my concerns for whether Thread will be able to use "Sign
-in with Apple", and whether it will create a better user experience for our
-customers, instead of making Thread more difficult to use. However these are
-only _our_ issues, and I would urge Apple consider more of the nuances of the
-ecosystem before putting strict requirements on third party developers that
-could harm their businesses, and worsen user experience across iOS, the web,
-and all other platforms.
+in with Apple" and my concerns around the UX impact for our customers.
+However these are only _our_ issues, and I would urge Apple consider more of
+the nuances of the ecosystem before putting strict requirements on third party
+developers that could harm their businesses, and worsen user experience across
+iOS, the web, and all other platforms.
+
+[^1]:
+
+  It I'm not entirely familiar with the terms of service of our payment
+  provider, so potentially they may not be as innocent as I make out, however I
+  suspect they probably do not forward this on as selling customer data does not
+  appear to be in their business model, could very well breach FCA regulations,
+  and would likely violate GDPR.
