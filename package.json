@@ -14,8 +14,10 @@
     "gatsby-plugin-netlify": "^2.1.0",
     "gatsby-plugin-offline": "^2.2.0",
     "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-plugin-robots-txt": "^1.4.0",
     "gatsby-plugin-sass": "^2.1.0",
     "gatsby-plugin-sharp": "^2.2.1",
+    "gatsby-plugin-sitemap": "^2.2.1",
     "gatsby-redirect-from": "^0.2.1",
     "gatsby-remark-classes": "^0.1.0",
     "gatsby-remark-embed-gist": "^1.1.7",
@@ -23,6 +25,8 @@
     "gatsby-remark-highlights": "^1.3.4",
     "gatsby-remark-images": "^3.1.2",
     "gatsby-remark-responsive-iframe": "^2.2.1",
+    "gatsby-remark-smartypants": "^2.1.0",
+    "gatsby-remark-widows": "^1.0.0",
     "gatsby-source-filesystem": "^2.1.1",
     "gatsby-transformer-remark": "^2.5.0",
     "gatsby-transformer-sharp": "^2.2.0",
@@ -34,7 +38,6 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-google-charts": "^3.0.8",
     "react-helmet": "^5.2.1",
     "sass-mq": "^5.0.0",
     "styled-components": "^4.3.2",
@@ -47,7 +50,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js' '**/*.md' '**/*.css' '**/*.scss'"
+    "serve": "gatsby serve",
+    "format": "prettier --write '**/*.js' '**/*.jsx' '**/*.md' '**/*.css' '**/*.scss'",
+    "check": "prettier --check '**/*.js' '**/*.jsx' '**/*.md' '**/*.css' '**/*.scss'",
+    "ci": "yarn run check && yarn run build"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

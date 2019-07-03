@@ -20,11 +20,17 @@ export default ({ data }) => {
         meta={[
           {
             name: "description",
-            content: data.site.siteMetadata.description
+            content: data.site.siteMetadata.description,
           },
-          { name: "keywords", content: "engineering culture" }
+          { name: "keywords", content: "engineering culture" },
         ]}
         bodyAttributes={{ class: bodyClasses }}
+        link={[
+          {
+            rel: "canonical",
+            href: `${data.site.siteMetadata.siteUrl}/${post.fields.slug}`,
+          },
+        ]}
       />
       <Layout>
         <article className={styles.post}>
@@ -64,6 +70,9 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         theme

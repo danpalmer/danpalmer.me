@@ -7,3 +7,7 @@ yarn-error.log
 /public
 .DS_Store
 .sass-cache/
+_posts/
+_site/
+db.csv
+danpalmer.sql

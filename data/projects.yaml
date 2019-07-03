@@ -40,7 +40,7 @@
   role: contributor
   primary: true
   repo: six50/sixfifty
-  description: Website and visualisations for an attempt to predict the UK General Election in 2017
+  description: Website and visualisations for an attempt to predict the UK General Election in 2017.
   languages:
     - HTML
     - JavaScript
@@ -141,7 +141,7 @@
   role: contributor
   status: legacy
   primary: false
-  description: Tool to migrate from GHC's Trac to Phabricator
+  description: Tool to migrate from GHC's Trac to Phabricator.
   repo: danpalmer/trac-to-phabricator
   languages:
     - Haskell

@@ -409,7 +409,7 @@ query {
 ```
 
 These queries mean that the client doesn’t need to understand the types of
-users available, or how various site features map to those types – this is the
+users available, or how various site features map to those types — this is the
 main benefit of interfaces. However the use of a union for `User` means that
 we can have many different interfaces represented, and compose them together
 on different types in that union.

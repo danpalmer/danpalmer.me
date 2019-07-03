@@ -48,7 +48,8 @@ $regular: $global-font-family;
   }
 
   hr {
-    border-color: $text-color;
+    border-color: transparentize($text-color, 0.9) !important;
+    width: 90%;
   }
 
   ul {
@@ -70,6 +71,11 @@ $regular: $global-font-family;
     tr {
       border-color: mix($near-black, $text-color, 10%);
     }
+  }
+
+  .markdown-content code {
+    background-color: transparentize($text-color, 0.2) !important;
+    color: $bg-color !important;
   }
 }
 
