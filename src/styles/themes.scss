@@ -48,7 +48,8 @@ $regular: $global-font-family;
   }
 
   hr {
-    border-color: transparentize($text-color, 0.7) !important;
+    border-color: transparentize($text-color, 0.9) !important;
+    width: 90%;
   }
 
   ul {
