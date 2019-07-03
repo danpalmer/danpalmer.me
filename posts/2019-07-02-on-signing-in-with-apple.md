@@ -265,8 +265,8 @@ Since this is unfortunately not the direction they have chosen, I would like
 to see the following from Apple, all of which I feel are aligned with their
 ultimate goals:
 
-- Distinguish between signing _in_ and signing _up_, ["grandfather
-  in"](https://en.wikipedia.org/wiki/Grandfather_clause) any accounts that
+- Distinguish between signing _in_ and signing _up_, "[grandfather
+  in](https://en.wikipedia.org/wiki/Grandfather_clause)" any accounts that
   are not created on iOS, allowing them to continue to sign in, without the
   app or service being required to adopt Apple's SSO.
 
