@@ -1,6 +1,6 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
-@import "~tachyons-sass/tachyons.scss";
+@import '~tachyons-sass/tachyons.scss';
 
 .content {
   margin-top: 30px;
@@ -59,6 +59,7 @@
     @extend .ml0;
     @extend .pl4;
     @extend .b--black-20;
+    @extend .i;
 
     p {
       @extend .pa0;
