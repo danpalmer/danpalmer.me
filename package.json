@@ -50,7 +50,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js' '**/*.md' '**/*.css' '**/*.scss'"
+    "serve": "gatsby serve",
+    "format": "prettier --write '**/*.js' '**/*.md' '**/*.css' '**/*.scss'",
+    "check": "prettier --check '**/*.js' '**/*.md' '**/*.css' '**/*.scss'",
+    "ci": "yarn run check && yarn run build"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
