@@ -339,9 +339,9 @@ being done for legitimate customer interest.
 
 ## Apple's "Email" Relay
 
-The last issue to cover, and potentially the most controversial, is Apple's
-policies around sending email to their relay service. This is the service that
-relays email from the private addresses like
+The last issue to cover, and potentially the most difficult to reconcile, is
+Apple's policies around sending email to their relay service. This is the
+service that relays email from the private addresses like
 _521d61ae4d@private.relay.apple.com_ to the original accounts.
 
 > In order to send email messages through the relay service to the users’
@@ -367,59 +367,63 @@ There are many problems with these restrictions.
    unable to authenticate all of their domains.
 
 2. Best practice for email deliverability suggests that senders should send
-   from a different domain per category of email that they send. This mostly
-   applies to larger companies, but 10 will be too limiting for many
-   companies.
+   from a different domain per category of email that they send[^8]. This
+   mostly applies to larger products, but 10 domains is too limiting.
 
-3. For third parties who need to email users on behalf of the service they
-   signed up for, it will be impossible to prove ownership of the domain for
-   each partner they work with, and they may not be able to provide the
-   specific addresses that they send from, or these may change over time,
-   creating significant business risk.
+3. For third parties who email users on behalf of the service they signed up
+   for, it will be impossible to prove ownership of the domain for each
+   partner they work with, and they may not be able to provide the specific
+   addresses that they send from, or these may change over time, creating
+   significant business risk.
 
-4. Third parties who need to email users on behalf of the service they signed
+4. Third parties who email users on behalf of the service they signed
    up for may not have implemented the requisite Sender Policy Framework
    measures, and may be unable or unwilling to do this.
 
 The first two are difficult requirements to meet, and could alone rule out the
 use of **Sign in with Apple** for some products, however they are at least
 fully within the control of the product. The latter two are more concerning.
+Let's dive into a specific example...
 
-Let's dive into a specific example. Thread delivers orders with a regular
-parcel service, but also offers "collection delivery", where parcels are
-dropped at a collection location, typically a convenience store of some sort,
-where the customer can collect it at a time that works for them. For Thread
-this works like a typical shipping provider, but once it arrives at the store
-and is available for collection, the customer receives an email with a pickup
-code that they must provide to be able to collect their parcel. This email
-with the crucial pickup code is sent by the _shipping provider_, not by
-Thread. There are multiple reasons why this is the case, but it's worth noting
-that this may not be entirely Thread's decision – it may be a requirement of
-the shipping provider[^8].
+#### Collection Delivery
+
+Thread delivers orders with a regular parcel service, but also offers
+_collection delivery_, where parcels are dropped off at a store of some sort,
+and the customer can collect it at their convenience. For Thread this works
+like a typical shipping provider, but once it arrives at the store and is
+available for collection, the customer receives an email with a pickup code
+that they must provide when collecting their parcel. This email with the
+pickup code is sent by the _shipping provider_, not by Thread. There are
+multiple reasons why this is the case, but it's worth noting that may not be
+within Thread's control – it may be a requirement of the shipping
+provider[^9].
 
 This presents a problem. We cannot prove ownership of the domain the provider
-use to send their email, for one we don't own it, but even if we could send
-them the proof document that Apple provide to upload to their servers, this
-process would only be possible for the provider to do a single customer.
+use to send their email. We don't own it, but even if we could send the proof
+document that Apple provide to the provider to upload to their servers, this
+process would only be possible for a single customer of that shipping
+provider, unless email for each retailer was sent from a separate domain.
 
 We could ask the shipping provider which email addresses they will contact the
-customer from, but if we assume that they have 3 – one for pickup codes
-(transactional email), one for customer support, one for service updates, this
-would use 30% of our email address limit with Apple, and we currently have at
-least 4 third party services in a similar situation to this provider.
+customer from, but if we assume that they have 3 – one for pickup codes, one
+for customer support, one for service updates, this would use 30% of our email
+address limit with Apple, and we currently have at least 4 third party
+services in a similar situation to this provider. Retailers that operate in
+multiple countries could easily have hundreds of such suppliers, and require
+thousands of email addresses.
 
 This also creates a problem if or when the provider chooses to change how they
-email. In the case of this provider, their tech is provided by a company on
-the other side of the world that they have a partnership with. This means that
-a product manager (or similar) on the other side of the world, with no
-business relationship with Thread, must notify their partnerships manager, who
-must notify our provider in the UK, who must notify someone at Thread, who
-must notify someone with enough knowledge of **Sign in with Apple** to know
-that this means something needs changing. That's a long chain of communication
-that needs to work perfectly, as well as needing to jump from being an
-_operations_ conversation to being one about product authentication – two
-seemingly unrelated areas. It is unreasonable of Apple to believe that this
-will happen.
+send email. In the case of this provider, their tech is provided by another
+company that they have a partnership with. This means that when changing the
+address or domain they send email from, a product manager or similar at the
+tech company, who have no business relationship with Thread, must notify some
+sort of partnerships manager, who must notify our shipping provider, who must
+notify someone at Thread, who must notify someone with enough knowledge of the
+requirements of **Sign in with Apple** to know that this means something needs
+changing. That's a long chain of communication that needs to work perfectly,
+as well as needing to jump from being an _operations_ conversation to being
+one about _authentication_ – two otherwise unrelated areas. It is unreasonable
+of Apple to believe that this will happen.
 
 #### Potential solutions
 
@@ -607,6 +611,14 @@ available within Apple's policies.
   programme.
 
 [^8]:
+
+  This is a huge simplification, but roughly transactional email, marketing
+  email, notifications, and service updates should be split across different
+  domains. This allows for email providers to understand the separate patterns
+  that each of these will have, and tailor their handling of the email
+  accordingly.
+
+[^9]:
 
   I can't speak to whether it actually is in this case, but different
   providers have different approaches. Some are happy to be just a carrier,
