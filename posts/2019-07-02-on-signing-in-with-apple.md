@@ -527,12 +527,12 @@ platforms.
 #### P.S.
 
 One of my colleagues once told me about the idea of "feature complexity",
-applying the concept of [time/space
+applying the concept of [algorithmic
 complexity](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
 in algorithms to features of products. Changing the text on a page might be an
 `O(1)` feature – it (naively) has no knock-on effects or maintenance. Adding
-an API to the product though might be an `O(nm)` feature, `n` work needs to be
-done to support the API for every `m` other feature that needs to be available
+an API to the product though might be an _O(nm)_ feature, _n_ work needs to be
+done to support the API for every _m_ other feature that needs to be available
 in the API, a far more expensive feature to create and therefore one that must
 be considered carefully. This isn't intended to be a perfect measure, but it
 can be a useful thought experiment.
@@ -544,7 +544,7 @@ with Apple** leak out from authentication into so many aspects of the product,
 the process of maintenance for that product over time, the features we can
 offer, and so on.
 
-Apple have, maybe unintentionally, created an `O(nm)` feature in the number of
+Apple have, maybe unintentionally, created an _O(nm)_ feature in the number of
 platforms a product works across and the number of third party services that
 depend on an email address, or potentially higher if more factors need to be
 considered. I worry that years down the line we will be making important
