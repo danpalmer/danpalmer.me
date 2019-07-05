@@ -31,7 +31,7 @@
     "gatsby-transformer-remark": "^2.5.0",
     "gatsby-transformer-sharp": "^2.2.1",
     "gatsby-transformer-yaml": "^2.2.0",
-    "graphql": "^14.4.1",
+    "graphql": "^14.4.2",
     "language-graphql": "https://github.com/rmosolgo/language-graphql",
     "language-haskell": "https://github.com/atom-haskell/language-haskell",
     "node-sass": "^4.12.0",
