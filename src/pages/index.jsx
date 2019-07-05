@@ -1,7 +1,7 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Layout from "../components/layout";
+import Layout from '../components/layout';
 
 const PostItem = ({ post }) => {
   return (
@@ -26,8 +26,8 @@ export default ({ data }) => {
           <section>
             <h3>About</h3>
             <p>
-              I'm a software developer at Thread in London, and an alumnus of
-              the University of Southampton where I studied Computer Science
+              I'm a software developer at Thread in London, and alumni of the
+              University of Southampton where I studied Computer Science
               specialising in Mobile and Secure Systems. I enjoy writing
               software to solve interesting problems and improving engineering
               culture and processes.
