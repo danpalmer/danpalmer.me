@@ -285,10 +285,13 @@ unsuitable for most retail or the sale of most goods.
 There are a couple of directions this could go.
 
 1. Using the trustworthiness flag that Apple pass through.
+
 2. Collecting real email addresses at account creation, or "upgrading" to a
    real address later on if required.
+
 3. A trusted partnership programme where select third parties can translate a
    relay email address to a real one directly with Apple.
+
 4. Services disable features for those accounts that signed up with "Sign in
    with Apple".
 
