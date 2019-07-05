@@ -89,7 +89,7 @@ Will it be required for Thread? Apple have not yet answered this question in
 their documentation, nor have they responded to a request for clarification
 (FB6135661).
 
-There are 3 potential solutions to this problem:
+There are three potential solutions to this problem:
 
 1. Apple make allowances for "legacy" accounts, as long as new accounts are
    not created with the social logins. This is Thread's preferred choice, at
