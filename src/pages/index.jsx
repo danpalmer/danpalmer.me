@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 const PostItem = ({ post }) => {
   return (
     <div className="pb5">
-      <Link to={post.fields.slug} className="link dim black no-underline">
+      <Link to={post.fields.slug} className="link black no-underline">
         <h3 className="mb1">
           {post.frontmatter.title}
           <br />
