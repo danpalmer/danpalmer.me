@@ -65,4 +65,8 @@
       @extend .pa0;
     }
   }
+
+  .footnote-backref {
+    @extend .gray;
+  }
 }
