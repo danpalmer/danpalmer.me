@@ -98,9 +98,9 @@ There are 3 potential solutions to this problem:
 2. We implement **Sign in with Apple**, likely Apple's preferred choice, but
    as we shall see later there may be other issues with this.
 
-3. We remove "Sign in with Facebook", likely Apple's second favourite choice,
-   but this prevents a significant proportion of our userbase from using the
-   service _on Apple devices_.
+3. We remove **Sign in with Facebook**, likely Apple's second favourite
+   choice, but this prevents a significant proportion of our userbase from
+   using the service _on Apple devices_.
 
 #### Engineering cost
 
