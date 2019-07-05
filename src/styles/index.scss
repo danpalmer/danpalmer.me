@@ -69,7 +69,8 @@ hr {
   @extend .mv4;
 }
 
-ul {
+ul,
+ol {
   @extend .pl4;
   @extend .lh-copy;
   @extend .dark-gray;
