@@ -38,7 +38,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "sass-mq": "^5.0.0",
+    "sass-mq": "^5.0.1",
     "styled-components": "^4.3.2",
     "tachyons": "^4.11.1",
     "tachyons-sass": "^4.9.5",
