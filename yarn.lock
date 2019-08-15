@@ -876,10 +876,10 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.0", "@babel/runtime@^7.5.1":
-  version "7.5.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.4.tgz#cb7d1ad7c6d65676e66b47186577930465b5271b"
-  integrity sha512-Na84uwyImZZc3FKf4aUF1tysApzwf3p2yuFBIyBfbzT5glzKTdvYI4KVW4kcgjrzoGUjC7w3YyCHcJKaRxsr2Q==
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.5":
+  version "7.5.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
+  integrity sha512-28QvEGyQyNkB0/m2B4FU7IEZGK2NUrcMtT6BZEFALTguLk+AUT6ofsHtPk5QyjAdUkpMJ+/Em+quwz4HOt30AQ==
   dependencies:
     regenerator-runtime "^0.13.2"
 
@@ -5555,12 +5555,12 @@ gatsby-remark-classes@^0.1.0:
   dependencies:
     unist-util-visit "^1.4.0"
 
-gatsby-remark-embed-gist@^1.1.8:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-gist/-/gatsby-remark-embed-gist-1.1.8.tgz#b403398aed0b42fce63c0c9a25e62ec9ccd347e1"
-  integrity sha512-yAOVfCtxAHmU3QZhX1l2RWMuy/ahOMaTV27F6Q7oOj85DEBhhgdH92fwT4LfLnxngWDb10EqluOiYt3mAhQt6Q==
+gatsby-remark-embed-gist@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-gist/-/gatsby-remark-embed-gist-1.1.9.tgz#8c633de2df3105f7681fea8ec92bc62dc6f424d7"
+  integrity sha512-FCn2kymq/okNDYo/2ZUTt7XYOeJJL7jF0wzmo0AapbgX5IGy/eEnQ3xfQH3B3h+5B5nmUoDtsVmuCjrxSDN0vg==
   dependencies:
-    "@babel/runtime" "^7.5.0"
+    "@babel/runtime" "^7.5.5"
     async-unist-util-visit "^1.0.0"
     cheerio "^1.0.0-rc.3"
     parse-numeric-range "^0.0.2"
