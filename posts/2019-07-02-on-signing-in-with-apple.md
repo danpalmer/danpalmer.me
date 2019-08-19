@@ -36,7 +36,7 @@ will end up being a blunt tool, where the design and policy choices made to
 enhance privacy end up restricting the user experience with no privacy gain.
 The opinion that Apple seem to be pushing with their SSO service is that data
 sharing is bad, ignoring and impeding the cases where, with informed user
-consent, it can be a powerdul tool on the modern web. I also believe that
+consent, it can be a powerful tool on the modern web. I also believe that
 Apple are viewing the user experience through a US focus, where in the global
 service marketplace their position is far less strong, and **Sign in with
 Apple** could be a confusing concept to many.
