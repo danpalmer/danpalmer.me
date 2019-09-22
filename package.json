@@ -42,7 +42,8 @@
     "styled-components": "^4.3.2",
     "tachyons": "^4.11.1",
     "tachyons-sass": "^4.9.5",
-    "webpack": "^4.39.2"
+    "webpack": "^4.39.2",
+    "prettier": "^1.18.2"
   },
   "license": "UNLICENSED",
   "private": true,
@@ -54,9 +55,6 @@
     "check": "prettier --check '**/*.js' '**/*.jsx' '**/*.md' '**/*.css' '**/*.scss'",
     "test": "node test.js",
     "ci": "yarn run check && yarn run build && yarn run test"
-  },
-  "devDependencies": {
-    "prettier": "^1.18.2"
   },
   "engines": {
     "node": ">=0.10.3 <0.12"
