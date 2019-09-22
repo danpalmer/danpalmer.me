@@ -5996,10 +5996,10 @@ gatsby-redirect-from@^0.2.1:
   resolved "https://registry.yarnpkg.com/gatsby-redirect-from/-/gatsby-redirect-from-0.2.1.tgz#d5041f8730348d4652f1a8a752bca1cf7e86bc75"
   integrity sha512-GLDM1hwOaeh95QFibTMuZORxXUrDXbSX+JOGjLDldDNC2KD8uILO0MNnwqf2UOXytD+5eTHaJAGLNiUjvWOKaw==
 
-gatsby-remark-classes@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-classes/-/gatsby-remark-classes-0.1.0.tgz#047b4197ba10138c5839ef7a602cd7a930b92108"
-  integrity sha512-uYvL86bRqYneHFjBM/nrlnsNLtI1XVFoaifjF0Hwr5dj87oUxKKCI9dEDB3pv1O/AAciDxQpnWnBKdTKMSsIxA==
+gatsby-remark-classes@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-classes/-/gatsby-remark-classes-0.1.2.tgz#3f47faac21b09c966f8ada2c6b5e4d51b23ed185"
+  integrity sha512-XowV/FDrBPIvHhTYSc6aKjHDiJS78Src2U7phF3hJD500MqCyYdmE4XpHAoxqAd2gHkTQp67R70eN6bCzpnWmQ==
   dependencies:
     unist-util-visit "^1.4.0"
 

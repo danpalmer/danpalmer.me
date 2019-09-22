@@ -19,7 +19,7 @@
     "gatsby-plugin-sharp": "^2.2.11",
     "gatsby-plugin-sitemap": "^2.2.6",
     "gatsby-redirect-from": "^0.2.1",
-    "gatsby-remark-classes": "^0.1.0",
+    "gatsby-remark-classes": "^0.1.2",
     "gatsby-remark-embed-gist": "^1.1.9",
     "gatsby-remark-embed-youtube": "^0.0.7",
     "gatsby-remark-highlights": "^1.3.4",
