@@ -1,7 +1,7 @@
 ---
 title: On Signing in with Apple
 date: 2019-07-05
-theme: near-white-black
+theme: sign-in-with-apple
 hidden: false
 ---
 
