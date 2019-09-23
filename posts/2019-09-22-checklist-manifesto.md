@@ -5,7 +5,7 @@ theme: checklist-manifesto
 hidden: false
 ---
 
-After a recent one to one with my manager, discussing how we could improve our
+Not long after a recent one to one with my manager, discussing how we could improve our
 incident response process in engineering at Thread, I returned to my desk to
 find a copy of [The Checklist Manifesto][checklist-manifesto] that he had kindly
 got for me.
