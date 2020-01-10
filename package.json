@@ -33,7 +33,7 @@
     "gatsby-transformer-yaml": "^2.2.23",
     "language-graphql": "https://github.com/rmosolgo/language-graphql",
     "language-haskell": "https://github.com/atom-haskell/language-haskell",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.0",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
