@@ -42,13 +42,23 @@ module.exports = {
           "gatsby-remark-smartypants",
           "gatsby-remark-widows",
           {
-            resolve: "gatsby-remark-highlights",
+            resolve: "gatsby-remark-vscode",
             options: {
-              additionalLangs: ["language-graphql", "language-haskell"],
-              scopePrefix: "syntax--",
-              codeWrap: {
-                className: "snippet",
-              },
+              colorTheme: "GitHub Plus",
+              extensions: [
+                {
+                  identifier: "justusadam.language-haskell",
+                  version: "2.7.0",
+                },
+                {
+                  identifier: "thenikso.github-plus-theme",
+                  version: "1.2.1",
+                },
+                {
+                  identifier: "kumar-harsh.graphql-for-vscode",
+                  version: "1.15.3",
+                },
+              ],
             },
           },
         ],

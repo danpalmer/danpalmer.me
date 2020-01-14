@@ -38,19 +38,13 @@
     }
   }
 
-  code {
+  p > code {
     @extend .lh-copy;
-    @extend .white;
     @extend .bg-mid-gray;
     @extend .br2;
     @extend .pv0;
     @extend .ph1;
     @extend .f6;
-  }
-
-  pre {
-    overflow: scroll;
-    padding: 1rem;
   }
 
   blockquote {
