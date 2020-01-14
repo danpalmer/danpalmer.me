@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 
 const Colophon = () => (
   <Layout>
-    <h1 className="f-subheadline">Colophon</h1>
+    <h1 className="f-subheadline">Meta</h1>
     <div className="measure-wide">
       <p>
         This blog is a progressive web app, built using a modern
@@ -29,6 +29,7 @@ const Colophon = () => (
         .
       </p>
       <p>Affiliate links are used on this site.</p>
+      <p>∞</p>
     </div>
   </Layout>
 );

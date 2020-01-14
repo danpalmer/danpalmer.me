@@ -57,6 +57,11 @@ export default ({ data }) => {
                   Email
                 </a>
               </li>
+              <li className="fl mr3">
+                <Link to="/colophon" className="link moon-gray no-underline">
+                  Meta
+                </Link>
+              </li>
             </ul>
           </section>
         </div>
@@ -65,11 +70,6 @@ export default ({ data }) => {
             <PostItem post={node} key={node.id} />
           ))}
         </div>
-      </div>
-      <div className="fl w-100 pb5">
-        <Link to="/colophon" className="link moon-gray underline-hover fr f6">
-          Colophon
-        </Link>
       </div>
     </Layout>
   );

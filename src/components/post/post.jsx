@@ -65,7 +65,7 @@ export default ({ data }) => {
             to="/colophon"
             className="link underline-hover fl f6 post-colophon-link"
           >
-            Colophon
+            Meta
           </Link>
         </div>
       </Layout>
