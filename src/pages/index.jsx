@@ -22,7 +22,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <div>
-        <div className="fl w-100 w-30-l pa2 pb5 pr5-l">
+        <div className="fl w-100 w-30-l pb5 pr5-l">
           <section>
             <h3>About</h3>
             <p>
@@ -60,13 +60,13 @@ export default ({ data }) => {
             </ul>
           </section>
         </div>
-        <div className="fl w-100 w-70-l pa2">
+        <div className="fl w-100 w-70-l">
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <PostItem post={node} key={node.id} />
           ))}
         </div>
       </div>
-      <div className="fl w-100 pa2 pb5">
+      <div className="fl w-100 pb5">
         <Link to="/colophon" className="link moon-gray underline-hover fr f6">
           Colophon
         </Link>
