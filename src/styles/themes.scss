@@ -47,6 +47,11 @@ $regular: $global-font-family;
     }
   }
 
+  a.post-colophon-link,
+  a.post-colophon-link:visited {
+    color: transparentize($text-color, 0.7) !important;
+  }
+
   hr {
     border-color: transparentize($text-color, 0.9) !important;
     width: 90%;

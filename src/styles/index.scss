@@ -83,3 +83,8 @@ ol {
 time {
   @extend .gray;
 }
+
+a.post-colophon-link,
+a.post-colophon-link:visited {
+  color: transparentize(black, 0.7) !important;
+}

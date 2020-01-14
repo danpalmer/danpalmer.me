@@ -67,11 +67,7 @@ export default ({ data }) => {
         </div>
       </div>
       <div className="fl w-100 pa2 pb5">
-        <Link
-          to="/colophon"
-          activeClassName="active"
-          className="link moon-gray underline-hover fr f6"
-        >
+        <Link to="/colophon" className="link moon-gray underline-hover fr f6">
           Colophon
         </Link>
       </div>

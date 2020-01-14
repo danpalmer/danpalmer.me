@@ -63,8 +63,7 @@ export default ({ data }) => {
         <div className="fl w-100 pt5 pb4">
           <Link
             to="/colophon"
-            activeClassName="active"
-            className="link moon-gray underline-hover fl f6"
+            className="link underline-hover fl f6 post-colophon-link"
           >
             Colophon
           </Link>
