@@ -74,9 +74,9 @@ $regular: $global-font-family;
     }
   }
 
-    background-color: transparentize($text-color, 0.2) !important;
-    color: $bg-color !important;
   .markdown-content p > code {
+    background-color: transparentize($text-color, 0.9) !important;
+    color: $text-color !important;
   }
 
   .markdown-content a.footnote-backref {

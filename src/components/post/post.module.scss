@@ -38,9 +38,8 @@
     }
   }
 
-  code {
+  p > code {
     @extend .lh-copy;
-    @extend .white;
     @extend .bg-mid-gray;
     @extend .br2;
     @extend .pv0;
