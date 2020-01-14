@@ -8,7 +8,8 @@ title: Buffer Overflows
 ---
 
 <p><small>This article was adapted from an assignment I completed for <a href="http://www.ecs.soton.ac.uk/admissions/ug/syllabus.php?unit=COMP2040">Secure Systems (COMP2040)</a> as a part of my <a href="http://www.ecs.soton.ac.uk/admissions/ug/G421.php">Computer Science with Mobile and Secure Systems</a> degree at the <a href="http://www.ecs.soton.ac.uk/">University of Southampton</a>.</small></p>
-- - -
+
+---
 
 The task given to me was to create a webserver that was exploitable with buffer overflow. This was my first attempt at networking code in C so it may be quite a bad implementation, I was also quite rushed with this coursework due to approaching exams. The server binds to port 8000 and delivers files from the directory it is run from. It will only handle 1 request at a time and it only supports GET requests, but it features basic protection against directory traversal attacks.
 
