@@ -74,14 +74,21 @@ $regular: $global-font-family;
     }
   }
 
-  .markdown-content code {
     background-color: transparentize($text-color, 0.2) !important;
     color: $bg-color !important;
+  .markdown-content p > code {
   }
 
   .markdown-content a.footnote-backref {
     color: $text-color;
     font-weight: bold;
+  }
+
+  .markdown-content .vscode-highlight {
+    font-size: 0.875rem !important;
+    .vscode-highlight-line {
+      padding: 0 1rem;
+    }
   }
 }
 

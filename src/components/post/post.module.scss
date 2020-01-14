@@ -48,11 +48,6 @@
     @extend .f6;
   }
 
-  pre {
-    overflow: scroll;
-    padding: 1rem;
-  }
-
   blockquote {
     @extend .bl;
     @extend .bw2;

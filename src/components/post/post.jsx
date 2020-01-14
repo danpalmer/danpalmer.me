@@ -5,7 +5,6 @@ import Layout from "../../components/layout";
 import classNames from "classnames";
 
 import styles from "./post.module.scss";
-import "../../styles/syntax-highlighting.css";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
