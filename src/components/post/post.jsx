@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Helmet from "react-helmet";
 import Layout from "../../components/layout";
 import classNames from "classnames";
@@ -60,6 +60,15 @@ export default ({ data }) => {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </article>
+        <div className="fl w-100 pt5 pb4">
+          <Link
+            to="/colophon"
+            activeClassName="active"
+            className="link moon-gray underline-hover fl f6"
+          >
+            Colophon
+          </Link>
+        </div>
       </Layout>
     </Fragment>
   );
