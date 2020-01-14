@@ -26,8 +26,8 @@ export default ({ data }) => {
           <section>
             <h3>About</h3>
             <p>
-              I'm a software developer at Thread in London, and alumni of the
-              University of Southampton where I studied Computer Science
+              I&rsquo;m a software engineer at Thread in London, and attended
+              the University of Southampton where I studied Computer Science
               specialising in Mobile and Secure Systems. I enjoy writing
               software to solve interesting problems and improving engineering
               culture and processes.
