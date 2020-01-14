@@ -36,7 +36,7 @@ export default ({ data }) => {
               <li className="fl mr3">
                 <a
                   className="link mid-gray no-underline"
-                  href="https://www.github.com/danpalmer"
+                  href="https://github.com/danpalmer"
                 >
                   GitHub
                 </a>
@@ -44,7 +44,7 @@ export default ({ data }) => {
               <li className="fl mr3">
                 <a
                   className="link mid-gray no-underline"
-                  href="https://www.twitter.com/danpalmer"
+                  href="https://twitter.com/danpalmer"
                 >
                   Twitter
                 </a>
