@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   siteMetadata: {
     title: "Dan Palmer",
@@ -45,6 +47,7 @@ module.exports = {
             resolve: "gatsby-remark-vscode",
             options: {
               colorTheme: "GitHub Plus",
+              extensionDataDirectory: path.resolve("./vendor"),
               extensions: [
                 {
                   identifier: "justusadam.language-haskell",
