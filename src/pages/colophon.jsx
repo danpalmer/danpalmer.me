@@ -22,7 +22,7 @@ const Colophon = () => (
         , and content is licenced under{" "}
         <a
           className="link gray underline-hover"
-          href="http://creativecommons.org/licenses/by-sa/4.0/"
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
         >
           Creative Commons Attribution-ShareAlike 4.0 International License
         </a>
