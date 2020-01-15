@@ -1,5 +1,6 @@
 node_modules/
 public/
+vendor/
 .cache/
 _site/
 _posts/
