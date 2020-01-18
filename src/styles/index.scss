@@ -88,3 +88,7 @@ a.post-colophon-link,
 a.post-colophon-link:visited {
   color: transparentize(black, 0.7) !important;
 }
+
+.gist table tr:last-child {
+  border-bottom: 1px;
+}

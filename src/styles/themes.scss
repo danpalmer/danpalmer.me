@@ -71,7 +71,7 @@ $regular: $global-font-family;
     border-color: $text-color !important;
   }
 
-  .markdown-content table {
+  .markdown-content table:not(.highlight) {
     background-color: mix($near-white, $bg-color, 10%);
 
     tr {
