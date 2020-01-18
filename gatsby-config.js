@@ -95,6 +95,14 @@ module.exports = {
         path: `${__dirname}/posts/images`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "static_images",
+        path: `${__dirname}/src/images`,
+        ignore: ["**/.(js|jsx|scss)"],
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-redirect-from",
