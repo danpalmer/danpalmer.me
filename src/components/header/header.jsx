@@ -6,7 +6,11 @@ const Header = ({ siteTitle }) => (
     query={graphql`
       query AvatarQuery {
         avatar: allImageSharp(
-          filter: { id: { eq: "229bc6f7-06ce-558e-8781-e86ac2aa5e51" } }
+          filter: {
+            internal: {
+              contentDigest: { eq: "6ed84bb3826dad26c27a572d9bd9e732" }
+            }
+          }
         ) {
           edges {
             node {
