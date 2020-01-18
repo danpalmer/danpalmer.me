@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
         ) {
           edges {
             node {
-              image: fluid(srcSetBreakpoints: [32, 64, 96], quality: 100) {
+              image: fluid(srcSetBreakpoints: [32, 64, 96], quality: 85) {
                 srcSet
                 base64
               }
