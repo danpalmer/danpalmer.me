@@ -40,7 +40,6 @@ module.exports = {
             },
           },
           "gatsby-remark-responsive-iframe",
-          "gatsby-remark-embed-gist",
           "gatsby-remark-smartypants",
           "gatsby-remark-widows",
           {
