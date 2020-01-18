@@ -27,6 +27,7 @@ module.exports = {
           "gatsby-remark-responsive-iframe",
           "gatsby-remark-smartypants",
           "gatsby-remark-widows",
+          "gatsby-remark-external-links",
           {
             resolve: "gatsby-remark-images",
             options: {
