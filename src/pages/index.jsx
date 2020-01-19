@@ -5,14 +5,13 @@ import Layout from "../components/layout";
 
 const PostItem = ({ post }) => {
   return (
-    <div className="pb5">
+    <div className="pb1 cf">
       <Link to={post.fields.slug} className="link black no-underline">
         <h3 className="mb1">
-          {post.frontmatter.title}
-          <br />
+          <span className="fl-l">{post.frontmatter.title}</span>
+          <br className="dn-l" />
+          <small className="normal f6 gray fr-l">{post.frontmatter.date}</small>
         </h3>
-        <small className="f6 gray">{post.frontmatter.date}</small>
-        <p>{post.excerpt}</p>
       </Link>
     </div>
   );
@@ -66,9 +65,14 @@ export default ({ data }) => {
           </section>
         </div>
         <div className="fl w-100 w-70-l">
-          {data.allMarkdownRemark.edges.map(({ node }) => (
+          {data.featuredPosts.edges.map(({ node }) => (
             <PostItem post={node} key={node.id} />
           ))}
+          <div className="pb5 pt4">
+            <Link to="/blog" className="link no-underline mid-gray">
+              View full archive
+            </Link>
+          </div>
         </div>
       </div>
     </Layout>
@@ -77,9 +81,9 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
+    featuredPosts: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { hidden: { ne: true } } }
+      filter: { frontmatter: { hidden: { ne: true }, featured: { eq: true } } }
     ) {
       totalCount
       edges {
@@ -89,7 +93,6 @@ export const query = graphql`
             title
             date(formatString: "DD MMMM, YYYY")
           }
-          excerpt(pruneLength: 300)
           fields {
             slug
           }
