@@ -5,6 +5,7 @@ redirect_from:
   - /2012/04/githubs-security-vulnerabilities
 slug: githubs-security-vulnerabilities
 title: GitHub's Security Vulnerabilities
+featured: true
 ---
 
 The security of GitHub's website and systems has been the focus of a fair amount of news in the industry over recent months, this is an account of my experience finding a vulnerability, getting it fixed, and also my opinions on the recent 'mass assignment' exploit that was publicly demonstrated on GitHub.

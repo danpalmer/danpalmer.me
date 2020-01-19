@@ -9,6 +9,7 @@ redirect_from:
 slug: starting-snap
 title: Starting a Snap site with Stack and Persistent
 theme: light-gray-purple
+featured: true
 ---
 
 Following on from my [previous post](https://danpalmer.me/blog/haskell-web-frameworks) about Haskell web frameworks, I wanted to dive into actually making something with my favourite of the lot. Snap gives you a lot right out of the box, but setting up an application to the point where it can talk to a database in a useful way (i.e. not untyped raw queries) takes a little bit of work.

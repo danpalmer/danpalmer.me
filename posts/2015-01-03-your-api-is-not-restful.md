@@ -9,6 +9,7 @@ redirect_from:
   - /2015/01/your-api-is-not-restful
 slug: your-api-is-not-restful
 title: Your API is not RESTful
+featured: true
 ---
 
 This is a post that I have been meaning to write for quite a while. 3 years ago, during an internship I was introduced to the concept of a RESTful web service, while integrating with various APIs such as those provided by Amazon S3, CloudApp, and several others. I ended up writing very similar, code for each, but there were enough differences, the authentication mechanism, where it wanted files uploaded, and so on, that meant each had to be implemented separately, with little code re-use. However, I learnt that this shouldn't be the case.

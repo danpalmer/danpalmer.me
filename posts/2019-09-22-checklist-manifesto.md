@@ -3,6 +3,7 @@ title: The Checklist Manifesto – Atul Gawande
 date: 2019-09-22
 theme: checklist-manifesto
 hidden: false
+featured: true
 ---
 
 Not long after a recent one to one with my manager, discussing how we could improve our

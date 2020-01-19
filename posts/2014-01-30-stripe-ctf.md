@@ -5,6 +5,7 @@ redirect_from:
   - /2014/01/stripe-ctf
 slug: stripe-ctf
 title: Stripe CTF 3.0
+featured: true
 ---
 
 Last Wednesday, [Stripe](http://stripe.com/) started their 3rd [Capture the Flag](http://stripe-ctf.com) competition. As a provider of online payment services, security has been critical to them, so over the last few years they have run two CTFs based around hacking and securing systems. This year they chose a different subject: distributed systems.

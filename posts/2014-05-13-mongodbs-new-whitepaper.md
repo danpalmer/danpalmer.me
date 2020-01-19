@@ -5,6 +5,7 @@ redirect_from:
   - /2014/05/mongodbs-new-whitepaper
 slug: mongodbs-new-whitepaper
 title: MongoDB Misinformation
+featured: true
 ---
 
 MongoDB, [the company behind MongoDB](http://www.mongodb.com/press/10gen-announces-company-name-change-mongodb-inc) published a new whitepaper this month, about 'quanityfing business avantage'. As I've recently completed a research project at university where I critically analysed the design decisions taken in MongoDB, I thought it would be interesting to see how the company sells it. I'll write about my research sometime, but for now, I'm going to pull out a few quotes from the whitepaper. You can download the paper [here](http://info.mongodb.com/rs/mongodb/images/MongoDB_Quantifying_BizAdvantage.pdf), that's a directly link so you don't have to sign up to their newsletter to get a copy.

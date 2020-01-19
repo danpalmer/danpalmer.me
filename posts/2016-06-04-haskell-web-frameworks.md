@@ -9,6 +9,7 @@ redirect_from:
 slug: haskell-web-frameworks
 title: Haskell Web Frameworks
 theme: purple-light-gray
+featured: true
 ---
 
 I've been learning Haskell for a while now and am excited by the improvements it can bring to how we work as software engineers. Haskell has traditionally been used in academia, research, and financial modelling, but has only recently become a productive tool for web development. Since I come from a backend web development background this is what excites me about Haskell, so I've been looking at a few web frameworks to see what might suit my preferences in web development.

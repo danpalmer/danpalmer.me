@@ -3,6 +3,7 @@ title: GraphQL Interfaces vs Unions
 date: 2018-10-28
 originally_on_thread: true
 theme: navy-light-red
+featured: true
 ---
 
 GraphQL’s type system allows us to make many invalid states impossible to

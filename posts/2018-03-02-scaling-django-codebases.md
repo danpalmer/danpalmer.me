@@ -3,6 +3,7 @@ title: Scaling Django Codebases at PyCon UK 2017
 date: 2018-03-02
 theme: near-black-gold
 originally_on_thread: true
+featured: true
 ---
 
 Four of us from the Thread engineering team went to PyCon UK again in

@@ -5,6 +5,7 @@ redirect_from:
   - /2013/10/objective-c
 slug: objective-c
 title: Objective-C
+featured: true
 ---
 
 If I mentioned that I like C, C++ or Python to other students on my course, or colleagues, there would be no reaction. There are things you can criticise about each one, but they are all very safe bets. When I tell people that I enjoy writing Objective-C however, they are confused and often quite hostile towards the language.
