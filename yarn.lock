@@ -5668,19 +5668,16 @@ gatsby-remark-smartypants@^2.1.21:
     retext-smartypants "^3.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-vscode@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-vscode/-/gatsby-remark-vscode-1.4.0.tgz#4950f97c9a32d72b3eba965e0bac16da9a7453e8"
-  integrity sha512-f+vLfVRKlLWuksAi3QQ/kh6MVKAuEKQw8PJ48d32f21RhQ2oo92DMQf7IfFgSLEApHIw1gDfU4g+GnmdrVuKdQ==
+gatsby-remark-vscode@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-vscode/-/gatsby-remark-vscode-2.0.1.tgz#5e6949212f8e9b123ce2ef44da0843383db53b13"
+  integrity sha512-qq4Vkl+xDnLxIYhVxL9T/CopPGWcHTdOhh3OgTsP+xA4kL5IXOvLNT8uvbpeHUX/mZcUej+GfC1T7l+qGpYEhw==
   dependencies:
     decompress "^4.2.0"
     json5 "^2.1.1"
-    lodash.escape "^4.0.1"
-    lodash.uniq "^4.5.0"
     loglevel "^1.6.4"
     oniguruma "^7.2.0"
     plist "^3.0.1"
-    rimraf "^3.0.0"
     unist-util-visit "^1.4.1"
     vscode-textmate "4.2.2"
 
@@ -8001,11 +7998,6 @@ lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
   integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
-
-lodash.escape@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/lodash.escape/-/lodash.escape-4.0.1.tgz#c9044690c21e04294beaa517712fded1fa88de98"
-  integrity sha1-yQRGkMIeBClL6qUXcS/e0fqI3pg=
 
 lodash.escaperegexp@^4.1.2:
   version "4.1.2"
