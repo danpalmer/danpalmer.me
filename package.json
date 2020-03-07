@@ -30,7 +30,7 @@
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-remark": "^2.6.50",
     "gatsby-transformer-sharp": "^2.3.14",
-    "gatsby-transformer-yaml": "^2.2.24",
+    "gatsby-transformer-yaml": "^2.2.26",
     "language-graphql": "https://github.com/rmosolgo/language-graphql",
     "language-haskell": "https://github.com/atom-haskell/language-haskell",
     "node-sass": "^4.13.1",
