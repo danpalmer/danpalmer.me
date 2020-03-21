@@ -8,7 +8,7 @@
     "classnames": "^2.2.6",
     "gatsby": "^2.19.12",
     "gatsby-image": "^2.2.40",
-    "gatsby-plugin-feed": "^2.3.27",
+    "gatsby-plugin-feed": "^2.4.0",
     "gatsby-plugin-manifest": "^2.2.41",
     "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-netlify": "^2.1.32",
