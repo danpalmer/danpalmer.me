@@ -47,20 +47,15 @@ module.exports = {
             resolve: "gatsby-remark-vscode",
             options: {
               theme: "GitHub Plus",
-              extensionDataDirectory: path.resolve("./vendor"),
+              // To get extensions that aren't distributed on NPM, go to the
+              // VSCode Marketplace, click "Download Extension" (not "Install")
+              // and drop the .vsix file into the vendor directory.
               extensions: [
-                {
-                  identifier: "justusadam.language-haskell",
-                  version: "2.7.0",
-                },
-                {
-                  identifier: "thenikso.github-plus-theme",
-                  version: "1.2.1",
-                },
-                {
-                  identifier: "kumar-harsh.graphql-for-vscode",
-                  version: "1.15.3",
-                },
+                path.resolve("./vendor/justusadam.language-haskell-2.7.0.vsix"),
+                path.resolve("./vendor/thenikso.github-plus-theme-1.2.1.vsix"),
+                path.resolve(
+                  "./vendor/kumar-harsh.graphql-for-vscode-1.15.3.vsix"
+                ),
               ],
             },
           },
