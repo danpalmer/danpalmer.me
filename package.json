@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Dan Palmer <dan@danpalmer.me>",
   "dependencies": {
-    "atom-language-graphql": "^0.2.0",
     "classnames": "^2.2.6",
     "gatsby": "^2.19.12",
     "gatsby-image": "^2.3.0",
@@ -33,8 +32,6 @@
     "gatsby-source-filesystem": "^2.2.1",
     "gatsby-transformer-yaml": "^2.2.24",
     "gatsby-transformer-yaml": "^2.3.0",
-    "language-graphql": "https://github.com/rmosolgo/language-graphql",
-    "language-haskell": "https://github.com/atom-haskell/language-haskell",
     "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
