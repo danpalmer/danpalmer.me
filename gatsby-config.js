@@ -46,7 +46,7 @@ module.exports = {
           {
             resolve: "gatsby-remark-vscode",
             options: {
-              colorTheme: "GitHub Plus",
+              theme: "GitHub Plus",
               extensionDataDirectory: path.resolve("./vendor"),
               extensions: [
                 {
