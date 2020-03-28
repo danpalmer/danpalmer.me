@@ -42,7 +42,7 @@
     "tachyons": "^4.11.1",
     "tachyons-sass": "^4.9.5",
     "typescript": "^3.8.3",
-    "webpack": "^4.42.0"
+    "webpack": "^4.42.1"
   },
   "license": "UNLICENSED",
   "private": true,
