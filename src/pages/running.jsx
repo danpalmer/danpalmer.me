@@ -116,7 +116,6 @@ const RunCalendar = ({ data }) => {
             monthBorderColor="#ffffff"
             dayBorderWidth={2}
             dayBorderColor="#ffffff"
-            // isInteractive={true}
           />
         </div>
       ))}
