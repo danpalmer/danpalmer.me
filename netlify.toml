@@ -1,4 +1,3 @@
 [build]
     command = "yarn run ci"
     publish = "public"
-    functions = "backend/"
