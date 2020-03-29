@@ -1,0 +1,8 @@
+@import "../styles/variables.scss";
+
+.calendarYear {
+  height: 20vw;
+  @media only screen and (min-width: $breakpoint-mobile) {
+    height: 11vw;
+  }
+}
