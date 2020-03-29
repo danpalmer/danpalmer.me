@@ -44,7 +44,10 @@ export default ({ data }) => {
               <p className="measure-wide">
                 <small>
                   This post was published on{" "}
-                  <a href="https://thread.engineering/teaching-non-engineers-how-to-contribute-code-2e85411ab464">
+                  <a
+                    className="dark-gray b"
+                    href="https://thread.engineering/teaching-non-engineers-how-to-contribute-code-2e85411ab464"
+                  >
                     Thread's Engineering blog
                   </a>
                   .
