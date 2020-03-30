@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <Fragment>
         <nav className="db flex justify-between w-100 pa3 ph5-l">
           <div className="dib w-25 v-mid">

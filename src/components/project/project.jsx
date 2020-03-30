@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 import styles from "./project.module.scss";
 
-const titleise = title => {
+const titleise = (title) => {
   return title.charAt(0).toUpperCase() + title.slice(1);
 };
 
@@ -31,10 +31,10 @@ export default ({ project, languages }) => {
       </h4>
       <p className="pt2 mv0">{project.description}</p>
       <ul className={styles.languages}>
-        {project.languages.map(languageName =>
+        {project.languages.map((languageName) =>
           languages
-            .filter(language => language.name === languageName)
-            .map(language => (
+            .filter((language) => language.name === languageName)
+            .map((language) => (
               <li key={language.id}>
                 <span style={{ backgroundColor: language.colour }} />
                 {language.name}

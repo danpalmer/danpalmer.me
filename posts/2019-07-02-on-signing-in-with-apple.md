@@ -563,7 +563,6 @@ for those users, I am disappointed in all of the possible resolutions
 available within Apple's policies.
 
 [^1]:
-
   Since this distinction may be nuanced, it's worth noting that this is not
   just the number of users completing sign-up, but more measured as the value
   to the business in them becoming customers. While I can't remember if this
@@ -572,7 +571,6 @@ available within Apple's policies.
   sign-ups, but increase the number of customers.
 
 [^2]:
-
   There are three main points at which Facebook receive information from a
   social sign-in: at sign-up, at the point the app/site/service registers an
   account conversion with Facebook, and at re-authentication time when the
@@ -584,7 +582,6 @@ available within Apple's policies.
   marketing channel).
 
 [^3]:
-
   Thread is lucky that we have a website where we can put this flow – many
   apps don't and would have to have the flow in the app, something I have very
   little hope of Apple allowing, as this would mean that a **Sign in with
@@ -592,14 +589,12 @@ available within Apple's policies.
   in with Apple** button.
 
 [^4]:
-
   If you've paid off a £100 balance three times before, they may well let you
   do the same for £500. If you paid late (with a fee) on a £100 balance, they
   may not let you take credit again (these numbers are an example and may not
   be entirely accurate, but are representative of how this may work).
 
 [^5]:
-
   As these addresses start to become more pervasive, the quality of the hidden
   "knowledge graph" of user data will begin to deteriorate. I wonder whether
   Apple's SSO has the power alone to cause this enough to materially impact
@@ -608,7 +603,6 @@ available within Apple's policies.
   make it nearly worthless.
 
 [^6]:
-
   It I'm not entirely familiar with the terms of service of our payment
   provider, so potentially they may not be as innocent as I make out, however
   I suspect they probably do not forward this on as selling customer data does
@@ -616,14 +610,12 @@ available within Apple's policies.
   regulations, and would likely violate GDPR.
 
 [^7]:
-
   The address conversion could even be done to a normalised and hashed email
   address so that the third party service must already know about the address
   in order to reveal it, and would be unable to harvest new addresses from the
   programme.
 
 [^8]:
-
   This is a huge simplification, but roughly transactional email, marketing
   email, notifications, and service updates should be split across different
   domains. This allows for email providers to understand the separate patterns
@@ -631,7 +623,6 @@ available within Apple's policies.
   accordingly.
 
 [^9]:
-
   I can't speak to whether it actually is in this case, but different
   providers have different approaches. Some are happy to be just a carrier,
   and have almost all aspects of their service be "whitelabelled" and branded

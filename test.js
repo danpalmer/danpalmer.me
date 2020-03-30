@@ -4,8 +4,8 @@ const path = require("path");
 const OUTDIR = "./public/";
 const EXPECTED_POSTS = 37;
 
-const files = fs.readdirSync(OUTDIR).filter(x => !x.endsWith(".map"));
-const posts = files.filter(x => /\d{4}-\d{2}-\d{2}-/.test(x));
+const files = fs.readdirSync(OUTDIR).filter((x) => !x.endsWith(".map"));
+const posts = files.filter((x) => /\d{4}-\d{2}-\d{2}-/.test(x));
 
 if (posts.length < EXPECTED_POSTS) {
   console.error(
@@ -15,7 +15,7 @@ if (posts.length < EXPECTED_POSTS) {
 }
 
 const noIndex = posts.filter(
-  x => !fs.existsSync(path.join(OUTDIR, x, "index.html"))
+  (x) => !fs.existsSync(path.join(OUTDIR, x, "index.html"))
 );
 
 if (noIndex.length) {
@@ -24,7 +24,7 @@ if (noIndex.length) {
 }
 
 const missingPostData = posts.filter(
-  x => !fs.existsSync(path.join(OUTDIR, "page-data", x, "page-data.json"))
+  (x) => !fs.existsSync(path.join(OUTDIR, "page-data", x, "page-data.json"))
 );
 
 if (missingPostData.length) {
@@ -48,7 +48,7 @@ const requiredFiles = [
 ];
 
 const missingRequiredFiles = requiredFiles.filter(
-  x => !fs.existsSync(OUTDIR, x)
+  (x) => !fs.existsSync(OUTDIR, x)
 );
 
 if (missingRequiredFiles.length) {

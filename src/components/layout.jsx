@@ -18,7 +18,7 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <Fragment>
         <Helmet
           title={data.site.siteMetadata.title}

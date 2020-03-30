@@ -12,7 +12,7 @@ export default ({ data }) => {
           <div key={node.id} className="w-100-m w-50-l">
             <Project
               project={node}
-              languages={data.languages.edges.map(e => e.node)}
+              languages={data.languages.edges.map((e) => e.node)}
             />
           </div>
         ))}
@@ -23,7 +23,7 @@ export default ({ data }) => {
           <div key={node.id} className="w-100-m w-50-l">
             <Project
               project={node}
-              languages={data.languages.edges.map(e => e.node)}
+              languages={data.languages.edges.map((e) => e.node)}
             />
           </div>
         ))}
