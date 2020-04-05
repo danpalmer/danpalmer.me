@@ -1,5 +1,17 @@
 @import "../styles/variables.scss";
 
+$text-colour: rgb(224, 237, 94);
+
+.body {
+  background-color: rgb(26, 26, 26);
+  color: $text-colour;
+  a,
+  p,
+  h1 {
+    color: $text-colour;
+  }
+}
+
 .calendarYear {
   height: 20vw;
   @media only screen and (min-width: $breakpoint-mobile) {
