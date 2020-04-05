@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import { ResponsiveCalendar } from "@nivo/calendar";
 import ReactMapGL, { Source, Layer } from "react-map-gl";
 
 import Layout from "../components/layout";
@@ -51,16 +50,11 @@ export default ({ data }) => {
           </div>
           <div className="fl w-100 w-70-l">
             <RunMap runs={runs} />
-            <RunCalendar data={dataForCalendar(runs)} />
             {runs.map((run) => (
               <Run run={run} key={run.id} />
             ))}
           </div>
         </div>
-          <RunCalendar data={dataForCalendar(data.runs)} />
-          {data.runs.edges.map(({ node }) => (
-            <Run run={node} key={node.id} />
-          ))}
       </Layout>
     </Fragment>
   );
@@ -141,42 +135,6 @@ const Stat = ({ value, description }) => (
   </div>
 );
 
-const RunCalendar = ({ data }) => {
-  const dataByYear = Object.entries(
-    data.reduce((years, entry) => {
-      const year = entry.day.split("-")[0];
-      if (!years[year]) {
-        years[year] = [];
-      }
-      years[year].push(entry);
-      return years;
-    }, {})
-  );
-
-  return (
-    <div>
-      {dataByYear.map(([year, data]) => (
-        <div className={styles.calendarYear} key={year}>
-          <ResponsiveCalendar
-            data={data}
-            from={`${year}-01-01`}
-            to={`${year}-12-31`}
-            emptyColor="#eeeeee"
-            colors={["#61cdbb", "#97e3d5", "#e8c1a0", "#f47560"]}
-            align="center"
-            margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
-            yearSpacing={40}
-            monthBorderColor="#ffffff"
-            dayBorderWidth={2}
-            dayBorderColor="#ffffff"
-            isInteractive={false}
-          />
-        </div>
-      ))}
-    </div>
-  );
-};
-
 // Utilities
 
 const calcMetricTotal = (runs, metric) =>
@@ -187,17 +145,7 @@ const calcMetricTotal = (runs, metric) =>
     }, 0)
     .toFixed(0);
 
-const dataForCalendar = (runs) =>
-  runs.map((run) => {
-    return {
-      day: isoDate(new Date(run.start_epoch_ms)),
-      value: run.summaries.find((s) => s.metric === "distance").value,
-    };
-  });
-
 const intComma = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
-const isoDate = (d) => d.toISOString().split("T")[0];
 
 const geoJsonForRuns = (runs) => ({
   type: "FeatureCollection",
