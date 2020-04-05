@@ -50,7 +50,7 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.running.goaltype": "freeRun",
+        "com_nike_running_goaltype": "freeRun",
         "location": "outdoors"
     },
     "change_tokens": [

@@ -79,12 +79,12 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.running.audioguidedrun": "30_MINUTE_HEAD_STARTS",
-        "com.nike.running.databaseformat": "activeRun",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.running.startlocation": "51.538972103721555,-0.002697303759391817",
-        "com.nike.temperature": "16.97",
-        "com.nike.weather": "rain",
+        "com_nike_running_audioguidedrun": "30_MINUTE_HEAD_STARTS",
+        "com_nike_running_databaseformat": "activeRun",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_running_startlocation": "51.538972103721555,-0.002697303759391817",
+        "com_nike_temperature": "16.97",
+        "com_nike_weather": "rain",
         "location": "outdoors"
     },
     "change_tokens": [

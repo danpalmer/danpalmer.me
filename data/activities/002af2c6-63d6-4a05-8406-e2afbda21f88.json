@@ -57,13 +57,13 @@
         "com.nike.running.ios.manualentry"
     ],
     "tags": {
-        "com.nike.edited": "1561072275.545099",
-        "com.nike.name": "Shakeout Run",
-        "com.nike.running.audioguidedrun": "SHAKEOUT_RUN_GB",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.running.runtype": "manual",
-        "evaluation.run.disqualified": "true",
-        "evaluation.run.version": "2.0.0",
+        "com_nike_edited": "1561072275.545099",
+        "com_nike_name": "Shakeout Run",
+        "com_nike_running_audioguidedrun": "SHAKEOUT_RUN_GB",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_running_runtype": "manual",
+        "evaluation_run_disqualified": "true",
+        "evaluation_run_version": "2.0.0",
         "location": "indoors"
     },
     "change_tokens": [

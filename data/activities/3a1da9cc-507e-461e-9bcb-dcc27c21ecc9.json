@@ -78,8 +78,8 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.running.audioguidedrun": "NEXT_RUN",
-        "com.nike.running.goaltype": "duration",
+        "com_nike_running_audioguidedrun": "NEXT_RUN",
+        "com_nike_running_goaltype": "duration",
         "location": "outdoors"
     },
     "change_tokens": [

@@ -78,8 +78,8 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.running.audioguidedrun": "FIRST_SPEED_RUN",
-        "com.nike.running.goaltype": "speed_duration",
+        "com_nike_running_audioguidedrun": "FIRST_SPEED_RUN",
+        "com_nike_running_goaltype": "speed_duration",
         "location": "outdoors"
     },
     "change_tokens": [

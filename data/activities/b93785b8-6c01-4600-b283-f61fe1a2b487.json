@@ -79,11 +79,11 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.running.audioguidedrun": "RUN_WITH_SHALANE",
-        "com.nike.running.databaseformat": "activeRun",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.temperature": "11.91",
-        "com.nike.weather": "clear-day",
+        "com_nike_running_audioguidedrun": "RUN_WITH_SHALANE",
+        "com_nike_running_databaseformat": "activeRun",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_temperature": "11.91",
+        "com_nike_weather": "clear-day",
         "location": "outdoors"
     },
     "change_tokens": [

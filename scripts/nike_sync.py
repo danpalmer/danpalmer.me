@@ -64,8 +64,13 @@ def run(access_token):
 def save_activity(activity):
     activity_id = activity["id"]
     logger.info(f"Saving activity {activity_id}")
-    with open(os.path.join(OUTPUT_DIR, f"{activity_id}.json"), "w") as f:
-        json.dump(activity, f, indent=4)
+    path = os.path.join(OUTPUT_DIR, f"{activity_id}.json")
+    try:
+        with open(path, "w") as f:
+            json.dump(sanitise_json(activity), f, indent=4)
+    except Exception:
+        os.unlink(path)
+        raise
 
 
 def activity_name(activity):
@@ -95,6 +100,26 @@ def get_last_activity_id():
     last_run = datetime.datetime.fromtimestamp(last_run_ms / 1000)
     logger.info(f"Last update from {last_run}")
     return last_id
+
+
+def sanitise_json(d):
+    """
+    Gatsby's JSON loading for GraphQL queries doesn't support "." characters in
+    names, which Nike uses a lot for reverse-domain notation.
+
+    We recursively transform all dict keys to use underscores instead.
+    """
+
+    def _transform_key(key):
+        return key.replace(".", "_")
+
+    if isinstance(d, dict):
+        return {_transform_key(k): sanitise_json(v) for k, v in d.items()}
+
+    if isinstance(d, (tuple, list)):
+        return [sanitise_json(x) for x in d]
+
+    return d
 
 
 if __name__ == "__main__":

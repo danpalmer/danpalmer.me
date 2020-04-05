@@ -78,12 +78,12 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.name": "A Run With Sandy",
-        "com.nike.running.audioguidedrun": "RUN_WITH_SANDY",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.running.startlocation": "51.53912667664968,-0.0027599265615796003",
-        "com.nike.temperature": "11.2",
-        "com.nike.weather": "partly_cloudy_night",
+        "com_nike_name": "A Run With Sandy",
+        "com_nike_running_audioguidedrun": "RUN_WITH_SANDY",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_running_startlocation": "51.53912667664968,-0.0027599265615796003",
+        "com_nike_temperature": "11.2",
+        "com_nike_weather": "partly_cloudy_night",
         "location": "outdoors"
     },
     "change_tokens": [

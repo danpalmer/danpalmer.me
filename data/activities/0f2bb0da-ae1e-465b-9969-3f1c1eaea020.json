@@ -86,10 +86,10 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.name": "New Morning Run With Headspace",
-        "com.nike.running.audioguidedrun": "NEW_MORNING_RUN_WITH_HEADSPACE",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.running.startlocation": "51.538865169137694,-0.0027564320297487877",
+        "com_nike_name": "New Morning Run With Headspace",
+        "com_nike_running_audioguidedrun": "NEW_MORNING_RUN_WITH_HEADSPACE",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_running_startlocation": "51.538865169137694,-0.0027564320297487877",
         "location": "outdoors"
     },
     "change_tokens": [

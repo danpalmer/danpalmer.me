@@ -79,17 +79,17 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.running.audioguidedrun": "5K_HEAD_STARTS",
-        "com.nike.running.databaseformat": "activeRun",
-        "com.nike.running.fullpowerenabled": "false",
-        "com.nike.running.goaltype": "distance",
-        "com.nike.running.originalactivityid": "6705F2F1-FEB6-4448-B61F-B2361EA53BB7",
-        "com.nike.running.recordingappversion": "6.5.0",
-        "com.nike.running.recordingsource": "watch",
-        "com.nike.running.syncappversion": "6.5.0",
-        "com.nike.running.syncsource": "watch",
-        "com.nike.temperature": "6.17",
-        "com.nike.weather": "partly-cloudy-night",
+        "com_nike_running_audioguidedrun": "5K_HEAD_STARTS",
+        "com_nike_running_databaseformat": "activeRun",
+        "com_nike_running_fullpowerenabled": "false",
+        "com_nike_running_goaltype": "distance",
+        "com_nike_running_originalactivityid": "6705F2F1-FEB6-4448-B61F-B2361EA53BB7",
+        "com_nike_running_recordingappversion": "6.5.0",
+        "com_nike_running_recordingsource": "watch",
+        "com_nike_running_syncappversion": "6.5.0",
+        "com_nike_running_syncsource": "watch",
+        "com_nike_temperature": "6.17",
+        "com_nike_weather": "partly-cloudy-night",
         "location": "outdoors"
     },
     "change_tokens": [

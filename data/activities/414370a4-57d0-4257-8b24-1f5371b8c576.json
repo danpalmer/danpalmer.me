@@ -86,12 +86,12 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.name": "On The Move",
-        "com.nike.running.audioguidedrun": "ON_THE_MOVE",
-        "com.nike.running.goaltype": "speed_duration",
-        "com.nike.running.startlocation": "52.0276343266116,-0.529201474359013",
-        "com.nike.temperature": "8.2",
-        "com.nike.weather": "rainy",
+        "com_nike_name": "On The Move",
+        "com_nike_running_audioguidedrun": "ON_THE_MOVE",
+        "com_nike_running_goaltype": "speed_duration",
+        "com_nike_running_startlocation": "52.0276343266116,-0.529201474359013",
+        "com_nike_temperature": "8.2",
+        "com_nike_weather": "rainy",
         "location": "outdoors",
         "terrain": "trail"
     },

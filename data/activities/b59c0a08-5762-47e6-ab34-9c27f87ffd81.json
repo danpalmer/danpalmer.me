@@ -78,12 +78,12 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.name": "Don't Wanna Run Run",
-        "com.nike.running.audioguidedrun": "DONT_WANT_TO_RUN",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.running.startlocation": "51.539115880542944,-0.002759496720698256",
-        "com.nike.temperature": "7.9",
-        "com.nike.weather": "partly_cloudy_night",
+        "com_nike_name": "Don't Wanna Run Run",
+        "com_nike_running_audioguidedrun": "DONT_WANT_TO_RUN",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_running_startlocation": "51.539115880542944,-0.002759496720698256",
+        "com_nike_temperature": "7.9",
+        "com_nike_weather": "partly_cloudy_night",
         "location": "outdoors"
     },
     "change_tokens": [

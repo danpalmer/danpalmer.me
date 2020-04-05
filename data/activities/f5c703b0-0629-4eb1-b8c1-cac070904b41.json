@@ -78,11 +78,11 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.running.audioguidedrun": "COLD_RUN",
-        "com.nike.running.databaseformat": "activeRun",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.temperature": "11.08",
-        "com.nike.weather": "cloudy",
+        "com_nike_running_audioguidedrun": "COLD_RUN",
+        "com_nike_running_databaseformat": "activeRun",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_temperature": "11.08",
+        "com_nike_weather": "cloudy",
         "location": "outdoors"
     },
     "change_tokens": [

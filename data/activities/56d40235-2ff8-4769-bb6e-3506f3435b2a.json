@@ -86,12 +86,12 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.name": "Run with Eliud",
-        "com.nike.running.audioguidedrun": "RUN_WITH_ELIUD",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.running.startlocation": "51.53931745706112,-0.0025740640547040057",
-        "com.nike.temperature": "4.1",
-        "com.nike.weather": "partly_sunny",
+        "com_nike_name": "Run with Eliud",
+        "com_nike_running_audioguidedrun": "RUN_WITH_ELIUD",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_running_startlocation": "51.53931745706112,-0.0025740640547040057",
+        "com_nike_temperature": "4.1",
+        "com_nike_weather": "partly_sunny",
         "location": "outdoors",
         "terrain": "road"
     },

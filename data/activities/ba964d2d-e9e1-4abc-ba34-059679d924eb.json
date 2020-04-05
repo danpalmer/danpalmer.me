@@ -79,14 +79,14 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.running.audioguidedrun": "EASY_RUN",
-        "com.nike.running.databaseformat": "activeRun",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.running.originalactivityid": "C7E85133-3CA5-40DA-9524-151D9E778221",
-        "com.nike.running.syncappversion": "6.4.1",
-        "com.nike.running.syncsource": "phone",
-        "com.nike.temperature": "8.23",
-        "com.nike.weather": "cloudy",
+        "com_nike_running_audioguidedrun": "EASY_RUN",
+        "com_nike_running_databaseformat": "activeRun",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_running_originalactivityid": "C7E85133-3CA5-40DA-9524-151D9E778221",
+        "com_nike_running_syncappversion": "6.4.1",
+        "com_nike_running_syncsource": "phone",
+        "com_nike_temperature": "8.23",
+        "com_nike_weather": "cloudy",
         "location": "outdoors"
     },
     "change_tokens": [

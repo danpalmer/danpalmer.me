@@ -78,12 +78,12 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.name": "Run With Joanie",
-        "com.nike.running.audioguidedrun": "RUN_WITH_JOANIE",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.running.startlocation": "51.53825295355054,-0.0038064747776804697",
-        "com.nike.temperature": "9.5",
-        "com.nike.weather": "partly_cloudy_night",
+        "com_nike_name": "Run With Joanie",
+        "com_nike_running_audioguidedrun": "RUN_WITH_JOANIE",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_running_startlocation": "51.53825295355054,-0.0038064747776804697",
+        "com_nike_temperature": "9.5",
+        "com_nike_weather": "partly_cloudy_night",
         "location": "outdoors"
     },
     "change_tokens": [

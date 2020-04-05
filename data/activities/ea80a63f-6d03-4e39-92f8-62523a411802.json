@@ -78,12 +78,12 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.name": "Next Run",
-        "com.nike.running.audioguidedrun": "NEXT_RUN",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.running.startlocation": "51.53835435799783,-0.004787836113206982",
-        "com.nike.temperature": "5.5",
-        "com.nike.weather": "partly_sunny",
+        "com_nike_name": "Next Run",
+        "com_nike_running_audioguidedrun": "NEXT_RUN",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_running_startlocation": "51.53835435799783,-0.004787836113206982",
+        "com_nike_temperature": "5.5",
+        "com_nike_weather": "partly_sunny",
         "location": "outdoors"
     },
     "change_tokens": [

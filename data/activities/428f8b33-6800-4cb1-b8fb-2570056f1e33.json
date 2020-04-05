@@ -78,12 +78,12 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.name": "Fuel The Run with Shalane",
-        "com.nike.running.audioguidedrun": "FTR_WITH_SHALANE",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.running.startlocation": "51.53917925407399,-0.0027301292772460967",
-        "com.nike.temperature": "8.9",
-        "com.nike.weather": "rainy",
+        "com_nike_name": "Fuel The Run with Shalane",
+        "com_nike_running_audioguidedrun": "FTR_WITH_SHALANE",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_running_startlocation": "51.53917925407399,-0.0027301292772460967",
+        "com_nike_temperature": "8.9",
+        "com_nike_weather": "rainy",
         "location": "outdoors"
     },
     "change_tokens": [

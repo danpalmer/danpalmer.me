@@ -78,9 +78,9 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.running.audioguidedrun": "RUN_WITH_ELIUD",
-        "com.nike.running.goaltype": "duration",
-        "com.nike.running.startlocation": "51.538947491312676,-0.0026821593234988036",
+        "com_nike_running_audioguidedrun": "RUN_WITH_ELIUD",
+        "com_nike_running_goaltype": "duration",
+        "com_nike_running_startlocation": "51.538947491312676,-0.0026821593234988036",
         "location": "outdoors"
     },
     "change_tokens": [

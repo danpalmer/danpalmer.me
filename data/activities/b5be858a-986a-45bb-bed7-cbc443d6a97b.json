@@ -78,8 +78,8 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.running.audioguidedrun": "JUST_GO_WITH_MO",
-        "com.nike.running.goaltype": "duration",
+        "com_nike_running_audioguidedrun": "JUST_GO_WITH_MO",
+        "com_nike_running_goaltype": "duration",
         "location": "outdoors"
     },
     "change_tokens": [

@@ -79,11 +79,11 @@
         "com.nike.nikefuelengine.1.0-A5.0"
     ],
     "tags": {
-        "com.nike.name": "Monday Evening Run",
-        "com.nike.running.databaseformat": "activeRun",
-        "com.nike.running.goaltype": "freeRun",
-        "com.nike.temperature": "26.56",
-        "com.nike.weather": "partly-cloudy-day",
+        "com_nike_name": "Monday Evening Run",
+        "com_nike_running_databaseformat": "activeRun",
+        "com_nike_running_goaltype": "freeRun",
+        "com_nike_temperature": "26.56",
+        "com_nike_weather": "partly-cloudy-day",
         "location": "outdoors"
     },
     "change_tokens": [

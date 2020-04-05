@@ -93,10 +93,10 @@
         "com.nike.running.ios.manualentry"
     ],
     "tags": {
-        "com.nike.running.feedpostobjectid": "0EDFB906-7788-41C1-94C8-FC06B6570790",
-        "com.nike.running.startlocation": "52.0278523517434,-0.529090150088645",
-        "com.nike.temperature": "11.2",
-        "com.nike.weather": "partly_sunny",
+        "com_nike_running_feedpostobjectid": "0EDFB906-7788-41C1-94C8-FC06B6570790",
+        "com_nike_running_startlocation": "52.0278523517434,-0.529090150088645",
+        "com_nike_temperature": "11.2",
+        "com_nike_weather": "partly_sunny",
         "location": "outdoors"
     },
     "change_tokens": [

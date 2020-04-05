@@ -93,11 +93,11 @@
         "com.nike.running.ios.manualentry"
     ],
     "tags": {
-        "com.nike.name": "Wednesday Evening Run",
-        "com.nike.running.feedpostobjectid": "8D10E695-9488-4955-9735-BD512CD50802",
-        "com.nike.running.startlocation": "51.5384292612206,-0.00297508333128924",
-        "com.nike.temperature": "19.5",
-        "com.nike.weather": "sunny",
+        "com_nike_name": "Wednesday Evening Run",
+        "com_nike_running_feedpostobjectid": "8D10E695-9488-4955-9735-BD512CD50802",
+        "com_nike_running_startlocation": "51.5384292612206,-0.00297508333128924",
+        "com_nike_temperature": "19.5",
+        "com_nike_weather": "sunny",
         "location": "outdoors",
         "terrain": "road"
     },
