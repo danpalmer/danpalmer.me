@@ -14,7 +14,7 @@ const MAPBOX_TOKEN =
 // Page
 
 export default ({ data }) => {
-  const runs = data.runs.edges.map((edge) => edge.node);
+  const runs = data.runs.nodes;
   return (
     <Fragment>
       <Helmet bodyAttributes={{ class: styles.body }} />
@@ -68,19 +68,17 @@ export const query = graphql`
       # Filter to above 60s to exclude cancelled runs
       filter: { active_duration_ms: { gt: 60000 } }
     ) {
-      edges {
-        node {
-          id
-          start_epoch_ms
-          summaries {
-            metric
+      nodes {
+        id
+        start_epoch_ms
+        summaries {
+          metric
+          value
+        }
+        metrics {
+          type
+          values {
             value
-          }
-          metrics {
-            type
-            values {
-              value
-            }
           }
         }
       }
