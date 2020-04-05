@@ -5,6 +5,7 @@ import ReactMapGL, { Source, Layer } from "react-map-gl";
 
 import Layout from "../components/layout";
 
+import "mapbox-gl/dist/mapbox-gl.css";
 import styles from "./running.module.scss";
 
 const MAPBOX_TOKEN =
