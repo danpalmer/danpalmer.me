@@ -3,6 +3,9 @@ name: Nike Sync
 on:
   schedule:
     - cron: "0 2 * * *"
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -19,14 +22,11 @@ jobs:
           pip install -r requirements.txt
       - name: Run sync script
         run: |
-          python scripts/nike_sync.py ${{ secrets.NIKE_ACCESS_TOKEN }}
-      - name: Commit new runs
-        run: |
-          if git diff-index --quiet HEAD --; then
-            echo "No new runs, finishing"
-          else
-            git add data/activities/*
-            git commit -m "Auto committing new runs"
-            git push
-          fi
-          
+          python scripts/nike_sync.py ${{ secrets.NIKE_REFRESH_TOKEN }}
+      - name: Push new runs
+        uses: github-actions-x/commit@v2.5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Add new runs"
+          files: data/activities/
+          name: Dan Palmer
