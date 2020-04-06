@@ -1,13 +1,54 @@
 @import "../styles/variables.scss";
 
-$text-colour: rgb(224, 237, 94);
+$nike: rgb(224, 237, 94);
+$light: rgb(204, 204, 204);
+$dark: rgb(26, 26, 26);
 
 .body {
-  background-color: rgb(26, 26, 26);
-  color: $text-colour;
+  background-color: $dark;
+  color: $nike;
   a,
   p,
-  h1 {
-    color: $text-colour;
+  h1,
+  h4,
+  li {
+    color: $nike;
+  }
+}
+
+.runTable {
+  width: 100%;
+  min-width: 600px;
+  overflow-x: scroll;
+
+  margin: 2rem 0 5rem 0;
+
+  thead {
+    color: $light;
+    text-align: right;
+
+    th {
+      padding: 0.5rem;
+    }
+  }
+}
+
+.runRow {
+  td {
+    padding: 0.5rem;
+    border: 0;
+    text-align: right;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+
+  date {
+    color: $light;
+  }
+
+  &:hover {
+    background-color: lighten($dark, 3%);
   }
 }

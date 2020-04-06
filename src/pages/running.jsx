@@ -1,4 +1,6 @@
 import React, { Fragment, useState } from "react";
+import classNames from "classnames";
+import { format as formatDate } from "date-fns";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import ReactMapGL, { Source, Layer } from "react-map-gl";
@@ -45,15 +47,13 @@ export default ({ data }) => {
               />
               <Stat
                 value={calcMetricTotal(runs, "calories")}
-                description={"Calories"}
+                description={"kcal"}
               />
             </section>
           </div>
           <div className="fl w-100 w-70-l">
             <RunMap runs={runs} />
-            {runs.map((run) => (
-              <Run run={run} key={run.id} />
-            ))}
+            <RunTable runs={runs} />
           </div>
         </div>
       </Layout>
@@ -64,7 +64,7 @@ export default ({ data }) => {
 export const query = graphql`
   query {
     runs: allActivitiesJson(
-      sort: { fields: start_epoch_ms }
+      sort: { fields: start_epoch_ms, order: DESC }
       # Filter to above 60s to exclude cancelled runs
       filter: { active_duration_ms: { gt: 60000 } }
     ) {
@@ -74,12 +74,21 @@ export const query = graphql`
         summaries {
           metric
           value
+          summary
         }
         metrics {
           type
           values {
             value
           }
+        }
+        tags {
+          name: com_nike_name
+          audioGuideKey: com_nike_running_audioguidedrun
+          temperature: com_nike_temperature
+          weatherKey: com_nike_weather
+          location
+          terrain
         }
       }
       totalCount
@@ -123,9 +132,63 @@ const RunMap = ({ runs }) => {
   );
 };
 
-const Run = ({ run }) => (
-  <div className="pv3 w-100 moon-gray bb b--near-white">{run.id}</div>
+const RunTable = ({ runs }) => (
+  <table className={styles.runTable} cellspacing="0" cellpadding="0">
+    <thead>
+      <tr>
+        <th></th>
+        <th>KM</th>
+        <th>KCAL</th>
+        <th>Pace</th>
+        <th>BPM</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {runs.map((run) => (
+        <RunRow run={run} key={run.id} />
+      ))}
+    </tbody>
+  </table>
 );
+
+const RunRow = ({ run }) => {
+  const distance = run.summaries.find(
+    (x) => x.summary === "total" && x.metric === "distance"
+  );
+
+  const calories = run.summaries.find(
+    (x) => x.summary === "total" && x.metric === "calories"
+  );
+
+  const pace = run.summaries.find(
+    (x) => x.summary === "mean" && x.metric === "pace"
+  );
+
+  const paceParts = pace ? decimalToMinsSecs(pace.value) : null;
+
+  const heartRate = run.summaries.find(
+    (x) => x.summary === "mean" && x.metric === "heart_rate"
+  );
+
+  return (
+    <tr className={styles.runRow}>
+      <td>{titleForRun(run)}</td>
+      <td>{distance && distance.value.toFixed(2)}</td>
+      <td>{calories && calories.value.toFixed(0)}</td>
+      {pace && (
+        <td>
+          {paceParts.minutes}:
+          {paceParts.seconds < 10 ? `0${paceParts.seconds}` : paceParts.seconds}{" "}
+        </td>
+      )}
+      <td>{heartRate && heartRate.value.toFixed(0)}</td>
+      <td>
+        <date>{formatDate(new Date(run.start_epoch_ms), "do MMM yyyy")}</date>
+      </td>
+    </tr>
+  );
+};
 
 const Stat = ({ value, description }) => (
   <div className="pb2 w-100">
@@ -179,4 +242,43 @@ const pathForRun = (run) => {
     console.log(`No lat/long for ${run.id}`);
     return [];
   }
+};
+
+const titleForRun = (run) => {
+  if (run.tags.name) {
+    return run.tags.name;
+  }
+
+  if (run.tags.audioGuideKey) {
+    return run.tags.audioGuideKey
+      .replace(/_/g, " ")
+      .replace("HS", "Headspace")
+      .replace("EOD", "End of the Day")
+      .replace("FTR", "Fuel the Run")
+      .replace(/\w\S*/g, capWord);
+  }
+
+  if (run.tags.location) {
+    return `${capWord(run.tags.location)} Run`;
+  }
+
+  return "Run";
+};
+
+const capWord = (word) => {
+  word = word.toLowerCase();
+
+  const ignores = ["a", "the", "of", "to", "with"];
+
+  if (ignores.includes(word)) {
+    return word;
+  }
+  return word.charAt(0).toUpperCase() + word.substr(1);
+};
+
+const decimalToMinsSecs = (value) => {
+  const minutes = Math.floor(value);
+  const rem = value - minutes;
+  const seconds = (60 * rem).toFixed(0);
+  return { minutes, seconds };
 };
