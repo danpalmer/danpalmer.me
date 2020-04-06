@@ -18,8 +18,7 @@ $dark: rgb(26, 26, 26);
 
 .runTable {
   width: 100%;
-  min-width: 600px;
-  overflow-x: scroll;
+  min-width: 700px;
 
   margin: 2rem 0 5rem 0;
 
@@ -44,11 +43,16 @@ $dark: rgb(26, 26, 26);
     }
   }
 
-  date {
-    color: $light;
-  }
-
   &:hover {
     background-color: lighten($dark, 3%);
   }
+}
+
+.tableContainer {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.runDate {
+  color: $light;
 }

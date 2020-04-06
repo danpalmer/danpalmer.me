@@ -133,23 +133,25 @@ const RunMap = ({ runs }) => {
 };
 
 const RunTable = ({ runs }) => (
-  <table className={styles.runTable} cellspacing="0" cellpadding="0">
-    <thead>
-      <tr>
-        <th></th>
-        <th>KM</th>
-        <th>KCAL</th>
-        <th>Pace</th>
-        <th>BPM</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      {runs.map((run) => (
-        <RunRow run={run} key={run.id} />
-      ))}
-    </tbody>
-  </table>
+  <div className={styles.tableContainer}>
+    <table className={styles.runTable} cellSpacing="0" cellPadding="0">
+      <thead>
+        <tr>
+          <th></th>
+          <th>KM</th>
+          <th>KCAL</th>
+          <th>Pace</th>
+          <th>BPM</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {runs.map((run) => (
+          <RunRow run={run} key={run.id} />
+        ))}
+      </tbody>
+    </table>
+  </div>
 );
 
 const RunRow = ({ run }) => {
@@ -183,8 +185,8 @@ const RunRow = ({ run }) => {
         </td>
       )}
       <td>{heartRate && heartRate.value.toFixed(0)}</td>
-      <td>
-        <date>{formatDate(new Date(run.start_epoch_ms), "do MMM yyyy")}</date>
+      <td className={styles.runDate}>
+        {formatDate(new Date(run.start_epoch_ms), "do MMM yyyy")}
       </td>
     </tr>
   );
