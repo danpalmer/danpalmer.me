@@ -17,15 +17,12 @@ jobs:
         with:
           node-version: 12.x
 
-      - name: Find yarn cache
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
       - name: Configure yarn cache
         uses: actions/cache@v1
         id: yarn-cache
         with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: yarn-${{ hashFiles('**/yarn.lock') }}
+          path: node_modules/
+          key: yarn-1-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             yarn-
 
