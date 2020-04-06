@@ -17,6 +17,7 @@ module.exports = {
         background_color: "#c8e1ff",
         theme_color: "#c8e1ff",
         display: "minimal-ui",
+        icon: "src/images/danpalmer.jpg",
       },
     },
     "gatsby-plugin-offline",
