@@ -38,11 +38,12 @@ jobs:
       - name: Test
         run: yarn run test
 
-      - name: Move build
-        run: mv public build
-      - name: Deploy
-        uses: danakim/gh-action-deploy-netlify@v1
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.0.11
         with:
-          AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          DEPLOY_PROD: "true"
+          publish-dir: ./public
+          production-branch: master
+          deploy-message: Deploy from GitHub Actions
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
