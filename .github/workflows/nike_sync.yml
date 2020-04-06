@@ -23,19 +23,22 @@ jobs:
         uses: actions/cache@v1
         id: pip-cache
         with:
-          path: ~/.cache/pip
-          key: pip-${{ hashFiles('**/requirements.txt') }}
+          path: venv
+          key: pip-1-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             pip-
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          python -m venv venv
+          source venv/bin/activate
           pip install -r requirements.txt
         if: steps.pip-cache.outputs.cache-hit != 'true'
 
       - name: Run sync script
         run: |
+          source venv/bin/activate
           python scripts/nike_sync.py ${{ secrets.NIKE_REFRESH_TOKEN }}
 
       - name: Push new runs
