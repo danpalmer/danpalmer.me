@@ -62,6 +62,13 @@ const Header = ({ siteTitle }) => (
               Projects
             </Link>
             <Link
+              to="/running"
+              activeClassName="active"
+              className="link dim f6 f5-l dib mr3 mr4-l"
+            >
+              Running
+            </Link>
+            <Link
               to="/cv"
               activeClassName="active"
               className="link dim f6 f5-l dib"
