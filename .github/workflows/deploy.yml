@@ -24,10 +24,11 @@ jobs:
         run: yarn run build
       - name: Test
         run: yarn run test
-      - uses: jsmrcaga/action-netlify-deploy@v1.0.1
+      - name: Move build
+        run: mv public build
+      - name: Deploy
+        uses: danachim/gh-action-deploy-netlify@v1
         with:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_DEPLOY_MESSAGE: "Prod deploy v${{ github.ref }}"
-          NETLIFY_DEPLOY_TO_PROD: true
-          build_directory: public
+          AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          DEPLOY_PROD: "true"
