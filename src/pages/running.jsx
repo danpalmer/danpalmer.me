@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from "react";
-import classNames from "classnames";
 import { format as formatDate } from "date-fns";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import ReactMapGL, { Source, Layer } from "react-map-gl";
+import { ViewportProvider, useDimensions } from "react-viewport-utils";
 
 import Layout from "../components/layout";
 
@@ -52,7 +52,7 @@ export default ({ data }) => {
             </section>
           </div>
           <div className="fl w-100 w-70-l">
-            <RunMap runs={runs} />
+            <RunMapWithViewport runs={runs} />
             <RunTable runs={runs} />
           </div>
         </div>
@@ -107,6 +107,20 @@ const RunMap = ({ runs }) => {
     zoom: 11.5,
   });
 
+  const [lastWidth, setLastWidth] = useState(0);
+
+  const dimensions = useDimensions({
+    deferUpdateUntilIdle: true,
+    disableScrollUpdates: true,
+  });
+
+  if (lastWidth !== dimensions.width) {
+    setTimeout(() => {
+      setViewport({ width: "100%", ...viewport });
+      setLastWidth(dimensions.width);
+    }, 0);
+  }
+
   return (
     <ReactMapGL
       {...viewport}
@@ -131,6 +145,12 @@ const RunMap = ({ runs }) => {
     </ReactMapGL>
   );
 };
+
+const RunMapWithViewport = (props) => (
+  <ViewportProvider>
+    <RunMap {...props} />
+  </ViewportProvider>
+);
 
 const RunTable = ({ runs }) => (
   <div className={styles.tableContainer}>
