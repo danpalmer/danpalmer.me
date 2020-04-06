@@ -6,6 +6,9 @@ on:
   push:
     branches:
       - master
+    paths:
+      - scripts/nike_sync.py
+      - requirements.txt
 
 jobs:
   sync:
