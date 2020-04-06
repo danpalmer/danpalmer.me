@@ -8,15 +8,30 @@ import argparse
 import httpx
 
 BASE_URL = "https://api.nike.com/sport/v3/me"
+TOKEN_REFRESH_URL = "https://unite.nike.com/tokenRefresh"
 OUTPUT_DIR = "data/activities"
+NIKE_CLIENT_ID = "HlHa2Cje3ctlaOqnxvgZXNaAs7T9nAuH"
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("nike_sync")
 
 
 class Nike:
-    def __init__(self, access_token):
-        self.client = httpx.Client(headers={"Authorization": f"Bearer {access_token}"})
+    def __init__(self, refresh_token):
+        self.client = httpx.Client()
+
+        response = self.client.post(
+            TOKEN_REFRESH_URL,
+            json={
+                "refresh_token": refresh_token,
+                "client_id": NIKE_CLIENT_ID,
+                "grant_type": "refresh_token",
+            },
+        )
+        response.raise_for_status()
+
+        access_token = response.json()["access_token"]
+        self.client.headers.update({"Authorization": f"Bearer {access_token}"})
 
     def get_activities_since_timestamp(self, timestamp):
         return self.request("activities/after_time", timestamp)
@@ -35,8 +50,8 @@ class Nike:
         return response.json()
 
 
-def run(access_token):
-    nike = Nike(access_token)
+def run(refresh_token):
+    nike = Nike(refresh_token)
     last_id = get_last_activity_id()
 
     logger.info(f"Running from ID {last_id}")
@@ -124,6 +139,6 @@ def sanitise_json(d):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("access_token", help="API access token for nike.com")
+    parser.add_argument("refresh_token", help="API access token for nike.com")
     options = parser.parse_args()
-    run(options.access_token)
+    run(options.refresh_token)
