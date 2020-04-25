@@ -33,7 +33,7 @@
     "gatsby-transformer-json": "^2.3.3",
     "gatsby-transformer-remark": "^2.7.3",
     "gatsby-transformer-sharp": "^2.4.6",
-    "gatsby-transformer-yaml": "^2.3.3",
+    "gatsby-transformer-yaml": "^2.3.4",
     "node-sass": "^4.13.1",
     "prettier": "^2.0.4",
     "prop-types": "^15.7.2",
