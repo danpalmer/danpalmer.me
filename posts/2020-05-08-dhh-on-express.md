@@ -32,7 +32,7 @@ Of course tweets aren't long enough to have a proper discussion about this, so
 let's break down in longer form why this code is so controversial and debate
 whether it should be how we're developing modern web apps.
 
-- - -
+---
 
 ### What's wrong with Express and Javascript
 
@@ -101,10 +101,10 @@ style of writing routing logic, database queries, access control, and more.
 def new
   @article = Article.new
 end
- 
+
 def create
   @article = Article.new(article_params)
- 
+
   if @article.save
     redirect_to @article
   else
@@ -137,7 +137,6 @@ operations to get higher throughput in applications. This is a complex change
 and so Django doesn't yet support this, despite many smaller Express-style
 libraries supporting it already.
 
-
 ### Why still use Rails today?
 
 While Rails (and Django) may look like a slightly dated ecosystem, and while
@@ -159,7 +158,7 @@ affected by the workflow you're developing. Rails is much higher level than
 Express, and as a result it's often possible to build and ship much quicker. Not
 everything is a CRUD application, but most web apps are at their core, or at
 least contain significant amounts of CRUD style code even if it's not their
-primary purpose. 
+primary purpose.
 
 Lastly, I mentioned before that Django in particular was inflexible and slow to
 adopt new technologies, but this is only partially true. One of the things that
@@ -174,7 +173,7 @@ rare in the Javascript ecosystem. This is one of the things that makes it so
 suitable for large codebases – it's possible to solve _most_ problems in it in
 some way, without starting from scratch.
 
-- - -
+---
 
 I hope this post sheds some light on the controversial opinions shared on
 Twitter. No one was wrong, but everyone brought their biases of what they're
@@ -188,5 +187,3 @@ others) make most simple things very quick to do and easy to understand, while
 preserving the power for the developer to extend and override, but are unlikely
 to be the first to get cutting edge features and may bring more than is needed
 for simple applications.
-
-
