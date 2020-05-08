@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 import { format as formatDate } from "date-fns";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby";
 import ReactMapGL, { Source, Layer } from "react-map-gl";
 import { ViewportProvider, useDimensions } from "react-viewport-utils";
