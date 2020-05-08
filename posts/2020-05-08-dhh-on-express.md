@@ -52,7 +52,7 @@ be a much more brittle and less coherent developer experience.
 
 ### Why this doesn't matter
 
-But I think DHH misses the point that this code sample is almost all the code
+But I think DHH misses the point – that this code sample is almost all the code
 for this application. Express is great for these sorts of "single file"
 applications. Separation of concerns is important to help developers keep the
 relevant parts of a system in their head, but if the whole system fits in their
@@ -71,22 +71,22 @@ possible that with Express you'll end up with a simpler system that works just
 as well. As Jaana Dogan says in her tweet above, you can build only what you
 need, and will end up with a more understandable and performant system.
 
+As we move to more use of "microservices", or focused API driven backends, more
+and more applications will be a good fit for this style.
+
 DHH is coming to the debate with a bias – he builds Basecamp, a large and
-complex web application that likely uses all of the above aspects and more. In
-fact Basecamp is complex enough that DHH created Rails specifically to handle
-this use case. I'm coming with a similar bias, I work on a Django codebase of
-about 250k lines of Python. I know that if we built it with Express it would be
-a mess, but because we have a solid, consistent foundation, that covers many
-common aspects of web development for us, our codebase is manageable and
-generally nice to work with.
+complex monolithic web application that likely uses all of the above aspects and
+more. In fact Basecamp is complex enough that DHH created Rails specifically to
+handle this use case. If Basecamp was built with Express it would likely be a
+mess, but because Rails provides solid, and importantly, _consistent_
+foundation, I'm sure it's much more manageable.
 
 So is the Express example a bad example? No. For a small and simple web app it's
-reasonable, and as we move to more use of "microservices" or at least API driven
-apps, more and more applications will be a good fit for this. Those apps of
-significant complexity will get much value out of a framework like Rails or
-Django, but simpler apps will likely benefit from the lower level design of
-Express or the buffet-style Javascript ecosystem where you can pick and choose
-which technologies you actually need.
+reasonable, and for focused APIs and microservices that only need a few aspects
+mentioned above it's ideal. Those apps of significant complexity will get plenty
+of value out of a framework like Rails or Django, but simpler apps will likely
+benefit from the lower level design of Express or the buffet-style Javascript
+ecosystem where you can pick and choose which technologies you actually need.
 
 ### Why the hate for Rails?
 
