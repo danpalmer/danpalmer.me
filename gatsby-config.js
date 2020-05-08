@@ -9,19 +9,6 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: "Personal site and blog of Dan Palmer",
-        short_name: "Dan Palmer",
-        start_url: "/",
-        background_color: "#c8e1ff",
-        theme_color: "#c8e1ff",
-        display: "minimal-ui",
-        icon: "src/images/danpalmer.jpg",
-      },
-    },
-    "gatsby-plugin-offline",
-    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
