@@ -28,7 +28,7 @@ This attracted a lot of commentary from others...
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Of course tweets aren't long enough to have a proper discussion about this, so
+Of course tweets aren't long enough to have a balanced discussion about this, so
 let's break down in longer form why this code is so controversial and debate
 whether it should be how we're developing modern web apps.
 
@@ -68,7 +68,8 @@ Express doesn't do many of these, at its core it pretty much only does the
 routing – everything else is some form of add-on. When you need all of those
 aspects that's a problem, but if you only need two or three, then it's quite
 possible that with Express you'll end up with a simpler system that works just
-as well.
+as well. As Jaana Dogan says in her tweet above, you can build only what you
+need, and will end up with a more understandable and performant system.
 
 DHH is coming to the debate with a bias – he builds Basecamp, a large and
 complex web application that likely uses all of the above aspects and more. In
