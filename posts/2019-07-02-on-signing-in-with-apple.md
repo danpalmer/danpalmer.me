@@ -1,5 +1,5 @@
 ---
-title: On Signing in with Apple
+title: Design Issues of Sign in with Apple
 date: 2019-07-05
 theme: sign-in-with-apple
 hidden: false
