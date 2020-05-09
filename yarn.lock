@@ -6399,10 +6399,10 @@ gatsby-remark-smartypants@^2.3.0:
     retext-smartypants "^3.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-vscode@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-vscode/-/gatsby-remark-vscode-2.0.3.tgz#aa37e1f3a76b14d058358a7e17268cfba18d3731"
-  integrity sha512-k5zp2t/UOtXeVU9g3Ij5MCoiv1FVoOPl4zwKKDIa77ASEPTbxpoSeS+vGSTpTdw0kMDzuwTn7JDQyv7cGu5BUQ==
+gatsby-remark-vscode@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-vscode/-/gatsby-remark-vscode-2.1.1.tgz#59234ccf17e3a11595c289a041195cd89592072d"
+  integrity sha512-tonJFIJufFE/bT4gT8mOVkIpnVYBe3wGzqC6NbIzxGiIV1l7EgJx7dOvLu9bzf4Dp8ZXJFx1oM5K7Ji65PNj1Q==
   dependencies:
     decompress "^4.2.0"
     json5 "^2.1.1"
@@ -8758,14 +8758,7 @@ json5@^1.0.1:
   dependencies:
     minimist "^1.2.0"
 
-json5@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/json5/-/json5-2.1.1.tgz#81b6cb04e9ba496f1c7005d07b4368a2638f90b6"
-  integrity sha512-l+3HXD0GEI3huGq1njuqtzYK8OYJyXMkOLtQ53pjWh89tvWS2h6l+1zMkYWqlb57+SiQodKZyvMEFb2X+KrFhQ==
-  dependencies:
-    minimist "^1.2.0"
-
-json5@^2.1.2:
+json5@^2.1.1, json5@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/json5/-/json5-2.1.2.tgz#43ef1f0af9835dd624751a6b7fa48874fb2d608e"
   integrity sha512-MoUOQ4WdiN3yxhm7NEVJSJrieAo5hNSLQ5sj05OTRHPL9HOBy8u4Bu88jsC1jvqAdN+E1bJmsUcZH+1HQxliqQ==
