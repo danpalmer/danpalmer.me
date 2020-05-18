@@ -92,3 +92,23 @@ a.post-colophon-link:visited {
 .gist table tr:last-child {
   border-bottom: 1px;
 }
+
+h3 .header-link {
+  margin-top: 2rem;
+}
+h5 .header-link {
+  margin-top: -0.14rem;
+}
+
+.markdown-content .grvsc-container {
+  @extend .bg-light-gray;
+
+  font-size: 0.875rem !important;
+  &::-webkit-scrollbar {
+    display:none;
+  }
+
+  .grvsc-line {
+    padding: 0 1rem;
+  }
+}

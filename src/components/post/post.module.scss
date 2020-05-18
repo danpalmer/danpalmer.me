@@ -11,7 +11,8 @@
   }
 
   h3 {
-    @extend .pt5;
+    @extend .mt4;
+    @extend .pt4;
   }
 
   table {
@@ -39,8 +40,9 @@
   }
 
   p > code {
+    // Light
     @extend .lh-copy;
-    @extend .bg-mid-gray;
+    @extend .bg-light-gray;
     @extend .br2;
     @extend .pv0;
     @extend .ph1;

@@ -80,7 +80,7 @@ $regular: $global-font-family;
   }
 
   .markdown-content p > code {
-    background-color: transparentize($text-color, 0.9) !important;
+    background-color: transparentize($text-color, 0.8) !important;
     color: $text-color !important;
   }
 
