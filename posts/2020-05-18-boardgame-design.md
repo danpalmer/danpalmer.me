@@ -6,12 +6,12 @@ theme: boardgames
 hidden: false
 ---
 
-Last year I bought a copy of [Scythe](scythe-aff) from publisher [Stonemaier
-Games](stonemaier), based in large part on the art. I was very happy with the
+Last year I bought a copy of [Scythe][scythe-aff] from publisher [Stonemaier
+Games][stonemaier], based in large part on the art. I was very happy with the
 art and enjoy playing the game, but what I found even more satisfying was the
 design of the iconography, the rulebook, and the use of physical tokens to
 re-inforce processes used throughout the game. This week I bought
-[Wingspan](wingspan-aff) from the same publisher, again based in large part on
+[Wingspan][wingspan-aff] from the same publisher, again based in large part on
 the artwork, and once again I'm finding the other aspects even more satisfying.
 
 While most of the enjoyment of playing a game comes from the core rules, and
@@ -266,9 +266,9 @@ their turns are physically represented and moved around the board. They are also
 less likely to forget to take an action because they are moving a token across
 it.
 
-I'm a big [fan of checklists](checklist) in running processes in the workplace,
+I'm a big [fan of checklists][checklist] in running processes in the workplace,
 but in board games the aim is to have fun. [Much has also been
-written](pointing) about how deliberate physical action helps reduce mistakes.
+written][pointing] about how deliberate physical action helps reduce mistakes.
 But why do we want a checklist, why do we need to reduce mistakes in board
 games?
 
@@ -295,8 +295,8 @@ products, or processes.
 
 - **Clear documentation**
   Documentation that has been _designed_ is far better than documentation that
-  has just been written. The [Django documentation](django) is a world-class
-  example from the web development world, and the [GOV.UK](govuk) website has
+  has just been written. The [Django documentation][django] is a world-class
+  example from the web development world, and the [GOV.UK][govuk] website has
   many examples of well structured, accessible documentation designed to be
   usable by almost anyone.
 
