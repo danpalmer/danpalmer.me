@@ -10,6 +10,12 @@
     @extend .pb2;
   }
 
+  h2 {
+    @extend .mt4;
+    @extend .pt4;
+    @extend .b;
+  }
+
   h3 {
     @extend .mt4;
     @extend .pt4;

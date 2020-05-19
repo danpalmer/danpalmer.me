@@ -153,3 +153,7 @@ $regular: $global-font-family;
 .theme-enron {
   @include theme(#9eebcf, #111111, $regular);
 }
+
+.theme-boardgames {
+  @include theme(#111111, #daedf0, $regular);
+}

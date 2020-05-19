@@ -93,6 +93,9 @@ a.post-colophon-link:visited {
   border-bottom: 1px;
 }
 
+h2 .header-link {
+  margin-top: 2rem;
+}
 h3 .header-link {
   margin-top: 2rem;
 }
@@ -105,10 +108,14 @@ h5 .header-link {
 
   font-size: 0.875rem !important;
   &::-webkit-scrollbar {
-    display:none;
+    display: none;
   }
 
   .grvsc-line {
     padding: 0 1rem;
   }
+}
+
+.markdown-content .gatsby-resp-image-wrapper {
+  margin-top: 1rem;
 }
