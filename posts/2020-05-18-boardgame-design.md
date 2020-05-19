@@ -123,7 +123,7 @@ represented by the icons above.
 
 ![Scythe currency icons](images/board_games/scythe_currencies.png)
 
-Scythe also has a number of "currencies" – military power, money,
+Scythe also has a number of "currencies" – military power, coins,
 popularity, and combat cards (the context these are being shown in, and the "2"
 is not important here).
 
@@ -140,8 +140,8 @@ relevance...
 
 Not only are the icons labelling an area of the board, but in many cases they
 are used next to other icons to show relationships between actions or resources.
-In this case we can see that having a _popularity_ of 0-3 will get us 3 _money_
-per _star_, 2 _money_ per _territory_, etc.
+In this case we can see that having a _popularity_ of 0-3 will get us 3 _coins_
+per _star_, 2 _coins_ per _territory_, etc.
 
 ![Wingspan board iconography](images/board_games/wingspan_board_iconography.png)
 
@@ -177,7 +177,7 @@ when performing this action, the player will...
 
 - Pay 3 metal
 - Get a mech (another icon not described above)
-- Get 2 money
+- Get 2 coins
 - Must deploy that mech where the player has a worker (another new icon)
 
 ![Scythe turn action cost benefit](images/board_games/scythe_turn_action.png)
@@ -219,7 +219,7 @@ figure out those details.
 
 ![Scythe benefits covered up by tokens](images/board_games/scythe_action_1.png)
 
-In this example, the player must pay 1 money for this action and can receive
+In this example, the player must pay 1 coin for this action and can receive
 either 2 power or 1 combat card. If they choose to upgrade this action though,
 they will pick up one of the tokens revealing a further 1 power or combat card.
 
