@@ -84,4 +84,4 @@ to their processes.
 
 [The Checklist Manifesto][checklist-manifesto]
 
-[checklist-manifesto]: https://www.amazon.co.uk/gp/product/1846683149/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=danpalmer07-21&creative=6738&linkCode=as2&creativeASIN=1846683149&linkId=6f8484d6289054dbc0ef13dc791f641d
+[checklist-manifesto]: https://amzn.to/2zScLZf
