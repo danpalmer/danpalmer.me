@@ -156,4 +156,12 @@ $regular: $global-font-family;
 
 .theme-boardgames {
   @include theme(#111111, #daedf0, $regular);
+  background: linear-gradient(
+    240deg,
+    rgba(108, 149, 199, 1) 0%,
+    rgba(218, 237, 240, 1) 26%,
+    rgba(212, 235, 237, 1) 39%,
+    rgba(187, 225, 224, 1) 63%,
+    rgba(242, 238, 225, 1) 100%
+  );
 }
