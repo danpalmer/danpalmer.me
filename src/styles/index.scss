@@ -77,6 +77,11 @@ ol {
 
   li {
     @extend .lh-copy;
+
+    a {
+      @extend .link;
+      @extend .underline-hover;
+    }
   }
 }
 
