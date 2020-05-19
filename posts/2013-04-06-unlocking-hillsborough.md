@@ -3,6 +3,7 @@ date: "2013-04-06"
 layout: post
 redirect_from:
   - /2013/04/unlocking-hillsborough
+  - /blog/articles/2013-04-06-unlocking-hillsborough.html
 slug: unlocking-hillsborough
 title: Unlocking Hillsborough
 featured: true
