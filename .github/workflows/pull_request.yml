@@ -34,15 +34,6 @@ jobs:
       - name: Lint
         run: yarn run check
 
-      - name: Configure build cache
-        uses: actions/cache@v1
-        id: build-cache
-        with:
-          path: .cache/
-          key: build-1-${{ hashFiles('gatsby-*.js') }}
-          restore-keys: |
-            build-
-
       - name: Build
         run: yarn run build
 
