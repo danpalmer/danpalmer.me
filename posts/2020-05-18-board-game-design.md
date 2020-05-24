@@ -1,5 +1,5 @@
 ---
-title: Board Game Design
+title: Learning from Board Game Design
 date: 2020-05-18
 featured: true
 theme: boardgames
@@ -14,12 +14,12 @@ re-inforce processes used throughout the game. This week I bought
 [Wingspan][wingspan-aff] from the same publisher, again based in large part on
 the artwork, and once again I'm finding the other aspects even more satisfying.
 
-While most of the enjoyment of playing a game comes from the core rules, and
-much of the rest comes from the design, it's these details that tie it all
-together for me, making what would otherwise be a collection of rules, into a
-coherent system that is intuitive and fluid to play. I've not played _loads_ of
-board games, and I have seen some of these aspects in others, but for games
-beyond the complexity of, say, Carcassonne, I have so far found Scythe and
+While most of the enjoyment of playing a game comes from the core rules and much
+of the rest comes from the visual design, it's these details that tie it all
+together for me, making what would otherwise be a collection of rules into a
+coherent system that is intuitive and fluid to play. I've not played a lot of
+board games and I have seen some of these aspects in others, but for games
+beyond the complexity of Carcassonne for example, I have so far found Scythe and
 Wingspan to feature some of the best design.
 
 ## Simple rulebooks
