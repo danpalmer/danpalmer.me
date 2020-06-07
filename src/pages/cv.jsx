@@ -45,24 +45,24 @@ export default () => {
             <div>
               <h5 className="f6 gray">
                 <span className="black">MWR InfoSecurity</span> &ndash; Security
-                Research and Development Intern, Summer 2013
+                Research and Development, Summer 2013
               </h5>
               <p>
-                At MWR I was given the task of taking a new security product
-                from idea to a fully featured prototype. At the end of my
-                internship I onboarded another developer to the codebase so that
-                development could continue. Eventually the project was spun-off
-                into a new company – Countercept.
+                At MWR I took a new security product from idea to fully featured
+                prototype in order to explore a new potential business
+                opportunity for the company. The prototype was successful and
+                development continued, being spun out into a new company –
+                Countercept, who grew to a ~100 people before being acquired
+                along with MWR by F-Secure in 2014.
               </p>
               <p>
-                During my time at MWR I also participated in a penetration test
-                against a client’s iOS application, finding vulnerabilities and
-                verifying the client’s fixes in a code review, and I assisted on
-                an incident response job where I analysed a piece of malware to
-                reverse engineer the cryptography being used by it. I also
-                learnt about some of the current threats to businesses,
-                particularly Advanced Persistent Threats, and different forms of
-                attack that have been identified.
+                During my time at MWR I participated in a penetration test
+                against a client’s iOS application, finding a critical
+                vulnerability and verifying the client’s fixes in a code review.
+                I also assisted in incident response for an attack by a
+                suspected "Advanced Persistent Threat" actor, analysing a piece
+                of malware to reverse engineer the cryptography being used by
+                it.
               </p>
             </div>
             <div>
@@ -164,7 +164,7 @@ export default () => {
                 >
                   Rewired State: Parliament
                 </a>
-                , Barcamp Brighton and Barcamp Southampton. I have won multiple
+                , Barcamp Brighton, Southampton, and London. I have won multiple
                 hackathons, ofter with some help from friends.
               </p>
               <p>
@@ -245,8 +245,6 @@ export default () => {
               >
                 cv@danpalmer.me
               </a>
-              . Please note that I do not answer my phone during working hours
-              unless necessary for work.
             </p>
           </section>
         </div>
