@@ -8,7 +8,7 @@ const PostItem = ({ post }) => {
     <div className="pb5">
       <Link to={post.fields.slug} className="link black no-underline">
         <h3 className="mb1">
-          {post.frontmatter.title}
+          {post.frontmatter.list_title || post.frontmatter.title}
           <br />
         </h3>
         <small className="f6 gray">{post.frontmatter.date}</small>
@@ -44,6 +44,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            list_title
             date(formatString: "DD MMMM, YYYY")
           }
           excerpt(pruneLength: 300)
