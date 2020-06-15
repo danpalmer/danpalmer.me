@@ -50,6 +50,16 @@ export default ({ data }) => {
                 description={"kcal"}
               />
             </section>
+            <section className="mt4">
+              <Stat
+                value={`${calculateRunStreak(data.runs)} day`}
+                description={"streak"}
+                className="mb0 pb0"
+              />
+              <p className="mt0">
+                <small>Consecutive days run allowing for 1 rest day.</small>
+              </p>
+            </section>
           </div>
           <div className="fl w-100 w-70-l">
             <RunMapWithViewport runs={runs} />
@@ -212,8 +222,8 @@ const RunRow = ({ run }) => {
   );
 };
 
-const Stat = ({ value, description }) => (
-  <div className="pb2 w-100">
+const Stat = ({ value, description, className }) => (
+  <div className={`${className} pb2 w-100`}>
     <span className="f1 fw9 i">{intComma(value)} </span>
     <span className="f3 fw6 i">{description}</span>
   </div>
@@ -261,7 +271,6 @@ const pathForRun = (run) => {
       .values.map((x) => x.value);
     return longs.map((x, idx) => [x, lats[idx]]);
   } catch (err) {
-    console.log(`No lat/long for ${run.id}`);
     return [];
   }
 };
@@ -303,4 +312,40 @@ const decimalToMinsSecs = (value) => {
   const rem = value - minutes;
   const seconds = (60 * rem).toFixed(0);
   return { minutes, seconds };
+};
+
+const calculateRunStreak = (runs) => {
+  let count = 1;
+  let hasHadRestDay = false;
+  let skippingRestDay = false;
+  let lastDay = roundDate(new Date(runs.nodes[0].start_epoch_ms));
+
+  const oneDay = 86400000;
+  const twoDays = 86400000 * 2;
+
+  for (let i = 1; i < runs.nodes.length; i++) {
+    const day = roundDate(new Date(runs.nodes[i].start_epoch_ms));
+    const diff = lastDay - day;
+    if (diff === oneDay || skippingRestDay) {
+      lastDay = day;
+      count += 1;
+      skippingRestDay = false;
+    } else if (!hasHadRestDay && diff === twoDays) {
+      hasHadRestDay = true;
+      skippingRestDay = true;
+      lastDay = day;
+      count += 1;
+    } else {
+      return count;
+    }
+  }
+  return count;
+};
+
+const roundDate = (date) => {
+  date.setHours(0);
+  date.setMinutes(0);
+  date.setSeconds(0);
+  date.setMilliseconds(0);
+  return date;
 };
