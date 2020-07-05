@@ -221,6 +221,7 @@ export default () => {
                 <li>Some experience with Haskell and Swift for personal projects</li>
                 <li>Used Java, C and Io in university projects</li>
                 <li>Knowledge of, and interest in, computer security issues</li>
+                <li>Found account takeover vulnerability in GitHub and information disclosure vulnerability in Django.</li>
                 <li>
                   Basic knowledge, and interest in penetration testing and
                   malware analysis
@@ -251,7 +252,7 @@ export default () => {
           <section className="pt3">
             <h2 className="f3-m  mb1 f2-l">Contact</h2>
             <p>
-              You can contact me a{" "}
+              You can contact me at{" "}
               <a
                 className="link gray underline-hover"
                 href="mailto:cv@danpalmer.me"
