@@ -15,49 +15,63 @@ export default () => {
                 June 2014 - Present
               </h5>
               <p>
-                At Thread I am trusted to deliver high quality code, and to take full ownership of
-                the end-to-end process of delivering functionality to address business needs. During
-                my time at Thread my role and responsibilities have grown with the company and team,
-                and given me exposure to problems in many areas. Broadly my job has involved: 
+                At Thread I am trusted to deliver high quality code, and to take
+                full ownership of the end-to-end process of delivering
+                functionality to address business needs. During my time at
+                Thread my role and responsibilities have grown with the company
+                and team, and given me exposure to problems in many areas.
+                Broadly my job has involved:
               </p>
               <ul>
                 <li>
-                  <strong>Iterating the product to achieve business goals.</strong><br/>
-                  Improving core features, enabling scalable A/B testing, and iterating the product
-                  towards goals. Aiming for CAC/LTV targets and defining and tracking
-                  new metrics for user experience where necessary.
+                  <strong>
+                    Iterating the product to achieve business goals.
+                  </strong>
+                  <br />
+                  Improving core features, enabling scalable A/B testing, and
+                  iterating the product towards goals. Aiming for CAC/LTV
+                  targets and defining and tracking new metrics for user
+                  experience where necessary.
                 </li>
                 <li>
-                  <strong>Architecting and implementing new technical solutions.</strong><br/>
-                  Choosing the technology and building initial implementation of Thread's API
-                  that now powers web/mobile, onboarding new engineers onto API development.
-                  Re-architecting our payment systems to support Strong Customer Authentication.
-                  Leading integrations for strategic business partnerships. Prototyping and
-                  implementation of new services to replace legacy components.
+                  <strong>
+                    Architecting and implementing new technical solutions.
+                  </strong>
+                  <br />
+                  Choosing the technology and building initial implementation of
+                  Thread's API that now powers web/mobile, onboarding new
+                  engineers onto API development. Re-architecting our payment
+                  systems to support Strong Customer Authentication. Leading
+                  integrations for strategic business partnerships. Prototyping
+                  and implementation of new services to replace legacy
+                  components.
                 </li>
-                <li><br/>
-                  <strong>Improving Thread's approach to engineering.</strong><br />
-                  Implementing an incident response process, with appropriate tooling to support
-                  responding engineers. Pushing forwards approach to code review and tooling for
-                  testing/linting, helping to define and raise standards across the team. Hiring
-                  new engineers and iterating our hiring process to find more signal and identify
-                  and reduce biases.
+                <li>
+                  <br />
+                  <strong>Improving Thread's approach to engineering.</strong>
+                  <br />
+                  Implementing an incident response process, with appropriate
+                  tooling to support responding engineers. Pushing forwards
+                  approach to code review and tooling for testing/linting,
+                  helping to define and raise standards across the team. Hiring
+                  new engineers and iterating our hiring process to find more
+                  signal and identify and reduce biases.
                 </li>
               </ul>
             </div>
             <div>
               <h5 className="f6 gray">
-                <span className="black">Coefficient</span> &ndash; Contract Software Engineer,
-                May 2020 – Present (Part Time)
+                <span className="black">Coefficient</span> &ndash; Contract
+                Software Engineer, May 2020 – Present (Part Time)
               </h5>
               <p>
-                At Coefficient I support data scientists and client development teams
-                with code review and turning prototypes into production-ready code to support
-                core business operations.
+                At Coefficient I support data scientists and client development
+                teams with code review and turning prototypes into
+                production-ready code to support core business operations.
               </p>
               <p>
-                I'm also working with Coefficient to build out in-house products and tools
-                to support business growth into new markets.  
+                I'm also working with Coefficient to build out in-house products
+                and tools to support business growth into new markets.
               </p>
             </div>
             <div>
@@ -218,10 +232,15 @@ export default () => {
                   Previously worked on Objective-C, C# .NET MVC and Node.js
                   codebases on professional projects
                 </li>
-                <li>Some experience with Haskell and Swift for personal projects</li>
+                <li>
+                  Some experience with Haskell and Swift for personal projects
+                </li>
                 <li>Used Java, C and Io in university projects</li>
                 <li>Knowledge of, and interest in, computer security issues</li>
-                <li>Found account takeover vulnerability in GitHub and information disclosure vulnerability in Django.</li>
+                <li>
+                  Found account takeover vulnerability in GitHub and information
+                  disclosure vulnerability in Django.
+                </li>
                 <li>
                   Basic knowledge, and interest in penetration testing and
                   malware analysis
