@@ -15,31 +15,49 @@ export default () => {
                 June 2014 - Present
               </h5>
               <p>
-                As part of a product-focused engineering team at Thread, much of
-                my role involves projects designed to address key business
-                metrics such as margin, conversion or revenue growth, although a
-                core part of my job is to help create a great engineering
-                culture in which to work.
+                At Thread I am trusted to deliver high quality code, and to take full ownership of
+                the end-to-end process of delivering functionality to address business needs. During
+                my time at Thread my role and responsibilities have grown with the company and team,
+                and given me exposure to problems in many areas. Broadly my job has involved: 
+              </p>
+              <ul>
+                <li>
+                  <strong>Iterating the product to achieve business goals.</strong><br/>
+                  Improving core features, enabling scalable A/B testing, and iterating the product
+                  towards goals. Aiming for CAC/LTV targets and defining and tracking
+                  new metrics for user experience where necessary.
+                </li>
+                <li>
+                  <strong>Architecting and implementing new technical solutions.</strong><br/>
+                  Choosing the technology and building initial implementation of Thread's API
+                  that now powers web/mobile, onboarding new engineers onto API development.
+                  Re-architecting our payment systems to support Strong Customer Authentication.
+                  Leading integrations for strategic business partnerships. Prototyping and
+                  implementation of new services to replace legacy components.
+                </li>
+                <li><br/>
+                  <strong>Improving Thread's approach to engineering.</strong><br />
+                  Implementing an incident response process, with appropriate tooling to support
+                  responding engineers. Pushing forwards approach to code review and tooling for
+                  testing/linting, helping to define and raise standards across the team. Hiring
+                  new engineers and iterating our hiring process to find more signal and identify
+                  and reduce biases.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 className="f6 gray">
+                <span className="black">Coefficient</span> &ndash; Contract Software Engineer,
+                May 2020 – Present (Part Time)
+              </h5>
+              <p>
+                At Coefficient I support data scientists and client development teams
+                with code review and turning prototypes into production-ready code to support
+                core business operations.
               </p>
               <p>
-                I’m frequently involved in the rapid development of new product
-                features designed to address user feedback, and work closely
-                with designers, stylists, copy-writers, and marketers to achieve
-                this. I also work on pure engineering projects, such as our
-                build processes, automation, and continuous delivery to help the
-                team work faster and more effectively. I take part in code
-                review on a regular basis, pair programming where appropriate,
-                and participate in hiring for new engineers.
-              </p>
-              <p>
-                While at Thread I have worked on all parts of our codebase,
-                building features and solving problems for different teams
-                across growth, customer acquisition, retention, core product
-                value, user experience, styling, inventory, commercial, finance,
-                warehouse operations, logistics, shipping, APIs, client apps,
-                internationalisation, automation, deployment, databases,
-                continuous integration and delivery, monitoring, alerting,
-                documenting, training, mentoring and more.
+                I'm also working with Coefficient to build out in-house products and tools
+                to support business growth into new markets.  
               </p>
             </div>
             <div>
@@ -114,11 +132,6 @@ export default () => {
                     <li>Winner of 3rd Year Netcraft Prize</li>
                   </ul>
                 </li>
-                <li>
-                  <strong>
-                    A-Levels: Maths A, Physics A, Computing A*, Economics (AS) A
-                  </strong>
-                </li>
               </ul>
             </div>
           </section>
@@ -165,7 +178,7 @@ export default () => {
                   Rewired State: Parliament
                 </a>
                 , Barcamp Brighton, Southampton, and London. I have won multiple
-                hackathons, ofter with some help from friends.
+                hackathons, ofteno with some help from friends.
               </p>
               <p>
                 I have also presented at PyConUK and the London Django Meetup
@@ -205,7 +218,7 @@ export default () => {
                   Previously worked on Objective-C, C# .NET MVC and Node.js
                   codebases on professional projects
                 </li>
-                <li>Some experience with Haskell for personal projects</li>
+                <li>Some experience with Haskell and Swift for personal projects</li>
                 <li>Used Java, C and Io in university projects</li>
                 <li>Knowledge of, and interest in, computer security issues</li>
                 <li>
