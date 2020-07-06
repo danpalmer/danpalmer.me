@@ -47,7 +47,6 @@ export default () => {
                   components.
                 </li>
                 <li>
-                  <br />
                   <strong>Improving Thread's approach to engineering.</strong>
                   <br />
                   Implementing an incident response process, with appropriate
