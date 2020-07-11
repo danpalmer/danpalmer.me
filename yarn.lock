@@ -6435,10 +6435,10 @@ gatsby-page-utils@^0.2.15:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-feed@^2.5.10:
-  version "2.5.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.5.10.tgz#2c08eb4e29139ce7230c18cdca65d7bbb282118d"
-  integrity sha512-mowkzuGDqETYgi6IsKaMVIlzm1fkUfuLbMPIS1mpTdgCCtwXQ82SMQePoFwPQ/eHbsOwl8++tENhP3OkMOqYig==
+gatsby-plugin-feed@^2.5.11:
+  version "2.5.11"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.5.11.tgz#64b6ec5a291df23bece4471a82186437b5a20fc6"
+  integrity sha512-Mnyc3sAWWCMXEO9YG76wsFxuAMQb1x4Bi3xC7/T+IlwTKHL86nRG/H+WF61BtEkw9YTX9TEHjegdoewu9OKM3A==
   dependencies:
     "@babel/runtime" "^7.10.3"
     "@hapi/joi" "^15.1.1"
