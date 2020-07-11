@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Dan Palmer <dan@danpalmer.me>",
   "dependencies": {
-    "@types/react": "^16.9.36",
+    "@types/react": "^16.9.41",
     "classnames": "^2.2.6",
     "date-fns": "^2.14.0",
     "dotenv": "^8.2.0",
