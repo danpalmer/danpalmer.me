@@ -41,7 +41,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
-    "react-map-gl": "^5.2.7",
+    "react-map-gl": "^5.2.8",
     "react-viewport-utils": "^1.12.1",
     "sass-mq": "^5.0.1",
     "styled-components": "^4.4.1",
