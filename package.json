@@ -32,7 +32,7 @@
     "gatsby-remark-widows": "^1.0.0",
     "gatsby-source-filesystem": "^2.3.27",
     "gatsby-transformer-json": "^2.4.11",
-    "gatsby-transformer-remark": "^2.8.32",
+    "gatsby-transformer-remark": "^2.8.34",
     "gatsby-transformer-sharp": "^2.5.14",
     "gatsby-transformer-yaml": "^2.4.10",
     "node-sass": "^4.14.1",
