@@ -6766,10 +6766,10 @@ gatsby-remark-smartypants@^2.3.13:
     retext-smartypants "^3.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-vscode@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-vscode/-/gatsby-remark-vscode-3.1.0.tgz#f513f060d0b9e1f47f6105c9da1fe3cd33f5aa8e"
-  integrity sha512-2NnPStgN/ARgFXoIl5fQXFiSpAvTIc6Y9oMc5BckQcxHaCEBg1NJRFx1DGcM73UfQBhBfCib9yiiLajnNxGtUg==
+gatsby-remark-vscode@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-vscode/-/gatsby-remark-vscode-3.2.0.tgz#7e16b71c7a3c7b711b64cb541250d8175c98ed77"
+  integrity sha512-KsI47oc5SfjZkcyNo+P6IZx3ouMWpKGuPXEDpnG70R9QOmwcrSGUJAmI37RfGP2RSTMnla+28sxzWOe1vXnL9g==
   dependencies:
     decompress "^4.2.0"
     json5 "^2.1.1"
