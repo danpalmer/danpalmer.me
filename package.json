@@ -19,7 +19,7 @@
     "gatsby-plugin-robots-txt": "^1.5.3",
     "gatsby-plugin-sass": "^2.5.1",
     "gatsby-plugin-sharp": "^2.8.0",
-    "gatsby-plugin-sitemap": "^2.6.0",
+    "gatsby-plugin-sitemap": "^2.10.0",
     "gatsby-redirect-from": "^0.2.4",
     "gatsby-remark-autolink-headers": "^2.5.0",
     "gatsby-remark-classes": "^1.0.0",
