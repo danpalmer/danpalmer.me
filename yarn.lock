@@ -1032,10 +1032,10 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
-  version "7.12.1"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.1.tgz#b4116a6b6711d010b2dad3b7b6e43bf1b9954740"
-  integrity sha512-J5AIf3vPj3UwXaAzb5j1xM4WAQDX3EMgemF8rjCP3SoW09LfRKAXQKt6CoVYl230P6iWdRcBbnLDDdnqWxZSCA==
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.4", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+  version "7.12.18"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.18.tgz#af137bd7e7d9705a412b3caaf991fe6aaa97831b"
+  integrity sha512-BogPQ7ciE6SYAUPtlm9tWbgI9+2AgqSam6QivMgXgAT+fKbgppaj4ZX15MHeLC1PVF5sNk70huBu20XxWOs8Cg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -6826,12 +6826,12 @@ gatsby-telemetry@^1.4.1:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-transformer-json@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-2.5.0.tgz#501015009cdc153d031988fed356fc2279fbb0c4"
-  integrity sha512-nnXS5/rRuuFDdFfkqS0bTqhf5EMD7WVEO0wy+Y485OfvqOHptCAuqfTyOU9paqq08rN5zLlvy7T/WZL4orRTsA==
+gatsby-transformer-json@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-2.11.0.tgz#a97603c76db256b890eb1e20922aa4d436b8357e"
+  integrity sha512-3619clIflEMl4OSo/Y9/6Uz+JrpSKKE9WI6i+ciCC7l7ER0lbsPNUBGxf1lXH1xgs5881+QiL8vNeiiwTYetIw==
   dependencies:
-    "@babel/runtime" "^7.11.2"
+    "@babel/runtime" "^7.12.5"
     bluebird "^3.7.2"
 
 gatsby-transformer-remark@^2.10.0:
