@@ -42,7 +42,7 @@ jobs:
         run: yarn run test
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.0.11
+        uses: nwtgck/actions-netlify@v1
         with:
           publish-dir: ./public
           production-branch: master
