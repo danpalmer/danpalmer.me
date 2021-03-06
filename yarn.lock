@@ -12390,10 +12390,10 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-map-gl@^6.1.8:
-  version "6.1.8"
-  resolved "https://registry.yarnpkg.com/react-map-gl/-/react-map-gl-6.1.8.tgz#063cd3ae63557d6fc2f727ef9ce00993f6d4f154"
-  integrity sha512-Q1rpZOktKBI3WYAUuw/jRfH/3uQ8Zv9G2otIwDNgA6dLVUBaPM8x2q0wHUE/fGHINRQWsYDiQVoO+R4Ovet3kg==
+react-map-gl@^6.1.10:
+  version "6.1.10"
+  resolved "https://registry.yarnpkg.com/react-map-gl/-/react-map-gl-6.1.10.tgz#8616562d1439f5718c02e5a69379d8f200f7a099"
+  integrity sha512-TZ0GSMSY3fK6bh5wTnoUHdJRyhJLmr2flZBonTR+7Br5Q/iAtOSnr5PMH8G/IE9KZ8AmwpyzdujvQXTI3ZycUA==
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@types/geojson" "^7946.0.7"
