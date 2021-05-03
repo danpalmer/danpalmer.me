@@ -336,16 +336,16 @@ products, processes, and more.
   workplace, or figuring out our friends' strategies.
 
 [^1]:
-  Edward Tufte, author of [_The Visual Display of Quantitative
-  Information_][visual-aff], described
-  [sparklines](https://en.wikipedia.org/wiki/Sparkline) – compact data
-  representation, often presented in-line in text or very close to it rather
-  than as separate figures to be referenced.
+    Edward Tufte, author of [_The Visual Display of Quantitative
+    Information_][visual-aff], described
+    [sparklines](https://en.wikipedia.org/wiki/Sparkline) – compact data
+    representation, often presented in-line in text or very close to it rather
+    than as separate figures to be referenced.
 
 [^2]:
-  Engine building games are a type of board game. They typically feature a
-  feedback loop that causes action to accelerate throughout gameplay. Players
-  earn resources or abilities, those let them earn more resources even faster.
+    Engine building games are a type of board game. They typically feature a
+    feedback loop that causes action to accelerate throughout gameplay. Players
+    earn resources or abilities, those let them earn more resources even faster.
 
 [pointing]: https://www.atlasobscura.com/articles/pointing-and-calling-japan-trains
 [checklist]: /2019-09-22-checklist-manifesto/

@@ -175,29 +175,29 @@ the design choices in a system may not align with what we need, there may be
 those for whom it does.
 
 [^1]:
-  At Thread we use kustomize, kapp, kbld, sops, Cloud SQL, Datadog,
-  cert-manager, and more. Each is good, but in aggregate it was a lot of work
-  to set up.
+    At Thread we use kustomize, kapp, kbld, sops, Cloud SQL, Datadog,
+    cert-manager, and more. Each is good, but in aggregate it was a lot of work
+    to set up.
 
 [^2]:
-  A fairly typical setup might be Ubuntu LTS, with systemd to manage
-  services, and a tool such as Ansible to provision servers. This sort of
-  setup is likely to be stable for years at a time, and while building such a
-  system isn't easy, information and guidance on this sort of server
-  administration is plentiful.
+    A fairly typical setup might be Ubuntu LTS, with systemd to manage
+    services, and a tool such as Ansible to provision servers. This sort of
+    setup is likely to be stable for years at a time, and while building such a
+    system isn't easy, information and guidance on this sort of server
+    administration is plentiful.
 
 [^3]:
-  It doesn't really reduce complexity, it just offloads it to Kubernetes'
-  internals. However we have APIs to hide complexity like this. Boundaries can
-  reduce accidental complexity on all sides, and can provide a nice interface
-  for testing. Ultimately Kubernetes is likely to have a better implementation
-  of rolling deployments, for example, than most home-grown implementations
-  given its extensive review, testing, and well defined semantics.
+    It doesn't really reduce complexity, it just offloads it to Kubernetes'
+    internals. However we have APIs to hide complexity like this. Boundaries can
+    reduce accidental complexity on all sides, and can provide a nice interface
+    for testing. Ultimately Kubernetes is likely to have a better implementation
+    of rolling deployments, for example, than most home-grown implementations
+    given its extensive review, testing, and well defined semantics.
 
 [^4]:
-  We have a node pool of pre-emptible instances for batch operations in our
-  Kubernetes cluster on Google Cloud, along side our regular node pool that
-  runs on regular instances.
+    We have a node pool of pre-emptible instances for batch operations in our
+    Kubernetes cluster on Google Cloud, along side our regular node pool that
+    runs on regular instances.
 
 [pid]: https://en.wikipedia.org/wiki/PID_controller
 [bin-pack]: https://en.wikipedia.org/wiki/Bin_packing_problem

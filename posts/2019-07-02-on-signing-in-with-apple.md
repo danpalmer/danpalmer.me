@@ -563,74 +563,74 @@ for those users, I am disappointed in all of the possible resolutions
 available within Apple's policies.
 
 [^1]:
-  Since this distinction may be nuanced, it's worth noting that this is not
-  just the number of users completing sign-up, but more measured as the value
-  to the business in them becoming customers. While I can't remember if this
-  distinction was relevant in this particular test, one thing we have seen in
-  changes to the registration process is that they can reduce the number of
-  sign-ups, but increase the number of customers.
+    Since this distinction may be nuanced, it's worth noting that this is not
+    just the number of users completing sign-up, but more measured as the value
+    to the business in them becoming customers. While I can't remember if this
+    distinction was relevant in this particular test, one thing we have seen in
+    changes to the registration process is that they can reduce the number of
+    sign-ups, but increase the number of customers.
 
 [^2]:
-  There are three main points at which Facebook receive information from a
-  social sign-in: at sign-up, at the point the app/site/service registers an
-  account conversion with Facebook, and at re-authentication time when the
-  user signs in again. It's very likely that the first two have already
-  happened by this point, and they contain the bulk of the interesting data –
-  Facebook knows that you use the app, they know all the data about you that
-  the app chose to share when marking you as "converted", they likely know
-  where you came from to install the app or sign up for an account (i.e. the
-  marketing channel).
+    There are three main points at which Facebook receive information from a
+    social sign-in: at sign-up, at the point the app/site/service registers an
+    account conversion with Facebook, and at re-authentication time when the
+    user signs in again. It's very likely that the first two have already
+    happened by this point, and they contain the bulk of the interesting data –
+    Facebook knows that you use the app, they know all the data about you that
+    the app chose to share when marking you as "converted", they likely know
+    where you came from to install the app or sign up for an account (i.e. the
+    marketing channel).
 
 [^3]:
-  Thread is lucky that we have a website where we can put this flow – many
-  apps don't and would have to have the flow in the app, something I have very
-  little hope of Apple allowing, as this would mean that a **Sign in with
-  Facebook** button would still exist in the app, without the requisite **Sign
-  in with Apple** button.
+    Thread is lucky that we have a website where we can put this flow – many
+    apps don't and would have to have the flow in the app, something I have very
+    little hope of Apple allowing, as this would mean that a **Sign in with
+    Facebook** button would still exist in the app, without the requisite **Sign
+    in with Apple** button.
 
 [^4]:
-  If you've paid off a £100 balance three times before, they may well let you
-  do the same for £500. If you paid late (with a fee) on a £100 balance, they
-  may not let you take credit again (these numbers are an example and may not
-  be entirely accurate, but are representative of how this may work).
+    If you've paid off a £100 balance three times before, they may well let you
+    do the same for £500. If you paid late (with a fee) on a £100 balance, they
+    may not let you take credit again (these numbers are an example and may not
+    be entirely accurate, but are representative of how this may work).
 
 [^5]:
-  As these addresses start to become more pervasive, the quality of the hidden
-  "knowledge graph" of user data will begin to deteriorate. I wonder whether
-  Apple's SSO has the power alone to cause this enough to materially impact
-  the industry. I suspect it may be a little like herd immunity, in that total
-  coverage may not be needed to sufficiently deteriorate the data quality, to
-  make it nearly worthless.
+    As these addresses start to become more pervasive, the quality of the hidden
+    "knowledge graph" of user data will begin to deteriorate. I wonder whether
+    Apple's SSO has the power alone to cause this enough to materially impact
+    the industry. I suspect it may be a little like herd immunity, in that total
+    coverage may not be needed to sufficiently deteriorate the data quality, to
+    make it nearly worthless.
 
 [^6]:
-  It I'm not entirely familiar with the terms of service of our payment
-  provider, so potentially they may not be as innocent as I make out, however
-  I suspect they probably do not forward this on as selling customer data does
-  not appear to be in their business model, could very well breach FCA
-  regulations, and would likely violate GDPR.
+    I'm not entirely familiar with the terms of service of our payment
+    provider, so potentially they may not be as innocent as I make out, however
+    I suspect they probably do not forward this on as selling customer data does
+    not appear to be in their business model, could very well breach FCA
+    regulations, and would likely violate GDPR.
 
 [^7]:
-  The address conversion could even be done to a normalised and hashed email
-  address so that the third party service must already know about the address
-  in order to reveal it, and would be unable to harvest new addresses from the
-  programme.
+    The address conversion could even be done to a normalised and hashed email
+    address so that the third party service must already know about the address
+    in order to reveal it, and would be unable to harvest new addresses from the
+    programme.
 
 [^8]:
-  This is a huge simplification, but roughly transactional email, marketing
-  email, notifications, and service updates should be split across different
-  domains. This allows for email providers to understand the separate patterns
-  that each of these will have, and tailor their handling of the email
-  accordingly.
+    This is a huge simplification, but roughly transactional email, marketing
+    email, notifications, and service updates should be split across different
+    domains. This allows for email providers to understand the separate patterns
+    that each of these will have, and tailor their handling of the email
+    accordingly.
 
 [^9]:
-  I can't speak to whether it actually is in this case, but different
-  providers have different approaches. Some are happy to be just a carrier,
-  and have almost all aspects of their service be "whitelabelled" and branded
-  or controlled by the client (Thread). Others prefer to own more of the
-  customer relationship, and have a brand presence, therefore requiring that
-  they own communication with the customer. Issues are similar for payment
-  providers – it's rare to see a Stripe logo on a page or email as they are
-  happy to be "infrastructure" in that way, but you never pay with PayPal
-  without going _through_ PayPal and seeing plenty of their branding. It's a
-  complex topic, and one that Apple are not going to simply force by sheer
-  weight.
+    I can't speak to whether it actually is in this case, but different
+    providers have different approaches. Some are happy to be just a carrier,
+    and have almost all aspects of their service be "whitelabelled" and branded
+    or controlled by the client (Thread). Others prefer to own more of the
+    customer relationship, and have a brand presence, therefore requiring that
+    they own communication with the customer. Issues are similar for payment
+    providers – it's rare to see a Stripe logo on a page or email as they are
+    happy to be "infrastructure" in that way, but you never pay with PayPal
+    without going _through_ PayPal and seeing plenty of their branding. It's a
+    complex topic, and one that Apple are not going to simply force by sheer
+    weight.
