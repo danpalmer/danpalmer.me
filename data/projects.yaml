@@ -7,6 +7,16 @@
     - Python
   repo: danpalmer/django-devdata
 
+- name: t
+  status: live
+  role: maintainer
+  primary: true
+  description: A template for creating organisation specific infrastructure tooling..
+  languages:
+    - Python
+    - GitHub Actions
+  repo: danpalmer/t
+
 - name: danpalmer.me
   status: live
   role: author
@@ -16,6 +26,7 @@
   languages:
     - JavaScript
     - CSS
+    - GitHub Actions
 
 - name: yesod-auth-nopassword
   status: legacy
