@@ -7,16 +7,6 @@
     - Python
   repo: danpalmer/django-devdata
 
-- name: t
-  status: live
-  role: maintainer
-  primary: true
-  description: A template for creating organisation specific infrastructure tooling..
-  languages:
-    - Python
-    - GitHub Actions
-  repo: danpalmer/t
-
 - name: danpalmer.me
   status: live
   role: author
@@ -27,15 +17,6 @@
     - JavaScript
     - CSS
     - GitHub Actions
-
-- name: yesod-auth-nopassword
-  status: legacy
-  role: author
-  primary: false
-  repo: danpalmer/yesod-auth-nopassword
-  description: A plugin for Yesod to provide email-only authentication.
-  languages:
-    - Haskell
 
 - name: django-enumfield
   status: live
@@ -54,6 +35,25 @@
   languages:
     - Python
   repo: thread/routemaster
+
+- name: t
+  status: live
+  role: maintainer
+  primary: true
+  description: A template for creating organisation specific infrastructure tooling..
+  languages:
+    - Python
+    - GitHub Actions
+  repo: danpalmer/t
+
+- name: yesod-auth-nopassword
+  status: legacy
+  role: author
+  primary: false
+  repo: danpalmer/yesod-auth-nopassword
+  description: A plugin for Yesod to provide email-only authentication.
+  languages:
+    - Haskell
 
 - name: sixfifty
   status: legacy
