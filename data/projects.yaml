@@ -1,11 +1,11 @@
-- name: routemaster
+- name: django-devdata
   status: live
   role: maintainer
   primary: true
-  description: A service for coordinating complex state machines between muliple other services.
+  description: Django workflow for creating development databases seeded with anonymised production data.
   languages:
     - Python
-  repo: thread/routemaster
+  repo: danpalmer/django-devdata
 
 - name: danpalmer.me
   status: live
@@ -20,7 +20,7 @@
 - name: yesod-auth-nopassword
   status: legacy
   role: author
-  primary: true
+  primary: false
   repo: danpalmer/yesod-auth-nopassword
   description: A plugin for Yesod to provide email-only authentication.
   languages:
@@ -29,16 +29,25 @@
 - name: django-enumfield
   status: live
   role: contributor
-  primary: false
+  primary: true
   repo: lamby/django-enumfield
   description: Complex enums wtith attached metadata and functionality in Python, compatible with the Django ORM.
   languages:
     - Python
 
+- name: routemaster
+  status: live
+  role: maintainer
+  primary: true
+  description: A service for coordinating complex state machines between muliple other services.
+  languages:
+    - Python
+  repo: thread/routemaster
+
 - name: sixfifty
   status: legacy
   role: contributor
-  primary: true
+  primary: false
   repo: six50/sixfifty
   description: Website and visualisations for an attempt to predict the UK General Election in 2017.
   languages:
@@ -49,7 +58,7 @@
 - name: monzo-web
   role: author
   status: legacy
-  primary: true
+  primary: false
   description: Web interface to a Monzo account. Browser-based, no server requirement, supports full O-Auth flow.
   repo: danpalmer/monzo-web
   languages:
@@ -59,7 +68,7 @@
 - name: graphql-validate
   role: author
   status: experimental
-  primary: true
+  primary: false
   description: Pedantic tools to validate GraphQL API documentation and structure.
   repo: danpalmer/graphql-validate
   languages:
@@ -109,7 +118,7 @@
   repo: danpalmer/mondo-loyalty
   languages:
     - Python
-  
+
 - name: snap-starter
   role: author
   status: legacy
@@ -122,7 +131,7 @@
 - name: bbcheck
   role: author
   status: legacy
-  primary: true
+  primary: false
   description: A service for checking the internet package availability at an address.
   repo: danpalmer/bbcheck
   languages:
