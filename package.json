@@ -9,7 +9,7 @@
     "date-fns": "^2.21.1",
     "dotenv": "^8.2.0",
     "gatsby": "^2.32.12",
-    "gatsby-image": "^3.4.0",
+    "gatsby-image": "^3.8.0",
     "gatsby-plugin-feed": "^2.13.1",
     "gatsby-plugin-manifest": "^2.12.1",
     "gatsby-plugin-meta-redirect": "^1.1.1",
