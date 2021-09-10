@@ -40,8 +40,8 @@ export default () => {
               </p>
               <h5 className="f6 gray mt4">
                 <span className="black">Coefficient</span>
-                &nbsp;&ndash; Senior Software Engineer (Contract), May 2020 – September
-                2020 (Part Time)
+                &nbsp;&ndash; Senior Software Engineer (Contract), May 2020 –
+                September 2020 (Part Time)
               </h5>
               <p>
                 Supported data scientists and client development teams with code
