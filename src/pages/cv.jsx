@@ -36,6 +36,10 @@ export default () => {
                     Tech lead for cloud migration, moving Thread services from
                     "bare-metal" machines to Google Cloud Platform.
                   </li>
+                  <li>
+                    Responsible for delivering business critical strategic
+                    projects related to fundraising and compliance.
+                  </li>
                 </ul>
               </p>
               <h5 className="f6 gray mt4">
