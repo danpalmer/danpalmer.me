@@ -1,7 +1,8 @@
 ---
 title: Implicit Hiring Criteria
-date: 2019-04-25
+date: 2021-09-11
 theme: blue-washed-red
+featured: true
 ---
 
 At Thread I'm involved in hiring engineers for frontend, backend and iOS roles.
@@ -13,14 +14,13 @@ helped me.
 
 Hiring, and scoring candidates, is usually framed around criteria or
 competencies, that we are _explicitly hiring for_, but this is only one of 4
-types of of assessment criteria.
+categories of of assessment criteria.
 
-From this, it follows that if there are things we _are_ hiring for, there must
-therefore be things we _aren't_ hiring for. Additionally, if there are
-things we are _explicitly_ looking for, there may be things we are _implicitly_
-looking for.
+It follows that if there are things we _are_ hiring for, there must therefore be
+things we _aren't_ hiring for. Additionally, if there are things we are
+_explicitly_ looking for, there may be things we are _implicitly_ looking for.
 
-We can draw up a truth table of these cases.
+We can draw up a table to explore all of these cases.
 
 |              | **Looking for**                                              | **Not looking for**                                       |
 | ------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
@@ -33,18 +33,17 @@ will help us to get a full understanding of the model.
 ### 1. Explicitly looking for
 
 This is the easiest, it's our traditional criteria or competencies. Let's use an
-infamous example: asking a software engineer to write the algorithm for
+(infamous) example: asking a software engineer to write the algorithm for
 reversing a binary tree on a whiteboard. In this case the criteria may be:
 
 - Candidate is able to parse and understand a problem description.
 - Candidate can produce working code to solve a straightforward problem.
 
 These are reasonable criteria for a software engineer, and while this particular
-interview has many problems, it's likely to give us some signal on these
+interview has its problems, it is likely to give us some signal on these
 criteria that will help us decide if the candidate is suitable for the role.
 
-There's not much more to say for this, it's the basis of all hiring, and well
-understood.
+This category of requirement is the basis of all hiring, and well understood.
 
 ### 2. Explicitly not looking for
 
@@ -57,16 +56,16 @@ We have decided as a team that we are not looking for _Python engineers_, and
 that we believe that a good engineer will become a good Python engineer
 regardless of whether they already know Python or not.
 
-For backend engineers I run this interview in Python, as it gives me a good
-understanding of what is possible in the solutions. Because we have decided that
-Python is something we are _explicitly not looking for_, I know to exclude
-certain kinds of missteps a candidate might make from my assessment. I also know
-that I should provide as much help as I can on Python syntax and understanding
-without penalising candidates.
+For backend engineers I run this interview in Python, as I have a good
+understanding of what is possible in the solutions. However because we have
+decided that Python is something we are _explicitly not looking for_, I know to
+exclude certain kinds of missteps a candidate might make from my assessment. I
+also know that I should provide as much help as I can on Python syntax and
+understanding without penalising candidates.
 
-Being clear within the hiring team about what is _not_ important, we can get on
-the same page, and likely have more alignment of scoring. A good way to achieve
-this is with explicit rubrics for interviews.
+Being clear within the hiring team about what is _not_ important means more
+alignment in the hiring team, and fewer opportunities for bias to creep in.
+A good way to achieve this is with explicit rubrics for interviews.
 
 ### 3. Implicitly not looking for
 
@@ -79,8 +78,9 @@ other forms of communication? Are we assessing for communication at all, or in
 enough detail?
 
 Another example of this may be culture fit. Many companies assess for this
-badly, and introduce bias into their process, but when this is done well, it can
-result in a team that is diverse on most axes, but has a shared set of values.
+badly and introduce bias into their process, but when this is done well it can
+result in a team that is diverse on most axes, but has a shared set of agreed
+upon values.
 
 - Does the team value collaboration, or value individuals going deep on topics
   by themselves?
@@ -89,21 +89,21 @@ result in a team that is diverse on most axes, but has a shared set of values.
 - Does the team value performance or readability of code?
 - Does the team value a theoretical approach, or a practical one?
 
-These are all on a spectrum, with very few teams falling completely on one end,
-but all teams will have different views on what's important, and by
-understanding these views, and interviewing for engineers whose views align,
-it's possible to build a team that work well together. It's important to note
-that this can be a way to unknowingly introduce bias into your hiring, so this
-needs to be done carefully.
+These are all on a spectrum (as well as being simplifications to illustrate a
+point), with very few teams falling completely at one end, but all teams will
+have different views on what's important and by understanding these views, and
+interviewing for engineers whose views align, it's possible to build a team that
+works well together. It's important to note that this can be a way to
+unknowingly introduce bias into your hiring, so this needs to be done carefully.
 
 ### 4. Implicitly looking for
 
 This is the category I find most interesting, and the one I have learnt the most
 about since I started interviewing.
 
-For an example, let's return to our infamous whiteboard test from before. While
-there are a few criteria that we want to assess with this, there are also some
-hidden criteria we may not realising we're assessing:
+For an example, let's return to our whiteboard test from before. While there are
+a few criteria that we want to assess with this, there are also some hidden
+criteria we may not realising we're assessing:
 
 - Can the candidate speak in front of a (small) audience?
 - Does the candidate know specifically what a binary tree is and how to reverse
@@ -119,7 +119,7 @@ Not everyone comes from a Computer Science degree, some people may have come
 from web design, games testing, QA, IT, etc. They may never have learnt what a
 binary tree is, at least not enough to remember confidently in an interview
 context. Is this _really_ important for the role? It may be, but it's important
-to know, so that this is in the "explicit" category.
+to make an _explicit_ decision, rather than fall into an _implicit_ one.
 
 > Who isn't able to physically write on a whiteboard? If they can't, they'll
 > just say so.
@@ -131,10 +131,12 @@ with in very different ways.
 
 Another good example of things implicitly sought in interview processes is with
 take-home tests. These are often open ended, which selects for candidates who
-have significant free time to spend on the test.
+have significant free time to spend on the test. Is having lots of free time a
+necessary criteria for the role? Probably not, and so it's important to not
+make it an implicit criteria.
 
 It's important to know what skills an interview is _implicitly_ selecting for.
-Are they important?
+Are they really important?
 
 ---
 
