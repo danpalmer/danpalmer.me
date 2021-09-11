@@ -17,7 +17,7 @@ machine learning approach. The rough approach of static analysers is to
 understand the rules of the code first, and then to predict completions within
 those rules. While this means that many predictions are valid, they are also
 simple. Predictions are minor completions, rather than fully new constructs in
-code. 
+code.
 
 Copilot's approach is almost backwards. Trained on a large corpus of open source
 code, it attempts to understand all the things that one may wish to write,
@@ -94,6 +94,7 @@ external_prices = functools.reduce(
 
 To say I was blown away was an understatement. To call out a few of the features
 here:
+
 - The reduce function (lambda) is functionally correct for the way that a reduce
   function must work, i.e. it handles accumulation of a sequence of values.
 - It has correctly deduced that we're reducing into a list, and must wrap new
@@ -273,7 +274,7 @@ The last teething issue I've noticed is that Copilot doesn't support
 multi-cursor editing. I do a lot of multi-cursor editing, even for small numbers
 of cursors and just a few characters at a time. Copilot currently works but only
 fills the suggestion on the first cursor which throws the cursors out of
-alignment. 
+alignment.
 
 Full multi-cursor support that suggests for each cursor separately could be
 good, but would mean that one bad suggestion could ruin the whole batch. Based
@@ -284,7 +285,7 @@ other cursors would solve the majority of cases.
 
 Copilot is the smartest auto-complete that I have used and it has left me
 speechless several times. However like many technologies that become more
-"lifelike", I think it has reached its own sort of  _uncanny valley_.
+"lifelike", I think it has reached its own sort of _uncanny valley_.
 
 For Copilot, this means that while it looks very smart at first glance, upon
 closer inspection it's still got a long way to go, and that disconnect may cause
