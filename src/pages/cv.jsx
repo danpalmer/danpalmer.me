@@ -167,6 +167,9 @@ export default () => {
               <p>
                 <ul>
                   <li>
+                    Scaling Django to 500 apps – DjangoCon US 2021
+                  </li>
+                  <li>
                     <a
                       className="link gray underline-hover"
                       href="https://skillsmatter.com/skillscasts/11718-django-enumfield"
