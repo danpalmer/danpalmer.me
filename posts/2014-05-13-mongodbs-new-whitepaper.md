@@ -5,11 +5,12 @@ redirect_from:
   - /2014/05/mongodbs-new-whitepaper
 slug: mongodbs-new-whitepaper
 title: MongoDB Misinformation
+featured: true
 ---
 
 MongoDB, [the company behind MongoDB](http://www.mongodb.com/press/10gen-announces-company-name-change-mongodb-inc) published a new whitepaper this month, about 'quanityfing business avantage'. As I've recently completed a research project at university where I critically analysed the design decisions taken in MongoDB, I thought it would be interesting to see how the company sells it. I'll write about my research sometime, but for now, I'm going to pull out a few quotes from the whitepaper. You can download the paper [here](http://info.mongodb.com/rs/mongodb/images/MongoDB_Quantifying_BizAdvantage.pdf), that's a directly link so you don't have to sign up to their newsletter to get a copy.
 
-> A Tier 1 investment bank rebuilt its globally distributed reference data platform on a new database technology, enabling it to save $40M over five years through reduced infrastructure and development costs, coupled with the elimination of regulatory penalties.
+> A Tier 1 investment bank rebuilt its globally distributed reference data platform on a new database technology, enabling it to save \$40M over five years through reduced infrastructure and development costs, coupled with the elimination of regulatory penalties.
 
 This sounds pretty great. Obviously it makes no mention of what proportion they saved, $40m saving on $1bn isn't particularly great, but I'll assume it was quite a significant saving. I wonder what platform they were using before? From what I've seen, many of these large enterprises are using things like MSSQL on Windows Server, which means licencing of thousands of dollars a year _per CPU core_. Alternatively if they were on IBM mainframes, which is not unlikely, they could have been paying extortionate amounts for hardware and software.
 

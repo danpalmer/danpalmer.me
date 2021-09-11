@@ -3,8 +3,10 @@ date: "2013-04-06"
 layout: post
 redirect_from:
   - /2013/04/unlocking-hillsborough
+  - /blog/articles/2013-04-06-unlocking-hillsborough.html
 slug: unlocking-hillsborough
 title: Unlocking Hillsborough
+featured: true
 ---
 
 I'm writing this on the train home from [Rewired State](http://rewiredstate.org)'s latest event: [National Hack the Government Day 2013](http://rewiredstate.org/hacks/national-hack-the-government-2013) ([event summary page](http://eventifier.co/event/nhtg13/)). It was another great event with the same friendly atmosphere that goes along with so many (especially Rewired State's) developer events. My friend [Elliot](http://twitter.com/elliotjh) and I won in one of the categories, and so this post is mostly about what we did, how we did it, and why we think it's important.

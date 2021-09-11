@@ -5,14 +5,15 @@ import Layout from "../components/layout";
 
 const PostItem = ({ post }) => {
   return (
-    <div className="pb5">
-      <Link to={post.fields.slug} className="link dim black no-underline">
-        <h3 className="mb1 lh-solid">
-          {post.frontmatter.title}
-          <br />
+    <div className="pb1 cf">
+      <Link to={post.fields.slug} className="link black no-underline">
+        <h3 className="mb1">
+          <span className="fl-l">
+            {post.frontmatter.list_title || post.frontmatter.title}
+          </span>
+          <br className="dn-l" />
+          <small className="normal f6 gray fr-l">{post.frontmatter.date}</small>
         </h3>
-        <small className="f6 gray">{post.frontmatter.date}</small>
-        <p className="lh-copy">{post.excerpt}</p>
       </Link>
     </div>
   );
@@ -22,20 +23,23 @@ export default ({ data }) => {
   return (
     <Layout>
       <div>
-        <div className="fl w-100 w-30-l pa2 pb5 pr5-l">
+        <div className="fl w-100 w-30-l pb5 pr5-l">
           <section>
             <h3>About</h3>
             <p>
-              I'm a software developer at Thread in London, and an alumnus
-              University of Southampton where I studied Computer Science
-              specialising in Mobile and Secure Systems. I enjoy writing
-              software and improving engineering processes.
+              I&rsquo;m a software engineer living in London. I enjoy writing
+              software to solve interesting problems and improving engineering
+              culture and processes.
+            </p>
+            <p>
+              Since 2014 I've been an engineer at Thread working on core product
+              features, APIs, payments, integration with partners, and tools.
             </p>
             <ul className="list pl0 b pt3">
               <li className="fl mr3">
                 <a
                   className="link mid-gray no-underline"
-                  href="https://www.github.com/danpalmer"
+                  href="https://github.com/danpalmer"
                 >
                   GitHub
                 </a>
@@ -43,7 +47,7 @@ export default ({ data }) => {
               <li className="fl mr3">
                 <a
                   className="link mid-gray no-underline"
-                  href="https://www.twitter.com/danpalmer"
+                  href="https://twitter.com/danpalmer"
                 >
                   Twitter
                 </a>
@@ -56,13 +60,23 @@ export default ({ data }) => {
                   Email
                 </a>
               </li>
+              <li className="fl mr3">
+                <Link to="/colophon" className="link moon-gray no-underline">
+                  Meta
+                </Link>
+              </li>
             </ul>
           </section>
         </div>
-        <div className="fl w-100 w-70-l pa2">
-          {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div className="fl w-100 w-70-l">
+          {data.featuredPosts.edges.map(({ node }) => (
             <PostItem post={node} key={node.id} />
           ))}
+          <div className="pb5 pt4">
+            <Link to="/blog" className="link no-underline mid-gray">
+              View full archive
+            </Link>
+          </div>
         </div>
       </div>
     </Layout>
@@ -71,16 +85,19 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    featuredPosts: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { hidden: { ne: true }, featured: { eq: true } } }
+    ) {
       totalCount
       edges {
         node {
           id
           frontmatter {
             title
+            list_title
             date(formatString: "DD MMMM, YYYY")
           }
-          excerpt(pruneLength: 300)
           fields {
             slug
           }

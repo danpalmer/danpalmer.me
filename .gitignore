@@ -5,4 +5,12 @@ yarn-error.log
 
 # Build directory
 /public
+/build
 .DS_Store
+.sass-cache/
+_posts/
+_site/
+db.csv
+danpalmer.sql
+
+.mypy_cache

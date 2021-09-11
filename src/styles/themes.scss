@@ -4,6 +4,7 @@
 $avenir: "avenir next", avenir, sans-serif;
 $consolas: Consolas, monaco, monospace;
 $helvetica: "helvetica neue", helvetica, sans-serif;
+$san-francisco: "San Francisco", "helvetica neue", helvetica, sans-serif;
 $regular: $global-font-family;
 
 @mixin theme($text-color, $bg-color, $typeface) {
@@ -46,11 +47,18 @@ $regular: $global-font-family;
     }
   }
 
-  hr {
-    border-color: $text-color;
+  a.post-colophon-link,
+  a.post-colophon-link:visited {
+    color: transparentize($text-color, 0.7) !important;
   }
 
-  ul {
+  hr {
+    border-color: transparentize($text-color, 0.9) !important;
+    width: 90%;
+  }
+
+  ul,
+  ol {
     color: $text-color;
   }
 
@@ -63,11 +71,28 @@ $regular: $global-font-family;
     border-color: $text-color !important;
   }
 
-  .markdown-content table {
+  .markdown-content table:not(.highlight) {
     background-color: mix($near-white, $bg-color, 10%);
 
     tr {
       border-color: mix($near-black, $text-color, 10%);
+    }
+  }
+
+  .markdown-content p > code {
+    background-color: transparentize($text-color, 0.8) !important;
+    color: $text-color !important;
+  }
+
+  .markdown-content a.footnote-backref {
+    color: $text-color;
+    font-weight: bold;
+  }
+
+  .markdown-content .grvsc-container {
+    font-size: 0.875rem !important;
+    .grvsc-line {
+      padding: 0 1rem;
     }
   }
 }
@@ -84,7 +109,7 @@ $regular: $global-font-family;
 }
 
 .theme-washed-blue-red {
-  @include theme($red, $washed-blue, $regular);
+  @include theme($red, $washed-blue, $helvetica);
 }
 
 .theme-washed-yellow-red {
@@ -92,11 +117,11 @@ $regular: $global-font-family;
 }
 
 .theme-navy-light-red {
-  @include theme($light-red, $navy, $regular);
+  @include theme($light-red, $navy, $avenir);
 }
 
 .theme-near-black-gold {
-  @include theme($gold, $near-black, $regular);
+  @include theme($gold, $near-black, $avenir);
 }
 
 .theme-near-black-light-yellow {
@@ -113,4 +138,30 @@ $regular: $global-font-family;
 
 .theme-light-gray-purple {
   @include theme($purple, $light-gray, $regular);
+}
+
+// Custom themes
+
+.theme-sign-in-with-apple {
+  @include theme($black, $near-white, $san-francisco);
+}
+
+.theme-checklist-manifesto {
+  @include theme(rgba(219, 87, 43, 1), rgba(251, 248, 222, 1), $regular);
+}
+
+.theme-enron {
+  @include theme(#9eebcf, #111111, $regular);
+}
+
+.theme-boardgames {
+  @include theme(#111111, #daedf0, $regular);
+  background: linear-gradient(
+    240deg,
+    rgba(108, 149, 199, 1) 0%,
+    rgba(218, 237, 240, 1) 26%,
+    rgba(212, 235, 237, 1) 39%,
+    rgba(187, 225, 224, 1) 63%,
+    rgba(242, 238, 225, 1) 100%
+  );
 }

@@ -3,6 +3,7 @@ date: "2013-04-16"
 layout: post
 redirect_from:
   - /2013/04/please-dont-buy-an-electric-car
+  - /blog/articles/2013-04-16-please-dont-buy-an-electric-car.html
 slug: please-dont-buy-an-electric-car
 title: Please Don't Buy an Electric Car
 ---

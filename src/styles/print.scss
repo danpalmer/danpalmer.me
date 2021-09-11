@@ -1,0 +1,39 @@
+@media print {
+  .hide-print {
+    display: none !important;
+  }
+  .show-print {
+    display: block;
+  }
+
+  .cv {
+    h2 {
+      font-size: 12pt !important;
+    }
+    h5 {
+      font-size: 10pt !important;
+      margin-bottom: 6px;
+    }
+    p {
+      font-size: 8pt !important;
+    }
+
+    .w-70 {
+      width: 100%;
+    }
+  }
+
+  nav {
+    display: none !important;
+  }
+
+  .page {
+    padding: 1rem;
+  }
+}
+
+@media not print {
+  .show-print {
+    display: none;
+  }
+}

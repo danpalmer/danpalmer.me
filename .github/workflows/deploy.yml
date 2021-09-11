@@ -1,0 +1,53 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 12.x
+
+      - name: Configure yarn cache
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: node_modules/
+          key: yarn-1-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            yarn-
+
+      - name: Install dependencies
+        run: yarn install
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+
+      - name: Lint
+        run: yarn run check
+
+      - name: Build
+        run: yarn run build
+
+      - name: Test
+        run: yarn run test
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1
+        with:
+          publish-dir: ./public
+          production-branch: master
+          deploy-message: Deploy from GitHub Actions
+          enable-pull-request-comment: false
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

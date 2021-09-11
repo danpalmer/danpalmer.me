@@ -47,6 +47,6 @@ Most crucially though, the framework must be documented. Examples of how to show
 
 Here's what my final scene looked like. It's very basic, but written to fulfil the assignment specification. I would have liked to spend more time making it nicer, perhaps with bump mapping, material loading, or smooth animation, but with exams coming in the next few weeks I unfortunately don't have enough time.
 
-<iframe src="http://player.vimeo.com/video/56837082?byline=0&amp;portrait=0&amp;color=d60002" width="600" height="386" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<iframe src="https://player.vimeo.com/video/56837082?byline=0&amp;portrait=0&amp;color=d60002" width="600" height="386" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 <br/>

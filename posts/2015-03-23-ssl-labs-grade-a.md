@@ -8,8 +8,11 @@ preview:
   marks.
 redirect_from:
   - /2015/03/ssl-labs-grade-a
+  - /blog/ssl-labs-grade-a
 slug: ssl-labs-grade-a
 title: Achieving Full Marks on Qualys SSL Labs
+theme: near-black-light-yellow
+featured: true
 ---
 
 Qualys have become well known in the recent crop of SSL and TLS vulnerabilities as a first-responder with automated testing and validation. Their [SSL server test](https://www.ssllabs.com/ssltest/index.html) checks for protocol support, key exchange security, and the security of the certificate used.

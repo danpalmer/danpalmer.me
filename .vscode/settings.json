@@ -1,1 +1,31 @@
-{ "spellchecker.ignoreWordsList": ["backend", "dyspraxia"] }
+{
+  "spellchecker.ignoreWordsList": [
+    "backend",
+    "dyspraxia",
+    "Elkind",
+    "Enron",
+    "Enron's",
+    "enron",
+    "GAAP",
+    "securitise",
+    "Facebook",
+    "realised",
+    "McKinsey",
+    "summarise",
+    "GDPR",
+    "transactional",
+    "whitelabelled",
+    "nitty",
+    "abided",
+    "colour",
+    "Stonemaier",
+    "labelling",
+    "Tuftian",
+    "Tufte",
+    "sparklines",
+    "realises",
+    "mech",
+    "gameplay",
+    "RPGs"
+  ]
+}

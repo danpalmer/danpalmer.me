@@ -4,7 +4,7 @@ layout: post
 redirect_from:
   - /2014/01/you-cant-learn-to-code-in-an-hour
 slug: you-cant-learn-to-code-in-an-hour
-title: You Can&#x2019;t Learn to Code in an Hour
+title: You Can't Learn to Code in an Hour
 ---
 
 I learnt to code when I was 15, by watching hours and hours of video tutorials about writing C# applications in Visual Studio, and copying code out of programming books.

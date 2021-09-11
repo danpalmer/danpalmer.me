@@ -3,6 +3,7 @@ date: "2012-12-30"
 layout: post
 redirect_from:
   - /2012/12/heroku-buildpack-for-hammer
+  - /blog/articles/2012-12-30-heroku-buildpack-for-hammer.html
 slug: heroku-buildpack-for-hammer
 title: Heroku Buildpack for Hammer
 ---
