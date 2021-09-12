@@ -90,8 +90,8 @@ upon values.
 - Does the team value a theoretical approach, or a practical one?
 
 These are all on a spectrum (as well as being simplifications to illustrate a
-point), with very few teams falling completely at one end, but all teams will
-have different views on what's important and by understanding these views, and
+point), with very few teams falling completely at one end. All teams will have
+different views on what's important and by understanding these views, and
 interviewing for engineers whose views align, it's possible to build a team that
 works well together. It's important to note that this can be a way to
 unknowingly introduce bias into your hiring, so this needs to be done carefully.
