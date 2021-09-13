@@ -124,7 +124,7 @@ to make an _explicit_ decision, rather than fall into an _implicit_ one.
 > Who isn't able to physically write on a whiteboard? If they can't, they'll
 > just say so.
 
-Candidate with dyspraxia may struggle to write on a whiteboard. Assuming that a
+Candidates with dyspraxia may struggle to write on a whiteboard. Assuming that a
 candidate will push back on an aspect of an interview if they have a reason to
 is a big assumption – interviews have strong power dynamics that people deal
 with in very different ways.
