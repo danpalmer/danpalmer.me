@@ -166,9 +166,7 @@ export default () => {
             <div>
               <p>
                 <ul>
-                  <li>
-                    Scaling Django to 500 apps – DjangoCon US 2021
-                  </li>
+                  <li>Scaling Django to 500 apps – DjangoCon US 2021</li>
                   <li>
                     <a
                       className="link gray underline-hover"
