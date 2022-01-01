@@ -6,7 +6,7 @@
   "dependencies": {
     "@types/react": "^17.0.20",
     "classnames": "^2.3.1",
-    "date-fns": "^2.23.0",
+    "date-fns": "^2.28.0",
     "dotenv": "^10.0.0",
     "gatsby": "^2.32.13",
     "gatsby-image": "^3.11.0",
