@@ -6901,10 +6901,10 @@ gatsby-recipes@^0.9.3:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-redirect-from@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby-redirect-from/-/gatsby-redirect-from-0.4.1.tgz#24a0fceb973a03e5549319e3121aad4759093880"
-  integrity sha512-rzg62vl9rK4aeR6vQ5Tst4d2TpVCPOIsVwcCQNH8ZVrmTt4F9gGQNK2TtgfAE5uLjdEswFYX2sF/uB/sD0Mu1A==
+gatsby-redirect-from@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/gatsby-redirect-from/-/gatsby-redirect-from-0.4.4.tgz#56077e882fcc83caca3e1a641aa8b244f1a9579d"
+  integrity sha512-2WUumX5UUq84agIq1fK29oj6FRyCKtTutoPYKN70pk4j15wJzoaZkkk3Qo4Z0D9boXUpOtTG1YYpyrVHQMerAw==
 
 gatsby-remark-autolink-headers@^2.11.0:
   version "2.11.0"
