@@ -14,7 +14,7 @@ helped me.
 
 Hiring, and scoring candidates, is usually framed around criteria or
 competencies, that we are _explicitly hiring for_, but this is only one of 4
-categories of of assessment criteria.
+categories of assessment criteria.
 
 It follows that if there are things we _are_ hiring for, there must therefore be
 things we _aren't_ hiring for. Additionally, if there are things we are
