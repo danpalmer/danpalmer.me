@@ -1,7 +1,7 @@
 ---
 title: How Stadia Works
 date: 2022-06-15
-theme: blue-washed-red
+theme: checklist-manifesto
 featured: true
 ---
 
