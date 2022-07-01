@@ -42,7 +42,7 @@
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-map-gl": "^6.1.17",
-    "react-viewport-utils": "^1.12.1",
+    "react-viewport-utils": "^2.0.2",
     "sass-mq": "^5.0.1",
     "styled-components": "^4.4.1",
     "tachyons": "^4.12.0",
