@@ -32,7 +32,11 @@ export default ({ data }) => {
               culture and processes.
             </p>
             <p>
-              Since 2014 I've been an engineer at Thread working on core product
+              I currently work at Google on the Play Developer Ecosystem team,
+              building services to help Android developers.
+            </p>
+            <p>
+              Previously I spent 7½ years at Thread working on core product
               features, APIs, payments, integration with partners, and tools.
             </p>
             <ul className="list pl0 b pt3">

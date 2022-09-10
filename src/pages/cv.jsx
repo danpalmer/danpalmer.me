@@ -36,6 +36,10 @@ export default () => {
                     Tech lead for cloud migration, moving Thread services from
                     "bare-metal" machines to Google Cloud Platform.
                   </li>
+                  <li>
+                    Responsible for delivering business critical strategic
+                    projects related to fundraising and compliance.
+                  </li>
                 </ul>
               </p>
               <h5 className="f6 gray mt4">
@@ -162,6 +166,7 @@ export default () => {
             <div>
               <p>
                 <ul>
+                  <li>Scaling Django to 500 apps – DjangoCon US 2021</li>
                   <li>
                     <a
                       className="link gray underline-hover"
