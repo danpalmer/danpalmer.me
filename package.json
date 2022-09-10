@@ -35,6 +35,7 @@
     "gatsby-transformer-remark": "*",
     "gatsby-transformer-sharp": "*",
     "gatsby-transformer-yaml": "*",
+    "mapbox-gl": "*",
     "node-sass": "*",
     "prettier": "*",
     "prop-types": "*",

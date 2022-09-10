@@ -70,12 +70,7 @@ module.exports = {
         path: `${__dirname}/posts`,
       },
     },
-    {
-      resolve: "gatsby-plugin-sass",
-      options: {
-        precision: 8,
-      },
-    },
+    "gatsby-plugin-sass",
     "gatsby-transformer-yaml",
     "gatsby-transformer-json",
     {
