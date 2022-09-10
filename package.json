@@ -35,7 +35,7 @@
     "gatsby-transformer-remark": "^2.16.1",
     "gatsby-transformer-sharp": "^2.12.1",
     "gatsby-transformer-yaml": "^2.11.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.3",
     "prettier": "^2.2.1",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
