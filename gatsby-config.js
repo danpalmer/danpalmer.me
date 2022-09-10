@@ -73,7 +73,11 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sass",
       options: {
-        precision: 8,
+        implementation: require("node-sass"),
+        postCssPlugins: [],
+        sassOptions: {
+          precision: 8,
+        },
       },
     },
     "gatsby-transformer-yaml",
@@ -100,6 +104,7 @@ module.exports = {
       },
     },
     "gatsby-transformer-sharp",
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-redirect-from",
     "gatsby-plugin-sitemap",
