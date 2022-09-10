@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-import styles from "./project.module.scss";
+import * as styles from "./project.module.scss";
 
 const titleise = (title) => {
   return title.charAt(0).toUpperCase() + title.slice(1);

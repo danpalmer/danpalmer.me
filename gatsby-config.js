@@ -70,7 +70,16 @@ module.exports = {
         path: `${__dirname}/posts`,
       },
     },
-    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        implementation: require("node-sass"),
+        postCssPlugins: [],
+        sassOptions: {
+          precision: 8,
+        },
+      },
+    },
     "gatsby-transformer-yaml",
     "gatsby-transformer-json",
     {

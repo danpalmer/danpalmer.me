@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import Layout from "../../components/layout";
 import classNames from "classnames";
 
-import styles from "./post.module.scss";
+import "./post.scss";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -32,7 +32,7 @@ export default ({ data }) => {
         ]}
       />
       <Layout>
-        <article className={styles.post}>
+        <article className="post">
           <header>
             <h1 className="f2-m mb1 f1-l measure-narrow">
               {post.frontmatter.title}
@@ -56,10 +56,7 @@ export default ({ data }) => {
             ) : null}
           </header>
           <section
-            className={classNames(
-              styles.content,
-              "markdown-content measure-wide"
-            )}
+            className="content markdown-content measure-wide"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </article>

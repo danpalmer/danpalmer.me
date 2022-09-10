@@ -8,7 +8,7 @@ import { ViewportProvider, useDimensions } from "react-viewport-utils";
 import Layout from "../components/layout";
 
 import "mapbox-gl/dist/mapbox-gl.css";
-import styles from "./running.module.scss";
+import * as styles from "./running.module.scss";
 
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoiZGFuLXBhbG1lciIsImEiOiJjazhtNTV6czkwNTFiM2VxZmMyajNuNW1vIn0.N5DKOkyvPB9OCgKLSuwyMA";
