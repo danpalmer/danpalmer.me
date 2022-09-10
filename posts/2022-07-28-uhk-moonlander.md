@@ -1,7 +1,7 @@
 ---
 title: "Keyboards for Professionals: Moonlander vs. the Ultimate Hacking Keyboard"
 date: 2022-07-28
-featured: true
+hidden: true
 ---
 
 I've been using the [Moonlander](moonlander) from [ZSA](zsa) for nearly 2 years now, but with the prospect of returning to an office I needed another keyboard to keep at work so decided to order the [Ultimate Hacking](uhk) from Ultimate Gadget Labs.
