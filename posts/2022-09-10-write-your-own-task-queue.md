@@ -62,9 +62,7 @@ Before embarking on the mission of creating a new task queue do survey the exist
 
 So go and write your own task queue! Most solutions out there won't satisfy all of your requirements, or will be very complex, and there has never been a better time to build on open-source infrastructure and code to create your own high quality task queue that works perfectly for your team.
 
-
 [^1]: One could argue that building on top of millions of lines of existing code in an open-source database is not "from scratch", but this just depends on which level of abstraction you view the problem at. Considering database code to be at the same level as first-party code developed in-house is not a productive approach for most teams.
-
 [^2]: Technically open source, but in line with the message of this post I wouldn't recommend its usage as it's mostly designed for Thread's use-cases.
 
 [wakatime]: https://wakatime.com/blog/56-building-a-distributed-task-queue-in-python
