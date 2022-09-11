@@ -11,7 +11,7 @@ What's a "task queue" in this context? For the purposes of this post, a task que
 
 So, why write your own? In short: task queues have many properties and tradeoffs that make it hard to find one that fits requirements perfectly, and with the world class open-source software we have available today they can be relatively quick to write from scratch[^1].
 
-# Properties and trade-offs
+## Properties and trade-offs
 
 Task queues exist at the intersection of many technology and product decisions. In terms of technology problems, task queues often interact with:
 
@@ -40,7 +40,7 @@ Each of these topics could be a blog post in its own right, discussing the optio
 
 Some of the more popular open-source task queue implementations try not to make too many decisions and instead make as much as possible configurable. This approach can work in moderation, but often ends up introducing far more complexity than is strictly necessary as most teams don't need multiple options for each decision, they only need the one option that works best for them. [Celery](celery) is a good example of this – it's very configurable, but as a result it's much more complex than necessary for almost any of its users.
 
-# Building from scratch
+## Building from scratch
 
 Today it is easier than ever to build a task queue from scratch due to the amazing open-source infrastructure we have available, and the great libraries available in most mainstream languages for things like process control, I/O management, logging, serialisation, and more.
 
@@ -55,7 +55,7 @@ Between using an open-source database for storage and existing language librarie
 
 There are multiple advantages to building your own task queue. By only solving the problems necessary for the team, code is typically much smaller and more straightforward than open-source libraries that try to solve everyone's problems. This makes the task queue easier to understand and it's reasonable for the team as a whole to have a very deep understanding of the code. Simpler code is also simpler to operate in production, and easier to reason about the behaviour and performance of. Finally, rather than trying to make every behaviour configurable or pluggable and guess ahead of time where customisation is needed, the codebase can be modified as needed in response to changing product and technical requirements, making it easier to adapt over time and minimising the technical debt introduced by incorrect or unnecessary abstractions.
 
-# When not to build your own
+### When not to build your own
 
 Despite this advice, there are times when it may be the wrong choice to build your own task queue. If the main way that work will be enqueued is by an off the shelf piece of software rather than an in-house one, there's probably an existing task queue that the software is best paired with. Another time when this approach may be inappropriate is in a team with diverse and competing requirements, for example one with many different types of workload, different clients, or needing to back on to multiple different storage layers.
 
