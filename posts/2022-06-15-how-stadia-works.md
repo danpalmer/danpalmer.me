@@ -2,7 +2,7 @@
 title: How Stadia Works
 date: 2022-06-15
 theme: checklist-manifesto
-featured: true
+featured: false
 ---
 
 Stadia is Google's cloud gaming service. Users who sign up can play games they purchase on nearly any device, as the game runs "in the cloud". This is a new concept that has only just become possible in the last few years, with advancements in internet connections, video encoding, and web browsers.

@@ -1,7 +1,8 @@
 ---
 title: "Write Your Own Task Queue"
 date: 2022-09-10
-hidden: true
+featured: true
+theme: light-blue-bg
 ---
 
 This is not a tutorial on _how_ to write your own task queue, but rather an attempt to convince you that you _should_ write your own.
@@ -28,6 +29,8 @@ As for product or business requirements, there are many more things to consider:
 
 - Priorities - how do tasks of different priorities behave in relation to each other
 - Deadlines - whether there are deadlines for work and how to ensure they are hit
+- Transactionality of enqueuing - whether an enqueueing transaction must commit for a task to be enqueued or whether a task can start before the enqueueing transaction commits
+- Transactionality of task processing - whether tasks manage their own transactions or are wrapped in one automatically
 - Idempotency - how tasks are treated when run multiple times
 - Queueing semantics – whether tasks are run at-least-once, or at-most-once
 - Retries - whether failed tasks should be reattempted and with what behaviour

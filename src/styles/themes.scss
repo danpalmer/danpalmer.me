@@ -165,3 +165,7 @@ $regular: $global-font-family;
     rgba(242, 238, 225, 1) 100%
   );
 }
+
+.theme-light-blue-bg {
+  @include theme($dark-gray, $washed-blue, $regular);
+}
