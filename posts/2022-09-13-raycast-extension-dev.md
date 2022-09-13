@@ -34,7 +34,7 @@ The last thing that I loved was the feedback loop. The default development actio
 
 #### Publishing and version control
 
-Currently extensions are all committed into the official extensions repository – <https://github.com/raycast/extensions>. This is a perfectly reasonable first-pass, but there are two issues with it for extension developers.
+Currently extensions are all committed into the official extensions repository – **[raycast/extensions](https://github.com/raycast/extensions)**. This is a perfectly reasonable first-pass, but there are two issues with it for extension developers.
 
 Firstly, should developers create and maintain extensions in a fork of the repository, or should they run their own source control? Developing in the main repository isn't ideal as there will always be a lot of unrelated activity going on. Developing in their own source control isn't ideal because when it comes time to submit they lose their history when copying over to the main repository (submodules don't appear to be used). For my own extension, due to indecision as to which is the better option, I've ended up doing neither, resulting in no source control, and a slightly worse developer experience.
 
