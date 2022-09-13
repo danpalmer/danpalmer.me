@@ -12,7 +12,7 @@ I started using Alfred within a few days of its release and have been a loyal us
 
 Raycast feels like the next evolution, and a more modern take on this problem space. Where Alfred placed an emphasis on built-in functionality, Raycast is mostly powered through extensions (many of which are included by default and form the basic functionality). And where Alfred opted for a simple scripting interface, Raycast offers deep and _fast_ integrations via an embedded scripting engine.
 
-### What's great in Raycast extension development
+## What's great in Raycast extension development
 
 Raycast extensions are developed with NodeJS and React. This wasn't great news to me as I find Node to be a low quality ecosystem and I'm not a fan of the direction React has taken. However Raycast has made a few choices that make it a much better environment to develop for than regular Node and React.
 
@@ -30,9 +30,9 @@ Something I appreciated about the developer experience was the template projects
 
 The last thing that I loved was the feedback loop. The default development action `npm run develop` rebuilds and loads into Raycast with almost no overhead. Technically this is true for Alfred as just saving the file is sufficient to update, but Raycast takes this a step further as, with its deeper integration, extensions may be displaying UI, and this is also hot-reloaded. Hot-reloading isn't anything new for the web world, but to see it in extension development for a native application, and to have it work by default with no extra steps, is a joy.
 
-### What needs improvement
+## What needs improvement
 
-##### Publishing and version control
+#### Publishing and version control
 
 Currently extensions are all committed into the official extensions repository – <https://github.com/raycast/extensions>. This is a perfectly reasonable first-pass, but there are two issues with it for extension developers.
 
@@ -40,11 +40,11 @@ Firstly, should developers create and maintain extensions in a fork of the repos
 
 The best approach (while keeping the official extensions repository) would probably be to have developers create and maintain extensions in their own repository, and for only a reference to be committed into the main extensions repository. This reference would probably target a commit hash for security, and probably some other metadata like the changelog and README. This might lead to some duplication with the extension repository though.
 
-The second issue is that the extensions repository is _large_. It's 4.06 GB on disk at the time of writing, but this is due to get a lot bigger, quickly. Most of the size is taken up with screenshots of each extension, with each screenshot weighing in at 1-2 MB, however Raycast has recently added an option to include a GIF of the extension being used, and the few GIFs already added are 10-20 MB each. There are currently 571 extensions, projecting this out to 1000 extensions, each with 3 screenshots and a GIF, that's going to be 13 GB just for the current state, let alone history.
+The second issue is that the extensions repository is _large_. It's 4.06 GB on disk at the time of writing, but this is due to get a lot bigger, quickly. Most of the size is taken up with screenshots of each extension, with each screenshot weighing in at 1-2 MB, however Raycast has recently added an option to include a GIF of the extension being used, and the few GIFs already added are 10-20 MB each. There are currently 571 extensions, projecting this out to 1000 extensions, this could reach as high as 30 GB, and that's just for the current state, not including git history which doesn't play well with binary files like GIFs.
 
 This leads me on to what I think is the best solution to both of these problems – just drop the extensions repository. Raycast supports private extensions (on paid plans) which are not included in the repository, so they have the backend set up for this already. The primary UI for extensions is in Raycast itself, the secondary UI is their website, so the repository isn't providing much additional visibility. While it's nice to see the change history for extensions, if developers are maintaining elsewhere and copying extensions in this is already providing limited benefit, and Raycast could still link to developer repositories. Internally Raycast could keep using a repository to power the extensions backend, with a bunch of automation built around it, but this would be an implementation detail for them to decide rather than something that I think developers should be exposed to. Submitting either via Raycast, either by uploading the files or pointing to a commit on a git repo for Raycast to pull in feels like the best way forward for developers.
 
-##### Security
+#### Security
 
 Security might be more of a user concern than a developer experience one, but it impacts developers and I'd like to see more effort put in here.
 
