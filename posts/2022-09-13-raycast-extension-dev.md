@@ -44,6 +44,25 @@ The second issue is that the extensions repository is _large_. It's 4.06 GB on d
 
 This leads me on to what I think is the best solution to both of these problems – just drop the extensions repository. Raycast supports private extensions (on paid plans) which are not included in the repository, so they have the backend set up for this already. The primary UI for extensions is in Raycast itself, the secondary UI is their website, so the repository isn't providing much additional visibility. While it's nice to see the change history for extensions, if developers are maintaining elsewhere and copying extensions in this is already providing limited benefit, and Raycast could still link to developer repositories. Internally Raycast could keep using a repository to power the extensions backend, with a bunch of automation built around it, but this would be an implementation detail for them to decide rather than something that I think developers should be exposed to. Submitting either via Raycast, either by uploading the files or pointing to a commit on a git repo for Raycast to pull in feels like the best way forward for developers.
 
+#### Ownership
+
+Because of everything going through this one repository, there's an issue of who owns extensions. Each extension is registered to an authenticated profile, however as the code is all in one repository, anyone could submit changes to it. Those changes are ultimately reviewed and accepted by Raycast, so they are effectively the owners.
+
+What happens if someone else updates your extension and changes it in a way you don't like, but Raycast do? What if the change is not something you want associated with your name and profile?
+
+It looks like there's some attempt to prevent this, with a GitHub CODEOWNERS setup that should protect each extension. However the CODEOWNERS file is invalid, seemingly using the Raycast usernames rather than GitHub usernames, making it incomplete. And CODEOWNERS can be overridden by Raycast anyway.
+
+The guidance provided by Raycast though also seems incompatible with extension developers having true ownership. Developers are encouraged to look at what extensions exist first and consider if their idea should be added to an existing extension, or if it warrants a new one. There [are](https://github.com/raycast/extensions/pull/2407#issuecomment-1202485709) [discussions](https://github.com/raycast/extensions/pull/2730#issuecomment-1233864942) already where the creation of new extensions is being challenged because there's something similar, and while Raycast seem fairly liberal in their acceptance – allowing extensions with duplicate functionality in a different workflow – I can't help but think the ownership line is fuzzy.
+
+I think Raycast are going to have to answer some hard questions in the future, and decide what they truly care about.
+
+- Are extensions owned by Raycast, in one beautiful, highly curated store, that other developers can contribute to?
+- Are extensions effectively owned by developers, and Raycast exercise strong curation over quality and duplication?
+- Are extensions effectively owned by developers, and Raycast exercise minimal curation, mostly just for safety and correctness?
+- Are extensions truly owned by developers, with no curation[^1]?
+
+Right now it's not obvious who owns an extension or who is responsible for the direction of an extension, but developers are taking the public risk right now. It's not a great state, and I hope it changes soon.
+
 #### Security
 
 Security might be more of a user concern than a developer experience one, but it impacts developers and I'd like to see more effort put in here.
@@ -72,3 +91,5 @@ None of this proposal is perfect by any means, but I believe it would defend aga
 ---
 
 This post isn't intended to be a review of Raycast, others have done that much better than I can. Instead it's intended to be a brief look into what the developer experience is like, and where I think it could go in the future. Raycast as a platform is _exciting_, and developing an extension for it was fun, straightforward, and I felt like I was doing good engineering rather than hacking something together. I suspect I'm not alone in this last point, because the scope of some Raycast extensions is significant – where Alfred plugins are often relatively surface level (variations on custom searches), Raycast extensions often have many features including complex integrations with third-party services.
+
+[^1]: I expect there would always be curation for safety purposes on their official store, but this option would likely necessitate the ability to install extensions from anywhere, perhaps with just a GitHub repo link, or zip file.
