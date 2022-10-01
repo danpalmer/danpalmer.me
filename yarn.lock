@@ -1020,17 +1020,10 @@
     core-js-pure "^3.20.2"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.7", "@babel/runtime@^7.18.0", "@babel/runtime@^7.18.9", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.7", "@babel/runtime@^7.18.0", "@babel/runtime@^7.18.9", "@babel/runtime@^7.3.4", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.19.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.19.0.tgz#22b11c037b094d27a8a2504ea4dcff00f50e2259"
   integrity sha512-eR8Lo9hnDS7tqkO7NsV+mKvCmv5boaXFSZ70DnfhcgiEne8hv9oCEd36Klw74EtizEqLsy4YnW8UWwpBVolHZA==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
-"@babel/runtime@^7.3.4":
-  version "7.15.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.4.tgz#fd17d16bfdf878e6dd02d19753a39fa8a8d9c84a"
-  integrity sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -6209,9 +6202,9 @@ gatsby-transformer-sharp@*:
     sharp "^0.30.7"
 
 gatsby-transformer-yaml@*:
-  version "4.22.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-4.22.0.tgz#2e80c5a3b3aed49f5bffddd06dc1e028c8b70889"
-  integrity sha512-1ig/MBsGw25Nf2hKKmqhTQEN8k3SK1FUl9udZq6WoykrVL6787nlT7wtV6e0nTcYLKwlfxXyeUj//Ln28/4Zmw==
+  version "4.24.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-4.24.0.tgz#295ae3677e4fa02c2c20059ae08fbb6ae5133ae8"
+  integrity sha512-ahYMFVvDMDGtw7plexB3Ut0lxn/2sozYv7B7k9kQmKFycU4a5zRKmo+YY6DR3Z5te653bqxc/Jonh3+DAtwzFg==
   dependencies:
     "@babel/runtime" "^7.15.4"
     js-yaml "^3.14.1"
