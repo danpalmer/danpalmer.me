@@ -6012,9 +6012,9 @@ gatsby-react-router-scroll@^5.22.0:
     prop-types "^15.8.1"
 
 gatsby-redirect-from@*:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-redirect-from/-/gatsby-redirect-from-0.5.0.tgz#007380b29795bd9eb89fd2db6004d6e3d169a599"
-  integrity sha512-OOGFdfDJPPdaWHgD5OA6JGanaAfCzij0wJ4XffxnemcFJsVZoOfKhLXxwFSXQ/+YW9S0NchGfpM4ycZ4Z517pw==
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-redirect-from/-/gatsby-redirect-from-1.0.0.tgz#4dc12c53d481c2448cada775467dc35584431a12"
+  integrity sha512-fKXitiMDYwd3zZeGHWaBFKpgP2GtOWNztBiBvUboqaOt2uTTqmTtjYK3ulncqYe3XF27Kqqgl99MxplOJKs/Fw==
 
 gatsby-remark-autolink-headers@*:
   version "5.22.0"
