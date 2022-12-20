@@ -1,1 +1,4 @@
 http://danpalmer.netlify.com/* http://danpalmer.me/:splat 301!
+
+/.well-known/webfinger https://social.danpalmer.me/.well-known/webfinger
+/.well-known/nodeinfo https://social.danpalmer.me/.well-known/nodeinfo
