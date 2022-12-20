@@ -15,3 +15,15 @@
 
 [build.processing.images]
     compress = false
+
+[[redirects]]
+    from = "/.well-known/webfinger"
+    to = "https://social.danpalmer.me/.well-known/webfinger"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/.well-known/nodeinfo"
+    to = "https://social.danpalmer.me/.well-known/nodeinfo"
+    status = 301
+    force = true
