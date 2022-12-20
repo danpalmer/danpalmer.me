@@ -42,7 +42,6 @@ const requiredFiles = [
   "robots.txt",
   "rss.xml",
   "sitemap.xml",
-  "netlify.toml",
   // Pages
   "cv/index.html",
   "projects/index.html",

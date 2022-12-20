@@ -42,12 +42,13 @@ jobs:
         run: yarn run test
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1
+        uses: nwtgck/actions-netlify@v2
         with:
           publish-dir: ./public
           production-branch: master
           deploy-message: Deploy from GitHub Actions
           enable-pull-request-comment: false
+          netlify-config-path: netlify.toml
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
