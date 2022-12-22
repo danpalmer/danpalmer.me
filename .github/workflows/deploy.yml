@@ -5,6 +5,8 @@ on:
     branches:
       - master
 
+  workflow_dispatch:
+
 jobs:
   deploy:
     name: Deploy
@@ -41,14 +43,12 @@ jobs:
       - name: Test
         run: yarn run test
 
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v2
+      - name: Upload
+        uses: appleboy/scp-action@v0.1.3
         with:
-          publish-dir: ./public
-          production-branch: master
-          deploy-message: Deploy from GitHub Actions
-          enable-pull-request-comment: false
-          netlify-config-path: netlify.toml
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "./public"
+          target: "/config/sites/danpalmer.me/"
