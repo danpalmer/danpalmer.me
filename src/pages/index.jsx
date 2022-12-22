@@ -59,6 +59,15 @@ export default ({ data }) => {
               <li className="fl mr3">
                 <a
                   className="link mid-gray no-underline"
+                  rel="me"
+                  href="https://social.danpalmer.me/@dan"
+                >
+                  Mastodon
+                </a>
+              </li>
+              <li className="fl mr3">
+                <a
+                  className="link mid-gray no-underline"
                   href="mailto:contact@danpalmer.me"
                 >
                   Email
