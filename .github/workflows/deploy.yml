@@ -50,7 +50,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          source: "public/**/*"
+          source: "public/*"
           strip_components: 1
           target: "/config/sites/danpalmer.me/"
           overwrite: true
