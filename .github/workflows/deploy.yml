@@ -50,5 +50,5 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          source: "./public/**/*"
+          source: "public/**/*"
           target: "/config/sites/danpalmer.me/"
