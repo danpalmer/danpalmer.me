@@ -13,7 +13,9 @@ Activity Pub, the underlying protocol for the fediverse, necessitates storing UR
 Rather than numbers or strings used as identifiers, a core concept in linked data, and by extension, Activity Pub, is that all identifiers are URIs, that when resolved, return the identified content. In practice this means that when one piece of data (e.g. a social media post) references another piece (e.g. a user), that reference is by URI, rather than by some arbitrary identifier, and by following that URI the entity it points to is returned.
 
 ##### Example
+
 In a typical web application we might see the following:
+
 ```json
 // Post
 {
@@ -30,6 +32,7 @@ In a typical web application we might see the following:
 ```
 
 In a linked data application, this would instead look like...
+
 ```json
 // Post
 {
@@ -44,7 +47,6 @@ In a linked data application, this would instead look like...
     "name": "Dan Palmer"
 }
 ```
-
 
 The main benefit of this is that following a relationship requires no additional knowledge. It's just a link, and links have well-defined semantics. The client does not need to know how to build a URI for the content it's seeking. This is of particular benefit in federated systems, where the servers are heterogenous, but all implementing the same spec.
 
@@ -87,6 +89,7 @@ In order to not break federation, rendering users unable to interact with the fe
 If current web frameworks aren't ideal for linked data applications such as Activity Pub servers, perhaps there's room for a framework that addresses these issues. The main aim of a framework for linked data would be to treat URIs as atomic identifiers, potentially even with fully opaque identifiers.
 
 For such a system there would likely be two litmus tests:
+
 1. Can the framework function in most of the ways we'd expect from a modern web framework, but with every URI being a UUID?
 2. Can arbitrary documents be imported into the framework and supported on an ongoing basis ("cool URIs don't change").
 
@@ -110,10 +113,10 @@ As Activity Pub hits the mainstream, the effects of this will become noticeable 
 
 A linked data approach to building frameworks may alleviate these issues, but more work is needed to understand the full impacts of such a framework and whether it would be a good way to build such applications.
 
-
 [mastodon]: https://joinmastodon.org/
 [gotosocial]: https://gotosocial.org/
 [cooluris]: https://www.w3.org/Provider/Style/URI.html
 [triplestore]: https://en.wikipedia.org/wiki/Triplestore
+
 [^1]: Arguably the web _is_ a linked data system – it has links, people don't generally hand construct URIs from documentation and data on web pages, they just follow links. However this is a fairly philosophical point of debate and perhaps not useful to go into in this post.
-[^2]: Typically this mechanism would be integrated using a request middleware so as to be run before routing, but would either need to return a response or route successfully. The former may mean leaving behind all existing controller infrastructure, depending on the framework,  and is therefore less than ideal, and the latter requires valid mappings between URIs which limits the ability to solve redirections.
+[^2]: Typically this mechanism would be integrated using a request middleware so as to be run before routing, but would either need to return a response or route successfully. The former may mean leaving behind all existing controller infrastructure, depending on the framework, and is therefore less than ideal, and the latter requires valid mappings between URIs which limits the ability to solve redirections.
