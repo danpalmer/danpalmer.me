@@ -1,7 +1,7 @@
 ---
 title: "Activity Pub vs Web Frameworks"
 date: 2023-01-08
-hidden: true
+featured: true
 ---
 
 In an attempt to self-host a low-cost fediverse node, I started with [GoToSocial][gotosocial], but later decided to switch to [Mastodon][mastodon] for better compatibility. This transition presented some challenges and got me thinking about whether existing web frameworks are well designed for linked data services.
