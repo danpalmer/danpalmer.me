@@ -1,6 +1,7 @@
 ---
 title: "A Journey in E-commerce Search"
 date: 2023-01-15
+featured: true
 ---
 
 At Thread we went through several iterations of Search, evolving the technology as we evolved the business and our understanding of what our customers wanted. Later stages went beyond my naive understanding of search at the time, and may prove useful inspiration to others.
