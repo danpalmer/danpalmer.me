@@ -96,9 +96,11 @@ Each filter would be a bitmap with each index corresponding to a product ID, set
 
 For example, given 3 products:
 
-1. Nike shoes in blue
-2. Nike shoes in red
-3. Adidas shoes in white
+| ID  | Category | Brand  | Colour |
+| --- | -------- | ------ | ------ |
+| 1   | Shoes    | Nike   | Blue   |
+| 2   | Shoes    | Nike   | Red    |
+| 3   | Shoes    | Adidas | White  |
 
 The bitmaps may look like:
 
