@@ -40,23 +40,26 @@ It turns out this was fairly straightforward to implement[^5]! Consider the foll
 
 ```python
 class SearchItem(Model):
-    id = PrimaryKey()
-    text = TextField()
-    filters = JSONField()
-    search_vector = SearchVectorField() # For Postgres Full Text Search
+  id = PrimaryKey()
+
+  text = TextField()
+  filters = JSONField()
+
+  # For Postgres Full Text Search
+  search_vector = SearchVectorField()
 ```
 
 We then used generators like this[^6]:
 
 ```python
 class BrandXCategory(Generator):
-    def generate(self):
-        for brand in get_brands():
-             for category in get_categories():
-                 yield SearchItem(
-                     text=f"{brand.name} {category.name}"
-                     filters={'brand': brand.id, 'category': category.id},
-                 )
+  def generate(self):
+    for brand in get_brands():
+      for category in get_categories():
+        yield SearchItem(
+          text=f"{brand.name} {category.name}"
+          filters={'brand': brand.id, 'category': category.id},
+        )
 ```
 
 There were many generators covering all types of filter that would often be combined – brand, category, brand+category, category+colour, material, material+category, and so on. Every day, or when major filtering changes were made, a search indexer would run over all the generator classes, generating all the search items, and updating the search items table.
