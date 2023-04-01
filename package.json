@@ -36,7 +36,7 @@
     "gatsby-transformer-sharp": "*",
     "gatsby-transformer-yaml": "*",
     "node-sass": "*",
-    "prettier": "*",
+    "prettier": "^2.8.4",
     "prop-types": "*",
     "react": "*",
     "react-dom": "*",
