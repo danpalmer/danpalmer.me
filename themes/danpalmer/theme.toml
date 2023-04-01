@@ -1,0 +1,11 @@
+name = "danpalmer"
+license = "MIT"
+description = "Custom theme for danpalmer.me"
+homepage = "https://danpalmer.me/"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Dan Palmer"
+  homepage = "https://danpalmer.me/"
