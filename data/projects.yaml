@@ -15,7 +15,7 @@
   repo: danpalmer/danpalmer.me
   description: This website, built with React, Gatsby, JS, SASS, Webpack and more.
   languages:
-    - JavaScript
+    - HTML
     - CSS
     - GitHub Actions
 
