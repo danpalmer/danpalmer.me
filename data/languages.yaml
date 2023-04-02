@@ -23,3 +23,6 @@
 
 - name: GitHub Actions
   colour: "#cb171e"
+
+- name: Typescript
+  colour: "#3178c6"

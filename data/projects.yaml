@@ -8,6 +8,15 @@
     - GitHub Actions
   repo: danpalmer/django-devdata
 
+- name: raycast/extensions
+  status: live
+  role: contributor
+  primary: true
+  description: Creator and maintainer of Monzo and Parallels Desktop extensions, as well as unpublished internal Google extensions.
+  languages:
+    - Typescript
+  repo: raycast/extensions
+
 - name: danpalmer.me
   status: live
   role: author
@@ -57,16 +66,6 @@
     - JavaScript
     - CSS
 
-- name: monzo-web
-  role: author
-  status: legacy
-  primary: false
-  description: Web interface to a Monzo account. Browser-based, no server requirement, supports full O-Auth flow.
-  repo: danpalmer/monzo-web
-  languages:
-    - Elm
-    - CSS
-
 - name: graphql-validate
   role: author
   status: experimental
@@ -91,33 +90,6 @@
   primary: false
   description: A static-analysis bot for Github.
   repo: justinabrahms/imhotep
-  languages:
-    - Python
-
-- name: monzo-api-stub
-  role: author
-  status: legacy
-  primary: false
-  description: Stub API for Monzo Bank, to aid in the developement of client applications.
-  repo: danpalmer/monzo-api-stub
-  languages:
-    - Python
-
-- name: mondo-bills
-  role: author
-  status: legacy
-  primary: false
-  description: A service to monitor subscriptions and bills coming out of your Mondo account automatically.
-  repo: danpalmer/mondo-bills
-  languages:
-    - Python
-
-- name: mondo-loyalty
-  role: author
-  status: legacy
-  primary: false
-  description: Loyalty scheme balance tracking in your Mondo account.
-  repo: danpalmer/mondo-loyalty
   languages:
     - Python
 
@@ -172,5 +144,42 @@
   primary: false
   description: A tool to migrate from Django templates to Jinja2 templates – "Django 2 Jinja2", dj2j2.
   repo: danpalmer/dj2j2
+  languages:
+    - Python
+
+- name: monzo-web
+  role: author
+  status: legacy
+  primary: false
+  description: Web interface to a Monzo account. Browser-based, no server requirement, supports full O-Auth flow.
+  repo: danpalmer/monzo-web
+  languages:
+    - Elm
+    - CSS
+
+- name: monzo-api-stub
+  role: author
+  status: legacy
+  primary: false
+  description: Stub API for Monzo Bank, to aid in the developement of client applications.
+  repo: danpalmer/monzo-api-stub
+  languages:
+    - Python
+
+- name: mondo-bills
+  role: author
+  status: legacy
+  primary: false
+  description: A service to monitor subscriptions and bills coming out of your Mondo account automatically.
+  repo: danpalmer/mondo-bills
+  languages:
+    - Python
+
+- name: mondo-loyalty
+  role: author
+  status: legacy
+  primary: false
+  description: Loyalty scheme balance tracking in your Mondo account.
+  repo: danpalmer/mondo-loyalty
   languages:
     - Python
