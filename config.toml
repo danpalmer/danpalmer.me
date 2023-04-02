@@ -1,4 +1,5 @@
 baseURL = 'https://danpalmer.me/'
 languageCode = 'en-gb'
 title = 'Dan Palmer'
-theme = 'danpalmer'
+timeZone = 'Europe/London'
+enableRobotsTXT = true
