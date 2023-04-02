@@ -1,7 +1,7 @@
 ---
 date: 2016-06-19
 layout: post
-preview:
+summary:
   Following on from my previous post about Haskell web frameworks, I've dived
   into making a non-trivial web application, with type-safe database access.
 redirect_from:

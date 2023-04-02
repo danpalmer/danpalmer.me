@@ -1,7 +1,7 @@
 ---
 date: 2015-03-23
 layout: post
-preview:
+summary:
   Qualys have become well known in the recent crop of SSL and TLS vulnerabilities
   as a first-responder with automated testing and validation, but scoring top marks
   on their SSL Labs test can be difficult. I explored what was required to score full

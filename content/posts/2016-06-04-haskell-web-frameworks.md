@@ -1,7 +1,7 @@
 ---
 date: 2016-06-04
 layout: post
-preview:
+summary:
   A quick overview of 5 of the popular Haskell web frameworks, and what they
   can do to improve the state of web development.
 redirect_from:

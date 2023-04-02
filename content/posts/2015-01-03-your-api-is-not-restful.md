@@ -1,7 +1,7 @@
 ---
 date: 2015-01-03
 layout: post
-preview:
+summary:
   RESTful APIs are a popular thing, but is anyone really doing it properly?
   This post highlights some common flaws in RESTful APIs, and explains why it's important
   that we improve them beyond the current standard.
