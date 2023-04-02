@@ -12,3 +12,8 @@ enableRobotsTXT = true
     style = 'github'
     tabWidth = 2
     noClasses = false
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "rss"
