@@ -63,7 +63,7 @@
         <a href="{{ .Permalink }}" class="link black no-underline">
           <h3 class="mb1">
             <span class="fl-l">
-              {{ .Title }}
+              {{ cond (isset .Params "list_title") .Params.list_title .Title }}
             </span>
             <br class="dn-l" />
             <small class="normal f6 gray fr-l">{{ .PublishDate.Format "January 2, 2006" }}</small>
