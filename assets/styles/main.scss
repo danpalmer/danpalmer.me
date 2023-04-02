@@ -1,0 +1,101 @@
+@import "../vendor/tachyons/tachyons.scss";
+
+@import "./variables";
+@import "./themes";
+@import "./print";
+@import "./post";
+@import "./projects";
+
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+
+body {
+  font-family: $global-font-family;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+iframe {
+  border: none;
+}
+
+// Theme
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @extend .near-black;
+  @extend .lh-solid;
+}
+
+b,
+strong {
+  @extend .black;
+  @extend .b;
+}
+
+nav {
+  a {
+    @extend .dark-gray;
+
+    &.active {
+      @extend .silver;
+    }
+  }
+}
+
+p {
+  @extend .dark-gray;
+  @extend .lh-copy;
+
+  a {
+    @extend .link;
+    @extend .underline-hover;
+  }
+}
+
+hr {
+  border-top: none;
+
+  @extend .bb;
+  @extend .b--black-20;
+  @extend .mv4;
+}
+
+ul,
+ol {
+  @extend .pl4;
+  @extend .lh-copy;
+  @extend .dark-gray;
+
+  li {
+    @extend .lh-copy;
+
+    a {
+      @extend .link;
+      @extend .underline-hover;
+    }
+  }
+}
+
+time {
+  @extend .gray;
+}
+
+h2 .header-link {
+  margin-top: 2rem;
+}
+h3 .header-link {
+  margin-top: 2rem;
+}
+h5 .header-link {
+  margin-top: -0.14rem;
+}

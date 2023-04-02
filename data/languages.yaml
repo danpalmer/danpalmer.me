@@ -1,4 +1,4 @@
-# https://github.github.com/linguist/
+# https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
 
 - name: Python
   colour: "#3572A5"

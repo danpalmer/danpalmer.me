@@ -1,0 +1,19 @@
+baseURL = 'https://danpalmer.me/'
+languageCode = 'en-gb'
+title = 'Dan Palmer'
+timeZone = 'Europe/London'
+enableRobotsTXT = true
+
+[permalinks]
+  posts = '/:slugorfilename'
+
+[markup]
+  [markup.highlight]
+    style = 'github'
+    tabWidth = 2
+    noClasses = false
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "rss"

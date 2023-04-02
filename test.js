@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const OUTDIR = "./public/";
-const EXPECTED_POSTS = 37;
+const EXPECTED_POSTS = 51;
 
 const files = fs.readdirSync(OUTDIR).filter((x) => !x.endsWith(".map"));
 const posts = files.filter((x) => /\d{4}-\d{2}-\d{2}-/.test(x));
@@ -11,6 +11,7 @@ if (posts.length < EXPECTED_POSTS) {
   console.error(
     `Did not find at least ${EXPECTED_POSTS} posts, only found ${posts.length}.`
   );
+  posts.map(console.log);
   process.exit(1);
 }
 
@@ -23,20 +24,9 @@ if (noIndex.length) {
   process.exit(1);
 }
 
-const missingPostData = posts.filter(
-  (x) => !fs.existsSync(path.join(OUTDIR, "page-data", x, "page-data.json"))
-);
-
-if (missingPostData.length) {
-  console.error(`Missing page data for ${missingPostData.length} posts.`);
-  process.exit(1);
-}
-
 const requiredFiles = [
   // Structure
   "index.html",
-  "_headers",
-  "_redirects",
   "404.html",
   "manifest.json",
   "robots.txt",

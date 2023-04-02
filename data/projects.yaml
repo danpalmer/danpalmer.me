@@ -5,6 +5,7 @@
   description: Django workflow for creating development databases seeded with anonymised production data.
   languages:
     - Python
+    - GitHub Actions
   repo: danpalmer/django-devdata
 
 - name: danpalmer.me
@@ -14,7 +15,7 @@
   repo: danpalmer/danpalmer.me
   description: This website, built with React, Gatsby, JS, SASS, Webpack and more.
   languages:
-    - JavaScript
+    - HTML
     - CSS
     - GitHub Actions
 
@@ -28,23 +29,13 @@
     - Python
 
 - name: routemaster
-  status: live
+  status: legacy
   role: maintainer
   primary: true
   description: A service for coordinating complex state machines between muliple other services.
   languages:
     - Python
   repo: thread/routemaster
-
-- name: t
-  status: live
-  role: maintainer
-  primary: true
-  description: A template for creating organisation specific infrastructure tooling..
-  languages:
-    - Python
-    - GitHub Actions
-  repo: danpalmer/t
 
 - name: yesod-auth-nopassword
   status: legacy
@@ -177,7 +168,7 @@
 
 - name: dj2j2
   role: author
-  status: legacy
+  status: experimental
   primary: false
   description: A tool to migrate from Django templates to Jinja2 templates – "Django 2 Jinja2", dj2j2.
   repo: danpalmer/dj2j2

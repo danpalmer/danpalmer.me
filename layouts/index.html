@@ -1,0 +1,80 @@
+{{ define "main" }}
+  <div class="fl w-100 w-30-l pb5 pr5-l">
+    <section>
+      <h3>About</h3>
+      <p>
+        I&rsquo;m a software engineer living in London. I enjoy writing
+        software to solve interesting problems and improving engineering
+        culture and processes.
+      </p>
+      <p>
+        I currently work at Google on the Play Developer Ecosystem team,
+        building services to help Android developers.
+      </p>
+      <p>
+        Previously I spent 7½ years at Thread working on core product
+        features, APIs, payments, integration with partners, and tools.
+      </p>
+      <ul class="list pl0 b pt3">
+        <li class="fl mr3">
+          <a
+            class="link mid-gray no-underline"
+            href="https://github.com/danpalmer"
+          >
+            GitHub
+          </a>
+        </li>
+        <li class="fl mr3">
+          <a
+            class="link mid-gray no-underline"
+            href="https://twitter.com/danpalmer"
+          >
+            Twitter
+          </a>
+        </li>
+        <li class="fl mr3">
+          <a
+            class="link mid-gray no-underline"
+            rel="me"
+            href="https://social.danpalmer.me/@dan"
+          >
+            Mastodon
+          </a>
+        </li>
+        <li class="fl mr3">
+          <a
+            class="link mid-gray no-underline"
+            href="mailto:contact@danpalmer.me"
+          >
+            Email
+          </a>
+        </li>
+        <li class="fl mr3">
+          <a href="/colophon" class="link moon-gray no-underline">
+            Meta
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="fl w-100 w-70-l">
+    {{ range (where (where .Site.RegularPages "Type" "posts") "Params.featured" true) }}
+      <div class="pb1 cf">
+        <a href="{{ .Permalink }}" class="link black no-underline">
+          <h3 class="mb1">
+            <span class="fl-l">
+              {{ cond (isset .Params "list_title") .Params.list_title .Title }}
+            </span>
+            <br class="dn-l" />
+            <small class="normal f6 gray fr-l">{{ .PublishDate.Format "January 2, 2006" }}</small>
+          </h3>
+        </a>
+      </div>
+    {{ end }}
+    <div class="pb5 pt4">
+      <a href="/posts" class="link no-underline mid-gray">
+        View full archive
+      </a>
+    </div>
+  </div>
+{{ end }}

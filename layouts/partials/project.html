@@ -1,0 +1,29 @@
+<div class="mr5">
+  <h3 class="pt5 mv0 {{ cond .primary "f3-ns f2-m f1-l" "f5-ns f4-m f3-l" }}">
+    {{ .name }}
+  </h3>
+  <p class="pt2 mv0">
+    <a
+      class="link gray underline-hover"
+      href="https://github.com/{{ .repo }}"
+    >
+      {{ .repo }}
+    </a>
+  </p>
+  <h4 class="pt2 mv0 silver">
+    {{ title .role }}, {{ .status }}
+  </h4>
+  <p class="pt2 mv0">{{ .description }}</p>
+  <ul class="languages">
+    {{ range $lang := .languages }}
+      {{ range site.Data.languages }}
+        {{ if eq $lang .name  }}
+          <li>
+            <span style="background-color: {{ .colour }}"></span>
+            {{ .name }}
+          </li>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </ul>
+</div>
