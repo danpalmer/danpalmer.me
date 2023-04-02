@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html>
-  {{- partial "head.html" . -}}
-    <body>
-      <div>
-        {{- partial "header.html" . -}}
-        <div class="page pa3 pa5-l">
-          {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Personal site and blog"
+    />
+    <meta
+      name="keywords"
+      content="engineering culture"
+    />
+
+    <title>
+      {{ block "title" . }}
+        {{ .Site.Title }} foo
+      {{ end }}
+    </title>
+
+    {{ $mainSass := resources.Get "styles/main.scss" }}
+    {{ $mainStyle := $mainSass | resources.ToCSS | minify }}
+    <link rel="stylesheet" type="text/css" href="{{ $mainStyle.Permalink }}" />
+
+    {{ $syntaxStyle := resources.Get "styles/syntax.css" | minify }}
+    <link rel="stylesheet" type="text/css" href="{{ $syntaxStyle.Permalink }}" />
+  </head>
+  <body>
+    <div>
+      {{- partial "header.html" . -}}
+      <div class="page pa3 pa5-l">
+        {{- block "main" . }}{{- end }}
       </div>
+      {{- partial "footer.html" . -}}
+    </div>
   </body>
 </html>

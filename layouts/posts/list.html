@@ -1,0 +1,22 @@
+{{ define "title" }}
+  Archive &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+  <div>
+    <div class="fl w-100 w-70-l">
+      {{ range .Pages }}
+        <div class="pb5">
+          <a href={{ .Permalink }} class="link black no-underline">
+            <h3 class="mb1">
+              {{ .Title }}
+              <br />
+            </h3>
+            <small class="f6 gray">{{ .PublishDate.Format "January 2, 2006" }}</small>
+            <p>{{ .Summary }}</p>
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

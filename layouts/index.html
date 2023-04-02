@@ -58,9 +58,9 @@
     </section>
   </div>
   <div class="fl w-100 w-70-l">
-    {{ range (where .Site.RegularPages "Type" "posts") }}
+    {{ range (where (where .Site.RegularPages "Type" "posts") "Params.featured" true) }}
       <div class="pb1 cf">
-        <a href={post.fields.slug} class="link black no-underline">
+        <a href="{{ .Permalink }}" class="link black no-underline">
           <h3 class="mb1">
             <span class="fl-l">
               {{ .Title }}
@@ -71,13 +71,10 @@
         </a>
       </div>
     {{ end }}
-    <!-- {data.featuredPosts.edges.map(({ node }) => (
-      <PostItem post={node} key={node.id} />
-    ))}
     <div class="pb5 pt4">
-      <Link to="/blog" class="link no-underline mid-gray">
+      <a href="/posts" class="link no-underline mid-gray">
         View full archive
-      </Link>
-    </div> -->
+      </a>
+    </div>
   </div>
 {{ end }}
