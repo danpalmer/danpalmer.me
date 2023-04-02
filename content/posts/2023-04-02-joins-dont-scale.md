@@ -78,7 +78,7 @@ because denormalising necessarily entails creating copies of data, so updating
 that data necessarily becomes more complex.
 
 Additionally, the engineering complexity of managing complex data models, with
-schema migrations[^1], code to update denormalised data, application level code
+schema migrations[^2], code to update denormalised data, application level code
 to ensure data consistency, and more code to optimise all of those things
 because there's so much more of it to do... all gets out of hand. It takes more
 engineering effort because the database is doing less out of the box.
@@ -86,7 +86,7 @@ engineering effort because the database is doing less out of the box.
 ### A rule of thumb
 
 The exact solution depends on the specifics of each product, but in general I
-like to try to make sure that all data[^2] falls into one of two categories:
+like to try to make sure that all data[^3] falls into one of two categories:
 
 - Low cardinality and/or low traffic, high complexity
 - High cardinality and/or high traffic, low complexity
