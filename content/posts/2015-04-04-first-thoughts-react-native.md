@@ -23,7 +23,7 @@ So I did.
 
 Immediately the iOS simulator is running, showing a display with instructions about how to proceed.
 
-![React Native First Start](images/Screen_Shot_2015-04-04_at_16.37.54.png)
+![React Native First Start](/posts/images/Screen_Shot_2015-04-04_at_16.37.54.png)
 
 It almost looks as if this process has been optimised for conversion rates, it's clearly leading me through and trying to get me to the point of my first app, or my first 'wow moment'.
 
@@ -45,7 +45,7 @@ At my [place of work](https://www.thread.com/) our designers often write markup,
 
 Finally, I want to cover my 'wow moment' that I had while using React Native. The simulator had refreshed, and attempted to load some new data from the web, but my tethering connection had dropped out. With no error handling in place yet, this failed...
 
-![React Native Exception](images/Screen_Shot_2015-04-04_at_17.03.54.png)
+![React Native Exception](/posts/images/Screen_Shot_2015-04-04_at_17.03.54.png)
 
 This is already a very useful screen, but I accidentally clicked on one of the frames in the stack trace, and was amazed to find that it opened the source file from the libraries I was using, to the correct line, in my editor. This is not a hugely difficult feat to achieve, there's already a connection out of the simulator back to a process on my machine, opening a file is straightforward, and yet I've never seen it before. Impressive.
 

@@ -5,6 +5,41 @@
 .content {
   margin-top: 30px;
 
+  // Features
+
+  a.post-colophon-link,
+  a.post-colophon-link:visited {
+    color: transparentize(black, 0.7) !important;
+  }
+
+  .gist table tr:last-child {
+    border-bottom: 1px;
+  }
+
+  .chroma {
+    @extend .bg-light-gray;
+
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+
+    overflow: scroll;
+
+    font-size: 0.875rem !important;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .line {
+      padding: 0 1rem;
+    }
+  }
+
+  .gatsby-resp-image-wrapper {
+    margin-top: 1rem;
+  }
+
+  // Base
+
   p {
     @extend .f5;
     @extend .pb2;
@@ -66,5 +101,12 @@
     p {
       @extend .pa0;
     }
+  }
+
+  a {
+    @extend .dark-gray;
+    @extend .lh-copy;
+    @extend .link;
+    @extend .underline;
   }
 }

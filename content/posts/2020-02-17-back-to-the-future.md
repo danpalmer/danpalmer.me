@@ -2,7 +2,6 @@
 title: Requirements change for the better
 date: 2020-02-17
 featured: true
-hidden: false
 ---
 
 I'm an armchair space enthusiast – I like to watch new launches but I know very
@@ -37,7 +36,7 @@ more cramped aeroplanes, here you can have a bed and dine in the onboard
 restaruant, wander along the promenade. As the cutaway below shows there's even
 reading room _and_ a writing room.
 
-![Cutaway of the inside of an airship](images/airship-cutaway.jpg)
+![Cutaway of the inside of an airship](/posts/images/airship-cutaway.jpg)
 
 But it doesn't stop there. It can stay aloft for days, is very fuel efficient,
 and the military models could even be equipped with hangers to deploy and

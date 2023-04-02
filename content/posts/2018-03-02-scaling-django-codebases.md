@@ -18,6 +18,6 @@ I’ve learnt many tips, tricks, and best practices for keeping engineers
 productive on a codebase of this size from my colleagues over the years, and I
 shared the highlights with the Python community in September.
 
-`youtube:https://www.youtube.com/embed/jBBcORHhfV0?modestbranding=1`
+{{< youtube id="jBBcORHhfV0" modestbranding="1" >}}
 
 [1]: https://docs.djangoproject.com/en/2.0/ref/applications/

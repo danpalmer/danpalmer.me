@@ -87,7 +87,7 @@ One API I am a big fan of is _Grand Central Dispatch_. This is an open source li
 
 Here I've created a concurrent queue, added 50 'processing jobs' to it, and added a 'barrier' to be executed at the end. This prints out the following:
 
-```
+```plain
 Finished Dispatch
 Continuing Execution
 Block 1 finished

@@ -2,7 +2,6 @@
 title: Is this what modern web development is?
 date: 2020-05-08
 featured: true
-hidden: false
 ---
 
 During GitHub's annual product announcement on Wednesday, new features to edit
@@ -11,7 +10,7 @@ web-app, written in Javascript using the Express server library.
 
 Here's the code sample...
 
-![Code sample, written in Javascript, of simple one-file Express-based server for a CRUD web-app.](images/express-code-sample.png)
+![Code sample, written in Javascript, of simple one-file Express-based server for a CRUD web-app.](/posts/images/express-code-sample.png)
 
 After the announcement, David Heinemeier Hansson (DHH), the creator of
 Ruby-on-Rails gave his thoughts on Twitter.

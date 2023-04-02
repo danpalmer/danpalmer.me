@@ -19,7 +19,7 @@ First off, [OneNote for Mac was released](http://blogs.office.com/2014/03/17/int
 
 Firstly, it's good. It's actually excellent. There is clearly a talented design team, who importantly care about making good Mac software behind the new OneNote. The whole thing feels like it fits in well on the Mac OS desktop, which I think is a very important aspect of making good software, something I get the impression matters much less on Windows.
 
-![Microsoft OneNote](images/onenote.png)
+![Microsoft OneNote](/posts/images/onenote.png)
 
 The other thing that surprised me was that OneNote is now on Mac OS, Windows, Android and iOS, with iPad and iPhone interfaces. And it all syncs over the web, with an API that allows external services to push information into your notebooks. The scope for integration is huge, and I look forward to seeing what developers do with the API.
 
@@ -45,7 +45,7 @@ This was announced during the keynote address at Build, and it's a brilliant mov
 
 The previously full-screen only Windows 8 ("metro") style apps, are now capable of running in a window. This instantly gives users the old desktop metaphor back. While many users don't fully understand the desktop metaphor and windowing systems, just getting that bit of context to actions back that was lost behind awkward gestures in the original Windows 8 will be a great boost to usability and productivity.
 
-![Windows 8](images/windows8.jpg)
+![Windows 8](/posts/images/windows8.jpg)
 
 But more importantly than this, the start menu is back, and now in a form that quite honestly looks stunning. The new menu has the old start menu style tree view of entries, and the instant search box, but also now features the same widgets as were previously found on the start screen, enabling quick access to possibly useful information, and importantly, in a place that users are clicking through to frequently. In this way, it's probably better than the Mac OS dashboard, which is so far out of the way, and lacking useful information, that I haven't used it in years.
 

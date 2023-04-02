@@ -15,7 +15,7 @@ After seeing David Ferguson's brilliant [Google Auto-Complete workflow](http://j
 
 Luckily reading data from Reddit is as simple as adding `.json` or `.xml` to the end of a url, so here's what I've managed so far.
 
-![Reddit for Alfred](images/alfred-reddit.png)
+![Reddit for Alfred](/posts/images/alfred-reddit.png)
 
 Typing `r/` will list the top 'hot' items on Reddit, and `r/subreddit` will give you the top items from a specific subreddit.
 

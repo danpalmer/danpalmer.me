@@ -25,41 +25,14 @@ Note: TLS is the successor to SSL. I have therefore used the term TLS, however m
 
 The deployment setup used a basic [nginx](http://nginx.org/) and [Gunicorn](http://gunicorn.org/) configuration that I found online. It was out of date and not designed to be secure, so the initial grade C from SSL Labs was unsurprising.
 
-##### Certificate
+| Category         | Score |
+| ---------------- | ----- |
+| Certificate      | 100%  |
+| Protocol Support | 70%   |
+| Key Exchange     | 80%   |
+| Cipher Strength  | 90%   |
 
-<div class="progress">
-  <div class="progress-bar progress-bar-success" role="progressbar" data-value="100">
-    100%
-  </div>
-</div>
-
-##### Protocol Support
-
-<div class="progress">
-  <div class="progress-bar progress-bar-warning" role="progressbar" data-value="70">
-    70%
-  </div>
-</div>
-
-##### Key Exchange
-
-<div class="progress">
-  <div class="progress-bar progress-bar-success" role="progressbar" data-value="80">
-    80%
-  </div>
-</div>
-
-##### Cipher Strength
-
-<div class="progress">
-  <div class="progress-bar progress-bar-success" role="progressbar" data-value="90">
-    90%
-  </div>
-</div>
-
-<div class="alert alert-danger">
-    This server is vulnerable to the POODLE attack. If possible, disable SSL 3 to mitigate. Grade capped to C.
-</div>
+_**This server is vulnerable to the POODLE attack. If possible, disable SSL 3 to mitigate. Grade capped to C.**_
 
 ---
 
@@ -71,23 +44,19 @@ Some implementations of TLS, when using CBC mode ciphers, are also vulnerable.
 
 As the warning explained, the solution to this was as simple as disabling SSL 3, which required a quick modification to the nginx configuration.
 
-<script src="https://gist.github.com/danpalmer/6b6f5e06e3c8edc35061.js"></script>
+{{< gist danpalmer 6b6f5e06e3c8edc35061 >}}
 
 ---
 
-<div class="alert alert-warning">
-    The server supports only older protocols, but not the current best TLS 1.2. Grade capped to B.
-</div>
+_**The server supports only older protocols, but not the current best TLS 1.2. Grade capped to B.**_
 
 Removing the cap for POODLE raised the grade to a B, but it was still being capped due to lack of support for TLS 1.2. Thankfully this was just as easy to fix.
 
-<script src="https://gist.github.com/danpalmer/5ea49ab65ff1994d257c.js"></script>
+{{< gist danpalmer 5ea49ab65ff1994d257c >}}
 
 ---
 
-<div class="alert alert-warning">
-    This server's certificate chain is incomplete. Grade capped to B.
-</div>
+_**This server's certificate chain is incomplete. Grade capped to B.**_
 
 Unfortunately the score was still capped to a grade B because the certificate chain was incomplete. _What exactly does this mean?_
 
@@ -101,19 +70,17 @@ Browsers and operating systems are smart enough that if they see a certificate, 
 
 Getting the intermediate certificates is as easy as concatenating the certificate data on to the end of the existing certificate. In the section "Certification Paths", SSL Labs will show the full certificate chain, and any that are missing. Searching Google for the fingerprints will often yield the missing certificate.
 
-<script src="https://gist.github.com/danpalmer/8b991d9be7b704a322e6.js"></script>
+{{< gist danpalmer 8b991d9be7b704a322e6 >}}
 
 ---
 
-<div class="alert alert-warning">
-    Session resumption (caching): No (IDs assigned but not accepted)
-</div>
+_**Session resumption (caching): No (IDs assigned but not accepted)**_
 
 While the grade was now high, the scores could still be improved. One suggestion given by SSL Labs was to enable session caching. This speeds up the TLS handshake after the first request.
 
 The [nginx documentation](http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache), suggests this as a reasonable configuration for a small to medium sized website. Larger sites may wish to tune their session cache for their traffic profile.
 
-<script src="https://gist.github.com/danpalmer/3a312e839d5647b2277e.js"></script>
+{{< gist danpalmer 3a312e839d5647b2277e >}}
 
 ---
 
@@ -129,7 +96,7 @@ After reading the documentation, it was immediately obvious that `eNULL` was mis
 
 Mozilla provide several recommended lists on their wiki page for [Server Side TLS](https://wiki.mozilla.org/Security/Server_Side_TLS) which are tuned for different trade-offs between security, and support for older browsers and devices. As I was not aiming to support legacy devices and browsers, I chose the "modern" list, and extended it with GCM mode DHE ciphers.
 
-```
+```plain
 ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!SRP:!DSS;
 ```
 
@@ -152,19 +119,14 @@ For calculating the final score, the following algorithm is used:
 
 This means I needed to remove the 128 bit cipher suites. This results in the following list:
 
-```
+```plain
 ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!SRP:!DSS
 ```
 
 While this does increase the score to 100% for _Cipher Strength_, it does so at the cost of support for many devices, notably Android pre-4.4, Internet Explorer before version 11, and anything before Windows 7.
 
-##### Cipher Strength
-
-<div class="progress">
-  <div class="progress-bar progress-bar-success" role="progressbar" data-value="100">
-    100%
-  </div>
-</div>
+| Cipher Strength | 100% |
+| --------------- | ---- |
 
 ---
 
@@ -174,23 +136,18 @@ The next area for improvement was _Key Exchange_ with a score of 80. Looking at 
 
 The solution to this is to generate a larger 'P' component for the DH key exchange. This is just a large prime number, but by default, OpenSSL does not generate a very large one, because it is computationally expensive to do so. Generating a new one is easy, but takes a while. The value does not have to be kept private, in fact it is published in the TLS handshake, however it should be one generated by a trusted party.
 
-```
+```plain
 openssl dhparams -out dhparams.pem 4096
 ```
 
 Once the parameters were generated, I updated the nginx config to use it.
 
-<script src="https://gist.github.com/danpalmer/ff81fd1453a9999facbd.js"></script>
+{{< gist danpalmer ff81fd1453a9999facbd >}}
 
 This achieved 10 more points on _Key Exchange_, but was limited because the actual private key was only 2048 bits. Increasing the private key to 4096 bits raised this to 100.
 
-##### Key Exchange
-
-<div class="progress">
-  <div class="progress-bar progress-bar-success" role="progressbar" data-value="100">
-    100%
-  </div>
-</div>
+| Key Exchange | 100% |
+| ------------ | ---- |
 
 ---
 
@@ -251,17 +208,12 @@ While my website doesn't need to support lots of different browsers (it's not an
 
 This confirms that it's only out of date browsers and devices that fail. Of those that succeed, they all managed to connect with TLS 1.2, so I removed TLS 1.1 support.
 
-<script src="https://gist.github.com/danpalmer/0eeceddaac6bfa0dfa16.js"></script>
+{{< gist danpalmer 0eeceddaac6bfa0dfa16 >}}
 
 This raised the score for _Protocol Support_ to 100%.
 
-##### Protocol Support
-
-<div class="progress">
-  <div class="progress-bar progress-bar-success" role="progressbar" data-value="100">
-    100%
-  </div>
-</div>
+| Protocol Support | 100% |
+| ---------------- | ---- |
 
 ---
 
@@ -269,11 +221,9 @@ At this point, the individual scores were as high as they could be, but the grad
 
 The last thing needed to achieve an A+ is HSTS. This is a mechanism for preventing downgrade attacks. Servers can specify a header in HTTP responses that tells clients not to accept an unsecured connection for a given amount of time. If the client attempts to reach the server after seeing this header, and is unable to do so over a secure connection, it will refuse to connect.
 
-<script src="https://gist.github.com/danpalmer/3aacb008a43cda26058a.js"></script>
+{{< gist danpalmer 3aacb008a43cda26058a >}}
 
-<div class="alert alert-success">
-    This server supports HTTP Strict Transport Security with long duration. Grade set to A+.
-</div>
+_**This server supports HTTP Strict Transport Security with long duration. Grade set to A+.**_
 
 ---
 
@@ -289,7 +239,7 @@ The ideal situation would be to run a local resolver that uses the system's defa
 
 Note that nginx's uses a per-worker cache for OCSP responses, with no sharing between processes, and therefore the first request to each worker will not receive an OCSP response, but will cause that worker to get it for future requests.
 
-<script src="https://gist.github.com/danpalmer/0151c008b14162e7b091.js"></script>
+{{< gist danpalmer 0151c008b14162e7b091 >}}
 
 ---
 

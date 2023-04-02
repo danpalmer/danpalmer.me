@@ -3,7 +3,6 @@ title: Learning from Board Game Design
 date: 2020-05-18
 featured: true
 theme: boardgames
-hidden: false
 ---
 
 Last year I bought a copy of [Scythe][scythe-aff] from publisher [Stonemaier
@@ -28,7 +27,7 @@ Let's start with the most straightforward design aspect, the design of the
 rulebook. Wingspan is a solid example of how a good rulebook can make a game
 easier to understand, so let's take a look at this page...
 
-![Page from Wingspan rules](images/board_games/wingspan_page.jpg)
+![Page from Wingspan rules](wingspan_page.jpg)
 
 First off this page looks great and has plenty of whitespace. It's easy to scan
 and hard to lose yourself in. The title structure is also clear with a section
@@ -39,13 +38,13 @@ uses titles to add some structure, but it's hard to know what's important in
 those long paragraphs. Processes aren't clearly separated from rules and the
 diagrams are very general.
 
-![Page from Ticket to Ride rules](images/board_games/ticket_to_ride_page.jpg)
+![Page from Ticket to Ride rules](ticket_to_ride_page.jpg)
 
 The key to Wingspan's rulebook is the progressive information disclosure. Take
 this example...
 
 ![Step 1 description for laying an
-egg](images/board_games/wingspan_subpage_1.png)
+egg](wingspan_subpage_1.png)
 
 - The title makes it clear that this is a _process_.
 - The **bold** text describes what to do in basic terms – but not in too much
@@ -62,14 +61,14 @@ trying to find the most important rules to teach friends eager to start playing,
 or scanning to find the specifics of a rule, it's easy to find the right level
 of detail for your needs.
 
-![Step 1 description diagram](images/board_games/wingspan_subpage_2.png)
+![Step 1 description diagram](wingspan_subpage_2.png)
 
 The description then includes a diagram. Many rulebooks make use of diagrams to
 explain large concepts, but Wingspan makes great use of small diagrams right
 next to the relevant text with very specific detail in them, rather than the
 small number of overly abstract diagrams that _Ticket to Ride_ features.
 
-![Managing egg tokens](images/board_games/wingspan_subpage_3.png)
+![Managing egg tokens](wingspan_subpage_3.png)
 
 After all the steps the rulebook presents extra details. This one in particular
 stood out to me because it fills in a gap that is often filled in by "house
@@ -88,7 +87,7 @@ In this case, the designers of Wingspan have likely tested the option for
 capping the number of eggs in the game, and decided that it plays better with no
 limit. Noting this intention is a nice touch.
 
-![Designer's note from Scythe rulebook](images/board_games/scythe_subpage_1.png)
+![Designer's note from Scythe rulebook](scythe_subpage_1.png)
 
 Speaking of the designers, they often crop up in the Wingspan and Scythe
 rulebooks. I liked this example particularly because it helps to set
@@ -104,7 +103,7 @@ remember, or read through when looking for that crucial rule check in the midst
 of battle.
 
 ![Bird specific reference in the Wingspan
-appendix](images/board_games/wingspan_appendix.png)
+appendix](wingspan_appendix.png)
 
 The last detail that stood out in Wingspan's rulebook was the decision to break
 some details out in to an appendix. In the game there are 170 bird cards with
@@ -133,12 +132,12 @@ combinations throughout.
 
 Let's take a look at the resources in Scythe...
 
-![Scythe resource icons](images/board_games/scythe_resources_padded.png)
+![Scythe resource icons](scythe_resources_padded.png)
 
 Scythe has 5 core resources that players use in their economies. These are
 represented by the icons above.
 
-![Scythe currency icons](images/board_games/scythe_currencies.png)
+![Scythe currency icons](scythe_currencies.png)
 
 Scythe also has a number of "currencies" – military power, coins,
 popularity, and combat cards (the context these are being shown in, and the "2"
@@ -151,23 +150,23 @@ hexagon ⬡ icons and stars ★ are the end-game mechanic.
 Like most board games, Scythe uses these icons on the board to indicate
 relevance...
 
-![Power track](images/board_games/scythe_power_track.png)
-![Triumph track](images/board_games/scythe_triumph_track.png)
-![Popularity track](images/board_games/scythe_popularity_track.png)
+![Power track](scythe_power_track.png)
+![Triumph track](scythe_triumph_track.png)
+![Popularity track](scythe_popularity_track.png)
 
 Not only are the icons labelling an area of the board, but in many cases they
 are used next to other icons to show relationships between actions or resources.
 In this case we can see that having a popularity of 0-3 will get us 3 coins per
 star ★, 2 coins per territory ⬡, etc.
 
-![Wingspan board iconography](images/board_games/wingspan_board_iconography.png)
+![Wingspan board iconography](wingspan_board_iconography.png)
 
 Wingspan also does this, in fact most of the content on the per-player boards
 are simply combinations of icons explaining what can be done.
 
 ![Wingspan icons used as bullet
-points](images/board_games/wingspan_inline_icons_1.png) ![Wingspan icon in-line
-in paragraph](images/board_games/wingspan_inline_icons_2.png)
+points](wingspan_inline_icons_1.png) ![Wingspan icon in-line
+in paragraph](wingspan_inline_icons_2.png)
 
 Wingspan goes a step further and uses its icons in-line in the rulebook,
 even in the middle of a paragraph in true Tuftian form[^1].
@@ -178,12 +177,12 @@ new concepts that are intuitive and don't need explaining (once the player
 realises they can trust the icons).
 
 ![Scythe territories and the resources they
-create](images/board_games/scythe_territory_resources.png)
+create](scythe_territory_resources.png)
 
 This first example combines the concept of a territory ⬡ and a resource to
 describe territories that create resources, a key concept in the game.
 
-![Scythe cost and benefit icons](images/board_games/scythe_cost_benefit.png)
+![Scythe cost and benefit icons](scythe_cost_benefit.png)
 
 Even more interesting to me is how these combinations form costs and benefits in
 the game. Since the game is focused around building an economy, a core gameplay
@@ -197,7 +196,7 @@ performing this action, the player will...
 - Get 2 coins
 - Must deploy that mech where the player has a worker (another new icon)
 
-![Scythe turn action cost benefit](images/board_games/scythe_turn_action.png)
+![Scythe turn action cost benefit](scythe_turn_action.png)
 
 This example shows an even more complex combination – the player can "produce"
 with 3 workers, on territories ⬡, plus in this case another territory that
@@ -235,13 +234,13 @@ and means that players have a clear visual representation of what they can do
 _right now_, rather than having to combine multiple sources of information to
 figure out those details.
 
-![Scythe benefits covered up by tokens](images/board_games/scythe_action_1.png)
+![Scythe benefits covered up by tokens](scythe_action_1.png)
 
 In this example, the player must pay 1 coin for this action and can receive
 either 2 power or 1 combat card. If they choose to upgrade this action though,
 they will pick up one of the tokens revealing a further 1 power or combat card.
 
-![Scythe costs to cover with tokens](images/board_games/scythe_action_2.png)
+![Scythe costs to cover with tokens](scythe_action_2.png)
 
 In performing this upgrade, they will then move that token down the board to
 cover one of the red costs associated with a related action. The board used for
@@ -254,7 +253,7 @@ sort of "physical checklist". It's not possible to have a spare token, it's not
 possible to accidentally upgrade, and it's not possible to only partially
 complete an upgrade.
 
-![Wingspan player grid](images/board_games/wingspan_board_iconography.png)
+![Wingspan player grid](wingspan_board_iconography.png)
 
 A more advanced illustration of this is given in Wingspan's action tokens. The
 game takes place in rounds, where in each round a player will have multiple
@@ -315,21 +314,21 @@ While these design details are quite board game specific, I think there are more
 general versions that can be applied to the design of a broad range of games,
 products, processes, and more.
 
-- **Clear documentation**  
+- **Clear documentation**
   Documentation that has been _designed_ is far better than documentation that
   has just been written. The [Django documentation][django] is a world-class
   example from the web development world, and the [GOV.UK][govuk] website has
   many examples of well structured, accessible documentation designed to be
   usable by almost anyone.
 
-- **Consistent system design**  
+- **Consistent system design**
   My key takeaway from Scythe's iconography is the system of notation that it
   creates. By teaching players basic rules and then recombining those in
   consistent ways, it creates something that is more than the sum of its parts.
   This is the power of building _systems_, rather than everything being an
   exception.
 
-- **Making process disappear**  
+- **Making process disappear**
   Lastly, checklists, abstract or otherwise, can help make boring practicalities
   disappear easy and quick, allowing us to focus on what really matters and
   where we can add value – whether that value is our expert knowledge in the

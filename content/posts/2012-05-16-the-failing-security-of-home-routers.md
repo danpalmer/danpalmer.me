@@ -124,7 +124,7 @@ with them having remote access with a particular username and password, but I
 got a strange answer. Apparently they switched telnet off on the routers in a
 recent firmware update.
 
-![Superhub Telnet Login](images/superhub-1.png)
+![Superhub Telnet Login](/posts/images/superhub-1.png)
 
 Now maybe there are other ways of disabling telnet, but when I am told "there is
 no telnet access", I expect the port to be closed. I certainly don't expect
@@ -204,7 +204,7 @@ similar situation, and any attacker can easily download the file. For less
 technically knowledgeable users, this is also a prime candidate for social
 engineering exploitation.
 
-![Superhub Configuration Password Dump](images/superhub-2.png)
+![Superhub Configuration Password Dump](/posts/images/superhub-2.png)
 
 Not only are all the passwords here, they are here again and again and again. I
 have carefully omitted the password for the account which actually works on the

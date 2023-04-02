@@ -12,7 +12,7 @@ title: Password Security
 
 ---
 
-![Top Passwords](images/passwords.png)
+![Top Passwords](/posts/images/passwords.png)
 
 <p><small>A cloud of passwords based on relative popularity</small></p>
 

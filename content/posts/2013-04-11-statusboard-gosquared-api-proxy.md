@@ -16,7 +16,7 @@ I've set up a public API for this so that you can use it with no setup at all. B
 
 #### Timeline
 
-![GoSquared Statusboard Graph](images/statusboard-gosquared.png)
+![GoSquared Statusboard Graph](/posts/images/statusboard-gosquared.png)
 
 <a href="http://statusboard.danpalmer.me/timeline/demo/GSN-181546-E">http://statusboard.danpalmer.me/timeline/<code>API_KEY</code>/<code>SITE_TOKEN</code>/<code>COLOUR?</code></a>
 
@@ -26,7 +26,7 @@ The colour of the graph is defined in the JSON returned, and defaults to "blue".
 
 #### Pages
 
-![GoSquared Statusboard List](images/statusboard-gosquared-pages.png)
+![GoSquared Statusboard List](/posts/images/statusboard-gosquared-pages.png)
 
 <a href="http://statusboard.danpalmer.me/pages/demo/GSN-181546-E">http://statusboard.danpalmer.me/pages/<code>API_KEY</code>/<code>SITE_TOKEN</code></a>
 

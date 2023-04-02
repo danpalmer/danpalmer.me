@@ -16,7 +16,7 @@ This is a possible solution to the problem. I can't take credit for the concept,
 
 The main idea is that you remember a series of positions, not a series of numbers. Instead of remembering the PIN '8361', you remember 4 boxes in order on a grid.
 
-![PIN Security Demo](images/pinsecurity-1.png)
+![PIN Security Demo](/posts/images/pinsecurity-1.png)
 
 When an attempt at the password is to be made, each square in the grid is filled with a single, random digit from 0-9 inclusive. The only reason for the colours is to make it easier to pick out your squares. The user types in the numbers that appear in each position that makes up their password.
 
@@ -37,6 +37,6 @@ This is obviously still fallible, but I think it provides much better security t
 
 Can this actually be implemented? Probably not. If a large percentage of people end up writing their PINs down on their phones with the current system, being even more complicated this system would probably not work.
 
-![PIN Security Solution](images/pinsecurity-2.png)
+![PIN Security Solution](/posts/images/pinsecurity-2.png)
 
 <a class="download-button" href="http://cl.ly/zb6dR">Download Demo App</a>

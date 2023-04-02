@@ -23,7 +23,7 @@ The inquiry has apparently embraced open data, and has made a large number of do
 
 But we quickly realised that the data was not in a useful format. Most of the documents were images of text from a typewriter. Not something a computer can read, and importantly, impossible to search.
 
-![A scan of a Hillsborough document](images/hillsborough-original-document.png)
+![A scan of a Hillsborough document](/posts/images/hillsborough-original-document.png)
 
 #### Pivoting!
 
@@ -40,13 +40,13 @@ ls tifs/*.tif | parallel tesseract {} text/{.}.text
 
 We used [Ghost Script](http://www.ghostscript.com/) to generate images from the PDFs. Originally we had wanted to use [ImageMagick](http://www.imagemagick.org/), but it didn't support creating multi-page TIFFs from multi-page PDFs. Also, I hadn't known about [GNU Parallel](http://www.gnu.org/software/parallel/) before this, but it turned out to be hugely useful for us, and managed to saturate the CPU on my laptop.
 
-![CPU usage when OCR'ing the Hillsborough documents](images/hillsborough-laptop-cpu.png)
+![CPU usage when OCR'ing the Hillsborough documents](/posts/images/hillsborough-laptop-cpu.png)
 
 This ended up taking almost an hour, but we ended up with a folder full of TIFFs ready to run through an OCR program to extract the text, but when we tried this, it was taking 30s or more for each document. With 2 hours to go on the hack, this clearly wasn't fast enough.
 
 After trying and failing to get the OCR program [Tesseract](https://code.google.com/p/tesseract-ocr/) installed on a university server where we didn't have root privileges, we turned to the 'cloud' and got the biggest server that [Digital Ocean](http://digitalocean.com) (the VPS provider that Elliot and I both use). 24 Intel Extreme cores. 96GB of RAM. SSD storage. That should be enough right?
 
-![CPU usage on the server OCR'ing all of the documents](images/hillsborough-server-cpu.png)
+![CPU usage on the server OCR'ing all of the documents](/posts/images/hillsborough-server-cpu.png)
 
 We ran this for about 3 hours in total, and it used all of the processing power it could with every core at full usage until about 2 hours in when we neared the end of the documents. In the end there were just a few really large documents (of around 800 pages each) left to finish while we were waiting for our turn to present.
 

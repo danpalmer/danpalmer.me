@@ -2,7 +2,6 @@
 title: The Checklist Manifesto – Atul Gawande
 date: 2019-09-22
 theme: checklist-manifesto
-hidden: false
 featured: true
 ---
 
