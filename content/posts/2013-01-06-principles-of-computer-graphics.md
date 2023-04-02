@@ -1,9 +1,9 @@
 ---
 date: 2013-01-06
 layout: post
-redirect_from:
+aliases:
   - /2013/01/principles-of-computer-graphics
-slug: principles-of-computer-graphics
+  - /principles-of-computer-graphics
 title: Principles of Computer Graphics
 ---
 

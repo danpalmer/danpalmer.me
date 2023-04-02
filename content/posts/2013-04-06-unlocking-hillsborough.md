@@ -1,10 +1,10 @@
 ---
 date: 2013-04-06
 layout: post
-redirect_from:
+aliases:
   - /2013/04/unlocking-hillsborough
   - /blog/articles/2013-04-06-unlocking-hillsborough.html
-slug: unlocking-hillsborough
+  - /unlocking-hillsborough
 title: Unlocking Hillsborough
 featured: true
 ---

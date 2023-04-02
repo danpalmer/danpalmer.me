@@ -1,9 +1,9 @@
 ---
 date: 2014-01-29
 layout: post
-redirect_from:
+aliases:
   - /2014/01/crowdfunded-cryptography
-slug: crowdfunded-cryptography
+  - /crowdfunded-cryptography
 title: A Crowdfunded Cryptography Nightmare
 ---
 

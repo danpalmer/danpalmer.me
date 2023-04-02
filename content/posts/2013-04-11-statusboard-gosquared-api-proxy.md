@@ -1,10 +1,10 @@
 ---
 date: 2013-04-11
 layout: post
-redirect_from:
+aliases:
   - /2013/04/statusboard-gosquared-api-proxy
   - /blog/articles/2013-04-11-statusboard-gosquared-api-proxy.html
-slug: statusboard-gosquared-api-proxy
+  - /statusboard-gosquared-api-proxy
 title: GoSquared API Proxy for Panic's Status Board
 ---
 

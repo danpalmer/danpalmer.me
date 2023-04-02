@@ -1,9 +1,9 @@
 ---
 date: 2010-05-19
 layout: post
-redirect_from:
+aliases:
   - /2010/05/pin-security
-slug: pin-security
+  - /pin-security
 title: PIN Security
 theme: none
 ---

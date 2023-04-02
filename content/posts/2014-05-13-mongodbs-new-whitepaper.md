@@ -1,9 +1,9 @@
 ---
 date: 2014-05-13
 layout: post
-redirect_from:
+aliases:
   - /2014/05/mongodbs-new-whitepaper
-slug: mongodbs-new-whitepaper
+  - /mongodbs-new-whitepaper
 title: MongoDB Misinformation
 featured: true
 ---

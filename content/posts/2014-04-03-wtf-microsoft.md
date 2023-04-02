@@ -1,9 +1,9 @@
 ---
 date: 2014-04-03
 layout: post
-redirect_from:
+aliases:
   - /2014/04/wtf-microsoft
-slug: wtf-microsoft
+  - /wtf-microsoft
 title: Microsoft's New Direction
 ---
 

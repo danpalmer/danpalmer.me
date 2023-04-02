@@ -1,9 +1,9 @@
 ---
 date: 2013-01-12
 layout: post
-redirect_from:
+aliases:
   - /2013/01/reddit-workflow-for-alfred-20
-slug: reddit-workflow-for-alfred-20
+  - /reddit-workflow-for-alfred-20
 title: Reddit Workflow for Alfred 2
 ---
 

@@ -1,9 +1,9 @@
 ---
 date: 2014-03-01
 layout: post
-redirect_from:
+aliases:
   - /2014/03/imessage-security
-slug: imessage-security
+  - /imessage-security
 title: iMessage Security
 ---
 

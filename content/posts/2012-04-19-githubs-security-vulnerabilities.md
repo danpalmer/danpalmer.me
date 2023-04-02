@@ -1,9 +1,9 @@
 ---
 date: 2012-04-19
 layout: post
-redirect_from:
+aliases:
   - /2012/04/githubs-security-vulnerabilities
-slug: githubs-security-vulnerabilities
+  - /githubs-security-vulnerabilities
 title: GitHub's Security Vulnerabilities
 featured: true
 ---

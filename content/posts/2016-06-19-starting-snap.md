@@ -4,9 +4,9 @@ layout: post
 summary:
   Following on from my previous post about Haskell web frameworks, I've dived
   into making a non-trivial web application, with type-safe database access.
-redirect_from:
+aliases:
   - /2016/06/starting-snap
-slug: starting-snap
+  - /starting-snap
 title: Starting a Snap site with Stack and Persistent
 theme: light-gray-purple
 featured: true

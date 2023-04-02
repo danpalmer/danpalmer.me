@@ -1,10 +1,10 @@
 ---
 date: 2012-03-22
 layout: post
-redirect_from:
+aliases:
   - /2012/03/password-security
   - /blog/passwords.html
-slug: password-security
+  - /password-security
 title: Password Security
 ---
 

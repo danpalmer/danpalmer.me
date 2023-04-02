@@ -1,9 +1,9 @@
 ---
 date: 2013-10-24
 layout: post
-redirect_from:
+aliases:
   - /2013/10/reasons-children-should-learn-to-code
-slug: reasons-children-should-learn-to-code
+  - /reasons-children-should-learn-to-code
 title: Reasons Children Should Learn to Code
 ---
 

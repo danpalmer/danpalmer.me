@@ -1,9 +1,9 @@
 ---
 date: 2014-01-30
 layout: post
-redirect_from:
+aliases:
   - /2014/01/stripe-ctf
-slug: stripe-ctf
+  - /stripe-ctf
 title: Stripe CTF 3.0
 featured: true
 ---

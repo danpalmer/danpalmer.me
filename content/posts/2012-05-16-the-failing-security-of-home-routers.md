@@ -1,9 +1,9 @@
 ---
 date: 2012-05-16
 layout: post
-redirect_from:
+aliases:
   - /2012/05/the-failing-security-of-home-routers
-slug: the-failing-security-of-home-routers
+  - /the-failing-security-of-home-routers
 title: The Failing Security of Home Routers
 ---
 

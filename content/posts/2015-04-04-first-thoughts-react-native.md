@@ -1,9 +1,9 @@
 ---
 date: 2015-04-04
 layout: post
-redirect_from:
+aliases:
   - /2015/04/first-thoughts-react-native
-slug: first-thoughts-react-native
+  - /first-thoughts-react-native
 title: First Thoughts on React Native
 ---
 

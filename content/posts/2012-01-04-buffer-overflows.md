@@ -1,9 +1,9 @@
 ---
 date: 2012-01-04
 layout: post
-redirect_from:
+aliases:
   - /2012/01/buffer-overflows
-slug: buffer-overflows
+	- /buffer-overflows
 title: Buffer Overflows
 ---
 

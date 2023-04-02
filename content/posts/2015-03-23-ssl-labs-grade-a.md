@@ -6,10 +6,10 @@ summary:
   as a first-responder with automated testing and validation, but scoring top marks
   on their SSL Labs test can be difficult. I explored what was required to score full
   marks.
-redirect_from:
+aliases:
   - /2015/03/ssl-labs-grade-a
   - /blog/ssl-labs-grade-a
-slug: ssl-labs-grade-a
+  - /ssl-labs-grade-a
 title: Achieving Full Marks on Qualys SSL Labs
 theme: near-black-light-yellow
 featured: true

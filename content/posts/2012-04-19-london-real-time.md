@@ -1,9 +1,9 @@
 ---
 date: 2012-04-19
 layout: post
-redirect_from:
+aliases:
   - /2012/04/london-real-time
-slug: london-real-time
+  - /london-real-time
 title: London Real-time
 ---
 

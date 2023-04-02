@@ -1,9 +1,9 @@
 ---
 date: 2012-08-03
 layout: post
-redirect_from:
+aliases:
   - /2012/08/2013-the-year-of-linux
-slug: 2013-the-year-of-linux
+  - /2013-the-year-of-linux
 title: "2013: The Year of Linux on the Desktop?"
 ---
 

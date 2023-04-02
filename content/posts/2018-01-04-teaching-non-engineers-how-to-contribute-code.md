@@ -1,9 +1,9 @@
 ---
 date: 2018-01-04
 layout: post
-redirect_from:
+aliases:
   - /2018/01/teaching-non-engineers-how-to-contribute-code
-slug: teaching-non-engineers-how-to-contribute-code
+  - /teaching-non-engineers-how-to-contribute-code
 title: How and why we teach non-engineers to use GitHub at Thread
 theme: washed-blue-red
 originally_on_thread: true

@@ -1,9 +1,9 @@
 ---
 date: 2013-06-04
 layout: post
-redirect_from:
+aliases:
   - /2013/06/initial-thoughts-on-android-development
-slug: initial-thoughts-on-android-development
+  - /initial-thoughts-on-android-development
 title: Initial Thoughts on Android Development
 ---
 

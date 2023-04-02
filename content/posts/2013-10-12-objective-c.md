@@ -1,9 +1,9 @@
 ---
 date: 2013-10-12
 layout: post
-redirect_from:
+aliases:
   - /2013/10/objective-c
-slug: objective-c
+  - /objective-c
 title: Objective-C
 featured: true
 ---

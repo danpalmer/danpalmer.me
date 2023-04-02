@@ -1,9 +1,9 @@
 ---
 date: 2012-05-09
 layout: post
-redirect_from:
+aliases:
   - /2012/05/the-problem-with-square-and-paypal-here
-slug: the-problem-with-square-and-paypal-here
+  - /the-problem-with-square-and-paypal-here
 title: The Problem with Square and PayPal Here
 ---
 

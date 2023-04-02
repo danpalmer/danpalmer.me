@@ -4,9 +4,9 @@ layout: post
 summary:
   A quick overview of 5 of the popular Haskell web frameworks, and what they
   can do to improve the state of web development.
-redirect_from:
+aliases:
   - /2016/06/haskell-web-frameworks
-slug: haskell-web-frameworks
+  - /haskell-web-frameworks
 title: Haskell Web Frameworks
 theme: purple-light-gray
 featured: true

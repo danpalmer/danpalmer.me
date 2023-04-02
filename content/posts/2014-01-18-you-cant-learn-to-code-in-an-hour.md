@@ -1,9 +1,9 @@
 ---
 date: 2014-01-18
 layout: post
-redirect_from:
+aliases:
   - /2014/01/you-cant-learn-to-code-in-an-hour
-slug: you-cant-learn-to-code-in-an-hour
+  - /you-cant-learn-to-code-in-an-hour
 title: You Can't Learn to Code in an Hour
 ---
 
