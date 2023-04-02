@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const OUTDIR = "./public/";
-const EXPECTED_POSTS = 37;
+const EXPECTED_POSTS = 52;
 
 const files = fs.readdirSync(OUTDIR).filter((x) => !x.endsWith(".map"));
 const posts = files.filter((x) => /\d{4}-\d{2}-\d{2}-/.test(x));
