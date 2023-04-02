@@ -13,7 +13,7 @@
   role: author
   primary: true
   repo: danpalmer/danpalmer.me
-  description: This website, built with React, Gatsby, JS, SASS, Webpack and more.
+  description: This website, built with Hugo and SASS, written in Markdown.
   languages:
     - HTML
     - CSS
