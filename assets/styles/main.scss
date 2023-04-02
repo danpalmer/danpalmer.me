@@ -3,6 +3,8 @@
 @import "./variables";
 @import "./themes";
 @import "./print";
+@import "./post";
+@import "./projects";
 
 img::selection {
   background: transparent;
@@ -107,15 +109,18 @@ h5 .header-link {
   margin-top: -0.14rem;
 }
 
-.markdown-content .grvsc-container {
+.markdown-content .chroma {
   @extend .bg-light-gray;
+
+  padding: 1rem 0;
+  border-radius: 0.5rem;
 
   font-size: 0.875rem !important;
   &::-webkit-scrollbar {
     display: none;
   }
 
-  .grvsc-line {
+  .line {
     padding: 0 1rem;
   }
 }
