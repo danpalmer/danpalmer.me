@@ -2,6 +2,10 @@
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 
+{{ define "body_classes" }}
+  {{ cond (isset .Params "theme") (print "theme-" .Params.theme) "" }}
+{{ end }}
+
 {{ define "main" }}
   <article class="post">
     <header>
@@ -22,3 +26,4 @@
     </a>
   </div>
 {{ end }}
+

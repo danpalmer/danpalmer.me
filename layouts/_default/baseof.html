@@ -31,7 +31,7 @@
     {{ $syntaxStyle := resources.Get "styles/syntax.css" | minify }}
     <link rel="stylesheet" type="text/css" href="{{ $syntaxStyle.Permalink }}" />
   </head>
-  <body>
+  <body class="{{ block "body_classes" . }}{{ end }}">
     <div>
       {{- partial "header.html" . -}}
       <div class="page pa3 pa5-l">

@@ -138,6 +138,10 @@ $regular: $global-font-family;
 
 .theme-light-gray-purple {
   @include theme($purple, $light-gray, $regular);
+
+  .content .chroma {
+    background-color: #ddd;
+  }
 }
 
 // Custom themes
