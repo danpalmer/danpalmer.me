@@ -1,5 +1,5 @@
 ---
-date: "2014-03-01"
+date: 2014-03-01
 layout: post
 redirect_from:
   - /2014/03/imessage-security

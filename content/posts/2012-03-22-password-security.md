@@ -1,5 +1,5 @@
 ---
-date: "2012-03-22"
+date: 2012-03-22
 layout: post
 redirect_from:
   - /2012/03/password-security

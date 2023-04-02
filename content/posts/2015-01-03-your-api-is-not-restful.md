@@ -1,5 +1,5 @@
 ---
-date: "2015-01-03"
+date: 2015-01-03
 layout: post
 preview:
   RESTful APIs are a popular thing, but is anyone really doing it properly?

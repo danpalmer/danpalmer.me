@@ -1,5 +1,5 @@
 ---
-date: "2013-04-16"
+date: 2013-04-16
 layout: post
 redirect_from:
   - /2013/04/please-dont-buy-an-electric-car

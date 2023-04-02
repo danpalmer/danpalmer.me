@@ -1,5 +1,5 @@
 ---
-date: "2012-04-19"
+date: 2012-04-19
 layout: post
 redirect_from:
   - /2012/04/githubs-security-vulnerabilities

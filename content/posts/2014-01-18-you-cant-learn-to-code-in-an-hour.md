@@ -1,5 +1,5 @@
 ---
-date: "2014-01-18"
+date: 2014-01-18
 layout: post
 redirect_from:
   - /2014/01/you-cant-learn-to-code-in-an-hour

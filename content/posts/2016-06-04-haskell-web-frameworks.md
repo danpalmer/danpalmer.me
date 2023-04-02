@@ -1,5 +1,5 @@
 ---
-date: "2016-06-04"
+date: 2016-06-04
 layout: post
 preview:
   A quick overview of 5 of the popular Haskell web frameworks, and what they

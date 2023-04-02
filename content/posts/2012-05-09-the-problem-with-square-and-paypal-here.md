@@ -1,5 +1,5 @@
 ---
-date: "2012-05-09"
+date: 2012-05-09
 layout: post
 redirect_from:
   - /2012/05/the-problem-with-square-and-paypal-here

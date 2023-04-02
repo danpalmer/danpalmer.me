@@ -1,5 +1,5 @@
 ---
-date: "2012-08-03"
+date: 2012-08-03
 layout: post
 redirect_from:
   - /2012/08/2013-the-year-of-linux

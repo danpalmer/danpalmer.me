@@ -1,5 +1,5 @@
 ---
-date: "2013-01-12"
+date: 2013-01-12
 layout: post
 redirect_from:
   - /2013/01/reddit-workflow-for-alfred-20

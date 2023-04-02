@@ -1,5 +1,5 @@
 ---
-date: "2014-04-03"
+date: 2014-04-03
 layout: post
 redirect_from:
   - /2014/04/wtf-microsoft

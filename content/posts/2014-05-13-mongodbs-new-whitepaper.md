@@ -1,5 +1,5 @@
 ---
-date: "2014-05-13"
+date: 2014-05-13
 layout: post
 redirect_from:
   - /2014/05/mongodbs-new-whitepaper

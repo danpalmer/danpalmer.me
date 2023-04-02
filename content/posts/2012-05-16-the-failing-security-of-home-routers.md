@@ -1,5 +1,5 @@
 ---
-date: "2012-05-16"
+date: 2012-05-16
 layout: post
 redirect_from:
   - /2012/05/the-failing-security-of-home-routers

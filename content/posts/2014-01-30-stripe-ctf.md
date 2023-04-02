@@ -1,5 +1,5 @@
 ---
-date: "2014-01-30"
+date: 2014-01-30
 layout: post
 redirect_from:
   - /2014/01/stripe-ctf

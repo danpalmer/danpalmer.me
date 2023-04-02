@@ -1,5 +1,5 @@
 ---
-date: "2014-01-29"
+date: 2014-01-29
 layout: post
 redirect_from:
   - /2014/01/crowdfunded-cryptography

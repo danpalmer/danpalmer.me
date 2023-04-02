@@ -1,5 +1,5 @@
 ---
-date: "2015-04-04"
+date: 2015-04-04
 layout: post
 redirect_from:
   - /2015/04/first-thoughts-react-native

@@ -1,5 +1,5 @@
 ---
-date: "2012-01-04"
+date: 2012-01-04
 layout: post
 redirect_from:
   - /2012/01/buffer-overflows

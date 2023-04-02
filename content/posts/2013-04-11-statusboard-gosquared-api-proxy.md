@@ -1,5 +1,5 @@
 ---
-date: "2013-04-11"
+date: 2013-04-11
 layout: post
 redirect_from:
   - /2013/04/statusboard-gosquared-api-proxy

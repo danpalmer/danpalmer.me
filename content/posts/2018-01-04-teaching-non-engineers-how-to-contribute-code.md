@@ -1,5 +1,5 @@
 ---
-date: "2018-01-04"
+date: 2018-01-04
 layout: post
 redirect_from:
   - /2018/01/teaching-non-engineers-how-to-contribute-code

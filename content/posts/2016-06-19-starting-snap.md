@@ -1,5 +1,5 @@
 ---
-date: "2016-06-19"
+date: 2016-06-19
 layout: post
 preview:
   Following on from my previous post about Haskell web frameworks, I've dived

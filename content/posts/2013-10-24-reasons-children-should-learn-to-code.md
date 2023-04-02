@@ -1,5 +1,5 @@
 ---
-date: "2013-10-24"
+date: 2013-10-24
 layout: post
 redirect_from:
   - /2013/10/reasons-children-should-learn-to-code

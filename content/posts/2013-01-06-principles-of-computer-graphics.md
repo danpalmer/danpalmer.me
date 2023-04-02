@@ -1,5 +1,5 @@
 ---
-date: "2013-01-06"
+date: 2013-01-06
 layout: post
 redirect_from:
   - /2013/01/principles-of-computer-graphics

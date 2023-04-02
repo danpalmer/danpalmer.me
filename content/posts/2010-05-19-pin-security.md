@@ -1,5 +1,5 @@
 ---
-date: "2010-05-19"
+date: 2010-05-19
 layout: post
 redirect_from:
   - /2010/05/pin-security

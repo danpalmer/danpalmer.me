@@ -1,5 +1,5 @@
 ---
-date: "2013-06-04"
+date: 2013-06-04
 layout: post
 redirect_from:
   - /2013/06/initial-thoughts-on-android-development

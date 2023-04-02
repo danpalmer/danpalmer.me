@@ -1,5 +1,5 @@
 ---
-date: "2015-03-23"
+date: 2015-03-23
 layout: post
 preview:
   Qualys have become well known in the recent crop of SSL and TLS vulnerabilities
