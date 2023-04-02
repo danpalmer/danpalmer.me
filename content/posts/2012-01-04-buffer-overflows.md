@@ -3,7 +3,7 @@ date: 2012-01-04
 layout: post
 aliases:
   - /2012/01/buffer-overflows
-	- /buffer-overflows
+  - /buffer-overflows
 title: Buffer Overflows
 ---
 
