@@ -12,7 +12,7 @@
   status: live
   role: contributor
   primary: true
-  description: Creator and maintainer of Monzo and Parallels Desktop extensions, as well as unpublished internal Google extensions.
+  description: Creator and maintainer of Monzo, Parallels Desktop, and omg.lol extensions, and contributor to Apple Music, Transmission, Arc, and Splitwise extensions.
   languages:
     - Typescript
   repo: raycast/extensions
