@@ -24,7 +24,7 @@ So why are people surprised when critical parts of their company infrastructure 
 
 In reality SaaS companies are constantly battling against spam, bots, misuse, illegal content hosting, cryptocurrency mining, and more. In many cases there is little difference between these uses and legitimate new accounts, especially when a company has tight security controls that prevent analysis of customer data, or when they haven't had the time to develop such signals.
 
-- - - 
+---
 
 So what's the solution? Building trust.
 
@@ -34,13 +34,13 @@ Getting an account manager or "customer success rep" means similar – someone o
 
 Lastly, having a contract is often a good way to avoid these sorts of issues. Contracts may still have clauses regarding terms of service violations, but with many SaaS businesses accounts with contracts are going to be treated differently, perhaps with a human or lawyer reviewing contracts before account suspension happens. Contracts also mean predictability for the SaaS provider, as they can be more sure about payments, and predictability means less necessity to pre-emptively suspend accounts based on usage. These are often a pre-requisite for higher quotas.
 
-- - -
+---
 
 But SaaS businesses won't be interested in sales calls for small companies?
 
 This is just untrue. Small companies grow. Usage typically grows and building that sales relationship from the beginning may be valuable to a SaaS business. Account managers are a sales channel for new products. SaaS businesses often have a few "whales" and want to diversify their income so that one large customer leaving isn't business-ending. Growth from existing customers is often a better growth plan than marketing to new customers. All of these and more are reasons for a SaaS business to engage with customers of all sizes[^5].
 
-- - -
+---
 
 If a service is critical to your business, make sure you can trust it. Part of that is making sure they can trust you. Engage with sales, become known to the company. Differentiate yourself from bots and spammers.
 
