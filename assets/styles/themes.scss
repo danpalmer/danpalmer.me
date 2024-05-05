@@ -173,3 +173,7 @@ $regular: $global-font-family;
 .theme-light-blue-bg {
   @include theme($dark-gray, $washed-blue, $regular);
 }
+
+.theme-rabbit {
+  @include theme(rgba(255, 77, 6, 1), $black, $regular);
+}
