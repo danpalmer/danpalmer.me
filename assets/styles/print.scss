@@ -9,6 +9,7 @@
   .cv {
     h2 {
       font-size: 12pt !important;
+      margin-top: 0;
     }
     h5 {
       font-size: 10pt !important;
@@ -17,7 +18,9 @@
     p {
       font-size: 8pt !important;
     }
-
+    .li {
+      line-height: 1.3;
+    }
     .w-70 {
       width: 100%;
     }
