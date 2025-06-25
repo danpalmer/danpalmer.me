@@ -116,6 +116,10 @@ $regular: $global-font-family;
   @include theme($red, $washed-yellow, $regular);
 }
 
+.theme-washed-yellow-dark-grey {
+  @include theme($dark-gray, $washed-yellow, $regular);
+}
+
 .theme-navy-light-red {
   @include theme($light-red, $navy, $avenir);
 }
