@@ -33,7 +33,7 @@
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="{{ .Site.Title }}">
 
     {{ $mainSass := resources.Get "styles/main.scss" }}
-    {{ $mainStyle := $mainSass | resources.ToCSS | minify }}
+    {{ $mainStyle := $mainSass | toCSS | minify }}
     <link rel="stylesheet" type="text/css" href="{{ $mainStyle.Permalink }}" />
 
     {{ $syntaxStyle := resources.Get "styles/syntax.css" | minify }}

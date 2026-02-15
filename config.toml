@@ -3,11 +3,16 @@ languageCode = 'en-gb'
 title = 'Dan Palmer'
 timeZone = 'Europe/London'
 enableRobotsTXT = true
+enableGitInfo = true
+disableKinds = ["taxonomy", "term", "section"]
 
 [permalinks]
-  posts = '/:slugorfilename'
+  posts = '/:slugorcontentbasename'
 
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.highlight]
     style = 'github'
     tabWidth = 2

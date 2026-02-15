@@ -1,1 +1,1 @@
-<p>{{ .GitInfo.Hash }}</p>
+<p>{{ with .GitInfo }}{{ .Hash }}{{ end }}</p>
