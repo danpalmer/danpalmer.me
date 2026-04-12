@@ -16,10 +16,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.154.5"
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: 16.x
+          node-version: 20.x
 
       - name: Test
         run: node test.js
