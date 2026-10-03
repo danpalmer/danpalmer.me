@@ -1,4 +1,4 @@
-<article class="pv3">
+<article class="relative nl3 nr3 ph3 pv3 br4 hover-bg-light-gray">
   <div class="flex items-baseline justify-between">
     <div class="pr3">
       <strong>{{ .name }}</strong>
@@ -6,17 +6,34 @@
     </div>
     {{ with .link }}
       <a
-        class="link gray underline-hover nowrap"
+        class="relative z-1 link gray underline-hover nowrap"
         href="{{ . }}"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener"
       >Open <span aria-hidden="true">↗</span></a>
     {{ else }}
       <a
-        class="link gray underline-hover nowrap"
+        class="relative z-1 link gray underline-hover nowrap"
         href="https://github.com/{{ .repo }}"
       >{{ .repo }}</a>
     {{ end }}
   </div>
   <p class="mt1 mb0 lh-copy">{{ .description }}</p>
+  {{ with .link }}
+    <a
+      class="absolute absolute--fill"
+      href="{{ . }}"
+      target="_blank"
+      rel="noopener"
+      aria-label="Open {{ $.name }}"
+    ></a>
+  {{ else }}
+    <a
+      class="absolute absolute--fill"
+      href="https://github.com/{{ .repo }}"
+      target="_blank"
+      rel="noopener"
+      aria-label="Open {{ .name }} on GitHub"
+    ></a>
+  {{ end }}
 </article>
