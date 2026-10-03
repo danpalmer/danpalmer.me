@@ -11,7 +11,7 @@
 - name: raycast/extensions
   status: legacy
   role: contributor
-  primary: true
+  primary: false
   description: Creator and maintainer of Monzo, Parallels Desktop, and omg.lol extensions, and contributor to Apple Music, Transmission, Arc, and Splitwise extensions.
   languages:
     - Typescript
@@ -20,7 +20,7 @@
 - name: danpalmer.me
   status: live
   role: author
-  primary: true
+  primary: false
   repo: danpalmer/danpalmer.me
   description: This website, built with Hugo and SASS, written in Markdown.
   languages:
@@ -31,7 +31,7 @@
 - name: django-enumfield
   status: legacy
   role: contributor
-  primary: true
+  primary: false
   repo: lamby/django-enumfield
   description: Complex enums wtith attached metadata and functionality in Python, compatible with the Django ORM.
   languages:
@@ -40,7 +40,7 @@
 - name: routemaster
   status: legacy
   role: maintainer
-  primary: true
+  primary: false
   description: A service for coordinating complex state machines between muliple other services.
   languages:
     - Python
