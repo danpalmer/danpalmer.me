@@ -8,6 +8,12 @@
     - CSS
     - GitHub Actions
 
+- name: Painscreek Killings Walkthrough
+  year: 2026
+  role: prompter
+  link: /painscreek.html
+  description: An interactive walkthrough tool for the game "The Painscreek Killings".
+
 - name: django-devdata
   year: 2025
   role: maintainer
