@@ -45,7 +45,11 @@ This is just untrue. Small companies grow. Usage typically grows and building th
 If a service is critical to your business, make sure you can trust it. Part of that is making sure they can trust you. Engage with sales, become known to the company. Differentiate yourself from bots and spammers.
 
 [^1]: Cracking down on illegal operations is legally necessary, cracking down on other usage is economically necessary in order to not go out of business, an outcome that would result in a bad experience for all customers.
+
 [^2]: There are oft-overlooked legal liability issues here. It's often not possible to say explicitly why an account has been suspended, as this can be read as an accusation that could be challenged in court and lead to defamation cases.
+
 [^3]: Cloud providers have quotas of resources, CI providers have low caps. ID verification to prevent duplication accounts may still be required.
+
 [^4]: Sometimes a billing address may be needed, in some cases there may even by KYC/AML checks that change the equation a bit, but it's still a long way from the level of trust that is possible.
+
 [^5]: Anecdotally, at my previous company I spoke to many SaaS companies across tech infra services, and heard about more from other members of the team. We were never "too small", despite being objectively small.

@@ -130,13 +130,21 @@ Implementing search at Thread was a journey in understanding the _problem_ of se
 I learnt a lot throughout this process, and consider it one of my formative experiences in developing as an engineer. I hope that others can learn something from the journey too.
 
 [^1]: While recommendations were always the core of the business, the secret sauce, and the primary draw for our customers, it was often a gateway into the user further refining selections through a more standard e-commerce experience where customers expected things like: search, sorting by price low-to-high, next-day delivery, gift vouchers, and more.
+
 [^2]: Falsehoods programmers believe about e-commerce: there is a single "products" table.
+
 [^3]: Thread actually scraped inventory from the websites of many partners (with explicit permission and contracts), so we often didn't know what inventory we had until we sold it. The search results were garbage if you were a customer looking for something specific, but could be great fun for staff looking for the most ridiculous products we, a _clothing retailer_, were selling. Classics included: Trump candles, weed candles, lots of candles, a 3 seater sofa, and a folding garden chair which someone actually ordered, and our warehouse staff happily received, packaged, and dispatched to the office.
+
 [^4]: Why would they? An image tells a thousand words, so there's no need to have the words "blue shirt" next to a photo of a blue shirt. This is only a half-truth, as for SEO there may be reasons to include this, but that data is still unstructured, may be in key words rather than the description, and likely won't cover synonyms. Additionally, brands often have brand guidelines to follow that include particular names for categories that can be non-standard, and the closer you get to the luxury end of the market the less SEO matters and the more out there product descriptions can get.
+
 [^5]: After the latest round of user feedback about terrible search I rage-implemented this in a Pret on a Saturday afternoon.
+
 [^6]: There were a few more pieces to the API, for example actually applying the filtering to check how many products it applied to at that time, and filtering out combinations with no products – we didn't want to show Nike Suits. Another part of the API was search-time formatting of the result, which allowed tweaking the user-visible text. This allowed for translation and internationalisation, and also generating the fallback `Search "foo"` item for free text search.
+
 [^7]: SQL JOINs scale perfectly well, until they don't. This is a complex and nuanced topic. Anyone selling a NoSQL database by saying joins don't scale, hasn't tried. Similarly, anyone saying joins have no problems hasn't used enough to hit the Postgres genetic query plan optimiser yet.
+
 [^8]: To represent price the idea was to segment pricing into brackets such as <£1, <£2, <£3, ... <£1000, <£1100, and so on, with closer grouping and therefore more sensitivity, lower down the scale.
+
 [^9]: Several times people in the company would raise the idea of services like Algolia and say "can we just use this". Explaining why this wouldn't Just Work™ was sometimes a tricky conversation as it's easy to come across as another engineer promoting [Not Invented Here syndrome][nih], but the end result was a better understanding of the problem across the company and more buy-in to solutions, and therefore ultimately an important process to go through.
 
 [doesitfitinmemory]: https://yourdatafitsinram.net/

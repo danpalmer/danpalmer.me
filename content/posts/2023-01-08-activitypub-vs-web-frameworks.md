@@ -119,4 +119,5 @@ A linked data approach to building frameworks may alleviate these issues, but mo
 [triplestore]: https://en.wikipedia.org/wiki/Triplestore
 
 [^1]: Arguably the web _is_ a linked data system – it has links, people don't generally hand construct URIs from documentation and data on web pages, they just follow links. However this is a fairly philosophical point of debate and perhaps not useful to go into in this post.
+
 [^2]: Typically this mechanism would be integrated using a request middleware so as to be run before routing, but would either need to return a response or route successfully. The former may mean leaving behind all existing controller infrastructure, depending on the framework, and is therefore less than ideal, and the latter requires valid mappings between URIs which limits the ability to solve redirections.

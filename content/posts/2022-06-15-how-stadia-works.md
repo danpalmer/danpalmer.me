@@ -136,7 +136,11 @@ So what are the important takeaways?
 - Stadia is probably a console, but maybe not in the way that you think. Whether it's a console or not doesn't matter much to game developers or when actually playing games.
 
 [^1]: There's a little bit of speculation here, I can't be certain that they don't have some magic, but remember that games are designed to run on computers that look and work like PCs and consoles, and Stadia must be very similar or no games would work.
+
 [^2]: This is speculation based on my experience as a software engineer. I've solved similar problems in the past with technologies like EBS volumes on AWS. I don't know for sure how Stadia achieves this, but it's likely close enough.
+
 [^3]: Some 5G is actually rebranded 4G, and doesn't have the latency improvements. Even if it's not rebranded 4G, some 5G uses 4G for the upload side, and while with Stadia there isn't much to upload (only your controller input), the latency impact will be too much.
+
 [^4]: This is a big topic that I'm not going to go into detail on, but consoles have less running than a typical PC, and have more stable environments so can therefore be optimised for by game developers, resulting in better performance on equivalent hardware.
+
 [^5]: To be clear, PC games do tend to get extensive testing and quality assurance. The difference is that there isn't usually another company forcing that to happen. Anyone can write a game and publish it for PC and have people buy it. That is not possible on consoles without getting approval from the console platform owner in some way.

@@ -17,7 +17,7 @@ Scratch that, I learnt to code in my first year at university, where I was taugh
 
 I'm 22, and after 7 years of programming (the last 5 more seriously), I think I'm finally starting to get the hang of it. This isn't just my experience, this is how many of the programmers I know have learnt. It's not something you learn in an hour, it's not something you learn in a year. It's a skill that you learn over many years of challenging yourself to learn new things, and practising your existing abilities, and that's only if you _can_ learn to code. [Some studies suggest](http://www.eis.mdx.ac.uk/research/PhDArea/saeed/S_Dehnadi_ppij-2006__2.pdf) that there are groups of people who will find it far more difficult, or impossible.
 
-So when I found [_Execute iOS_](http://executeios.com/), I was a little annoyed. _Execute_ follows [Sam Soffes](http://soff.es/), a very experienced iOS developer, teaching [Josh Long]() who has no previous programming experience, how to be an iOS developer in 3 days. That's from no programming experience, to submitting an app, in just 3 days.
+So when I found [_Execute iOS_](http://executeios.com/), I was a little annoyed. _Execute_ follows [Sam Soffes](http://soff.es/), a very experienced iOS developer, teaching [Josh Long](https://twitter.com/joshlong) who has no previous programming experience, how to be an iOS developer in 3 days. That's from no programming experience, to submitting an app, in just 3 days.
 
 I'm sure the teaching is done well, Sam is a brilliant developer. And I'm sure the production quality on the whole course – book, videos, and source code – will be fantastic. I wouldn't expect anything less from these guys. But it's not going to teach anyone to code.
 

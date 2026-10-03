@@ -43,9 +43,13 @@ All in all, Rabbit has a big challenge in funding an expensive service, with fur
 As the reviews come out, the hype for the R1 dies, and the reality of the costs come into focus, I expect trouble for Rabbit unless they pivot to a subscription model, but with their brand positioning this will be a tough sell, as it would be giving up the biggest selling point they currently have. With all the hype around the device, I'm reminded of the glory days of services like Uber before they cared about profitability, and the old adage that anyone can successfully sell $1 bills for 25 cents.
 
 [^1]: The process of generating an AI-based answer.
+
 [^2]: Both Assistant and Siri do some processing entirely locally which significantly speeds up their responses. The AI Pin appears to do the same for queries about the current time, but it's unclear if the R1 is able to do anything locally.
+
 [^3]: Like the kind of inefficiencies you get when you build and ship a new piece of hardware and the backend services in just 6 months as Rabbit did.
+
 [^4]: Delivered from a factory to a distribution centre in the US.
+
 [^5]: There are free services on device, like Google Lens or Circle to Search, but these are effectively ad-supported. There are also AI features in modern smartphones, often around photo search and editing, but these are typically computed on device and therefore have no cost to provide (photos on iOS), or are tied to an increase in storage that is charged for (iCloud/Google Photos), or are being provided by large companies with sufficient war chests.
 
 [humane]: https://humane.com/

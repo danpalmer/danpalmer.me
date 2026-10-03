@@ -78,8 +78,6 @@ In the mean time, better training will continue to improve LLM performance and c
 
 Based on all of this, I'm developing my own intuition for where LLMs are likely to succeed and fail, and it all comes down to how many requirements there are for them to follow. The more I can leave up to the model, the better it will do. Unfortunately that doesn't align well with development in large, mature codebases, but it's great for isolated components, prototyping, greenfield work, and exploring optimisations. I'm also starting to structure projects in a way that shifts more of the work towards these aspects.
 
-
-
 [^1]: I have no interest in AI generated poetry and songs, but _mechanically_ they are capable of producing the necessary format of writing with the right words in the right place.
 
 [^2]: I'm not talking here about big complex problems, I'm talking about muscle memory, small, learned steps and interactions that we don't even think about.
