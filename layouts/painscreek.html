@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painscreek Killings Walkthrough</title>
+<style>
+  :root{--ink:#202124;--muted:#6b7176;--line:#dedede;--dark:#2e3135;--pale:#f5f5f5;--done:#f7f7f7}
+  *{box-sizing:border-box} body{margin:0;background:#fff;color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+  header{max-width:720px;margin:0 auto;padding:54px 0 22px;border-bottom:1px solid var(--line)} h1{font-size:28px;line-height:1.2;font-weight:600;letter-spacing:-.02em;margin:0}
+  main{max-width:760px;margin:0 auto;padding:24px 20px 54px}.topline{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:20px}.count{font-size:15px;color:var(--muted)}.count strong{color:var(--ink);font-weight:600}
+  .progress{height:5px;background:#e7e7e7;border-radius:4px;overflow:hidden;width:180px}.progress div{height:100%;background:var(--dark);transition:width .2s}
+  .tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:0 0 18px;border-bottom:1px solid var(--line)}
+  button,.button{appearance:none;background:#fff;border:1px solid #c8c8c8;border-radius:4px;color:var(--ink);font:600 14px/1.2 inherit;padding:8px 10px;cursor:pointer}button:hover{background:var(--pale);border-color:#777}.toggle.active{background:var(--dark);border-color:var(--dark);color:#fff}.danger{margin-left:auto;color:#994137;border-color:#d9bbb7}.card input:disabled{cursor:not-allowed;opacity:.45}
+  .note{color:var(--muted);font-size:14px;margin:18px 0}.cards{display:grid;gap:0}.card{padding:17px 0;border-bottom:1px solid var(--line)}.card.done{background:var(--done);padding:17px 12px;opacity:.8}.card.blocked{opacity:.76}.card-head{display:flex;gap:12px;align-items:flex-start}.card input{appearance:none;width:20px;height:20px;border:1.5px solid #888;border-radius:3px;background:#fff;margin:2px 0 0;flex:none;cursor:pointer}.card input:checked{background:var(--dark);border-color:var(--dark)}.card input:checked::after{content:"✓";display:block;color:white;font-size:15px;line-height:17px;text-align:center;font-weight:700}.card input:focus-visible{outline:3px solid #bababa;outline-offset:2px}.title{font-weight:600;font-size:16px;line-height:1.3;margin:0;cursor:pointer}.meta{font-size:13px;color:var(--muted);margin-top:3px}.badge{font-size:12px;color:var(--ink);background:var(--pale);padding:2px 6px;border-radius:3px;white-space:nowrap;margin-left:auto}.details{margin:10px 0 0 32px;color:#38464c;font-size:14px}.details summary{cursor:pointer;color:var(--ink);font-weight:600}.details p{margin:8px 0 0}.needs{margin:10px 0 0 32px;color:var(--muted);font-size:13px}.empty{padding:26px 0;text-align:center;color:var(--muted)}.footer{margin-top:38px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}a{color:var(--ink);text-underline-offset:2px} @media(max-width:760px){header{margin:0 20px}} @media(max-width:560px){header{margin:0;padding:34px 18px 18px}main{padding:18px 18px 40px}.details,.needs{margin-left:0}.badge{display:none}.tools .danger{margin-left:0}.progress{width:135px}}
+</style>
+</head>
+<body>
+<header><h1>Painscreek Killings Walkthrough</h1></header>
+<main>
+  <div class="topline"><div class="count" id="count"></div><div class="progress" aria-label="Progress"><div id="bar"></div></div></div>
+  <div class="tools"><button class="toggle active" id="ready" type="button">Available now</button><button class="toggle" id="all" type="button">All leads</button><button class="toggle" id="done" type="button">Completed</button><button class="danger" id="reset" type="button">Reset progress</button></div>
+  <p class="note" id="note"></p><section class="cards" id="cards" aria-live="polite"></section>
+  <p class="footer">Built from Ian Bryce Jones’ <a href="https://intermittentmechanism.blog/2019/08/08/walkthrough-the-painscreek-killings/" target="_blank" rel="noreferrer">walkthrough</a>.</p>
+</main>
+<script>
+const T=[
+['sheriff','Sheriff’s Office: collect the desk key and gate key','Sheriff’s Office',[],1,'Take the sheriff’s desk key from the carpet under the desk. Open the top desk drawer and take the gate key to Painscreek proper. Also take the map, flashlight, and note outside the window (cemetery code 1131).'],
+['town','Open the gate into Painscreek','Town entrance',['sheriff'],1,'Use the gate key from the sheriff’s top drawer. This unlocks the entire town.'],
+['hospital-start','Sweep the hospital’s open areas','Hospital',['town'],2,'At reception/nurses’ station collect the medical-records key, Wanda Tyler key, Henry Johnson keycard, and the fancy pin (1964). The keycard causes the scripted power outage.'],
+['hospital-records','Open medical records','Hospital',['hospital-start'],3,'Use the medical-records key at the nurses’ station. Read the middle-drawer note about Katherine’s lost pin if you want confirmation.'],
+['hospital-locker','Open Katherine’s locker','Hospital',['hospital-start'],4,'Enter 1964, stamped on the fancy pin from reception. Take the nurse logbook.'],
+['mansion-start','Sweep the Mayor’s mansion open areas','Mayor’s mansion',['town'],2,'Collect the maid-room key (kitchen island), Bernard’s residence key (exercise-room locker), Mary’s 1993 diary (laundry), and the 3:20 tea-time note beneath the balcony couch leg.'],
+['maid','Open the maid’s room','Mayor’s mansion',['mansion-start'],4,'Use the kitchen-island key. Read Mary’s 1995 diary and notes.'],
+['church-key','Retrieve the church key','Trinity Church grounds',['town'],2,'It is under the flower pot beside the church. Hospital/mansion notes merely hint at this.'],
+['church-start','Sweep Trinity Church and take the tool-room key','Trinity Church',['church-key'],3,'In Scott’s room read the 1985 diary, inspect the toy plane (May 3 1985), then open the safe behind the plane poster with 5385. In Father Matthew’s office take the tool-storage key.'],
+['church-tool','Open the tool storage room','Trinity Church',['church-start'],4,'Use Father Matthew’s office key. Take the Slim Jim lock pick. The chest here needs its own key.'],
+['car','Open Steven Moss’ car','Outside Anne’s Inn',['church-tool'],4,'Use the Slim Jim. Take the PI licence, 1997-1 diary, and note its last-page security-room code: 025241.'],
+['security','Open the mansion security room','Mayor’s mansion',['car'],5,'Enter 025241. Take the nanny, tea-room, and Trisha-room keys plus the worker list.'],
+['nanny','Search Dorothy’s room','Mayor’s mansion',['security'],6,'Use the nanny-room key; read Dorothy’s diaries and leaving letter.'],
+['tea','Open the tea room','Mayor’s mansion',['security'],6,'Use the tea-room key. Take the master-bedroom key from the green-lamp stand.'],
+['master','Search the master bedroom','Mayor’s mansion',['tea'],7,'Use the master key. Take the clock key and Anne’s Inn room-201 key from the floor by the window.'],
+['inn201','Open Anne’s Inn room 201','Anne’s Inn',['master'],8,'Use the room-201 key. Take Steven’s 1997-2 diary (its final page identifies the reception compartment), the cross-indentation photo, the Calvin photo, and the roof photo.'],
+['inn-compartment','Open the reception hidden compartment','Anne’s Inn',['inn201'],9,'Use the location description on the final page of 1997-2. Read the innkeeper’s logbook.'],
+['trisha','Open Trisha’s room','Mayor’s mansion',['security'],6,'Use the security-room key. In the wardrobe read Trisha 1989 (study code 44871) and take Scott’s cabin key.'],
+['study','Open the mansion study','Mayor’s mansion',['trisha'],7,'Enter 44871. Take Medical Encyclopedia vol. 10 and inspect the knight (5) and pawn (2).'],
+['annex','Open the hidden study annex','Mayor’s mansion',['study'],8,'Place vol. 10 in the bookcase, then press vol. 14 (fourth from right), vol. 6 (sixth from left), vol. 15 (third from right). Take Sofia’s photo.'],
+['gallery-safe','Open the gallery safe','Mayor’s mansion',['mansion-start','briefcase','sofia-box'],11,'Press the side button on the central-column woman painting. The code is Vincent’s birthdate: 611975 (June 1, 1975). Take Charles 1995-1 and the king piece (4).'],
+['cabin','Enter Scott Brooks’ cabin','Scott’s cabin',['trisha'],7,'Use Scott’s cabin key. Take the chest key and Father Matthew bedroom key from the phonograph stand.'],
+['chest','Open the “Scott’s Things” chest','Trinity Church',['cabin','church-tool'],8,'Return to the tool room and use the chest key. Take Scott’s cabin basement key.'],
+['matthew-room','Open Father Matthew’s bedroom','Trinity Church',['cabin'],8,'Use its key. Read Matthew’s 1971 diary: his favourite places are Moon Café, church, and Little Big Books.'],
+['shed','Open the secret hideout shed','Mansion grounds',['church-start'],6,'Enter 8831, from Scott’s church safe. Take the mansion attic key, Trisha nightstand key, queen piece (1), and note Oliver has tools.'],
+['trisha-nightstand','Open Trisha’s locked nightstand','Mayor’s mansion',['trisha','shed'],8,'Use the shed key. Take Scott’s metal cross and the key to Dorothy’s residence.'],
+['attic','Open the mansion attic and garage','Mayor’s mansion',['shed'],7,'Use the attic key. Take clock instructions and go down the stairs to unlock Derrick Tyler’s garage.'],
+['clock','Open the Benfield clock','Mayor’s mansion',['tea','master','attic','mansion-start'],9,'Insert the clock key, set the hands to 3:20, then turn the key.'],
+['cabin-basement','Open Scott’s cabin basement','Scott’s cabin',['cabin','chest'],9,'Use the basement key.'],
+['secret-room','Open Scott’s secret room','Scott’s cabin',['cabin-basement','trisha-nightstand','inn201'],10,'Find the covered cross-shaped indentation by matching Steven’s photo to the basement water heater. Insert the metal cross, enter wardrobe, pull light switch. Take sewer key, old gate key, music-box key, and map.'],
+['sewers','Enter sewers, hospital basement, and restore power','Sewers / hospital',['secret-room'],11,'Unlock the camouflaged sewer entrance between Black Pine Rd and Maple Dr. In the basement take the B.H. key, briefcase key and hammer; flip the power reset; unlock the stairwell.'],
+['henry','Open Dr Johnson’s office','Hospital',['hospital-start','sewers'],12,'Power is restored: swipe Henry’s keycard. Take the hospital room-203 key.'],
+['hospital203','Open hospital room 203','Hospital',['henry'],13,'Take Dorothy’s bedroom key from the nightstand top drawer.'],
+['dorothy-house','Enter Dorothy Patterson’s residence','40 Black Pine Rd',['trisha-nightstand'],10,'Use Dorothy’s residence key.'],
+['dorothy-bedroom','Open Dorothy’s upstairs bedroom','40 Black Pine Rd',['dorothy-house','hospital203'],14,'Use the hospital room-203 key. Take Oliver’s photography-shop key.'],
+['oliver','Enter Oliver Gibson’s Photography Shop','5 Walnut Ave',['dorothy-bedroom'],15,'Use the key by Dorothy’s mantel. Take wrench and shovel from the back-office toolbox area.'],
+['broach','Open the mansion garden and inspect the well','Mansion grounds',['secret-room'],12,'Use the old gate key. Take Sofia’s brooch; its stamped number is 0526.'],
+['sofia-box','Open Sofia’s box','Dorothy’s bedroom',['dorothy-bedroom','broach'],16,'Enter 0526. Read Sofia’s 1975 diary: Vincent was born June 1, 1975.'],
+['briefcase','Open Steven Moss’ briefcase','Anne’s Inn room 201',['inn201','sewers'],13,'Use the briefcase key from the mortuary. Note the gallery-safe clue and Sheriff filing code 7741; photograph the intact dartboard if desired.'],
+['filing','Open the Sheriff’s filing cabinet','Sheriff’s Office',['briefcase'],14,'Enter 7741. Take Steven Moss’ car key.'],
+['glovebox','Open Moss’ glove compartment','Outside Anne’s Inn',['car','filing'],15,'Use the car key. Take room-201 lockbox key.'],
+['lockbox','Open Anne’s Inn room-201 lockbox','Anne’s Inn',['glovebox'],16,'Use the lockbox key behind reception. Take 1997-5, roadside-drain note, and light-fixture photo.'],
+['drain','Retrieve the 19th-century church key','Roadside drain',['oliver','lockbox'],17,'Use wrench on the drain opposite Trinity Church’s parking-lot entrance. Take the key.'],
+['church-attic','Open Trinity Church hidden attic','Trinity Church',['drain','lockbox'],18,'Press the button under the light fixture in Father Calvin’s office, then use the 19th-century church key. Do not play Matthew’s confession tape until ready: it begins the no-save endgame.'],
+['father-drawer','Open Father Matthew’s desk drawer','Trinity Church',['matthew-room','sewers'],18,'Complete Sofia’s gift scavenger hunt; the gift card gives Sofia’s birthday, 0318. Use it on the top right desk drawer.'],
+['confessional','Open the confessional cabinet','Trinity Church',['inn201','cemetery'],17,'The Calvin photo says use Father Calvin’s birthdate. Read his headstone: Oct 24 1902 → 102402.'],
+['andrew','Enter Andrew Reed’s residence','7 Black Pine Rd',['town'],3,'Take the 7 Black Pine Rd key from the inbox at Anne’s Inn reception, then enter.'],
+['bernard','Enter Bernard Hopkins’ residence','31 Silverlake Blvd',['mansion-start'],4,'Use Bernard’s key from the mansion exercise-room locker. Read the office note: yellow-dart score must be subtracted from red.'],
+['bernard-bedroom','Open Bernard’s upstairs bedroom','31 Silverlake Blvd',['bernard','sewers'],13,'Use the B.H. key from the hospital mortuary.'],
+['bernard-drawer','Open Bernard’s office drawer','31 Silverlake Blvd',['bernard','briefcase'],15,'From the intact dartboard: red 146 minus yellow 9 = 137. Enter 0137; take the tea-room desk key.'],
+['tea-drawer','Open the tea room’s large desk drawer','Mayor’s mansion',['tea','bernard-drawer'],16,'Use the tea-room desk key; take Vivian’s 1995 diary.'],
+['wanda','Enter Wanda and Derrick Tyler’s residence','43 Silverlake Blvd',['hospital-start'],4,'Use the Wanda Tyler key from the nurses’ station. Read Derrick’s 1990 diary: time capsule is near a big cemetery stone.'],
+['wanda-drawer','Open Wanda’s jammed nightstand','43 Silverlake Blvd',['wanda','sewers'],13,'Use the hammer from hospital storage.'],
+['cemetery','Visit Painscreek Cemetery','Cemetery',['town'],3,'The gate code is 1131 but it is already open. Read Father Calvin’s exact birthdate on his headstone.'],
+['capsule','Dig up the buried time capsule','Cemetery',['wanda','oliver'],16,'With the shovel, use the search prompt at the ground near the large stone. Take the bishop piece (9).'],
+['study-drawer','Open the study middle drawer','Mayor’s mansion',['study','gallery-safe','shed','capsule'],18,'The lock says KQBK. Pieces give 4/1/9/5 or 5/1/9/5; use 5194 if 4195 fails.'],
+['gift','Find Sofia’s hidden gift','Town',['sewers','matthew-room'],17,'Collect the six clues: Inn=b​​ird; bridge=stump; post office=stream; Moon Café=playground; church=1203; Little Big Books=house. The box is near the playground birdhouse at a stump, by the river. Enter 1203 for Sofia’s birthday (0318).'],
+['end','Play Father Matthew’s confession tape (endgame)','Trinity Church attic',['church-attic'],99,'Only do this when you are ready. The walkthrough warns that playing it initiates the endgame and you can no longer save.']
+];
+const tasks=T.filter(([id])=>id!=='end').map(([id,title,area,deps,priority,hint])=>({id,title,area,deps,priority,hint}));
+// The attic is deliberately held until every other investigation lead is resolved.
+tasks.find(t=>t.id==='church-attic').deps=tasks.filter(t=>t.id!=='church-attic').map(t=>t.id);
+let state=JSON.parse(localStorage.getItem('painscreek-progress')||'{}'), view='ready';
+const byId=Object.fromEntries(tasks.map(t=>[t.id,t]));
+function ready(t){return !state[t.id]&&t.deps.every(d=>state[d])}
+function descendants(id){const out=new Set;let changed=true;while(changed){changed=false;tasks.forEach(t=>{if(t.deps.some(d=>d===id||out.has(d))&&!out.has(t.id)){out.add(t.id);changed=true}})}return [...out]}
+function save(){localStorage.setItem('painscreek-progress',JSON.stringify(state))}
+function render(){const completed=tasks.filter(t=>state[t.id]);const available=tasks.filter(ready).sort((a,b)=>a.priority-b.priority||a.title.localeCompare(b.title));let shown=view==='ready'?available:view==='done'?completed:tasks.slice().sort((a,b)=>(state[a.id]?1:0)-(state[b.id]?1:0)||a.priority-b.priority);
+  document.getElementById('count').innerHTML=`<strong>${completed.length}</strong> of ${tasks.length} leads completed · <strong>${available.length}</strong> available now`;
+  document.getElementById('bar').style.width=(completed.length/tasks.length*100)+'%'; document.getElementById('note').textContent=view==='ready'?'These are the next actions whose requirements you have completed.':view==='done'?'Untick any completed lead to roll back it and all leads that depend on it.':'Every lead is shown. Blocked leads name their unfinished requirements.';
+  const cards=document.getElementById('cards');cards.innerHTML='';if(!shown.length){cards.innerHTML='<div class="empty">No leads in this view.</div>';return}
+  shown.forEach(t=>{const done=!!state[t.id], isReady=ready(t), missing=t.deps.filter(d=>!state[d]).map(d=>byId[d].title);const el=document.createElement('article');el.className='card '+(done?'done':isReady?'':'blocked');el.innerHTML=`<div class="card-head"><input type="checkbox" id="${t.id}" ${done?'checked':''} ${!done&&!isReady?'disabled':''}><div><label class="title" for="${t.id}">${t.title}</label><div class="meta">${t.area}</div></div>${isReady&&!done?'<span class="badge">Ready</span>':''}</div><details class="details"><summary>Process &amp; hint</summary><p>${t.hint}</p></details>${missing.length?`<div class="needs"><strong>Still needed:</strong> ${missing.join(' · ')}</div>`:''}`;el.querySelector('input').addEventListener('change',e=>toggle(t.id,e.target.checked));cards.appendChild(el)})}
+function toggle(id,on){if(on){state[id]=true}else{delete state[id];descendants(id).forEach(d=>delete state[d])}save();render()}
+document.querySelectorAll('.toggle').forEach(b=>b.addEventListener('click',()=>{view=b.id;document.querySelectorAll('.toggle').forEach(x=>x.classList.toggle('active',x===b));render()}));
+document.getElementById('reset').addEventListener('click',()=>{if(confirm('Reset every checked lead?')){state={};save();render()}});render();
+</script>
+</body>
+</html>
