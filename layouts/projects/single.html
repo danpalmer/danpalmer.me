@@ -2,19 +2,9 @@
   Projects &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
-  <div class="pb3 flex flex-wrap">
-    {{ range (where .Site.Data.projects "primary" true) }}
-      <div class="w-100-m w-50-l">
-        {{- partial "project.html" . -}}
-      </div>
-    {{ end }}
-  </div>
-  <hr class="bb b--black-20 mt5" />
-  <div class="pv3 flex flex-wrap">
-    {{ range (where .Site.Data.projects "primary" false) }}
-      <div class="w-100-m w-50-l">
-        {{- partial "project.html" . -}}
-      </div>
+  <div class="pv1">
+    {{ range .Site.Data.projects }}
+      {{- partial "project.html" . -}}
     {{ end }}
   </div>
 {{ end }}

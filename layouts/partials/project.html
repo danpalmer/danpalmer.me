@@ -1,29 +1,22 @@
-<div class="mr5">
-  <h3 class="pt5 mv0 {{ cond .primary "f3-ns f2-m f1-l" "f5-ns f4-m f3-l" }}">
-    {{ .name }}
-  </h3>
-  <p class="pt2 mv0">
-    <a
-      class="link gray underline-hover"
-      href="https://github.com/{{ .repo }}"
-    >
-      {{ .repo }}
-    </a>
-  </p>
-  <h4 class="pt2 mv0 silver">
-    {{ title .role }}, {{ .status }}
-  </h4>
-  <p class="pt2 mv0">{{ .description }}</p>
-  <ul class="languages">
-    {{ range $lang := .languages }}
-      {{ range site.Data.languages }}
-        {{ if eq $lang .name  }}
-          <li>
-            <span style="background-color: {{ .colour }}"></span>
-            {{ .name }}
-          </li>
-        {{ end }}
-      {{ end }}
+<article class="pv3">
+  <div class="flex items-baseline justify-between">
+    <div class="pr3">
+      <strong>{{ .name }}</strong>
+      <span class="ml2 silver">{{ .year }}</span>
+    </div>
+    {{ with .link }}
+      <a
+        class="link gray underline-hover nowrap"
+        href="{{ . }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Open <span aria-hidden="true">↗</span></a>
+    {{ else }}
+      <a
+        class="link gray underline-hover nowrap"
+        href="https://github.com/{{ .repo }}"
+      >{{ .repo }}</a>
     {{ end }}
-  </ul>
-</div>
+  </div>
+  <p class="mt1 mb0 lh-copy">{{ .description }}</p>
+</article>
