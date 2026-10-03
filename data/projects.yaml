@@ -9,7 +9,7 @@
   repo: danpalmer/django-devdata
 
 - name: raycast/extensions
-  status: live
+  status: legacy
   role: contributor
   primary: true
   description: Creator and maintainer of Monzo, Parallels Desktop, and omg.lol extensions, and contributor to Apple Music, Transmission, Arc, and Splitwise extensions.
@@ -29,7 +29,7 @@
     - GitHub Actions
 
 - name: django-enumfield
-  status: live
+  status: legacy
   role: contributor
   primary: true
   repo: lamby/django-enumfield
