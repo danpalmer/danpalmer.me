@@ -99,3 +99,150 @@ h3 .header-link {
 h5 .header-link {
   margin-top: -0.14rem;
 }
+
+// Use the visitor's system appearance for the standard site pages. Posts with
+// a custom theme deliberately retain their authored colours.
+@media (prefers-color-scheme: dark) {
+  body:not([class*="theme-"]) {
+    background-color: #121212;
+    color: #e8e8e8;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    b,
+    strong,
+    .black,
+    .near-black {
+      color: #f5f5f5;
+    }
+
+    nav a,
+    p,
+    ul,
+    ol,
+    .dark-gray {
+      color: #d6d6d6;
+    }
+
+    time,
+    .mid-gray,
+    .gray {
+      color: #a8a8a8;
+    }
+
+    .silver,
+    .moon-gray {
+      color: #c2c2c2;
+    }
+
+    hr,
+    .content blockquote {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .content {
+      table {
+        background-color: #1e1e1e;
+
+        tr {
+          border-color: rgba(255, 255, 255, 0.12);
+        }
+      }
+
+      p > code {
+        background-color: #2b2b2b;
+        color: #f5f5f5;
+      }
+
+      .chroma {
+        background-color: #1e1e1e;
+        color: #f0f0f0;
+      }
+    }
+
+    .hover-bg-light-gray:hover {
+      background-color: #242424;
+    }
+
+    // The syntax stylesheet is generated separately, so provide its dark
+    // palette here rather than changing the generated light theme.
+    .chroma {
+      .k,
+      .kc,
+      .kd,
+      .kn,
+      .kp,
+      .kr,
+      .o,
+      .ow {
+        color: #ff7b72;
+      }
+
+      .kt,
+      .nc,
+      .na,
+      .nb,
+      .no,
+      .nt,
+      .nv,
+      .vc,
+      .vg,
+      .vi,
+      .m,
+      .mb,
+      .mf,
+      .mh,
+      .mi,
+      .mo {
+        color: #79c0ff;
+      }
+
+      .nf,
+      .ne,
+      .nl,
+      .ni {
+        color: #d2a8ff;
+      }
+
+      .s,
+      .sa,
+      .sb,
+      .sc,
+      .dl,
+      .sd,
+      .s1,
+      .s2,
+      .se,
+      .sh,
+      .si,
+      .sr,
+      .ss,
+      .sx {
+        color: #a5d6ff;
+      }
+
+      .c,
+      .c1,
+      .ch,
+      .cm,
+      .cp,
+      .cpf,
+      .cs,
+      .lnt,
+      .ln {
+        color: #8b949e;
+      }
+
+      .err,
+      .gd,
+      .ge,
+      .gi,
+      .gp {
+        color: #f0f0f0;
+      }
+    }
+  }
+}
